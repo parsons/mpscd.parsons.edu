@@ -1,0 +1,61 @@
+body {
+
+  .loader {
+    background-color: white;
+  }
+
+  &.preload {
+    .loader {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      z-index: 9999;
+    }
+  }
+}
+
+body.preload {
+  * {
+    display: none !important;
+    transition: none !important;
+    animation-name: none !important;
+  }
+
+  .loader {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes pulsate {
+  0%   { opacity: 1 }
+  50% { opacity: 0.3 }
+  100% { opacity: 1 }
+}
+
+.loader {
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out 0.25s;
+  visibility: hidden;
+  z-index: 999999999;
+}
+
+.loader-loading {
+  background-color: black;
+  animation: pulsate 1.5s infinite ease-in-out;
+  border-radius: 30px;
+  height: 30px;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+}

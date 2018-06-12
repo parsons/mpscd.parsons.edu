@@ -1,0 +1,10 @@
+---
+deploy: ''
+source: _sv
+destination: 'build'
+source_stylesheet: application.scss
+source_javascript: application.js
+destination_stylesheet: application.min.css
+destination_javascript: application.min.js
+layout: layout/_layout.liquid
+includes: modules

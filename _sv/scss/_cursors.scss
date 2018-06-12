@@ -1,0 +1,6 @@
+$cursor-offset: 15;
+$cursor-offset-sm: 7;
+
+@mixin cursor-default {
+    cursor: url(#{$image-filepath}cursor/cursor-default.svg) $cursor-offset $cursor-offset, auto !important;
+}
