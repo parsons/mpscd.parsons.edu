@@ -22,12 +22,6 @@ $(window).load(function(){
   $("body").scrollTop(0);
   $("body").removeClass("preload");
 
-  $('.marquee').marquee({
-    duplicated: true,
-    pauseOnHover: true,
-    startVisible: true,
-    gap: 0
-  });
 });
 
 $(window).resize(function(){
