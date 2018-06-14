@@ -5,9 +5,9 @@
  *= require _lib/ajaxchimp/jquery.ajaxchimp
  *= require _lib/ajaxchimp/jquery.ajaxchimp.langs
  *= require _lib/jquery.finger/jquery.finger
- *= require _lib/hypher/hypher
- *= require _lib/hypher/en-us
-*= require _lib/v0/v0.pageController
+ *= require _sass/_lib/hypher/hypher
+ *= require _sass/_lib/hypher/en-us
+*= require _sass/_lib/v0/v0.pageController
  *
 */
 

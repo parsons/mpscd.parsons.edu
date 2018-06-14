@@ -1,3 +1,6 @@
+---
+---
+
 /*
 // global variables
 */
@@ -138,7 +141,7 @@ $border-lg:                              5px solid $color-base;
 /*
 // project variables
 */
-$image-filepath:                         "_assets/images/";
+$image-filepath:                         "images/";
 
 $t-color-children:                       "p, li, a, h1, h2, h3, h4, h5, h6, span";
 
@@ -149,19 +152,19 @@ $nav-height:                             $space-xl;
 /*
 // imports
 */
-@import "_lib/bootstrap/bootstrap";
-@import '_lib/v0/v0';
+@import "../_sass/_lib/bootstrap/bootstrap";
+@import '../_sass/_lib/v0/v0';
 
-@import 'scss/tests';
-@import 'scss/mixins';
-@import 'scss/loader';
-@import 'scss/cursors';
-@import 'scss/fonts';
-@import 'scss/type';
-@import 'scss/color';
-@import 'scss/media';
-@import 'scss/layout';
-@import 'scss/nav';
+@import '../_sass/tests';
+@import '../_sass/mixins';
+@import '../_sass/loader';
+@import '../_sass/cursors';
+@import '../_sass/fonts';
+@import '../_sass/type';
+@import '../_sass/color';
+@import '../_sass/media';
+@import '../_sass/layout';
+@import '../_sass/nav';
 
 * {
   -webkit-user-select: none;
