@@ -12257,38 +12257,38 @@ body.preload .loader {
 
 @font-face {
   font-family: "'America Regular Web', 'Helvetica Neue', Helvetica, Arial, sans-serif";
-  src: url("_assets/fonts/GT-America-Regular.eot");
-  src: url("_assets/fonts/GT-America-Regular.eot?#iefix") format("embedded-opentype"), url("_assets/fonts/GT-America-Regular.woff") format("woff");
+  src: url("fonts/GT-America-Regular.eot");
+  src: url("fonts/GT-America-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/GT-America-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "'America Regular Italic Web', 'Helvetica Neue', Helvetica, Arial, sans-serif";
-  src: url("_assets/fonts/GT-America-Regular-Italic.eot");
-  src: url("_assets/fonts/GT-America-Regular-Italic.eot?#iefix") format("embedded-opentype"), url("_assets/fonts/GT-America-Regular-Italic.woff") format("woff");
+  src: url("fonts/GT-America-Regular-Italic.eot");
+  src: url("fonts/GT-America-Regular-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/GT-America-Regular-Italic.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "'Super Display Light Web', 'Times New Roman'";
-  src: url("_assets/fonts/GT-Super-Display-Light-v1.eot");
-  src: url("_assets/fonts/GT-Super-Display-Light-v1.eot?#iefix") format("embedded-opentype"), url("_assets/fonts/GT-Super-Display-Light-v1.woff") format("woff");
+  src: url("fonts/GT-Super-Display-Light-v1.eot");
+  src: url("fonts/GT-Super-Display-Light-v1.eot?#iefix") format("embedded-opentype"), url("fonts/GT-Super-Display-Light-v1.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "'Super Display Super Web', 'Times New Roman'";
-  src: url("_assets/fonts/GT-Super-Display-Super-v1.eot");
-  src: url("_assets/fonts/GT-Super-Display-Super-v1.eot?#iefix") format("embedded-opentype"), url("_assets/fonts/GT-Super-Display-Super-v1.woff") format("woff");
+  src: url("fonts/GT-Super-Display-Super-v1.eot");
+  src: url("fonts/GT-Super-Display-Super-v1.eot?#iefix") format("embedded-opentype"), url("fonts/GT-Super-Display-Super-v1.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "'America Mono Regular Web', Courier";
-  src: url("_assets/fonts/GT-America-Mono-Regular.eot");
-  src: url("_assets/fonts/GT-America-Mono-Regular.eot?#iefix") format("embedded-opentype"), url("_assets/fonts/GT-America-Mono-Regular.woff") format("woff");
+  src: url("fonts/GT-America-Mono-Regular.eot");
+  src: url("fonts/GT-America-Mono-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/GT-America-Mono-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "'America Mono Regular Italic Web', Courier";
-  src: url("_assets/fonts/GT-America-Mono-Regular-Italic.eot");
-  src: url("_assets/fonts/GT-America-Mono-Regular-Italic.eot?#iefix") format("embedded-opentype"), url("_assets/fonts/GT-America-Mono-Regular-Italic.woff") format("woff");
+  src: url("fonts/GT-America-Mono-Regular-Italic.eot");
+  src: url("fonts/GT-America-Mono-Regular-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/GT-America-Mono-Regular-Italic.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 /* ////////////////////////////////////////////////
