@@ -1,0 +1,1902 @@
+/*doc
+ ---
+ title: Overview
+ name: 0-variables-overview
+ category: Variables
+ ---
+
+Variables can be overridden by being set before including the `_variables` partial.
+*/
+
+/*doc
+---
+title: Screen Sizes
+name: 1-screen-sizes
+category: Variables
+---
+
+Set break points which are used in break point mixins, utilities, text and the Bootstrap grid and visibility helpers.
+
+| Variable          | Default
+| ---               | ---
+| `$screen-xxs-min` | 375px
+| `$screen-xs-min`  | 480px
+| `$screen-sm-min`  | 768px
+| `$screen-md-min`  | 1024px
+| `$screen-lg-min`  | 1280px
+| `$screen-x-minl`  | 1500px
+| `$screen-xxl-min` | 1800px
+*/
+
+// $screen-xxs-min:                         375px !default;
+// $screen-xs-min:                          480px !default;
+// $screen-sm-min:                          768px !default;
+// $screen-md-min:                          1024px !default;
+// $screen-lg-min:                          1300px !default;
+// $screen-xl-min:                          1500px !default;
+// $screen-xxl-min:                         1800px !default;
+
+/*doc
+---
+title: Text Sizes
+name: text-sizes
+category: Variables
+---
+
+| Variable        | Default
+| ---             | ---
+| `$text-default` | 9px
+| `$text-xxs`     | 11px
+| `$text-xs`      | 13px
+| `$text-sm`      | 18px
+| `$text-md`      | 25px
+| `$text-lg`      | 40px
+| `$text-xl`      | 60px
+| `$text-xxl`     | 100px
+*/
+//
+// $text-default:                           9px !default;
+// $text-xxs:                               11px !default;
+// $text-xs:                                13px !default;
+// $text-sm:                                18px !default;
+// $text-md:                                25px !default;
+// $text-lg:                                40px !default;
+// $text-xl:                                60px !default;
+// $text-xxl:                               100px !default;
+
+/*doc
+---
+title: Letter Spacing
+name: letter-spacing
+category: Variables
+---
+
+| Variable     | Default
+| ---          | ---
+| `$letter-sm` | 0.05em
+| `$letter-md` | 0.1em
+| `$letter-lg` | 0.3em
+*/
+
+// $letter-sm:                              0.05em !default;
+// $letter-md:                              0.1em !default;
+// $letter-lg:                              0.3em !default;
+
+/*doc
+---
+title: Line Height
+name: line-height
+category: Variables
+---
+
+| Variable   | Default
+| ---        | ---
+| `$line-xs` | 1.0
+| `$line-sm` | 1.25
+| `$line-md` | 1.5
+| `$line-lg` | 1.75
+| `$line-xl` | 2.0
+*/
+
+// $line-xs:                                1.0 !default;
+// $line-sm:                                1.25 !default;
+// $line-md:                                1.5 !default;
+// $line-lg:                                1.75 !default;
+// $line-xl:                                2.0 !default;
+
+/*doc
+---
+title: Spacing
+name: spacing
+category: Variables
+---
+
+| Variable    | Default
+| ---         | ---
+| `$space-xs` | 10px
+| `$space-sm` | 15px
+| `$space-md` | 30px
+| `$space-lg` | 60px
+| `$space-xl` | 100px
+*/
+
+// $space-xs:                               10px !default;
+// $space-sm:                               15px !default;
+// $space-md:                               30px !default;
+// $space-lg:                               60px !default;
+// $space-xl:                               100px !default;
+
+
+
+/*doc
+ ---
+ title: Overview
+ name: 0-mixins-overview
+ category: Mixins
+ ---
+
+Mixins should be used when the output of the included CSS changes or you need to repeat the same group of declarations.
+
+*/
+
+/*doc
+---
+title: Media Queries
+name: 1-media-queries
+category: Mixins
+---
+
+**Width**
+
+You should implement a mobile first approach so you use `from` over `to`.
+
++ `@from($device-width)`
++ `@to($device-width)`
+
+The following shorthand mixins have been created for your convenience.
+
+| Mixin | Description
+| ---    | ---
+| `@include xs {}` | Extra small screen size and up
+| `@include sm {}` | Small screen size and up
+| `@include md {}` | Medium screen size and up
+| `@include lg {}` | Large screen size and up
+| `@include xl {}` | Extra large screen size and up
+
+The value for these break-points is set in [variables][screen-sizes].
+
+**Height**
+
++ `@from-height($device-height)`
++ `@to-height($device-height)`
+*/
+
+@mixin from($device-width) {
+  @media screen and (min-width: $device-width) {
+    @content;
+  }
+}
+
+@mixin to($device-width) {
+  @media screen and (max-width: $device-width - 1) {
+    @content;
+  }
+}
+
+@mixin from-height($device-height) {
+  @media screen and (min-height: $device-height) {
+    @content;
+  }
+}
+
+@mixin to-height($device-height) {
+  @media screen and (max-height: $device-height - 1) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @include from($screen-xs-min) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @include from($screen-sm-min) {
+    @content;
+  }
+}
+
+@mixin md {
+  @include from($screen-md-min) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @include from($screen-lg-min) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @include from($screen-xl-min) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @include from($screen-xxl-min) {
+    @content;
+  }
+}
+
+/*doc
+---
+title: Background Image
+name: background-image
+category: Mixins
+---
+
+Cover background image.
+
+`@include background-image('image.png')`
+*/
+
+@mixin background-image($image) {
+  background-image: url($image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*doc
+---
+title: Background Mask
+name: background-mask
+category: Mixins
+---
+
+`@include background-mask(rgba(0,0,0,0.9))`
+*/
+
+@mixin background-mask($background-color) {
+  position: relative;
+
+  &:before {
+    @include animated;
+    background-color: $background-color;
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    z-index: 0;
+  }
+}
+
+/*doc
+---
+title: Drop Shadow
+name: drop-shadow
+category: Mixins
+---
+
+`@include drop-shadow(black)`
+*/
+
+@mixin drop-shadow($drop-shadow) {
+  -webkit-filter: drop-shadow($drop-shadow);
+  filter: drop-shadow($drop-shadow);
+}
+
+/*doc
+---
+title: Overflow Scroll
+name: overflow-scroll
+category: Mixins
+---
+
+`@include overflow-scroll`
+*/
+
+@mixin overflow-scroll {
+  overflow: scroll;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*doc
+ ---
+ title: Overview
+ name: 0-utilities-overview
+ category: Utilities
+ ---
+
+Utilities are very specific and targeted, generally with a single property, sometimes with an !important suffix to ensure their property is modified.
+
+All utilities are prefixed by `u-` and can be optionally followed by one of the following break point abbreviations:
+
+| Prefix | Description
+| ---    | ---
+| `-sm-` | Small screen size and up
+| `-md-` | Medium screen size and up
+| `-lg-` | Large screen size and up
+| `-xl-` | Extra Large screen size and up
+
+The value for these break-points is set in [variables][screen-sizes].
+
+```html_example
+<div class="u-padding-all-md u-sm-padding-all-lg u-md-padding-all-xl">
+  Content
+</div>
+```
+
+*/
+
+/*doc
+---
+title: Animated
+name: animated
+category: Utilities
+---
+
+Add default animation transitions to an element for all properties.
+
+```html_example
+<div class="u-animated">
+  Content
+</div>
+```
+*/
+
+.u-animated {
+  transition: all 0.3s ease-in-out;
+}
+
+/*doc
+---
+title: Responsive Images
+name: responsive-images
+category: Utilities
+---
+
+Make images respond to their containers.
+
+By default, the image will never be wider than iteself.
+
+```html_example
+<div>
+  <img src="http://placehold.it/500x250&text=500%20x%20250" class="u-responsive">
+</div>
+```
+
+Combine with `u-full` to make it is always fill the container width.
+
+```html_example
+<div>
+  <img src="http://placehold.it/500x250&text=500%20x%20250" class="u-responsive u-full">
+</div>
+```
+*/
+
+@mixin responsive-setup($namespace: "") {
+  .u#{$namespace}-responsive {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+/*doc
+---
+title: Display
+name: display
+category: Utilities
+---
+
+| Class            | Description
+| ---              | ---
+| `u-table`        | Display as a table
+| `u-table-cell`   | Display as a table cell
+| `u-align-top`    | Vertically align to the top
+| `u-align-bottom` | Vertically align to the bottom
+| `u-align-middle` | Vertically align to the middle
+| `u-block`        | Display as a block
+| `u-inline`       | Display inline
+| `u-inline-block` | Display as an inline-block
+| `u-relative`     | Positon relative
+| `u-absolute`     | Positon absolute
+| `u-fixed`        | Position fixed
+| `u-static`       | Position static
+| `u-bottom`       | Position bottom 0
+| `u-left`         | Positon left 0
+| `u-right`        | Position right 0
+| `u-top`          | Position top 0
+| `u-circle`       | Make element a circle
+| `u-half`         | Set 50% width
+| `u-full`         | Set 100% width
+
+```html_example
+<div class="u-table u-full">
+  <div class="u-table-cell u-middle">
+    Table cell vertically aligned in the middle of the parent table.
+  </div>
+</div>
+```
+
+*/
+
+@mixin display-setup($namespace: "") {
+  .u#{$namespace}-table {
+    display: table !important;
+  }
+  .u#{$namespace}-table-cell {
+    display: table-cell !important;
+  }
+  .u#{$namespace}-top {
+    vertical-align: top !important;
+  }
+  .u#{$namespace}-bottom {
+    vertical-align: bottom !important;
+  }
+  .u#{$namespace}-middle {
+    vertical-align: middle !important;
+  }
+  .u#{$namespace}-block {
+    display: block !important;
+  }
+  .u#{$namespace}-inline {
+    display: inline !important;
+  }
+  .u#{$namespace}-inline-block {
+    display: inline-block !important;
+  }
+  .u#{$namespace}-flex {
+    display: flex !important;
+  }
+  .u#{$namespace}-inline-flex {
+    display: inline-flex !important;
+  }
+  .u#{$namespace}-relative {
+    position: relative !important;
+  }
+  .u#{$namespace}-absolute {
+    position: absolute !important;
+  }
+  .u#{$namespace}-fixed {
+    position: fixed !important;
+  }
+  .u#{$namespace}-static {
+    position: static !important;
+  }
+  .u#{$namespace}-bottom {
+    bottom: 0 !important;
+  }
+  .u#{$namespace}-left {
+    left: 0 !important;
+  }
+  .u#{$namespace}-right {
+    right: 0 !important;
+  }
+  .u#{$namespace}-top {
+    top: 0 !important;
+  }
+  .u#{$namespace}-circle {
+    border-radius: 99999px !important;
+  }
+  .u#{$namespace}-half {
+    width: 50% !important;
+  }
+  .u#{$namespace}-full {
+    width: 100% !important;
+  }
+}
+
+/*doc
+---
+title: Spacing
+name: space
+category: Utilities
+---
+
+Space utilities are configured for `margin` and `padding` and come with size suffixes for `n`, `xs`, `sm`, `md`, `lg`, `xl`.
+
+The value for these break-points is set in [variables][spacing].
+
+If verbosity is not your thing you can use the shorthand version (in brackets).
+
+Classes are constructed as: `u-{{breakpoint}}-{{type}}-{{direction}}-{{size}}`
+e.g. `u-margin-all-lg` or `u-sm-padding-vertical-sm`.
+
+Shorthand classes are constructed as `u-{{breakpoint}}-{{type}}{{direction}}{{size}}`
+e.g. `u-malg` or `u-sm-pvsm`.
+
+**Breakpoints**
+
++ `sm-`
++ `md-`
++ `-lg`
++ `-xl`
+
+**Type**
+
++ `padding-` or `p`
++ `margin-` or `m`
+
+**Direction**
+
++ `top-` or `t`
++ `bottom-` `b`
++ `vertical-` `v`
++ `left-` `l`
++ `right-` `r`
++ `horizontal-` `h`
++ `all-` `a`
+
+**Size**
+
++ `xs`
++ `sm`
++ `md`
++ `lg`
++ `xl`
+
+```html_example
+<div class="u-padding-all-md u-sm-padding-all-lg u-md-padding-all-xl">
+  Content
+</div>
+
+<div class="u-margin-all-md u-sm-margin-all-lg u-md-margin-all-xl">
+  Content
+</div>
+```
+*/
+
+@mixin space-margin-setup($namespace: "") {
+  .u#{$namespace}-mtn,
+  .u#{$namespace}-margin-top-n,
+  .u#{$namespace}-mvn,
+  .u#{$namespace}-margin-vertical-n,
+  .u#{$namespace}-man,
+  .u#{$namespace}-margin-all-n {
+    margin-top: 0 !important;
+  }
+  .u#{$namespace}-mtxxs,
+  .u#{$namespace}-margin-top-xxs,
+  .u#{$namespace}-mvxxs,
+  .u#{$namespace}-margin-vertical-xxs,
+  .u#{$namespace}-maxxs,
+  .u#{$namespace}-margin-all-xxs {
+    margin-top: $space-xxs !important;
+  }
+  .u#{$namespace}-mtxs,
+  .u#{$namespace}-margin-top-xs,
+  .u#{$namespace}-mvxs,
+  .u#{$namespace}-margin-vertical-xs,
+  .u#{$namespace}-maxs,
+  .u#{$namespace}-margin-all-xs {
+    margin-top: $space-xs !important;
+  }
+  .u#{$namespace}-mtsm,
+  .u#{$namespace}-margin-top-sm,
+  .u#{$namespace}-mvsm,
+  .u#{$namespace}-margin-vertical-sm,
+  .u#{$namespace}-masm,
+  .u#{$namespace}-margin-all-sm {
+    margin-top: $space-sm !important;
+  }
+  .u#{$namespace}-mtmd,
+  .u#{$namespace}-margin-top-md,
+  .u#{$namespace}-mvmd,
+  .u#{$namespace}-margin-vertical-md,
+  .u#{$namespace}-mamd,
+  .u#{$namespace}-margin-all-md {
+    margin-top: $space-md !important;
+  }
+  .u#{$namespace}-mtlg,
+  .u#{$namespace}-margin-top-lg,
+  .u#{$namespace}-mvlg,
+  .u#{$namespace}-margin-vertical-lg,
+  .u#{$namespace}-malg,
+  .u#{$namespace}-margin-all-lg {
+    margin-top: $space-lg !important;
+  }
+  .u#{$namespace}-mtxl,
+  .u#{$namespace}-margin-top-xl,
+  .u#{$namespace}-mvxl,
+  .u#{$namespace}-margin-vertical-xl,
+  .u#{$namespace}-maxl,
+  .u#{$namespace}-margin-all-xl {
+    margin-top: $space-xl !important;
+  }
+  .u#{$namespace}-mtxxl,
+  .u#{$namespace}-margin-top-xxl,
+  .u#{$namespace}-mvxxl,
+  .u#{$namespace}-margin-vertical-xxl,
+  .u#{$namespace}-maxxl,
+  .u#{$namespace}-margin-all-xxl {
+    margin-top: $space-xxl !important;
+  }
+  .u#{$namespace}-mbn,
+  .u#{$namespace}-margin-bottom-n,
+  .u#{$namespace}-mvn,
+  .u#{$namespace}-margin-vertical-n,
+  .u#{$namespace}-man,
+  .u#{$namespace}-margin-all-n {
+    margin-bottom: 0 !important;
+  }
+  .u#{$namespace}-mbxxs,
+  .u#{$namespace}-margin-bottom-xxs,
+  .u#{$namespace}-mvxxs,
+  .u#{$namespace}-margin-vertical-xxs,
+  .u#{$namespace}-maxxs,
+  .u#{$namespace}-margin-all-xxs {
+    margin-bottom: $space-xxs !important;
+  }
+  .u#{$namespace}-mbxs,
+  .u#{$namespace}-margin-bottom-xs,
+  .u#{$namespace}-mvxs,
+  .u#{$namespace}-margin-vertical-xs,
+  .u#{$namespace}-maxs,
+  .u#{$namespace}-margin-all-xs {
+    margin-bottom: $space-xs !important;
+  }
+  .u#{$namespace}-mbsm,
+  .u#{$namespace}-margin-bottom-sm,
+  .u#{$namespace}-mvsm,
+  .u#{$namespace}-margin-vertical-sm,
+  .u#{$namespace}-masm,
+  .u#{$namespace}-margin-all-sm {
+    margin-bottom: $space-sm !important;
+  }
+  .u#{$namespace}-mbmd,
+  .u#{$namespace}-margin-bottom-md,
+  .u#{$namespace}-mvmd,
+  .u#{$namespace}-margin-vertical-md,
+  .u#{$namespace}-mamd,
+  .u#{$namespace}-margin-all-md {
+    margin-bottom: $space-md !important;
+  }
+  .u#{$namespace}-mblg,
+  .u#{$namespace}-margin-bottom-lg,
+  .u#{$namespace}-mvlg,
+  .u#{$namespace}-margin-vertical-lg,
+  .u#{$namespace}-malg,
+  .u#{$namespace}-margin-all-lg {
+    margin-bottom: $space-lg !important;
+  }
+  .u#{$namespace}-mbxl,
+  .u#{$namespace}-margin-bottom-xl,
+  .u#{$namespace}-mvxl,
+  .u#{$namespace}-margin-vertical-xl,
+  .u#{$namespace}-maxl,
+  .u#{$namespace}-margin-all-xl {
+    margin-bottom: $space-xl !important;
+  }
+  .u#{$namespace}-mbxxl,
+  .u#{$namespace}-margin-bottom-xxl,
+  .u#{$namespace}-mvxxl,
+  .u#{$namespace}-margin-vertical-xxl,
+  .u#{$namespace}-maxxl,
+  .u#{$namespace}-margin-all-xxl {
+    margin-bottom: $space-xxl !important;
+  }
+  .u#{$namespace}-mln,
+  .u#{$namespace}-margin-left-n,
+  .u#{$namespace}-mhn,
+  .u#{$namespace}-margin-horizontal-n,
+  .u#{$namespace}-man,
+  .u#{$namespace}-margin-all-n {
+    margin-left: 0 !important;
+  }
+  .u#{$namespace}-mlxxs,
+  .u#{$namespace}-margin-left-xxs,
+  .u#{$namespace}-mhxxs,
+  .u#{$namespace}-margin-horizontal-xxs,
+  .u#{$namespace}-maxxs,
+  .u#{$namespace}-margin-all-xxs {
+    margin-left: $space-xxs !important;
+  }
+  .u#{$namespace}-mlxs,
+  .u#{$namespace}-margin-left-xs,
+  .u#{$namespace}-mhxs,
+  .u#{$namespace}-margin-horizontal-xs,
+  .u#{$namespace}-maxs,
+  .u#{$namespace}-margin-all-xs {
+    margin-left: $space-xs !important;
+  }
+  .u#{$namespace}-mlsm,
+  .u#{$namespace}-margin-left-sm,
+  .u#{$namespace}-mhsm,
+  .u#{$namespace}-margin-horizontal-sm,
+  .u#{$namespace}-masm,
+  .u#{$namespace}-margin-all-sm {
+    margin-left: $space-sm !important;
+  }
+  .u#{$namespace}-mlmd,
+  .u#{$namespace}-margin-left-md,
+  .u#{$namespace}-mhmd,
+  .u#{$namespace}-margin-horizontal-md,
+  .u#{$namespace}-mamd,
+  .u#{$namespace}-margin-all-md {
+    margin-left: $space-md !important;
+  }
+  .u#{$namespace}-mllg,
+  .u#{$namespace}-margin-left-lg,
+  .u#{$namespace}-mhlg,
+  .u#{$namespace}-margin-horizontal-lg,
+  .u#{$namespace}-malg,
+  .u#{$namespace}-margin-all-lg {
+    margin-left: $space-lg !important;
+  }
+  .u#{$namespace}-mlxl,
+  .u#{$namespace}-margin-left-xl,
+  .u#{$namespace}-mhxl,
+  .u#{$namespace}-margin-horizontal-xl,
+  .u#{$namespace}-maxl,
+  .u#{$namespace}-margin-all-xl {
+    margin-left: $space-xl !important;
+  }
+  .u#{$namespace}-mlxxl,
+  .u#{$namespace}-margin-left-xxl,
+  .u#{$namespace}-mhxxl,
+  .u#{$namespace}-margin-horizontal-xxl,
+  .u#{$namespace}-maxxl,
+  .u#{$namespace}-margin-all-xxl {
+    margin-left: $space-xxl !important;
+  }
+  .u#{$namespace}-mrn,
+  .u#{$namespace}-margin-right-n,
+  .u#{$namespace}-mhn,
+  .u#{$namespace}-margin-horizontal-n,
+  .u#{$namespace}-man,
+  .u#{$namespace}-margin-all-n {
+    margin-right: 0 !important;
+  }
+  .u#{$namespace}-mrxxs,
+  .u#{$namespace}-margin-right-xxs,
+  .u#{$namespace}-mhxxs,
+  .u#{$namespace}-margin-horizontal-xxs,
+  .u#{$namespace}-maxxs,
+  .u#{$namespace}-margin-all-xxs {
+    margin-right: $space-xxs !important;
+  }
+  .u#{$namespace}-mrxs,
+  .u#{$namespace}-margin-right-xs,
+  .u#{$namespace}-mhxs,
+  .u#{$namespace}-margin-horizontal-xs,
+  .u#{$namespace}-maxs,
+  .u#{$namespace}-margin-all-xs {
+    margin-right: $space-xs !important;
+  }
+  .u#{$namespace}-mrsm,
+  .u#{$namespace}-margin-right-sm,
+  .u#{$namespace}-mhsm,
+  .u#{$namespace}-margin-horizontal-sm,
+  .u#{$namespace}-masm,
+  .u#{$namespace}-margin-all-sm {
+    margin-right: $space-sm !important;
+  }
+  .u#{$namespace}-mrmd,
+  .u#{$namespace}-margin-right-md,
+  .u#{$namespace}-mhmd,
+  .u#{$namespace}-margin-horizontal-md,
+  .u#{$namespace}-mamd,
+  .u#{$namespace}-margin-all-md {
+    margin-right: $space-md !important;
+  }
+  .u#{$namespace}-mrlg,
+  .u#{$namespace}-margin-right-lg,
+  .u#{$namespace}-mhlg,
+  .u#{$namespace}-margin-horizontal-lg,
+  .u#{$namespace}-malg,
+  .u#{$namespace}-margin-all-lg {
+    margin-right: $space-lg !important;
+  }
+  .u#{$namespace}-mrxl,
+  .u#{$namespace}-margin-right-xl,
+  .u#{$namespace}-mhxl,
+  .u#{$namespace}-margin-horizontal-xl,
+  .u#{$namespace}-maxl,
+  .u#{$namespace}-margin-all-xl {
+    margin-right: $space-xl !important;
+  }
+  .u#{$namespace}-mrxxl,
+  .u#{$namespace}-margin-right-xxl,
+  .u#{$namespace}-mhxxl,
+  .u#{$namespace}-margin-horizontal-xxl,
+  .u#{$namespace}-maxxl,
+  .u#{$namespace}-margin-all-xxl {
+    margin-right: $space-xxl !important;
+  }
+  .u#{$namespace}-mha,
+  .u#{$namespace}-margin-horizontal-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@mixin space-padding-setup($namespace: "") {
+  .u#{$namespace}-ptn,
+  .u#{$namespace}-padding-top-n,
+  .u#{$namespace}-pvn,
+  .u#{$namespace}-padding-vertical-n,
+  .u#{$namespace}-pan,
+  .u#{$namespace}-padding-all-n {
+    padding-top: 0 !important;
+  }
+  .u#{$namespace}-ptxxs,
+  .u#{$namespace}-padding-top-xxs,
+  .u#{$namespace}-pvxxs,
+  .u#{$namespace}-padding-vertical-xxs,
+  .u#{$namespace}-paxxs,
+  .u#{$namespace}-padding-all-xxs {
+    padding-top: $space-xxs !important;
+  }
+  .u#{$namespace}-ptxs,
+  .u#{$namespace}-padding-top-xs,
+  .u#{$namespace}-pvxs,
+  .u#{$namespace}-padding-vertical-xs,
+  .u#{$namespace}-paxs,
+  .u#{$namespace}-padding-all-xs {
+    padding-top: $space-xs !important;
+  }
+  .u#{$namespace}-ptsm,
+  .u#{$namespace}-padding-top-sm,
+  .u#{$namespace}-pvsm,
+  .u#{$namespace}-padding-vertical-sm,
+  .u#{$namespace}-pasm,
+  .u#{$namespace}-padding-all-sm {
+    padding-top: $space-sm !important;
+  }
+  .u#{$namespace}-ptmd,
+  .u#{$namespace}-padding-top-md,
+  .u#{$namespace}-pvmd,
+  .u#{$namespace}-padding-vertical-md,
+  .u#{$namespace}-pamd,
+  .u#{$namespace}-padding-all-md {
+    padding-top: $space-md !important;
+  }
+  .u#{$namespace}-ptlg,
+  .u#{$namespace}-padding-top-lg,
+  .u#{$namespace}-pvlg,
+  .u#{$namespace}-padding-vertical-lg,
+  .u#{$namespace}-palg,
+  .u#{$namespace}-padding-all-lg {
+    padding-top: $space-lg !important;
+  }
+  .u#{$namespace}-ptxl,
+  .u#{$namespace}-padding-top-xl,
+  .u#{$namespace}-pvxl,
+  .u#{$namespace}-padding-vertical-xl,
+  .u#{$namespace}-paxl,
+  .u#{$namespace}-padding-all-xl {
+    padding-top: $space-xl !important;
+  }
+  .u#{$namespace}-ptxxl,
+  .u#{$namespace}-padding-top-xxl,
+  .u#{$namespace}-pvxxl,
+  .u#{$namespace}-padding-vertical-xxl,
+  .u#{$namespace}-paxxl,
+  .u#{$namespace}-padding-all-xxl {
+    padding-top: $space-xxl !important;
+  }
+  .u#{$namespace}-pbn,
+  .u#{$namespace}-padding-bottom-n,
+  .u#{$namespace}-pvn,
+  .u#{$namespace}-padding-vertical-n,
+  .u#{$namespace}-pan,
+  .u#{$namespace}-padding-all-n {
+    padding-bottom: 0 !important;
+  }
+  .u#{$namespace}-pbxxs,
+  .u#{$namespace}-padding-bottom-xxs,
+  .u#{$namespace}-pvxxs,
+  .u#{$namespace}-padding-vertical-xxs,
+  .u#{$namespace}-paxxs,
+  .u#{$namespace}-padding-all-xxs {
+    padding-bottom: $space-xxs !important;
+  }
+  .u#{$namespace}-pbxs,
+  .u#{$namespace}-padding-bottom-xs,
+  .u#{$namespace}-pvxs,
+  .u#{$namespace}-padding-vertical-xs,
+  .u#{$namespace}-paxs,
+  .u#{$namespace}-padding-all-xs {
+    padding-bottom: $space-xs !important;
+  }
+  .u#{$namespace}-pbsm,
+  .u#{$namespace}-padding-bottom-sm,
+  .u#{$namespace}-pvsm,
+  .u#{$namespace}-padding-vertical-sm,
+  .u#{$namespace}-pasm,
+  .u#{$namespace}-padding-all-sm {
+    padding-bottom: $space-sm !important;
+  }
+  .u#{$namespace}-pbmd,
+  .u#{$namespace}-padding-bottom-md,
+  .u#{$namespace}-pvmd,
+  .u#{$namespace}-padding-vertical-md,
+  .u#{$namespace}-pamd,
+  .u#{$namespace}-padding-all-md {
+    padding-bottom: $space-md !important;
+  }
+  .u#{$namespace}-pblg,
+  .u#{$namespace}-padding-bottom-lg,
+  .u#{$namespace}-pvlg,
+  .u#{$namespace}-padding-vertical-lg,
+  .u#{$namespace}-palg,
+  .u#{$namespace}-padding-all-lg {
+    padding-bottom: $space-lg !important;
+  }
+  .u#{$namespace}-pbxl,
+  .u#{$namespace}-padding-bottom-xl,
+  .u#{$namespace}-pvxl,
+  .u#{$namespace}-padding-vertical-xl,
+  .u#{$namespace}-paxl,
+  .u#{$namespace}-padding-all-xl {
+    padding-bottom: $space-xl !important;
+  }
+  .u#{$namespace}-pbxxl,
+  .u#{$namespace}-padding-bottom-xxl,
+  .u#{$namespace}-pvxxl,
+  .u#{$namespace}-padding-vertical-xxl,
+  .u#{$namespace}-paxxl,
+  .u#{$namespace}-padding-all-xxl {
+    padding-bottom: $space-xxl !important;
+  }
+  .u#{$namespace}-pln,
+  .u#{$namespace}-padding-left-n,
+  .u#{$namespace}-phn,
+  .u#{$namespace}-padding-horizontal-n,
+  .u#{$namespace}-pan,
+  .u#{$namespace}-padding-all-n {
+    padding-left: 0 !important;
+  }
+  .u#{$namespace}-plxxs,
+  .u#{$namespace}-padding-left-xxs,
+  .u#{$namespace}-phxxs,
+  .u#{$namespace}-padding-horizontal-xxs,
+  .u#{$namespace}-paxxs,
+  .u#{$namespace}-padding-all-xxs {
+    padding-left: $space-xxs !important;
+  }
+  .u#{$namespace}-plxs,
+  .u#{$namespace}-padding-left-xs,
+  .u#{$namespace}-phxs,
+  .u#{$namespace}-padding-horizontal-xs,
+  .u#{$namespace}-paxs,
+  .u#{$namespace}-padding-all-xs {
+    padding-left: $space-xs !important;
+  }
+  .u#{$namespace}-plsm,
+  .u#{$namespace}-padding-left-sm,
+  .u#{$namespace}-phsm,
+  .u#{$namespace}-padding-horizontal-sm,
+  .u#{$namespace}-pasm,
+  .u#{$namespace}-padding-all-sm {
+    padding-left: $space-sm !important;
+  }
+  .u#{$namespace}-plmd,
+  .u#{$namespace}-padding-left-md,
+  .u#{$namespace}-phmd,
+  .u#{$namespace}-padding-horizontal-md,
+  .u#{$namespace}-pamd,
+  .u#{$namespace}-padding-all-md {
+    padding-left: $space-md !important;
+  }
+  .u#{$namespace}-pllg,
+  .u#{$namespace}-padding-left-lg,
+  .u#{$namespace}-phlg,
+  .u#{$namespace}-padding-horizontal-lg,
+  .u#{$namespace}-palg,
+  .u#{$namespace}-padding-all-lg {
+    padding-left: $space-lg !important;
+  }
+  .u#{$namespace}-plxl,
+  .u#{$namespace}-padding-left-xl,
+  .u#{$namespace}-phxl,
+  .u#{$namespace}-padding-horizontal-xl,
+  .u#{$namespace}-paxl,
+  .u#{$namespace}-padding-all-xl {
+    padding-left: $space-xl !important;
+  }
+  .u#{$namespace}-plxxl,
+  .u#{$namespace}-padding-left-xxl,
+  .u#{$namespace}-phxxl,
+  .u#{$namespace}-padding-horizontal-xxl,
+  .u#{$namespace}-paxxl,
+  .u#{$namespace}-padding-all-xxl {
+    padding-left: $space-xxl !important;
+  }
+  .u#{$namespace}-prn,
+  .u#{$namespace}-padding-right-n,
+  .u#{$namespace}-phn,
+  .u#{$namespace}-padding-horizontal-n,
+  .u#{$namespace}-pan,
+  .u#{$namespace}-padding-all-n {
+    padding-right: 0 !important;
+  }
+  .u#{$namespace}-prxxs,
+  .u#{$namespace}-padding-right-xxs,
+  .u#{$namespace}-phxxs,
+  .u#{$namespace}-padding-horizontal-xxs,
+  .u#{$namespace}-paxxs,
+  .u#{$namespace}-padding-all-xxs {
+    padding-right: $space-xxs !important;
+  }
+  .u#{$namespace}-prxs,
+  .u#{$namespace}-padding-right-xs,
+  .u#{$namespace}-phxs,
+  .u#{$namespace}-padding-horizontal-xs,
+  .u#{$namespace}-paxs,
+  .u#{$namespace}-padding-all-xs {
+    padding-right: $space-xs !important;
+  }
+  .u#{$namespace}-prsm,
+  .u#{$namespace}-padding-right-sm,
+  .u#{$namespace}-phsm,
+  .u#{$namespace}-padding-horizontal-sm,
+  .u#{$namespace}-pasm,
+  .u#{$namespace}-padding-all-sm {
+    padding-right: $space-sm !important;
+  }
+  .u#{$namespace}-prmd,
+  .u#{$namespace}-padding-right-md,
+  .u#{$namespace}-phmd,
+  .u#{$namespace}-padding-horizontal-md,
+  .u#{$namespace}-pamd,
+  .u#{$namespace}-padding-all-md {
+    padding-right: $space-md !important;
+  }
+  .u#{$namespace}-prlg,
+  .u#{$namespace}-padding-right-lg,
+  .u#{$namespace}-phlg,
+  .u#{$namespace}-padding-horizontal-lg,
+  .u#{$namespace}-palg,
+  .u#{$namespace}-padding-all-lg {
+    padding-right: $space-lg !important;
+  }
+  .u#{$namespace}-prxl,
+  .u#{$namespace}-padding-right-xl,
+  .u#{$namespace}-phxl,
+  .u#{$namespace}-padding-horizontal-xl,
+  .u#{$namespace}-paxl,
+  .u#{$namespace}-padding-all-xl {
+    padding-right: $space-xl !important;
+  }
+  .u#{$namespace}-prxxl,
+  .u#{$namespace}-padding-right-xxl,
+  .u#{$namespace}-phxxl,
+  .u#{$namespace}-padding-horizontal-xxl,
+  .u#{$namespace}-paxxl,
+  .u#{$namespace}-padding-all-xxl {
+    padding-right: $space-xxl !important;
+  }
+}
+
+@include display-setup("");
+@include responsive-setup("");
+@include space-margin-setup("");
+@include space-padding-setup("");
+
+@include sm {
+  @include display-setup("-sm");
+  @include responsive-setup("-sm");
+  @include space-margin-setup("-sm");
+  @include space-padding-setup("-sm");
+}
+
+@include md {
+  @include display-setup("-md");
+  @include responsive-setup("-md");
+  @include space-margin-setup("-md");
+  @include space-padding-setup("-md");
+}
+
+@include lg {
+  @include display-setup("-lg");
+  @include responsive-setup("-lg");
+  @include space-margin-setup("-lg");
+  @include space-padding-setup("-lg");
+}
+
+@include xl {
+  @include display-setup("-xl");
+  @include responsive-setup("-xl");
+  @include space-margin-setup("-xl");
+  @include space-padding-setup("-xl");
+}
+
+/*doc
+ ---
+ title: Type
+ name: 0-t-overview
+ category: Type
+ ---
+
+All type helpers are prefixed by `t-`.
+*/
+
+/*doc
+---
+title: Size
+name: 0-t-sizes
+category: Type
+---
+
+| Class       | Size
+| ---         | ---
+| `t-default` | [$text-default][text-sizes]
+| `t-xxs`     | [$text-xxs][text-sizes]
+| `t-xs`      | [$text-xs][text-sizes]
+| `t-sm`      | [$text-sm][text-sizes]
+| `t-md`      | [$text-md][text-sizes]
+| `t-lg`      | [$text-lg][text-sizes]
+| `t-xl`      | [$text-xl][text-sizes]
+| `t-xxl`     | [$text-xxl][text-sizes]
+
+```html_example
+<div class="t-xxs">Extra Extra Small</div>
+```
+
+```html_example
+<div class="t-xs">Extra Small</div>
+```
+
+```html_example
+<div class="t-sm">Small</div>
+```
+
+```html_example
+<div class="t-md">Medium</div>
+```
+
+```html_example
+<div class="t-lg">Large</div>
+```
+
+```html_example
+<div class="t-xl">Extra Large</div>
+```
+
+```html_example
+<div class="t-xxl">Extra Extra Large</div>
+```
+
+***
+
+Type size helpers can be optionally followed by one of the following break point abbreviations:
+
+| Prefix | Description
+| ---    | ---
+| `-sm-` | Small screen size and up
+| `-md-` | Medium screen size and up
+| `-lg-` | Large screen size and up
+| `-xl-` | Extra Large screen size and up
+
+The value for these break-points is set in [screen sizes][1-screen-sizes].
+
+```html_example
+<div class="t-sm t-sm-md">Text</div>
+```
+*/
+
+
+@mixin text-setup($namespace: "") {
+  .t#{$namespace}-xxs {
+    font-size: $text-xxs !important;
+  }
+  .t#{$namespace}-xs {
+    font-size: $text-xs !important;
+  }
+  .t#{$namespace}-sm {
+    font-size: $text-sm !important;
+  }
+  .t#{$namespace}-md {
+    font-size: $text-md !important;
+  }
+  .t#{$namespace}-lg {
+    font-size: $text-lg !important;
+  }
+  .t#{$namespace}-xl {
+    font-size: $text-xl !important;
+  }
+  .t#{$namespace}-xxl {
+    font-size: $text-xxl !important;
+  }
+  .t#{$namespace}-c,
+  .t#{$namespace}-text-center {
+    text-align: center !important;
+  }
+  .t#{$namespace}-al,
+  .t#{$namespace}-left {
+    text-align: left !important;
+  }
+  .t#{$namespace}-ar,
+  .t#{$namespace}-right {
+    text-align: right !important;
+  }
+  .t#{$namespace}-u,
+  .t#{$namespace}-uppercase {
+    text-transform: uppercase !important;
+  }
+  .t#{$namespace}-l,
+  .t#{$namespace}-lowercase {
+    text-transform: lowercase !important;
+  }
+  .t#{$namespace}-c,
+  .t#{$namespace}-capitalize {
+    text-transform: capitalize !important;
+  }
+  .t#{$namespace}-u,
+  .t#{$namespace}-underline {
+    text-decoration: underline !important;
+  }
+  .t#{$namespace}-n,
+  .t#{$namespace}-none {
+    text-decoration: none !important;
+  }
+  .t#{$namespace}-lxs,
+  .t#{$namespace}-line-xs {
+    line-height: $text-line-xs !important;
+  }
+  .t#{$namespace}-lsm,
+  .t#{$namespace}-line-sm {
+    line-height: $text-line-sm !important;
+  }
+  .t#{$namespace}-lmd,
+  .t#{$namespace}-line-md {
+    line-height: $text-line-md !important;
+  }
+  .t#{$namespace}-llg,
+  .t#{$namespace}-line-lg {
+    line-height: $text-line-lg !important;
+  }
+  .t#{$namespace}-lxl,
+  .t#{$namespace}-line-xl {
+    line-height: $text-line-xl !important;
+  }
+  .t#{$namespace}-ls-n,
+  .t#{$namespace}-letter-n,
+  .t#{$namespace}-ls-none,
+  .t#{$namespace}-letter-none,
+  .t#{$namespace}-ls-0,
+  .t#{$namespace}-letter-0 {
+    letter-spacing: 0 !important;
+  }
+  .t#{$namespace}-letter-xs {
+    letter-spacing: $text-letter-xs !important;
+  }
+  .t#{$namespace}-letter-sm {
+    letter-spacing: $text-letter-sm !important;
+  }
+  .t#{$namespace}-letter-md {
+    letter-spacing: $text-letter-md !important;
+  }
+  .t#{$namespace}-letter-lg {
+    letter-spacing: $text-letter-lg !important;
+  }
+  .t#{$namespace}-letter-xl {
+    letter-spacing: $text-letter-xl !important;
+  }
+  .t#{$namespace}-h,
+  .t#{$namespace}-hyphenate {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+  }
+}
+
+@include text-setup("");
+
+@include xs {
+  @include text-setup("-xs");
+}
+
+@include sm {
+  @include text-setup("-sm");
+}
+
+@include md {
+  @include text-setup("-md");
+}
+
+@include lg {
+  @include text-setup("-lg");
+}
+
+@include xl {
+  @include text-setup("-xl");
+}
+
+@include xl {
+  @include text-setup("-xxl");
+}
+
+/*doc
+---
+title: Nav
+name: nav
+category: Modules
+---
+
+Navigation Menu which is presented as an overlay on mobile and then in the header on small screens and up.
+
+```markup_example_template
+@include nav;
+```
+
+```markup_example_template
+<div class="nav-overlay collapse" id="nav-overlay" data-toggle="collapse" data-target="#nav-menu, #nav-overlay"></div>
+<div class="container-fluid">
+  <div class="nav row" id="nav">
+    <div class="nav-brand col-xs-9 col-sm-5">
+      <a href="/" itemprop="url" class="nav-logo">
+        <img src="http://placehold.it/500x250&text=Logo" alt="CompanyName" itemprop="logo">
+      </a>
+    </div>
+
+    <div class="pull-right visible-xs">
+      <ul>
+        <li class="nav-menu-item">
+          <a href="#" data-toggle="collapse" data-target="#nav-menu, #nav-overlay">Menu</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav-menu col-sm-12 collapse" id="nav-menu">
+      <ul class="nav-menu-items">
+        <li class="nav-menu-item col-xs-12"><a href="/page.html">Page</a></li>
+        <li class="nav-menu-item col-xs-12"><a href="#">Link</a></li>
+        <li class="nav-menu-item nav-menu-item-right col-xs-12"><a href="#">Link</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+```
+*/
+
+@mixin nav {
+  .nav {
+    height: $nav-height;
+    z-index: 10;
+    position: relative;
+
+    li > a {
+      color: $color-brand;
+      height: $nav-height;
+      line-height: $nav-height;
+      margin: 0;
+      text-decoration: none;
+      padding: 10px 15px;
+
+      @include sm {
+        &.is-active,
+        &:hover {
+          background: $color-brand;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .nav-brand {
+    line-height: $nav-height;
+    position: relative;
+  }
+
+  .nav-logo {
+    &:hover {
+      background: transparent !important;
+    }
+
+    img {
+      display: inline-block;
+      margin-top: -10px;
+      height: 50px;
+      vertical-align: middle;
+      width: auto;
+    }
+  }
+
+  .nav-with-logo {
+    .nav-name {
+      display: none;
+
+      @include sm {
+        display: block;
+      }
+    }
+  }
+
+  .nav-menu {
+    background: white;
+    transition: 0.3s all ease-in-out;
+    left: 0;
+    margin-top: $nav-height;
+    position: absolute !important;
+    top: 0;
+    width: 100%;
+
+    &.collapse {
+      display: none;
+
+      &.in {
+        display: block;
+      }
+    }
+
+    @include sm {
+      background: transparent;
+      display: block !important;
+      height: $nav-height !important;
+      margin: 0;
+      transition: none;
+      width: auto;
+
+      li > a {
+        .is-active,
+        &:hover {
+          background: $color-brand;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .nav-menu-items {
+    @include sm {
+      text-align: right;
+    }
+  }
+
+  .nav-menu-item {
+    display: inline-block;
+
+    @include sm {
+      float: none !important;
+      width: auto !important;
+    }
+  }
+}
+
+/*doc
+---
+title: Footer
+name: footer
+category: Modules
+---
+
+Footer which sticks to the bottom of the page.
+
+```markup_example_template
+`@include footer;
+```
+
+```markup_example_template
+<body>
+  <div class="wrapper">
+    Page Content
+  </div>
+  <div class="footer">
+    <div class="u-tac">Footer</div>
+  </div>
+</body>
+```
+*/
+
+@mixin footer {
+  html,
+  body {
+    height: 100%;
+  }
+
+  .wrapper {
+    min-height: 100%;
+    margin-bottom: -$footer-height;
+  }
+
+  .wrapper:after {
+    content: "";
+    display: block;
+  }
+
+  .footer,
+  .wrapper:after {
+    height: $footer-height;
+    width: 100%;
+  }
+
+  .footer-link {
+    display: block;
+    text-align: center;
+
+    @include sm {
+      display: inline-block;
+      margin-right: $space-sm;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/*doc
+---
+title: Loader
+name: loader
+category: Modules
+---
+
+The `preload` class shows the loader and prevents animations and transitions from occuring.
+
+The `loader` class is a full screen takeover.
+
+```markup_example_template
+@include loader;
+```
+
+```html_example
+  <div class="loader"></div>
+```
+
+The `preload` class should be removed when the page loads.
+
+```markup_example_template
+<body class="preload">
+  <div class="loader"></div>
+</body>
+
+<script>
+  $(window).load(function() {
+    $("body").removeClass("preload");
+  });
+</script>
+```
+*/
+
+@mixin loader {
+  body.preload {
+    * {
+      transition: none !important;
+      animation-name: none !important;
+    }
+
+    .loader {
+      visibility: visible;
+    }
+  }
+
+  .loader {
+    background-color: black;
+    transition: visibility 1s 0s;
+    visibility: hidden;
+    z-index: 9999;
+  }
+}
+
+/*doc
+---
+title: Overlay
+name: overlay
+category: Modules
+---
+
+The `preload` class creates a fixed element that takes over the screen.
+
+```html_example
+@include overlay;
+```
+
+```markup_example_template
+<div class="overlay"></div>
+```
+*/
+
+/*doc
+---
+title: Collapsible
+name: overlay-collapse
+parent: overlay
+---
+
+You can make an overlay compatible with Bootstrap collapse by adding the `is-collapsible` class.
+
+```markup_example_template
+<div id="my-overlay" class="overlay is-collapsible"></div>
+<a href="#" data-toggle="collapse" data-target="#my-overlay">Toggle Overlay</a>
+```
+*/
+
+@mixin overlay {
+  .overlay {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    &.is-collapsible {
+      &.collapse {
+        display: none;
+
+        &.in {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// color
+// text
+.t-color-base {
+  color: $color-base;
+  #{$t-color-children} {
+    color: $color-base;
+  }
+}
+
+.t-color-brand {
+  color: $color-brand;
+  #{$t-color-children} {
+    color: $color-brand;
+  }
+}
+
+.t-color-brand-secondary {
+  color: $color-brand-secondary;
+  #{$t-color-children} {
+    color: $color-brand-secondary;
+  }
+}
+
+.t-color-gray {
+  color: $color-gray;
+  #{$t-color-children} {
+    color: $color-gray;
+  }
+}
+
+.t-color-dark {
+  color: $color-dark;
+  #{$t-color-children} {
+    color: $color-dark;
+  }
+}
+
+.t-color-mid {
+  color: $color-mid;
+  #{$t-color-children} {
+    color: $color-mid;
+  }
+}
+
+.t-color-light {
+  color: $color-light;
+  #{$t-color-children} {
+    color: $color-light;
+  }
+}
+
+.t-color-disabled {
+  color: $color-disabled;
+  #{$t-color-children} {
+    color: $color-disabled;
+  }
+}
+
+.t-color-alert {
+  color: $color-alert;
+  #{$t-color-children} {
+    color: $color-alert;
+  }
+}
+
+// borders
+.b-none, .b-n, .border-none, .border-0, .b-0 {
+  border: 0;
+}
+
+.b-top, .b-t {
+  border-top: $border-base;
+}
+
+.b-right, .b-r {
+  border-right: $border-base;
+}
+
+.b-bottom, .b-b {
+  border-bottom: $border-base;
+}
+
+.b-left, .b-l {
+  border-left: $border-base;
+}
+
+//
+.b-all-sm, .b-a-sm {
+  border-all: $border-sm;
+}
+
+.b-top-sm, .b-t-sm {
+  border-top: $border-sm;
+}
+
+.b-right-sm, .b-r-sm {
+  border-right: $border-sm;
+}
+
+.b-bottom-sm, .b-b-sm {
+  border-bottom: $border-sm;
+}
+
+.b-left-sm, .b-l-sm {
+  border-left: $border-sm;
+}
+
+//
+.b-all-md, .b-a-md {
+  border: $border-md;
+}
+
+.b-top-md, .b-t-md {
+  border-top: $border-md;
+}
+
+.b-right-md, .b-r-md {
+  border-right: $border-md;
+}
+
+.b-bottom-md, .b-b-md {
+  border-bottom: $border-md;
+}
+
+.b-left-md, .b-l-md {
+  border-left: $border-md;
+}
+
+//
+.b-all-lg, .b-a-lg {
+  border: $border-lg;
+}
+
+.b-top-lg, .b-t-lg {
+  border-top: $border-lg;
+}
+
+.b-right-lg, .b-r-lg {
+  border-right: $border-lg;
+}
+
+.b-bottom-lg, .b-b-lg {
+  border-bottom: $border-lg;
+}
+
+.b-left-lg, .b-l-lg {
+  border-left: $border-lg;
+}
+
+// border colors
+.b-color-base {
+  border-color: $color-base !important;
+}
+
+.b-color-brand {
+  border-color: $color-brand !important;
+}
+
+.b-color-brand-secondary {
+  border-color: $color-brand-secondary !important;
+}
+
+.b-color-gray {
+  border-color: $color-gray !important;
+}
+
+.b-color-dark {
+  border-color: $color-dark !important;
+}
+
+.b-color-mid {
+  border-color: $color-mid !important;
+}
+
+.b-color-light {
+  border-color: $color-light !important;
+}
+
+.b-color-disabled {
+  border-color: $color-disabled !important;
+}
+
+.b-color-alert {
+  border-color: $color-alert;
+}
+
+// fill
+.u-color-base {
+  background-color: $color-base;
+}
+
+.u-color-brand {
+  background-color: $color-brand;
+}
+
+.u-color-brand-secondary {
+  background-color: $color-brand-secondary;
+}
+
+.u-color-gray {
+  background-color: $color-gray;
+}
+
+.u-color-dark {
+  background-color: $color-dark;
+}
+
+.u-color-mid {
+  background-color: $color-mid;
+}
+
+.u-color-light {
+  background-color: $color-light;
+}
+
+.u-color-disabled {
+  background-color: $color-disabled;
+}
+
+.u-color-alert {
+  background-color: $color-alert;
+}
+
+.colorway-dark {
+  @extend .u-color-dark;
+  @extend .t-color-light;
+}
+
+.colorway-light {
+  @extend .u-color-light;
+  @extend .t-color-dark;
+}
+
+// Background Images
+.bg-img-container,
+.background-image-container {
+
+  &.background-center-center {
+    background-position: center center;
+  }
+  &.background-no-repeat {
+    background-repeat: no-repeat;
+  }
+  &.background-contain {
+    background-size: contain;
+  }
+  &.background-cover {
+    background-size: contain;
+  }
+}
+
+.background-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+// Utilities
+.no-scroll {
+  overflow: hidden;
+}

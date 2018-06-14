@@ -1,0 +1,28 @@
+.nav,
+.footer {
+ width: 100%;
+ position: relative;
+ z-index: 1002;
+ height: $space-md;
+
+  .inner {
+    width: 100%;
+   padding: $space-xs;
+  }
+
+  p,
+  h1 {
+    font-size: $text-sm;
+  }
+
+  a {
+
+    &.active {
+      border-bottom: $border-base;
+    }
+
+    &:hover {
+
+    }
+  }
+}

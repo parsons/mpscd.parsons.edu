@@ -1,0 +1,43 @@
+.test-sizes {
+  height: 100vh;
+  padding: 50px;
+
+  &:after {
+    content: "xs";
+    @include sm {
+      content: "sm";
+    }
+    @include md {
+      content: "md";
+    }
+    @include lg {
+      content: "lg";
+    }
+    @include xl {
+      content: "xl";
+    }
+    @include xxl {
+      content: "xxl";
+    }
+  }
+}
+
+.test-layout {
+  .row>.col, .row>[class^=col-], .example-content-main, .example-content-secondary {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+  }
+
+  h2 {
+    font-size: 30px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .container.example .row>.col, .container.example .row>[class^=col-] {
+    background-color: transparent;
+    border: none;
+    padding-bottom: 50px;
+  }
+}
