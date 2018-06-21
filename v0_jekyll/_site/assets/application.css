@@ -12633,6 +12633,7 @@ img {
   margin: 0; }
 
 body {
+  background-color: #ffffff;
   position: relative;
   min-height: 100vh;
   cursor: url(images/cursor/cursor-default.svg) 15 15, auto !important; }

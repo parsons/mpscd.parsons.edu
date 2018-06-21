@@ -176,6 +176,7 @@ $nav-height:                             $space-xl;
 }
 
 body {
+  background-color: $color-light;
   position: relative;
   min-height: 100vh;
   @include cursor-default;
