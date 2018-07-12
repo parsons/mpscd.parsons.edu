@@ -1,43 +1,43 @@
 $font-filepath:                       "fonts/";
-$font-primary-src:                    #{$font-filepath}GT-America-Regular;
-$font-primary-italic-src:             #{$font-filepath}GT-America-Regular-Italic;
-$font-secondary-src:                  #{$font-filepath}GT-Super-Display-Light-v1;
-$font-secondary-heavy-src:            #{$font-filepath}GT-Super-Display-Super-v1;
+$font-primary-src:                    #{$font-filepath}SuisseWorksTrial-Regular;
+$font-primary-italic-src:             #{$font-filepath}SuisseWorksTrial-Regular;
+$font-secondary-src:                  #{$font-filepath}SuisseIntlTrial-Regular;
+$font-secondary-heavy-src:            #{$font-filepath}SuisseIntlTrial-Regular;
 $font-tertiary-src:                   #{$font-filepath}GT-America-Mono-Regular;
 $font-tertiary-italic-src:            #{$font-filepath}GT-America-Mono-Regular-Italic;
 
 @font-face {
   font-family: $font-primary;
-  src:url("#{$font-primary-src}.eot");
-  src:url("#{$font-primary-src}.eot?#iefix") format("embedded-opentype"),
-      url("#{$font-primary-src}.woff") format("woff");
+  src:url("#{$font-primary-src}.otf");
+  // src:url("#{$font-primary-src}.eot?#iefix") format("embedded-opentype"),
+  //     url("#{$font-primary-src}.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: $font-primary-italic;
-  src:url("#{$font-primary-italic-src}.eot");
-  src:url("#{$font-primary-italic-src}.eot?#iefix") format("embedded-opentype"),
-      url("#{$font-primary-italic-src}.woff") format("woff");
+  src:url("#{$font-primary-italic-src}.otf");
+  // src:url("#{$font-primary-italic-src}.eot?#iefix") format("embedded-opentype"),
+  //     url("#{$font-primary-italic-src}.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: $font-secondary;
-  src:url("#{$font-secondary-src}.eot");
-  src:url("#{$font-secondary-src}.eot?#iefix") format("embedded-opentype"),
-      url("#{$font-secondary-src}.woff") format("woff");
+  src:url("#{$font-secondary-src}.otf");
+  // src:url("#{$font-secondary-src}.eot?#iefix") format("embedded-opentype"),
+  //     url("#{$font-secondary-src}.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: $font-secondary-heavy;
-  src:url("#{$font-secondary-heavy-src}.eot");
-  src:url("#{$font-secondary-heavy-src}.eot?#iefix") format("embedded-opentype"),
-      url("#{$font-secondary-heavy-src}.woff") format("woff");
+  src:url("#{$font-secondary-heavy-src}.otf");
+  // src:url("#{$font-secondary-heavy-src}.eot?#iefix") format("embedded-opentype"),
+  //     url("#{$font-secondary-heavy-src}.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

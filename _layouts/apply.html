@@ -9,11 +9,36 @@
 
   <body class="preload js-body with-mask">
 
-      {% include _nav.html %}
-      
-      {% include _apply.html %}
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 b-r">
 
-      {% include _footer.html %}
+            <div class="row">
+              {% include _nav.html %}
+            </div>
+
+            <div class="row t-set">
+            {% include _apply.html %}
+            </div>
+
+            <div class="row">
+            {% include _footer.html %}
+            </div>   
+
+          </div>
+
+          <div class="col-6">
+              <ul>
+                  {% for post in site.posts %}
+                    <li>
+                      <a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+          </div>
+
+        </div>
+      </div>
       
     <script type="text/javascript" src="/assets/application.js"></script>
   </body>

@@ -68,12 +68,61 @@ h6, {
   @include secondary;
   letter-spacing: $text-letter-base;
   line-height: $text-line-base;
-  font-size: $text-lg;
   color: $color-base;
   margin: 0;
   padding: 0;
   text-transform: none;
 }
+
+h1 {
+  font-size: $text-xs-xxl;
+  
+  @include sm {
+    font-size: $text-xxl;
+  }
+}
+
+h2 {
+  font-size: $text-xs-xl;
+  
+  @include sm {
+    font-size: $text-xl;
+  }
+}
+
+h3 {
+  font-size: $text-xs-lg;
+  
+  @include sm {
+    font-size: $text-lg;
+  }
+}
+
+h4 {
+  font-size: $text-xs-md;
+  
+  @include sm {
+    font-size: $text-md;
+  }
+}
+
+h5 {
+  font-size: $text-xs-sm;
+  
+  @include sm {
+    font-size: $text-sm;
+  }
+}
+
+h6 {
+  font-size: $text-xs-xs;
+  
+  @include sm {
+    font-size: $text-xs;
+  }
+}
+
+
 
 p,
 li {
@@ -148,6 +197,10 @@ table {
   }
 }
 
+.outline {
+  
+}
+
 /* ////////////////////////////////////////////////
 T-SET
 `.t-set`
@@ -160,67 +213,67 @@ h4,
 h5,
 h6 {
   &.t-set {
-    @include primary;
+    @include secondary;
     line-height: $text-line-sm;
   }
 }
 
 h1 {
   &.t-set {
-    font-size: $text-xxl;
+    font-size: $text-xs-xxl;
 
     @include sm {
-      font-size: $text-xs-xxl;
+      font-size: $text-xxl;
     }
   }
 }
 
 h2 {
   &.t-set {
-    font-size: $text-xl;
+    font-size: $text-xs-xl;
 
     @include sm {
-      font-size: $text-xs-xl;
+      font-size: $text-xl;
     }
   }
 }
 
 h3 {
   &.t-set {
-    font-size: $text-lg;
-
+    font-size: $text-xs-lg;
     @include sm {
-      font-size: $text-xs-lg;
+      font-size: $text-lg;
     }
   }
 }
 
 h4 {
   &.t-set {
-    font-size: $text-md;
+    font-size: $text-xs-md;
 
     @include sm {
-      font-size: $text-xs-md;
+      font-size: $text-md;
     }
   }
 }
 
 h5 {
   &.t-set {
-    font-size: $text-sm;
 
+    font-size: $text-xs-xxl;
     @include sm {
-      font-size: $text-xs-xxl;
+      font-size: $text-sm;
     }
   }
 }
 
 h6 {
   &.t-set {
-    font-size: $text-xxs;
+
+    font-size: $text-xs-xxl;
 
     @include sm {
-      font-size: $text-xs-xxl;
+      font-size: $text-xxs;
     }
   }
 }

@@ -11128,22 +11128,22 @@ The value for these break-points is set in [screen sizes][1-screen-sizes].
   font-size: 12px !important; }
 
 .t-xs {
-  font-size: 15px !important; }
+  font-size: 12px !important; }
 
 .t-sm {
-  font-size: 20px !important; }
+  font-size: 18px !important; }
 
 .t-md {
-  font-size: 25px !important; }
+  font-size: 30px !important; }
 
 .t-lg {
-  font-size: 50px !important; }
+  font-size: 42px !important; }
 
 .t-xl {
   font-size: 75px !important; }
 
 .t-xxl {
-  font-size: 100px !important; }
+  font-size: 96px !important; }
 
 .t-c,
 .t-text-center {
@@ -11238,22 +11238,22 @@ li.t-set {
     font-size: 12px !important; }
 
   .t-xs-xs {
-    font-size: 15px !important; }
+    font-size: 12px !important; }
 
   .t-xs-sm {
-    font-size: 20px !important; }
+    font-size: 18px !important; }
 
   .t-xs-md {
-    font-size: 25px !important; }
+    font-size: 30px !important; }
 
   .t-xs-lg {
-    font-size: 50px !important; }
+    font-size: 42px !important; }
 
   .t-xs-xl {
     font-size: 75px !important; }
 
   .t-xs-xxl {
-    font-size: 100px !important; }
+    font-size: 96px !important; }
 
   .t-xs-c,
   .t-xs-text-center {
@@ -11343,22 +11343,22 @@ li.t-set {
     font-size: 12px !important; }
 
   .t-sm-xs {
-    font-size: 15px !important; }
+    font-size: 12px !important; }
 
   .t-sm-sm {
-    font-size: 20px !important; }
+    font-size: 18px !important; }
 
   .t-sm-md {
-    font-size: 25px !important; }
+    font-size: 30px !important; }
 
   .t-sm-lg {
-    font-size: 50px !important; }
+    font-size: 42px !important; }
 
   .t-sm-xl {
     font-size: 75px !important; }
 
   .t-sm-xxl {
-    font-size: 100px !important; }
+    font-size: 96px !important; }
 
   .t-sm-c,
   .t-sm-text-center {
@@ -11448,22 +11448,22 @@ li.t-set {
     font-size: 12px !important; }
 
   .t-md-xs {
-    font-size: 15px !important; }
+    font-size: 12px !important; }
 
   .t-md-sm {
-    font-size: 20px !important; }
+    font-size: 18px !important; }
 
   .t-md-md {
-    font-size: 25px !important; }
+    font-size: 30px !important; }
 
   .t-md-lg {
-    font-size: 50px !important; }
+    font-size: 42px !important; }
 
   .t-md-xl {
     font-size: 75px !important; }
 
   .t-md-xxl {
-    font-size: 100px !important; }
+    font-size: 96px !important; }
 
   .t-md-c,
   .t-md-text-center {
@@ -11553,22 +11553,22 @@ li.t-set {
     font-size: 12px !important; }
 
   .t-lg-xs {
-    font-size: 15px !important; }
+    font-size: 12px !important; }
 
   .t-lg-sm {
-    font-size: 20px !important; }
+    font-size: 18px !important; }
 
   .t-lg-md {
-    font-size: 25px !important; }
+    font-size: 30px !important; }
 
   .t-lg-lg {
-    font-size: 50px !important; }
+    font-size: 42px !important; }
 
   .t-lg-xl {
     font-size: 75px !important; }
 
   .t-lg-xxl {
-    font-size: 100px !important; }
+    font-size: 96px !important; }
 
   .t-lg-c,
   .t-lg-text-center {
@@ -11658,22 +11658,22 @@ li.t-set {
     font-size: 12px !important; }
 
   .t-xl-xs {
-    font-size: 15px !important; }
+    font-size: 12px !important; }
 
   .t-xl-sm {
-    font-size: 20px !important; }
+    font-size: 18px !important; }
 
   .t-xl-md {
-    font-size: 25px !important; }
+    font-size: 30px !important; }
 
   .t-xl-lg {
-    font-size: 50px !important; }
+    font-size: 42px !important; }
 
   .t-xl-xl {
     font-size: 75px !important; }
 
   .t-xl-xxl {
-    font-size: 100px !important; }
+    font-size: 96px !important; }
 
   .t-xl-c,
   .t-xl-text-center {
@@ -11763,22 +11763,22 @@ li.t-set {
     font-size: 12px !important; }
 
   .t-xxl-xs {
-    font-size: 15px !important; }
+    font-size: 12px !important; }
 
   .t-xxl-sm {
-    font-size: 20px !important; }
+    font-size: 18px !important; }
 
   .t-xxl-md {
-    font-size: 25px !important; }
+    font-size: 30px !important; }
 
   .t-xxl-lg {
-    font-size: 50px !important; }
+    font-size: 42px !important; }
 
   .t-xxl-xl {
     font-size: 75px !important; }
 
   .t-xxl-xxl {
-    font-size: 100px !important; }
+    font-size: 96px !important; }
 
   .t-xxl-c,
   .t-xxl-text-center {
@@ -12256,27 +12256,23 @@ body.preload .loader {
   width: 30px; }
 
 @font-face {
-  font-family: "'America Regular Web', 'Helvetica Neue', Helvetica, Arial, sans-serif";
-  src: url("fonts/GT-America-Regular.eot");
-  src: url("fonts/GT-America-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/GT-America-Regular.woff") format("woff");
+  font-family: "'Suisse Works Regular', 'Times New Roman'";
+  src: url("fonts/SuisseWorksTrial-Regular.otf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "'America Regular Italic Web', 'Helvetica Neue', Helvetica, Arial, sans-serif";
-  src: url("fonts/GT-America-Regular-Italic.eot");
-  src: url("fonts/GT-America-Regular-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/GT-America-Regular-Italic.woff") format("woff");
+  font-family: "'Suisse Works Regular', 'Times New Roman'";
+  src: url("fonts/SuisseWorksTrial-Regular.otf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "'Super Display Light Web', 'Times New Roman'";
-  src: url("fonts/GT-Super-Display-Light-v1.eot");
-  src: url("fonts/GT-Super-Display-Light-v1.eot?#iefix") format("embedded-opentype"), url("fonts/GT-Super-Display-Light-v1.woff") format("woff");
+  font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+  src: url("fonts/SuisseIntlTrial-Regular.otf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "'Super Display Super Web', 'Times New Roman'";
-  src: url("fonts/GT-Super-Display-Super-v1.eot");
-  src: url("fonts/GT-Super-Display-Super-v1.eot?#iefix") format("embedded-opentype"), url("fonts/GT-Super-Display-Super-v1.woff") format("woff");
+  font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+  src: url("fonts/SuisseIntlTrial-Regular.otf");
   font-weight: normal;
   font-style: normal; }
 @font-face {
@@ -12295,16 +12291,16 @@ body.preload .loader {
 Typogrpahy
 */
 body {
-  font-family: "'America Regular Web', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+  font-family: "'Suisse Works Regular', 'Times New Roman'";
   color: #000000;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
   body em {
-    font-family: "'America Regular Italic Web', 'Helvetica Neue', Helvetica, Arial, sans-serif"; }
+    font-family: "'Suisse Works Regular', 'Times New Roman'"; }
   body b, body strong {
-    font-family: "'Super Display Super Web', 'Times New Roman'"; }
+    font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif"; }
   body a {
     text-decoration: none; }
     body a:visited {
@@ -12319,21 +12315,56 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "'Super Display Light Web', 'Times New Roman'";
+  font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
   letter-spacing: 0;
   line-height: 1;
-  font-size: 50px;
   color: #000000;
   margin: 0;
   padding: 0;
   text-transform: none; }
 
+h1 {
+  font-size: 80px; }
+  @media screen and (min-width: 576px) {
+    h1 {
+      font-size: 96px; } }
+
+h2 {
+  font-size: 70px; }
+  @media screen and (min-width: 576px) {
+    h2 {
+      font-size: 75px; } }
+
+h3 {
+  font-size: 60px; }
+  @media screen and (min-width: 576px) {
+    h3 {
+      font-size: 42px; } }
+
+h4 {
+  font-size: 40px; }
+  @media screen and (min-width: 576px) {
+    h4 {
+      font-size: 30px; } }
+
+h5 {
+  font-size: 30px; }
+  @media screen and (min-width: 576px) {
+    h5 {
+      font-size: 18px; } }
+
+h6 {
+  font-size: 18px; }
+  @media screen and (min-width: 576px) {
+    h6 {
+      font-size: 12px; } }
+
 p,
 li {
-  font-family: "'America Regular Web', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+  font-family: "'Suisse Works Regular', 'Times New Roman'";
   letter-spacing: 0.03em;
   line-height: 1.25;
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
   margin: 0;
   padding: 0;
@@ -12355,7 +12386,7 @@ a {
     text-decoration: none; }
 
 blockquote {
-  font-family: "'America Regular Italic Web', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+  font-family: "'Suisse Works Regular', 'Times New Roman'";
   padding: 0;
   margin: 0; }
 
@@ -12397,48 +12428,48 @@ h5.t-set,
 .t-set h5,
 h6.t-set,
 .t-set h6 {
-  font-family: "'America Regular Web', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+  font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
   line-height: 1; }
 
 h1.t-set, .t-set h1 {
-  font-size: 100px; }
+  font-size: 80px; }
   @media screen and (min-width: 576px) {
     h1.t-set, .t-set h1 {
-      font-size: 80px; } }
+      font-size: 96px; } }
 
 h2.t-set, .t-set h2 {
-  font-size: 75px; }
+  font-size: 70px; }
   @media screen and (min-width: 576px) {
     h2.t-set, .t-set h2 {
-      font-size: 70px; } }
+      font-size: 75px; } }
 
 h3.t-set, .t-set h3 {
-  font-size: 50px; }
+  font-size: 60px; }
   @media screen and (min-width: 576px) {
     h3.t-set, .t-set h3 {
-      font-size: 60px; } }
+      font-size: 42px; } }
 
 h4.t-set, .t-set h4 {
-  font-size: 25px; }
+  font-size: 40px; }
   @media screen and (min-width: 576px) {
     h4.t-set, .t-set h4 {
-      font-size: 40px; } }
+      font-size: 30px; } }
 
 h5.t-set, .t-set h5 {
-  font-size: 20px; }
+  font-size: 80px; }
   @media screen and (min-width: 576px) {
     h5.t-set, .t-set h5 {
-      font-size: 80px; } }
+      font-size: 18px; } }
 
 h6.t-set, .t-set h6 {
-  font-size: 12px; }
+  font-size: 80px; }
   @media screen and (min-width: 576px) {
     h6.t-set, .t-set h6 {
-      font-size: 80px; } }
+      font-size: 12px; } }
 
 p.t-set, .t-set p, .t-set li,
 li.t-set {
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1; }
   @media screen and (min-width: 2000px) {
@@ -12485,8 +12516,8 @@ a.t-set, .t-set a {
   text-decoration: none; }
 
 blockquote.t-set, .t-set blockquote {
-  font-family: "'Super Display Super Web', 'Times New Roman'";
-  font-size: 25px;
+  font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+  font-size: 30px;
   padding: 50px; }
 
 hr.t-set, .t-set hr {
@@ -12501,7 +12532,7 @@ hr.t-set, .t-set hr {
 .t-set small {
   font-size: 80%; }
 .t-set sup {
-  font-family: "'Super Display Light Web', 'Times New Roman'";
+  font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
   margin-left: 6px;
   font-size: 40%;
   vertical-align: super; }
@@ -12540,17 +12571,17 @@ T-SET + T-READING
   .t-reading p:last-of-type {
     margin-bottom: 0; }
   .t-reading p em {
-    font-family: "'America Regular Italic Web', 'Helvetica Neue', Helvetica, Arial, sans-serif"; }
+    font-family: "'Suisse Works Regular', 'Times New Roman'"; }
   .t-reading p strong {
     font-family: "'America Mono Regular Web', Courier"; }
   .t-reading p em strong {
     font-family: "'America Mono Regular Web', Courier"; }
 .t-reading em {
-  font-family: "'America Regular Italic Web', 'Helvetica Neue', Helvetica, Arial, sans-serif"; }
+  font-family: "'Suisse Works Regular', 'Times New Roman'"; }
 .t-reading strong {
-  font-family: "'Super Display Super Web', 'Times New Roman'"; }
+  font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif"; }
 .t-reading em strong {
-  font-family: "'Super Display Super Web', 'Times New Roman'"; }
+  font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif"; }
 .t-reading ul,
 .t-reading ol {
   margin-bottom: 25px; }
@@ -12561,7 +12592,7 @@ T-SET + T-READING
 .t-reading a {
   text-transform: uppercase; }
 .t-reading blockquote {
-  font-size: 50px; }
+  font-size: 42px; }
 
 .t-disabled {
   color: #e3e7e1; }
@@ -12570,9 +12601,9 @@ T-SET + T-READING
     cursor: not-allowed; }
 
 .t-indented {
-  text-indent: 25px; }
+  text-indent: 30px; }
   .t-indented p, p .t-indented {
-    text-indent: 25px; }
+    text-indent: 30px; }
 
 .t-indented-none
 .t-indented-0 {
@@ -12583,16 +12614,16 @@ T-SET + T-READING
     text-indent: 0; }
 
 .font-primary {
-  font-family: "'America Regular Web', 'Helvetica Neue', Helvetica, Arial, sans-serif"; }
+  font-family: "'Suisse Works Regular', 'Times New Roman'"; }
 
 .font-primary-italic {
-  font-family: "'America Regular Italic Web', 'Helvetica Neue', Helvetica, Arial, sans-serif"; }
+  font-family: "'Suisse Works Regular', 'Times New Roman'"; }
 
 .font-secondary {
-  font-family: "'Super Display Light Web', 'Times New Roman'"; }
+  font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif"; }
 
 .font-secondary-heavy {
-  font-family: "'Super Display Super Web', 'Times New Roman'"; }
+  font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif"; }
 
 .font-tertiary {
   font-family: "'America Mono Regular Web', Courier"; }
@@ -12609,20 +12640,14 @@ img {
 .footer {
   width: 100%;
   position: relative;
-  z-index: 1002;
-  height: 50px; }
+  z-index: 1002; }
   .nav .inner,
   .footer .inner {
     width: 100%;
     padding: 10px; }
   .nav p,
-  .nav h1,
-  .footer p,
-  .footer h1 {
-    font-size: 20px; }
-  .nav a.active,
-  .footer a.active {
-    border-bottom: 1px solid #000000; }
+  .footer p {
+    font-size: 18px; }
 
 * {
   -webkit-user-select: none;

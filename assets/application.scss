@@ -38,23 +38,23 @@ $container-max-widths: (
 );
 
 // fonts
-$font-primary:                           "'America Regular Web', 'Helvetica Neue', Helvetica, Arial, sans-serif";
-$font-primary-italic:                    "'America Regular Italic Web', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+$font-primary:                           "'Suisse Works Regular', 'Times New Roman'";
+$font-primary-italic:                    "'Suisse Works Regular', 'Times New Roman'";
 $font-primary-heavy:                     $font-primary-italic;
-$font-secondary:                         "'Super Display Light Web', 'Times New Roman'";
-$font-secondary-heavy:                   "'Super Display Super Web', 'Times New Roman'";
+$font-secondary:                         "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+$font-secondary-heavy:                   "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
 $font-tertiary:                          "'America Mono Regular Web', Courier";
 $font-tertiary-italic:                   "'America Mono Regular Italic Web', Courier";
 
 // type sizes
-$text-base:                              20px !default;
+$text-base:                              18px !default;
 $text-xxs:                               12px !default;
-$text-xs:                                15px !default;
+$text-xs:                                12px !default;
 $text-sm:                                $text-base !default;
-$text-md:                                25px !default;
-$text-lg:                                50px !default;
+$text-md:                                30px !default;
+$text-lg:                                42px !default;
 $text-xl:                                75px !default;
-$text-xxl:                               100px !default;
+$text-xxl:                               96px !default;
 
 // mobile sizes
 $text-xs-xxs:                            13px !default;
