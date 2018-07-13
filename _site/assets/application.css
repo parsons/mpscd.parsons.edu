@@ -12004,9 +12004,9 @@ You can make an overlay compatible with Bootstrap collapse by adding the `is-col
     color: #ffeb0b; }
 
 .t-color-brand-secondary {
-  color: green; }
+  color: #f1fff3; }
   .t-color-brand-secondary p, .t-color-brand-secondary li, .t-color-brand-secondary a, .t-color-brand-secondary h1, .t-color-brand-secondary h2, .t-color-brand-secondary h3, .t-color-brand-secondary h4, .t-color-brand-secondary h5, .t-color-brand-secondary h6, .t-color-brand-secondary span {
-    color: green; }
+    color: #f1fff3; }
 
 .t-color-gray {
   color: #e3e7e1; }
@@ -12105,7 +12105,7 @@ You can make an overlay compatible with Bootstrap collapse by adding the `is-col
   border-color: #ffeb0b !important; }
 
 .b-color-brand-secondary {
-  border-color: green !important; }
+  border-color: #f1fff3 !important; }
 
 .b-color-gray {
   border-color: #e3e7e1 !important; }
@@ -12132,7 +12132,7 @@ You can make an overlay compatible with Bootstrap collapse by adding the `is-col
   background-color: #ffeb0b; }
 
 .u-color-brand-secondary {
-  background-color: green; }
+  background-color: #f1fff3; }
 
 .u-color-gray {
   background-color: #e3e7e1; }
@@ -12361,7 +12361,7 @@ h6 {
 
 p,
 li {
-  font-family: "'Suisse Works Regular', 'Times New Roman'";
+  font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
   letter-spacing: 0.03em;
   line-height: 1.25;
   font-size: 18px;
@@ -12400,10 +12400,6 @@ pre {
   width: 100%;
   overflow-x: scroll; }
 
-hr {
-  background: transparent;
-  border-top: 1px solid #000000; }
-
 table {
   width: 100%;
   border-collapse: collapse; }
@@ -12432,6 +12428,7 @@ h6.t-set,
   line-height: 1; }
 
 h1.t-set, .t-set h1 {
+  margin-bottom: 50px;
   font-size: 80px; }
   @media screen and (min-width: 576px) {
     h1.t-set, .t-set h1 {
@@ -12469,9 +12466,11 @@ h6.t-set, .t-set h6 {
 
 p.t-set, .t-set p, .t-set li,
 li.t-set {
+  font-family: "'Suisse Works Regular', 'Times New Roman'";
   font-size: 18px;
   letter-spacing: 0;
-  line-height: 1; }
+  line-height: 1.5;
+  margin-bottom: 25px; }
   @media screen and (min-width: 2000px) {
     p.t-set, .t-set p, .t-set li,
     li.t-set {
@@ -12521,12 +12520,13 @@ blockquote.t-set, .t-set blockquote {
   padding: 50px; }
 
 hr.t-set, .t-set hr {
-  margin: 50px 0;
-  background: transparent;
-  border-top: 2px solid #000000; }
+  margin: 25px 0;
+  background: #000;
+  height: 3px;
+  width: 100%; }
 
 .t-set img {
-  margin: 50px 0;
+  margin: 25px 0;
   max-width: 100%;
   width: 100%; }
 .t-set small {
@@ -12658,7 +12658,7 @@ img {
   margin: 0; }
 
 body {
-  background-color: #ffffff;
+  background-color: #f1fff3;
   position: relative;
   min-height: 100vh;
   cursor: url(images/cursor/cursor-default.svg) 15 15, auto !important; }
@@ -12672,3 +12672,14 @@ body {
 
 ::selection {
   background: gray; }
+
+/*
+// A couple of dumb classes
+*/
+.outline {
+  color: #ffffff;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #000000; }
+
+.bg-light {
+  background: #ffffff; }

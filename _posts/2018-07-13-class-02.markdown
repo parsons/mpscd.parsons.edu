@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Major Studio 2 Photo"
+date:   2018-06-12 12:17:43 -0400
+categories: jekyll update
+excerpt_separator: <!--more-->
+
+images:
+- url: https://www.placecage.com/g/200/300
+  alt: Cage
+  title: cage
+---
+
+![Major Studio 2]({{ site.url }}/assets/images/work/class02.jpg)
+
+<!--more-->
+
+Photo from Major Studio 2, Spring 2018

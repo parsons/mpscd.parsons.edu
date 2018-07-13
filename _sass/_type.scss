@@ -126,7 +126,7 @@ h6 {
 
 p,
 li {
-  @include primary;
+  @include secondary;
   letter-spacing: $text-letter-md;
   line-height: $text-line-md;
   font-size: $text-sm;
@@ -178,10 +178,10 @@ pre {
   overflow-x: scroll;
 }
 
-hr {
-  background: transparent;
-  border-top: $border-base;
-}
+// hr {
+//   background: transparent;
+//   border-top: $border-base;
+// }
 
 table {
   width: 100%;
@@ -195,10 +195,6 @@ table {
   tr {
     height: $space-md;
   }
-}
-
-.outline {
-  
 }
 
 /* ////////////////////////////////////////////////
@@ -220,6 +216,7 @@ h6 {
 
 h1 {
   &.t-set {
+    margin-bottom: $space-md;
     font-size: $text-xs-xxl;
 
     @include sm {
@@ -281,10 +278,12 @@ h6 {
 p,
 li {
   &.t-set {
+    @include primary;
     @extend .t-hyphenate;
     font-size: $text-base;
     letter-spacing: $text-letter-base;
-    line-height: $text-line-base;
+    line-height: $text-line-lg;
+    margin-bottom: $space-sm;
 
     @include from(2000px) {
       font-size: 100px;
@@ -378,16 +377,17 @@ blockquote {
 
 hr {
   &.t-set {
-    margin: $space-md 0;
-    background: transparent;
-    border-top: $border-md;
+    margin: $space-sm 0;
+    background: #000;
+    height: 3px;
+    width: 100%;
   }
 }
 
 .t-set {
 
   img {
-    margin: $space-md 0;
+    margin: $space-sm 0;
     max-width: 100%;
     width: 100%;
   }

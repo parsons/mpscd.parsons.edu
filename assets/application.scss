@@ -124,7 +124,7 @@ $spacers: map-merge((
 // color
 $color-base:                             #000000;
 $color-brand:                            #ffeb0b;
-$color-brand-secondary:                  green;
+$color-brand-secondary:                  #f1fff3;
 $color-gray:                             #e3e7e1;
 $color-dark:                             #000000;
 $color-mid:                              gray;
@@ -176,7 +176,7 @@ $nav-height:                             $space-xl;
 }
 
 body {
-  background-color: $color-light;
+  background-color: $color-brand-secondary;
   position: relative;
   min-height: 100vh;
   @include cursor-default;
@@ -196,4 +196,19 @@ body {
 
 ::selection {
   background: $color-mid;
+}
+
+
+/*
+// A couple of dumb classes
+*/
+
+.outline {
+  color: $color-light;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: $color-base;
+}
+
+.bg-light {
+  background: $color-light;
 }

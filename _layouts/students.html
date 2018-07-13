@@ -11,7 +11,7 @@
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col-6 b-r">
+          <div class="col-6 b-r bg-light">
 
             <div class="row">
               {% include _nav.html %}
@@ -28,13 +28,11 @@
           </div>
 
           <div class="col-6 b-r">
-              <ul>
-                  {% for post in site.posts %}
-                    <li>
-                      <a href="{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                  {% endfor %}
-                </ul>
+            {% for post in site.posts %}
+            <div class="col-6 col-offset-2 u-mtmd u-mbmd">
+              {{ post.excerpt }}
+            </div>
+            {% endfor %}
           </div>
 
         </div>
