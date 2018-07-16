@@ -6,7 +6,7 @@
 
   .inner {
     width: 100%;
-   padding: $space-xs;
+  //  padding: $space-xs;
   }
 
   p,
@@ -17,11 +17,15 @@
   a {
 
     &.active {
-      // border-bottom: $border-base;
+      border-bottom: $border-base;
     }
 
     &:hover {
 
+    }
+
+    &.hidden {
+      display: none;
     }
   }
 }

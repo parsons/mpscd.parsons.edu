@@ -7,37 +7,45 @@
 
 {% include _head.html %}
 
-  <body class="preload js-body with-mask">
+  <body class="preload js-body with-mask" id="current-page-title">
 
+    <div class="info">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-6 b-r bg-light">
 
-            <div class="row">
-              {% include _nav.html %}
+          <div class="info-content b-r bg-light">
+            <div class="col">
+
+              <div class="row">
+                {% include _nav.html %}
+              </div>
+
+              <div class="row t-set">
+                <!-- check for content conditionally -->
+                {% include {{ page.include }} %}
+              </div>
+
+              <div class="row">
+                {% include _footer.html %}
+              </div>
+
             </div>
-
-            <div class="row t-set">
-            {% include _home.html %}
-            </div>
-
-            <div class="row">
-            {% include _footer.html %}
-            </div>   
-
-          </div>
-
-          <div class="col-6">
-              {% for post in site.posts %}
-                <div class="col-6 col-offset-2 u-mtmd u-mbmd">
-                  {{ post.excerpt }}
-                </div>
-              {% endfor %}
           </div>
 
         </div>
       </div>
-      
+    </div>
+
+    <div class="explore">
+      <div class="explore-items">
+        {% for post in site.posts %}
+          <div class="explore-item -col-6 -col-offset-2 u-mtmd u-mbmd">
+            {{ post.excerpt }}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
     <script type="text/javascript" src="/assets/application.js"></script>
   </body>
 </html>

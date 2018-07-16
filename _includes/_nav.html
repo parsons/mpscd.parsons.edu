@@ -3,15 +3,18 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col">
-          <h4><a href="{{ site.url }}" class="logo active">Parsons MPS Communication Design <span class="outline">Digital Product Design</span></a>
+          <h4><a href="/" class="logo">Parsons MPS Communication Design <span class="outline">Digital Product Design</span></a>
         </div>
         <div class="col u-mbxl">
-          <ul>
-            <li><a href="/curriculum" class="active">Curriculum</a></li>
-            <li><a href="/faculty">Faculty</a></li>
-            <li><a href="/students">Students</a></li>
-            <li><a href="/apply">Apply</a></li>
-          </ul>
+            <ul>
+          {% for link in site.data.navigation.primary %}
+            {% assign class = nil %}
+            {% if page.url contains link.url %}
+              {% assign class = 'active' %}
+            {% endif %}
+            <li><h4><a href="{{ link.url }}" class="{{ class }}">{{ link.title }}</a></h4></li>
+          {% endfor %}
+        </ul>
         </div>
       </div>
     </div>

@@ -12664,11 +12664,16 @@ img {
   z-index: 1002; }
   .nav .inner,
   .footer .inner {
-    width: 100%;
-    padding: 10px; }
+    width: 100%; }
   .nav p,
   .footer p {
     font-size: 18px; }
+  .nav a.active,
+  .footer a.active {
+    border-bottom: 1px solid #000000; }
+  .nav a.hidden,
+  .footer a.hidden {
+    display: none; }
 
 * {
   -webkit-user-select: none;
@@ -12698,7 +12703,7 @@ body {
 // A couple of dumb classes
 // move these into partials
 */
-.outline {
+.text-outline {
   color: #ffffff;
   -webkit-text-stroke-width: 0.8px;
   -webkit-text-stroke-color: #000000; }
