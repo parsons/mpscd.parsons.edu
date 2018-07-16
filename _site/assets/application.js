@@ -27,3 +27,4 @@ $(window).load(function(){
 $(window).resize(function(){
   console.log('window resized!');
 });
+

@@ -4,7 +4,7 @@
 /*
 // global variables
 */
-$base-unit:                              10px;
+$base-unit:                              18px;
 
 $screen-xs-min:                          0 !default;
 $screen-sm-min:                          576px !default;
@@ -15,7 +15,7 @@ $screen-xxl-min:                         1800px !default;
 
 // grid
 $grid-columns:                           12 !default;
-$grid-gutter-width:                      25px !default;
+$grid-gutter-width:                      36px !default;
 $grid-breakpoints: (
   // Extra small screen / phone
   xs: $screen-xs-min,
@@ -90,7 +90,7 @@ $text-letter-lg:                         .05em;
 $text-letter-xl:                         .1em;
 
 // spacing
-$space-base:                             25px;
+$space-base:                             36px;
 $space-xxs:                              5px;
 $space-xs:                               10px !default;
 $space-sm:                               $space-base !default;
@@ -213,7 +213,7 @@ body {
 */
 
 .text-outline {
-  color: $color-light;
+  color: $color-light !important;
   -webkit-text-stroke-width: 0.8px;
   -webkit-text-stroke-color: $color-base;
 }
@@ -244,4 +244,44 @@ body {
   * {
     filter: blur(0);
   }
+}
+
+.ui-arrow {
+  width: 0px;
+  height: 0px;
+  float: right;
+  display: inline-block;
+  border-top: 18px solid $color-dark;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+
+  &:hover {
+    border-top: 18px solid $color-brand;
+    cursor: pointer;
+  }
+}
+
+
+.explore {
+  filter: blur($blur-full);
+
+  &:hover {
+    filter: blur($blur-hover);
+  }
+}
+
+.ui-pill-black {
+  height: $space-sm;
+  padding: 12px;
+  font-size: $text-xs;
+  font-family: $font-secondary;
+  text-align: center;
+  border-radius: $space-sm;
+  // width: 200px;
+  right: $space-sm;
+  top: $space-sm;
+  position: fixed;
+  z-index: 10;
+  color: $color-light;
+  background: $color-dark
 }

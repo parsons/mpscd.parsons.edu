@@ -4,48 +4,12 @@
 
 <hr>
 
-<div>
-  <h3>Brendan Griffiths</h3>
-  <p>Brendan Griffiths is a graphic designer, programmer, and educator living and working in New York City. He is a partner in the design practice Zut Alors!, and currently serves as Assistant Professor of Interaction Design at Parsons School of Design, where he directs the Master of Professional Studies in Communication Design. He holds a BFA in Multimedia Design from the University of Oregon and an MFA in Graphic Design from Yale University.</p>
-
-  <p><a href="https://brendangriffiths.com">Website</a></p>
-</div>
-
-<div>
-  <h3>Adam Brodowski</h3>
-  <p>Adam Brodowski comes from a background of consulting and most recently was the Design Director for Made by Many NYC.</p>
-
-  <p><a href="http://abrodowski.com">Website</a></p>
-</div>
-
-<div>
-  <h3>Jacob Heftmann</h3>
-  <p>Jacob Heftmann is a self-taught graphic designer and developer, and the principal of a design studio called XXIX (named for the year he decided to work for himself).</p>
-
-  <p>His professional interests are focused on the following areas: (1) building a modern graphic design practice; (2) developing better tools and processes for producing good work; (3) supporting designers in pursuing non-commercial projects; (4) multi-disciplinary design education.</p>
-
-  <p><a href="http://www.jacobheftmann.com">Website</a></p>
-</div>
-
-<div>
-  <h3>Erica Heinz</h3>
-  <p>Erica Heinz has over a decade of experience in web design and development, working with both large corporations and lean startups. She manages projects from strategy and IA all the way through to development and support, pulling in outside specialists as needed.</p>
-
-  <p>She is schooled in visual communications, trained in Lean UX and agile development, and fascinated by the culture-changing power of the web.</p>
-
-  <p><a href="http://ericaheinz.com">Website</a></p>
-</div>
-
-<div>
-  <h3>Nick Schaden</h3>
-  <p>Nick Schaden is a technologist, part designer, part developer, entirely focused on generating clean, modern code on projects he loves. For now he's assisting a rapidly expanding, popular payments service out of San Francisco.</p>
-
-  <p><a href="http://www.nickschaden.com">Website</a></p>
-</div>
-
-<div>
-  <h3>Brian Watterson</h3>
-  <p>Brian Watterson is full of mystery.</p>
-
-  <p><a href="https://brianwatterson.com">Website</a></p>
-</div>
+{% for instructor in site.data.faculty.instructors %}
+  <div>
+    <h3>{{ instructor.name }}<div class="ui-arrow"></div></h3>
+    <div class="u-mtsm">
+      {{ instructor.bio | markdownify }}
+      <p><a href="{{ instructor.url }}">{{ instructor.url-title }}</a></p>
+    </div>
+  </div>
+{% endfor %}

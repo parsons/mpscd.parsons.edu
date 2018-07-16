@@ -43,24 +43,24 @@ These are still supported but should be phased out in favor of Bootstrap helpers
 + [ ] move to-do items to Issues
 + [ ] implement isotope
 + [ ] decide on underlying base grid (bootstrap? Bootstrap-modified?)
-+ [ ] figure out margins/spacing around content (inner, container-liquid..)
-+ [ ] separate layers for content and gallery
-+ [ ] add ui elements (as ::after?)
+
++ [x] separate layers for content and gallery
++ [x] add ui elements (as ::after?)
 + [ ] decide on structure for Jekyll posts (put all info in yaml front matter?)
 + [ ] create liquid template for gallery (and any other applicable sections)
 + [ ] create randomization for gallery (skewed distribution towards recent?)
-+ [ ] use relative paths for navigation urls – should work locally as well as remotely
++ [x] use relative paths for navigation urls – should work locally as well as remotely
 + [ ] plan for sizing of top layer
-+ [ ] change grid variables
-+ [ ] since the layout for every page is the same let's talk about simplifying this with some logic
-+ [ ] remove doctype stuff from pages, just use it in head/layout
++ [x] change grid variables
++ [x] since the layout for every page is the same let's talk about simplifying this with some logic
+
 + [ ] put fixed nav in before doing any other styling
-+ [ ] put nav in config and create list dynamically
++ [x] put nav in config and create list dynamically
 + [ ] put site title in config
-+ [ ] use prefix naming convention for classes e.g. `.text-outline`
++ [x] use prefix naming convention for classes e.g. `.text-outline`
 + [ ] use relative paths for assets
 + [ ] plan for interaction between layers
-+ [ ] check `.colorway-light` for `.bg-light` functionality
++ [x] check `.colorway-light` for `.bg-light` functionality
 + [ ] variablize colors
 + [ ] page transitions
 + [ ] loader
@@ -71,3 +71,7 @@ These are still supported but should be phased out in favor of Bootstrap helpers
 
 ## Code review
 + generally best to avoid styling `.col-`, `.row`, etc.
+
+## Issues
++ [x] figure out margins/spacing around content (inner, container-liquid..)
++ [x] remove doctype stuff from pages, just use it in head/layout

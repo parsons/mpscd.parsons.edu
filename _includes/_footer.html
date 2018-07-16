@@ -1,27 +1,24 @@
 <!-- foot -->
 <div class="footer">
-  <div class="inner u-pbxs b-t">
     <div class="container-fluid">
-      <div class="row">
-
-        <div class="col">
-            <div class="row u-mbmd">
-              <ul>
-              {% for link in site.data.navigation.primary %}
-                {% assign class = nil %}
-                {% if page.url contains link.url %}
-                  {% assign class = 'hidden' %}
-                {% endif %}
-                <li><h1><a href="{{ link.url }}"  class="{{ class }}">{{ link.title }}</a></h1></li>
-              {% endfor %}
-            </ul>
-            </div>
-            <div class="row u-mbmd">
-              <ul>
-              {% for link in site.data.navigation.secondary %}
-                <li><h4><a href="{{ link.url }}">{{ link.title }}</a></h4></li>
-              {% endfor %}
-            </ul>
+            <div class="row">
+              <div class="col">
+                <hr>
+                <ul class="u-mbmd">
+                {% for link in site.data.navigation.primary %}
+                  {% assign class = nil %}
+                  {% if page.url contains link.url %}
+                    {% assign class = 'hidden' %}
+                  {% endif %}
+                  <li><h1><a href="{{ link.url }}"  class="{{ class }}">{{ link.title }}</a></h1></li>
+                {% endfor %}
+                </ul>
+                <ul class="u-mbmd">
+                {% for link in site.data.navigation.secondary %}
+                  <li><h4><a href="{{ link.url }}">{{ link.title }}</a></h4></li>
+                {% endfor %}
+                </ul>
+              </div>
             </div>
 
           <div class="row u-mblg">
@@ -36,9 +33,5 @@
                 </p>
               </div>
            </div>
-
-        </div>
-      </div>
     </div>
-  </div>
 </div>
