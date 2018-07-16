@@ -50,19 +50,20 @@ These are still supported but should be phased out in favor of Bootstrap helpers
 + [ ] create liquid template for gallery (and any other applicable sections)
 + [ ] create randomization for gallery (skewed distribution towards recent?)
 + [ ] use relative paths for navigation urls – should work locally as well as remotely
++ [ ] plan for sizing of top layer
++ [ ] change grid variables
++ [ ] since the layout for every page is the same let's talk about simplifying this with some logic
++ [ ] remove doctype stuff from pages, just use it in head/layout
++ [ ] put fixed nav in before doing any other styling
 + [ ] put nav in config and create list dynamically
 + [ ] put site title in config
 + [ ] use prefix naming convention for classes e.g. `.text-outline`
 + [ ] use relative paths for assets
 + [ ] plan for interaction between layers
-+ [ ] plan for sizing of top layer
-+ [ ] change grid variables
 + [ ] check `.colorway-light` for `.bg-light` functionality
 + [ ] variablize colors
-+ [ ] since the layout for every page is the same let's talk about simplifying this with some logic
 + [ ] page transitions
 + [ ] loader
-+ [ ] remove doctype stuff from pages, just use it in head/layout
 
 ## Code review
 + generally best to avoid styling `.col-`, `.row`, etc.
