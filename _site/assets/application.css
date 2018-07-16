@@ -12636,6 +12636,27 @@ img {
   height: auto;
   max-width: 100%; }
 
+.info {
+  z-index: 10;
+  position: absolute;
+  width: 100%; }
+  @media screen and (min-width: 576px) {
+    .info {
+      width: 75%; } }
+  @media screen and (min-width: 768px) {
+    .info {
+      width: 50%;
+      max-width: 600px; } }
+
+.explore {
+  z-index: 0;
+  position: absolute; }
+
+.explore-item {
+  width: 25%;
+  float: left;
+  padding: 25px; }
+
 .nav,
 .footer {
   width: 100%;

@@ -1,0 +1,27 @@
+.info {
+  z-index: 10;
+  position: absolute;
+  width: $info-width-xs;
+
+  @include sm {
+    width: $info-width-sm;
+  }
+
+  @include md {
+    width: $info-width-md;
+    max-width: $info-width-max-md;
+  }
+}
+
+.explore {
+  z-index: 0;
+  position: absolute;
+
+}
+
+//
+.explore-item {
+  width: 25%;
+  float: left;
+  padding: $space-sm;
+}

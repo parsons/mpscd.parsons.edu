@@ -58,3 +58,12 @@ These are still supported but should be phased out in favor of Bootstrap helpers
 + [ ] plan for sizing of top layer
 + [ ] change grid variables
 + [ ] check `.colorway-light` for `.bg-light` functionality
++ [ ] variablize colors
++ [ ] since the layout for every page is the same let's talk about simplifying this with some logic
++ [ ] page transitions
++ [ ] loader
++ [ ] remove doctype stuff from pages, just use it in head/layout
+
+## Code review
++ generally best to avoid styling `.col-`, `.row`, etc.
++
