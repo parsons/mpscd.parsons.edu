@@ -1,5 +1,5 @@
-# v0
-Start a new site quickly and easily, using Jekyll.
+# Parsons MPSCD
+
 
 ## Getting started
 1. Install the [Jekyll gem] with 'gem install jekyll bundler'
@@ -12,9 +12,6 @@ Start a new site quickly and easily, using Jekyll.
 7. Configure `application.js` to import the JS components you need
 8. Configure `application.scss` with project variables and imports for the SCSS components you need
 9. configure `fonts.scss`
-
-## Transporting v0
-How would you install v0 in an existing project?
 
 ## Typography
 - philosophy
@@ -43,3 +40,21 @@ These are still supported but should be phased out in favor of Bootstrap helpers
 + [x] when I change the SCSS, git is logging all the sass-cache files. Do some research on `.gitignore`
 + [x] there are duplicate versions of some files. For instance, `application.scss` exists in multiple places. Also, let’s do a little clean-up on things like `__v0-master`
 + [x] research something that works with Jekyll for compiling all the .js files into `application.js`. On the base v0 (without Jekyll) we use Grunt (or Gulp? 🤔) to compile that stuff. Maybe Codekit is a good option for us going forward?
++ [ ] move to-do items to Issues
++ [ ] implement isotope
++ [ ] decide on underlying base grid (bootstrap? Bootstrap-modified?)
++ [ ] figure out margins/spacing around content (inner, container-liquid..)
++ [ ] separate layers for content and gallery
++ [ ] add ui elements (as ::after?)
++ [ ] decide on structure for Jekyll posts (put all info in yaml front matter?)
++ [ ] create liquid template for gallery (and any other applicable sections)
++ [ ] create randomization for gallery (skewed distribution towards recent?)
++ [ ] use relative paths for navigation urls – should work locally as well as remotely
++ [ ] put nav in config and create list dynamically
++ [ ] put site title in config
++ [ ] use prefix naming convention for classes e.g. `.text-outline`
++ [ ] use relative paths for assets
++ [ ] plan for interaction between layers
++ [ ] plan for sizing of top layer
++ [ ] change grid variables
++ [ ] check `.colorway-light` for `.bg-light` functionality
