@@ -66,6 +66,8 @@ These are still supported but should be phased out in favor of Bootstrap helpers
 + [ ] loader
 + [ ] put background image/color into config
 
+## Design to-do
++ [ ] cursors
+
 ## Code review
 + generally best to avoid styling `.col-`, `.row`, etc.
-+
