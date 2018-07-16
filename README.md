@@ -64,6 +64,7 @@ These are still supported but should be phased out in favor of Bootstrap helpers
 + [ ] variablize colors
 + [ ] page transitions
 + [ ] loader
++ [ ] put background image/color into config
 
 ## Code review
 + generally best to avoid styling `.col-`, `.row`, etc.
