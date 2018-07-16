@@ -54,9 +54,9 @@ These are still supported but should be phased out in favor of Bootstrap helpers
 + [x] change grid variables
 + [x] since the layout for every page is the same let's talk about simplifying this with some logic
 
-+ [ ] put fixed nav in before doing any other styling
++ [x] put fixed nav in before doing any other styling
 + [x] put nav in config and create list dynamically
-+ [ ] put site title in config
++ [x] put site title in config
 + [x] use prefix naming convention for classes e.g. `.text-outline`
 + [ ] use relative paths for assets
 + [ ] plan for interaction between layers
