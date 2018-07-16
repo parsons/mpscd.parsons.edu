@@ -154,6 +154,9 @@ $info-width-sm:                          75%;
 $info-width-md:                          50%;
 $info-width-max-md:                      600px;
 
+$blur-full:                              10px;
+$blur-hover:                             3px;
+
 /*
 // imports
 */
@@ -206,6 +209,7 @@ body {
 
 /*
 // A couple of dumb classes
+// move these into partials
 */
 
 .outline {
@@ -216,4 +220,28 @@ body {
 
 .bg-light {
   background: $color-light;
+}
+
+.blur-full {
+  filter: blur(10px);
+}
+
+.blur-hover {
+  filter: blur(3px);
+
+  * {
+    filter: blur(3px);
+  }
+
+  img {
+    filter: blur(3px);
+  }
+}
+
+.blur-none, .blur-0 {
+  filter: blur(0);
+
+  * {
+    filter: blur(0);
+  }
 }

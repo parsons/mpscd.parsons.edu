@@ -12696,6 +12696,7 @@ body {
 
 /*
 // A couple of dumb classes
+// move these into partials
 */
 .outline {
   color: #ffffff;
@@ -12704,3 +12705,18 @@ body {
 
 .bg-light {
   background: #ffffff; }
+
+.blur-full {
+  filter: blur(10px); }
+
+.blur-hover {
+  filter: blur(3px); }
+  .blur-hover * {
+    filter: blur(3px); }
+  .blur-hover img {
+    filter: blur(3px); }
+
+.blur-none, .blur-0 {
+  filter: blur(0); }
+  .blur-none *, .blur-0 * {
+    filter: blur(0); }
