@@ -41,15 +41,17 @@
     </div>
 
     <div class="ui-pill-black">{{ page.title }}</div>
-    <div class="explore explore-blur">
+    <a href="/explore/"><div class="explore explore-blur">
       <div class="explore-items">
-        {% for post in site.posts %}
-          <div class="explore-item -col-6 -col-offset-2 u-mtmd u-mbmd">
-            {{ post.excerpt }}
-          </div>
+          {% for post in site.posts %}
+          {% for image in post.images %}
+            <div class="explore-item -col-6 -col-offset-2 u-mtmd u-mbmd">
+              <img src="{{ site.data.filepaths.desktop }}{{ image.src }}" alt="{{ image.alt }}" data-caption="{{ image.caption }}" data-creator="{{ image.creator }}">
+            </div>
+          {% endfor %}
         {% endfor %}
       </div>
-    </div>
+    </div></a>
 
     <script type="text/javascript" src="/assets/application.js"></script>
   </body>

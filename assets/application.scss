@@ -333,3 +333,10 @@ body {
     filter: blur($blur-hover);
   }
 }
+
+.hover-caption {
+  position: fixed;
+  bottom: 0px;
+  left: $space-sm;
+  z-index: 12;
+}

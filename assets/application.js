@@ -28,3 +28,23 @@ $(window).resize(function(){
   console.log('window resized!');
 });
 
+
+// some additional jquery--to be sorted PS
+
+
+
+
+let caption;
+let creator;
+
+let addCaption = function(){
+  caption = $(this).children("img").data("caption");
+  creator = $(this).children("img").data("creator");
+  $(".hover-caption").html("<h1>"+ caption +"</h1><h1>"+ creator +"</h1>");
+};
+
+let removeCaption = function(){
+  $(".hover-caption").html("");
+};
+
+$(".explore-item").hover(addCaption,removeCaption);

@@ -12830,3 +12830,9 @@ body {
   transition: 0.2s; }
   .explore-blur:hover {
     filter: blur(3px); }
+
+.hover-caption {
+  position: fixed;
+  bottom: 0px;
+  left: 36px;
+  z-index: 12; }
