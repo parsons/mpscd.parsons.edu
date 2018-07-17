@@ -12470,20 +12470,25 @@ h6.t-set, .t-set h6 {
     h6.t-set, .t-set h6 {
       font-size: 12px; } }
 
+p.t-set, .t-set p, .t-set li {
+  margin-bottom: 36px; }
+
+li.t-set {
+  margin-bottom: 0; }
+
 p.t-set, .t-set p, .t-set li,
 li.t-set {
   font-family: "'Suisse Works Regular', 'Times New Roman'";
   font-size: 18px;
   letter-spacing: 0;
-  line-height: 1.5;
-  margin-bottom: 36px; }
+  line-height: 1.5; }
   @media screen and (min-width: 2000px) {
     p.t-set, .t-set p, .t-set li,
     li.t-set {
       font-size: 100px; } }
   p.t-set > a, .t-set p > a, .t-set li > a,
   li.t-set > a {
-    border-bottom: 1px solid #000000; }
+    border-bottom: 1px dotted #000000; }
     p.t-set > a:active, .t-set p > a:active, .t-set li > a:active, p.t-set > a:target, .t-set p > a:target, .t-set li > a:target,
     li.t-set > a:active,
     li.t-set > a:target {
@@ -12657,7 +12662,8 @@ img {
 
 .explore {
   z-index: 0;
-  position: absolute; }
+  position: absolute;
+  margin-left: 36px; }
 
 .explore-item {
   width: 25%;
@@ -12768,11 +12774,6 @@ body {
     border-top: 18px solid #ffeb0b;
     cursor: pointer; }
 
-.explore {
-  filter: blur(10px); }
-  .explore:hover {
-    filter: blur(3px); }
-
 .ui-pill-black {
   height: 36px;
   padding: 12px;
@@ -12786,3 +12787,46 @@ body {
   z-index: 10;
   color: #ffffff;
   background: #000000; }
+
+.ul-md {
+  list-style-type: none !important;
+  margin: 0;
+  padding: 0; }
+  .ul-md > li {
+    font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+    font-size: 40px;
+    line-height: 1.25;
+    margin: none; }
+    .ul-md > li a {
+      border-bottom: none; }
+    @media screen and (min-width: 576px) {
+      .ul-md > li {
+        font-size: 30px; } }
+
+.columns-2 {
+  -webkit-column-count: 2;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 2;
+  /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 36px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 36px;
+  /* Firefox */
+  column-gap: 36px; }
+
+.hover-blink {
+  opacity: 1; }
+  .hover-blink:hover {
+    animation: blink 0.03s infinite alternate-reverse; }
+
+@keyframes blink {
+  0% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1.0; } }
+.explore-blur {
+  filter: blur(10px);
+  transition: 0.2s; }
+  .explore-blur:hover {
+    filter: blur(3px); }

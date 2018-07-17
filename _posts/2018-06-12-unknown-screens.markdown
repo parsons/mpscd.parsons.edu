@@ -1,8 +1,14 @@
 ---
 layout: post
-title:  "Unknown Conference - Patrick Serr"
+title:  "Patrick Serr Unknown Conference"
 date:   2018-06-12 12:17:43 -0400
-categories: jekyll update
+tags: "Student Projects"
+
+images:
+- caption: Unknown Confererence
+  creator: Patrick Serr
+  src: pserr01.png
+  alt: Patrick Serr Unknown Conference
 ---
 
 ![Unknown Conference]({{ site.url }}/assets/images/work/pserr01.png)

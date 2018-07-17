@@ -2,13 +2,14 @@
 layout: post
 title:  "Sheila Cheng Drop and Grow"
 date:   2018-06-12 12:17:43 -0400
-categories: jekyll update
+tags: "Student Projects"
 excerpt_separator: <!--more-->
 
 images:
-- url: https://www.placecage.com/g/200/300
-  alt: Cage
-  title: cage
+- caption: Drop and Grow
+  creator: Sheila Cheng
+  src: scheng01.jpg
+  alt: Sheila Cheng Drop and Grow
 ---
 
 ![Drop and Grow]({{ site.url }}/assets/images/work/scheng01.jpg)

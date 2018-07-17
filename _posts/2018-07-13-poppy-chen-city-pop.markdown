@@ -2,13 +2,14 @@
 layout: post
 title:  "Poppy Chen City Pop App"
 date:   2018-06-12 12:17:43 -0400
-categories: jekyll update
+tags: "Student Projects"
 excerpt_separator: <!--more-->
 
 images:
-- url: https://www.placecage.com/g/200/300
-  alt: Cage
-  title: cage
+- caption: City Pop App
+  creator: Poppy Chen
+  src: pchen01.png
+  alt: Poppy Chen City Pop App
 ---
 
 ![Drop and Grow]({{ site.url }}/assets/images/work/pchen01.png)

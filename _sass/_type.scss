@@ -280,6 +280,18 @@ h6 {
   }
 }
 
+p {
+  &.t-set{
+    margin-bottom: $space-sm;
+  }
+}
+
+li {
+  &.t-set{
+    margin-bottom: 0;
+  }
+}
+
 p,
 li {
   &.t-set {
@@ -288,14 +300,13 @@ li {
     font-size: $text-base;
     letter-spacing: $text-letter-base;
     line-height: $text-line-lg;
-    margin-bottom: $space-sm;
 
     @include from(2000px) {
       font-size: 100px;
     }
 
     > a {
-      border-bottom: 1px solid $color-base;
+      border-bottom: 1px dotted $color-base;
 
       &:active,
       &:target {

@@ -12,41 +12,16 @@
     <div class="sidebar">
       <div class="sidebar-title"><h6>Parsons MPS Communication Design Digital Product Design</h6></div>
     </div>
-    <div class="info">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="info-content b-r colorway-light">
-            <div class="col">
-
-              <div class="row">
-                {% include _nav.html %}
-              </div>
-
-              <div class="row t-set">
-                <div class="col">
-                <!-- check for content conditionally -->
-                {% include {{ page.include }} %}
-                </div>
-              </div>
-
-              <div class="row">
-                {% include _footer.html %}
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
 
     <div class="ui-pill-black">{{ page.title }}</div>
-    <div class="explore explore-blur">
+    <div class="explore">
       <div class="explore-items">
         {% for post in site.posts %}
-          <div class="explore-item -col-6 -col-offset-2 u-mtmd u-mbmd">
-            {{ post.excerpt }}
-          </div>
+          {% for image in post.images %}
+            <div class="explore-item -col-6 -col-offset-2 u-mtmd u-mbmd">
+              <img src="{{ site.data.filepaths.desktop }}{{ image.src }}" alt="{{ image.alt }}" data-caption="{{ image.caption }}" data-creator="{{ image.creator }}">
+            </div>
+          {% endfor %}
         {% endfor %}
       </div>
     </div>

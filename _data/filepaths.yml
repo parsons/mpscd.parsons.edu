@@ -1,0 +1,6 @@
+#a place to put filepaths
+
+thumb: /assets/images/work/thumb/
+mobile: /assets/images/work/mobile/
+desktop: /assets/images/work/desktop/
+desktop-xl: /assets/images/work/desktop-xl/

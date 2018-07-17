@@ -43,6 +43,7 @@ These are still supported but should be phased out in favor of Bootstrap helpers
 + [ ] move to-do items to Issues
 + [ ] implement isotope
 + [ ] decide on underlying base grid (bootstrap? Bootstrap-modified?)
++ [ ] 
 
 + [x] separate layers for content and gallery
 + [x] add ui elements (as ::after?)

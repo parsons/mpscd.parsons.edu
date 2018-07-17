@@ -262,14 +262,6 @@ body {
 }
 
 
-.explore {
-  filter: blur($blur-full);
-
-  &:hover {
-    filter: blur($blur-hover);
-  }
-}
-
 .ui-pill-black {
   height: $space-sm;
   padding: 12px;
@@ -284,4 +276,60 @@ body {
   z-index: 10;
   color: $color-light;
   background: $color-dark
+}
+
+.ul-md {
+  list-style-type: none !important;
+  margin: 0;
+  padding: 0;
+
+  & > li {
+  font-family: $font-secondary;
+  font-size: $text-xs-md;
+  line-height: $text-line-md;
+  margin: none;
+
+  & a {
+    border-bottom: none;
+  }
+
+  @include sm {
+    font-size: $text-md;
+    }
+  }
+}
+
+.ul-xxl {
+
+}
+
+.columns-2 {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+
+  -webkit-column-gap: 36px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 36px; /* Firefox */
+  column-gap: 36px;
+}
+
+.hover-blink {
+  opacity: 1;
+  &:hover{
+    animation: blink 0.03s infinite alternate-reverse;
+  }
+}
+
+@keyframes blink {
+  0% { opacity: 0.1; }
+  100% { opacity: 1.0; }
+}
+
+.explore-blur {
+  filter: blur($blur-full);
+  transition: 0.2s;
+
+  &:hover {
+    filter: blur($blur-hover);
+  }
 }

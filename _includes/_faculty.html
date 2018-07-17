@@ -9,7 +9,7 @@
     <h3>{{ instructor.name }}<div class="ui-arrow"></div></h3>
     <div class="u-mtsm">
       {{ instructor.bio | markdownify }}
-      <p><a href="{{ instructor.url }}">{{ instructor.url-title }}</a></p>
+      <p><a href="{{ instructor.url }}" title="{{ instructor.url-title }}">{{ instructor.url-title }}</a></p>
     </div>
   </div>
 {% endfor %}
