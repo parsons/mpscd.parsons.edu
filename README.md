@@ -47,7 +47,7 @@ These are still supported but should be phased out in favor of Bootstrap helpers
 
 + [x] separate layers for content and gallery
 + [x] add ui elements (as ::after?)
-+ [ ] decide on structure for Jekyll posts (put all info in yaml front matter?)
++ [x] decide on structure for Jekyll posts (put all info in yaml front matter?)
 + [ ] create liquid template for gallery (and any other applicable sections)
 + [ ] create randomization for gallery (skewed distribution towards recent?)
 + [x] use relative paths for navigation urls – should work locally as well as remotely
@@ -56,10 +56,11 @@ These are still supported but should be phased out in favor of Bootstrap helpers
 + [x] since the layout for every page is the same let's talk about simplifying this with some logic
 
 + [x] put fixed nav in before doing any other styling
++ [ ] edit nav for mobile
 + [x] put nav in config and create list dynamically
 + [x] put site title in config
 + [x] use prefix naming convention for classes e.g. `.text-outline`
-+ [ ] use relative paths for assets
++ [x] use relative paths for assets
 + [ ] plan for interaction between layers
 + [x] check `.colorway-light` for `.bg-light` functionality
 + [ ] variablize colors
