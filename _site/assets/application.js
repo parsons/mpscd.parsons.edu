@@ -77,10 +77,10 @@ $(".listing").on("click", function() {
 
 $(".listing").hover( 
   function() {
-  $(this).children(".col-8").children("h3").addClass("text-outline");
+  $(this).children(".col-sm-8").children("h3").addClass("text-outline");
   $(this).children(".ui-arrow").addClass("text-outline");
   }, function() {
-    $(this).children(".col-8").children("h3").removeClass("text-outline");
+    $(this).children(".col-sm-8").children("h3").removeClass("text-outline");
     $(this).children(".ui-arrow").removeClass("text-outline");
     }
 );
