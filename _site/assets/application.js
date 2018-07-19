@@ -75,8 +75,6 @@ $(".listing").on("click", function() {
   }
 });
 
-
-
 $(".listing").hover( 
   function() {
   $(this).children(".col-8").children("h3").addClass("text-outline");
@@ -86,3 +84,24 @@ $(".listing").hover(
     $(this).children(".ui-arrow").removeClass("text-outline");
     }
 );
+
+
+// nav functionality
+
+$(".nav-title").on("click", function() {
+  console.log("hello!");
+  var $menu = $(".nav-menu");
+  var $title = $(this).children("h4");
+
+  if(!$menu.hasClass("collapse"))
+  {
+    $menu.addClass("collapse");
+    $title.html("menu");
+    $("body").removeClass("overflow-hidden");
+  } else {
+    $menu.removeClass("collapse");
+    $title.html("close");
+    $("body").addClass("overflow-hidden");
+  }
+
+});

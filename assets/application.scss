@@ -92,9 +92,9 @@ $text-letter-xl:                         .1em;
 // spacing
 $space-base:                             36px;
 $space-xxs:                              5px;
-$space-xs:                               10px !default;
+$space-xs:                               18px !default;
 $space-sm:                               $space-base !default;
-$space-md:                               50px !default;
+$space-md:                               48px !default;
 $space-lg:                               75px !default;
 $space-xl:                               100px !default;
 $space-xxl:                              200px !default;
@@ -147,7 +147,7 @@ $t-color-children:                       "p, li, a, h1, h2, h3, h4, h5, h6, span
 
 $gutter:                                 $space-base;
 $layout-outer:                           $gutter * 2;
-$nav-height:                             $space-xl;
+$nav-height:                             $space-md;
 
 $info-width-xs:                          100%;
 $info-width-sm:                          75%;
@@ -299,7 +299,12 @@ body {
   position: fixed;
   z-index: 10;
   color: $color-light;
-  background: $color-dark
+  background: $color-dark;
+  display: none;
+
+  @include sm {
+    display: block;
+  }
 }
 
 .ul-md {
@@ -403,4 +408,11 @@ body {
     -webkit-text-stroke-color: $color-base;
     border: 1px solid $color-base;
   }
+}
+
+
+// nav
+
+.overflow-hidden {
+  overflow: hidden;
 }
