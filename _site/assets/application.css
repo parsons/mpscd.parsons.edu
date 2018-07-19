@@ -12459,13 +12459,13 @@ h4.t-set, .t-set h4 {
       font-size: 30px; } }
 
 h5.t-set, .t-set h5 {
-  font-size: 56px; }
+  font-size: 16px; }
   @media screen and (min-width: 576px) {
     h5.t-set, .t-set h5 {
       font-size: 18px; } }
 
 h6.t-set, .t-set h6 {
-  font-size: 56px; }
+  font-size: 12px; }
   @media screen and (min-width: 576px) {
     h6.t-set, .t-set h6 {
       font-size: 12px; } }
@@ -12841,17 +12841,10 @@ body {
       .ul-md > li {
         font-size: 30px; } }
 
-.columns-2 {
-  -webkit-column-count: 2;
-  /* Chrome, Safari, Opera */
-  -moz-column-count: 2;
-  /* Firefox */
-  column-count: 2;
-  -webkit-column-gap: 36px;
-  /* Chrome, Safari, Opera */
-  -moz-column-gap: 36px;
-  /* Firefox */
-  column-gap: 36px; }
+@media screen and (min-width: 576px) {
+  .columns-2 {
+    column-count: 2;
+    column-gap: 36px; } }
 
 .hover-blink {
   opacity: 1; }

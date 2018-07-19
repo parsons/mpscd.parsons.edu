@@ -262,7 +262,7 @@ h4 {
 h5 {
   &.t-set {
 
-    font-size: $text-xs-xxl;
+    font-size: $text-xs-sm;
     @include sm {
       font-size: $text-sm;
     }
@@ -272,7 +272,7 @@ h5 {
 h6 {
   &.t-set {
 
-    font-size: $text-xs-xxl;
+    font-size: $text-xs-xxs;
 
     @include sm {
       font-size: $text-xxs;
