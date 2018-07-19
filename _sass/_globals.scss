@@ -5,16 +5,19 @@
   border-right: 1px solid #000;
   position: fixed;
   z-index: 12;
-  writing-mode: sideways-lr;
-  text-align: center;
-  padding-left: 12px;
+  display: none;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: center;
+
+  @include sm {
+    display: flex;
+    }
 }
 
-// .sidebar-title {
-//   background: #ccc;
-//   writing-mode: sideways-lr;
-//   text-align: center;
-// }
+.sidebar-title {
+  transform: rotate(-90deg);
+}
 
 .nav, .footer {
 width: 100%;

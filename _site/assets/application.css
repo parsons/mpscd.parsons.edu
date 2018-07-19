@@ -11140,7 +11140,7 @@ The value for these break-points is set in [screen sizes][1-screen-sizes].
   font-size: 42px !important; }
 
 .t-xl {
-  font-size: 75px !important; }
+  font-size: 56px !important; }
 
 .t-xxl {
   font-size: 96px !important; }
@@ -11250,7 +11250,7 @@ li.t-set {
     font-size: 42px !important; }
 
   .t-xs-xl {
-    font-size: 75px !important; }
+    font-size: 56px !important; }
 
   .t-xs-xxl {
     font-size: 96px !important; }
@@ -11355,7 +11355,7 @@ li.t-set {
     font-size: 42px !important; }
 
   .t-sm-xl {
-    font-size: 75px !important; }
+    font-size: 56px !important; }
 
   .t-sm-xxl {
     font-size: 96px !important; }
@@ -11460,7 +11460,7 @@ li.t-set {
     font-size: 42px !important; }
 
   .t-md-xl {
-    font-size: 75px !important; }
+    font-size: 56px !important; }
 
   .t-md-xxl {
     font-size: 96px !important; }
@@ -11565,7 +11565,7 @@ li.t-set {
     font-size: 42px !important; }
 
   .t-lg-xl {
-    font-size: 75px !important; }
+    font-size: 56px !important; }
 
   .t-lg-xxl {
     font-size: 96px !important; }
@@ -11670,7 +11670,7 @@ li.t-set {
     font-size: 42px !important; }
 
   .t-xl-xl {
-    font-size: 75px !important; }
+    font-size: 56px !important; }
 
   .t-xl-xxl {
     font-size: 96px !important; }
@@ -11775,7 +11775,7 @@ li.t-set {
     font-size: 42px !important; }
 
   .t-xxl-xl {
-    font-size: 75px !important; }
+    font-size: 56px !important; }
 
   .t-xxl-xxl {
     font-size: 96px !important; }
@@ -12324,31 +12324,31 @@ h6 {
   text-transform: none; }
 
 h1 {
-  font-size: 80px; }
+  font-size: 56px; }
   @media screen and (min-width: 576px) {
     h1 {
       font-size: 96px; } }
 
 h2 {
-  font-size: 70px; }
+  font-size: 42px; }
   @media screen and (min-width: 576px) {
     h2 {
-      font-size: 75px; } }
+      font-size: 56px; } }
 
 h3 {
-  font-size: 60px; }
+  font-size: 36px; }
   @media screen and (min-width: 576px) {
     h3 {
       font-size: 42px; } }
 
 h4 {
-  font-size: 40px; }
+  font-size: 28px; }
   @media screen and (min-width: 576px) {
     h4 {
       font-size: 30px; } }
 
 h5 {
-  font-size: 30px; }
+  font-size: 16px; }
   @media screen and (min-width: 576px) {
     h5 {
       font-size: 18px; } }
@@ -12435,37 +12435,37 @@ h6.t-set,
 
 h1.t-set, .t-set h1 {
   margin-bottom: 50px;
-  font-size: 80px; }
+  font-size: 56px; }
   @media screen and (min-width: 576px) {
     h1.t-set, .t-set h1 {
       font-size: 96px; } }
 
 h2.t-set, .t-set h2 {
-  font-size: 70px; }
+  font-size: 42px; }
   @media screen and (min-width: 576px) {
     h2.t-set, .t-set h2 {
-      font-size: 75px; } }
+      font-size: 56px; } }
 
 h3.t-set, .t-set h3 {
-  font-size: 60px; }
+  font-size: 36px; }
   @media screen and (min-width: 576px) {
     h3.t-set, .t-set h3 {
       font-size: 42px; } }
 
 h4.t-set, .t-set h4 {
-  font-size: 40px; }
+  font-size: 28px; }
   @media screen and (min-width: 576px) {
     h4.t-set, .t-set h4 {
       font-size: 30px; } }
 
 h5.t-set, .t-set h5 {
-  font-size: 80px; }
+  font-size: 56px; }
   @media screen and (min-width: 576px) {
     h5.t-set, .t-set h5 {
       font-size: 18px; } }
 
 h6.t-set, .t-set h6 {
-  font-size: 80px; }
+  font-size: 56px; }
   @media screen and (min-width: 576px) {
     h6.t-set, .t-set h6 {
       font-size: 12px; } }
@@ -12650,15 +12650,18 @@ img {
 .info {
   z-index: 10;
   position: absolute;
-  width: 100%;
-  margin-left: 36px; }
+  background: #ffffff;
+  border-right: 1px solid #000000;
+  width: 100%; }
   @media screen and (min-width: 576px) {
     .info {
-      width: 75%; } }
+      width: 75%;
+      margin-left: 36px; } }
   @media screen and (min-width: 768px) {
     .info {
       width: 50%;
-      max-width: 600px; } }
+      max-width: 600px;
+      margin-left: 36px; } }
 
 .explore {
   z-index: 0;
@@ -12688,9 +12691,16 @@ img {
   border-right: 1px solid #000;
   position: fixed;
   z-index: 12;
-  writing-mode: sideways-lr;
-  text-align: center;
-  padding-left: 12px; }
+  display: none;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: center; }
+  @media screen and (min-width: 576px) {
+    .sidebar {
+      display: flex; } }
+
+.sidebar-title {
+  transform: rotate(-90deg); }
 
 .nav, .footer {
   width: 100%;
@@ -12751,6 +12761,11 @@ body {
 // move these into partials
 */
 .text-outline {
+  color: #ffffff !important;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #000000; }
+
+.hover-text-outline:hover {
   color: #ffffff !important;
   -webkit-text-stroke-width: 0.8px;
   -webkit-text-stroke-color: #000000; }
@@ -12817,7 +12832,7 @@ body {
   padding: 0; }
   .ul-md > li {
     font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
-    font-size: 40px;
+    font-size: 28px;
     line-height: 1.25;
     margin: none; }
     .ul-md > li a {
@@ -12872,3 +12887,18 @@ body {
 .listing-description.expanded {
   padding-top: 36px;
   max-height: 1000px !important; }
+
+.text-reverse {
+  color: #ffffff !important;
+  background: #000000 !important; }
+
+.apply-button {
+  padding-left: 18px;
+  padding-right: 18px;
+  color: #ffffff !important;
+  background: #000000 !important; }
+  .apply-button:hover {
+    background: #ffffff !important;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: #000000;
+    border: 1px solid #000000; }

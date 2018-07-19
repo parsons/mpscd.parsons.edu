@@ -53,17 +53,17 @@ $text-xs:                                12px !default;
 $text-sm:                                $text-base !default;
 $text-md:                                30px !default;
 $text-lg:                                42px !default;
-$text-xl:                                75px !default;
+$text-xl:                                56px !default;
 $text-xxl:                               96px !default;
 
 // mobile sizes
-$text-xs-xxs:                            13px !default;
+$text-xs-xxs:                            12px !default;
 $text-xs-xs:                             $text-base !default;
-$text-xs-sm:                             30px !default;
-$text-xs-md:                             40px !default;
-$text-xs-lg:                             60px !default;
-$text-xs-xl:                             70px !default;
-$text-xs-xxl:                            80px !default;
+$text-xs-sm:                             16px !default;
+$text-xs-md:                             28px !default;
+$text-xs-lg:                             36px !default;
+$text-xs-xl:                             42px !default;
+$text-xs-xxl:                            56px !default;
 
 // variable type sizes
 $text-v-base:                            2vw;
@@ -218,6 +218,14 @@ body {
   color: $color-light !important;
   -webkit-text-stroke-width: 0.8px;
   -webkit-text-stroke-color: $color-base;
+}
+
+.hover-text-outline {
+  &:hover{
+  color: $color-light !important;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: $color-base;
+  }
 }
 
 .bg-light {
@@ -376,4 +384,26 @@ body {
 .listing-description.expanded {
   padding-top: $space-sm;
   max-height: 1000px !important;
+}
+
+
+// more extra classes
+
+.text-reverse {
+  color: $color-light !important;
+  background: $color-dark !important;
+}
+
+.apply-button {
+  padding-left: 18px;
+  padding-right: 18px;
+  color: $color-light !important;
+  background: $color-dark !important;
+
+  &:hover {
+    background: $color-light !important;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: $color-base;
+    border: 1px solid $color-base;
+  }
 }

@@ -10,12 +10,12 @@
                   {% if page.url contains link.url %}
                     {% assign class = 'hidden' %}
                   {% endif %}
-                  <li><h1><a href="{{ link.url }}"  class="{{ class }}">{{ link.title }}</a></h1></li>
+                  <li><h1><a href="{{ link.url }}" title="{{ link.title }}" class="{{ class }} hover-text-outline">{{ link.title }}</a></h1></li>
                 {% endfor %}
                 </ul>
                 <ul class="u-mbmd">
                 {% for link in site.data.navigation.secondary %}
-                  <li><h4><a href="{{ link.url }}">{{ link.title }}</a></h4></li>
+                  <li><h4><a href="{{ link.url }}" title="{{ link.title }}" class="hover-text-outline">{{ link.title }}</a></h4></li>
                 {% endfor %}
                 </ul>
               </div>
@@ -23,7 +23,7 @@
 
           <div class="row u-mblg">
               <div class="col-xs-6 col-sm-6 u-pbsm visible-xs">
-                <p>PARSONS LOGO</p>
+                <img src="{{ site.data.filepaths.desktop }}parsons_logo.jpg" alt="Parsons The New School for Design">
               </div>
               <div class="col-xs-6 col-sm-6 u-pbsm u-sm-pbn">
                 <p>Parsons<br/>

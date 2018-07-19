@@ -1,15 +1,19 @@
 .info {
   z-index: 10;
   position: absolute;
+  background: $color-light;
+  border-right: 1px solid $color-dark;
   width: $info-width-xs;
-  margin-left: $space-sm;
+
   @include sm {
     width: $info-width-sm;
+    margin-left: $space-sm;
   }
 
   @include md {
     width: $info-width-md;
     max-width: $info-width-max-md;
+    margin-left: $space-sm;
   }
 }
 
