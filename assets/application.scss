@@ -157,6 +157,8 @@ $info-width-max-md:                      600px;
 $blur-full:                              10px;
 $blur-hover:                             3px;
 
+$sidebar-width:                          $sidebar-width;
+
 /*
 // imports
 */
@@ -252,7 +254,7 @@ body {
   margin-top: 8px;
   background-origin: content-box;
   margin-left: -10px;
-  background-position: center; 
+  background-position: center;
   background-image: url("images/down-arrow.svg");
   display: inline-block;
   background-size: 24px 18px;
@@ -272,7 +274,7 @@ body {
   &.rotate-180 {
     transform-origin: center;
     transform: rotate(180deg);
-  }  
+  }
 }
 
 
