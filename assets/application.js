@@ -29,10 +29,7 @@ $(window).resize(function(){
 });
 
 
-// some additional jquery--to be sorted PS
-
-
-
+// caption showing for explore
 
 let caption;
 let creator;
@@ -40,7 +37,7 @@ let creator;
 let addCaption = function(){
   caption = $(this).children("img").data("caption");
   creator = $(this).children("img").data("creator");
-  $(".hover-caption").html("<h1>"+ caption +"</h1><h1>"+ creator +"</h1>");
+  $(".hover-caption").html("<h1 class='text-outline'>"+ caption +"</h1><h1 class='text-outline'>"+ creator +"</h1>");
 };
 
 let removeCaption = function(){
@@ -48,3 +45,44 @@ let removeCaption = function(){
 };
 
 $(".explore-item").hover(addCaption,removeCaption);
+
+
+// isotope
+
+let $explore = $('.explore').isotope({
+  // options
+  itemSelector: '.explore-item',
+  layoutMode: 'masonry'
+});
+
+$explore.imagesLoaded().progress( function(){
+  $explore.isotope("layout");
+});
+
+
+// listing functionality
+
+$(".listing").on("click", function() {
+  var $description = $(this).children(".listing-description");
+
+  if(!$description.hasClass("expanded"))
+  {
+    $description.addClass("expanded");
+    $(this).children(".ui-arrow").addClass("rotate-180");
+  } else {
+    $description.removeClass("expanded");
+    $(this).children(".ui-arrow").removeClass("rotate-180");
+  }
+});
+
+
+
+$(".listing").hover( 
+  function() {
+  $(this).children(".col-8").children("h3").addClass("text-outline");
+  $(this).children(".ui-arrow").addClass("text-outline");
+  }, function() {
+    $(this).children(".col-8").children("h3").removeClass("text-outline");
+    $(this).children(".ui-arrow").removeClass("text-outline");
+    }
+);
