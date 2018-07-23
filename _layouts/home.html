@@ -42,10 +42,10 @@
 
     <div class="ui-pill-black">{{ page.title }}</div>
     <div class="explore blur-full">
-      <div class="explore-items">
+      <div class="explore-items container-fluid">
           {% for post in site.posts %}
           {% for image in post.images %}
-            <div class="explore-item -col-6 -col-offset-2 u-mtmd u-mbmd">
+            <div class="explore-item col-4 col-offset-2 u-mtmd u-mbmd">
               <img src="{{ site.data.filepaths.desktop }}{{ image.src }}" alt="{{ image.alt }}" data-caption="{{ image.caption }}" data-creator="{{ image.creator }}">
             </div>
           {% endfor %}
