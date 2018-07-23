@@ -8,7 +8,7 @@ $base-unit:                              18px;
 
 $screen-xs-min:                          0 !default;
 $screen-sm-min:                          576px !default;
-$screen-md-min:                          768px !default;
+$screen-md-min:                          1000px !default;
 $screen-lg-min:                          1200px !default;
 $screen-xl-min:                          1500px !default;
 $screen-xxl-min:                         1800px !default;
@@ -351,14 +351,14 @@ body {
   100% { opacity: 1.0; }
 }
 
-.explore-blur {
-  filter: blur($blur-full);
-  transition: 0.2s;
+// .explore-blur {
+//   filter: blur($blur-full);
+//   transition: 0.2s;
 
-  &:hover {
-    filter: blur($blur-hover);
-  }
-}
+//   &:hover {
+//     filter: blur($blur-hover);
+//   }
+// }
 
 .hover-caption {
   position: fixed;
@@ -415,4 +415,12 @@ body {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.push-left {
+  transform: translateX(-$sidebar-width);
+}
+
+.push-left-full {
+  transform: translateX(-100%);
 }

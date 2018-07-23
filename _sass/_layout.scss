@@ -4,16 +4,17 @@
   background: $color-light;
   border-right: 1px solid $color-dark;
   width: $info-width-xs;
+  transition: 0.1s;
 
   @include sm {
     width: $info-width-sm;
-    margin-left: $space-sm;
+    padding-left: $sidebar-width;
   }
 
   @include md {
     width: $info-width-md;
     max-width: $info-width-max-md;
-    margin-left: $space-sm;
+    padding-left: $sidebar-width;
   }
 }
 

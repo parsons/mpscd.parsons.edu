@@ -37,7 +37,7 @@
   --dark: #343a40;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
+  --breakpoint-md: 1000px;
   --breakpoint-lg: 1200px;
   --breakpoint-xl: 1500px;
   --breakpoint-xxl: 1800px;
@@ -462,7 +462,7 @@ pre {
   @media (min-width: 576px) {
     .container {
       max-width: 540px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     .container {
       max-width: 720px; } }
   @media (min-width: 1200px) {
@@ -781,7 +781,7 @@ pre {
 
   .offset-sm-11 {
     margin-left: 91.6666666667%; } }
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
@@ -1511,7 +1511,7 @@ pre {
     -ms-overflow-style: -ms-autohiding-scrollbar; }
     .table-responsive-sm > .table-bordered {
       border: 0; } }
-@media (max-width: 767.98px) {
+@media (max-width: 999.98px) {
   .table-responsive-md {
     display: block;
     width: 100%;
@@ -3101,12 +3101,12 @@ input[type="button"].btn-block {
       flex-basis: auto; }
     .navbar-expand-sm .navbar-toggler {
       display: none; } }
-@media (max-width: 767.98px) {
+@media (max-width: 999.98px) {
   .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .navbar-expand-md {
     flex-flow: row nowrap;
     justify-content: flex-start; }
@@ -4670,7 +4670,7 @@ button.bg-dark:focus {
 
   .d-sm-inline-flex {
     display: inline-flex !important; } }
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .d-md-none {
     display: none !important; }
 
@@ -5043,7 +5043,7 @@ button.bg-dark:focus {
 
   .align-self-sm-stretch {
     align-self: stretch !important; } }
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .flex-md-row {
     flex-direction: row !important; }
 
@@ -5469,7 +5469,7 @@ button.bg-dark:focus {
 
   .float-sm-none {
     float: none !important; } }
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .float-md-left {
     float: left !important; }
 
@@ -6252,7 +6252,7 @@ button.bg-dark:focus {
   .ml-sm-auto,
   .mx-sm-auto {
     margin-left: auto !important; } }
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .m-md-0 {
     margin: 0 !important; }
 
@@ -7576,7 +7576,7 @@ button.bg-dark:focus {
 
   .text-sm-center {
     text-align: center !important; } }
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .text-md-left {
     text-align: left !important; }
 
@@ -9291,7 +9291,7 @@ e.g. `u-malg` or `u-sm-pvsm`.
   .u-sm-paxxl,
   .u-sm-padding-all-xxl {
     padding-right: 200px !important; } }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .u-md-table {
     display: table !important; }
 
@@ -11443,7 +11443,7 @@ li.t-set {
     -ms-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto; } }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .t-md-xxs {
     font-size: 12px !important; }
 
@@ -12181,7 +12181,7 @@ You can make an overlay compatible with Bootstrap collapse by adding the `is-col
     @media screen and (min-width: 576px) {
       .test-sizes:after {
         content: "sm"; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1000px) {
       .test-sizes:after {
         content: "md"; } }
     @media screen and (min-width: 1200px) {
@@ -12652,16 +12652,17 @@ img {
   position: absolute;
   background: #ffffff;
   border-right: 1px solid #000000;
-  width: 90%; }
+  width: 90%;
+  transition: 0.1s; }
   @media screen and (min-width: 576px) {
     .info {
       width: 75%;
-      margin-left: 36px; } }
-  @media screen and (min-width: 768px) {
+      padding-left: 36px; } }
+  @media screen and (min-width: 1000px) {
     .info {
       width: 50%;
       max-width: 600px;
-      margin-left: 36px; } }
+      padding-left: 36px; } }
 
 .explore {
   z-index: 0;
@@ -12896,12 +12897,6 @@ body {
     opacity: 0.1; }
   100% {
     opacity: 1.0; } }
-.explore-blur {
-  filter: blur(10px);
-  transition: 0.2s; }
-  .explore-blur:hover {
-    filter: blur(3px); }
-
 .hover-caption {
   position: fixed;
   bottom: 0px;
@@ -12938,3 +12933,9 @@ body {
 
 .overflow-hidden {
   overflow: hidden; }
+
+.push-left {
+  transform: translateX(-36px); }
+
+.push-left-full {
+  transform: translateX(-100%); }

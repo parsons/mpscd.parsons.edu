@@ -41,7 +41,7 @@
     </div>
 
     <div class="ui-pill-black">{{ page.title }}</div>
-    <a href="/explore/"><div class="explore explore-blur">
+    <div class="explore blur-full">
       <div class="explore-items">
           {% for post in site.posts %}
           {% for image in post.images %}
@@ -51,7 +51,7 @@
           {% endfor %}
         {% endfor %}
       </div>
-    </div></a>
+    </div>
 
     <script type="text/javascript" src="/assets/application.js"></script>
   </body>

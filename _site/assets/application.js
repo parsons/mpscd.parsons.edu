@@ -105,3 +105,25 @@ $(".nav-title").on("click", function() {
   }
 
 });
+
+
+// explore functionality
+
+$(".explore").hover(function() {
+  console.log("hello!");
+  $(".info").addClass("push-left");
+  $(this).removeClass("blur-full").addClass("blur-hover");
+},
+  function() {
+    console.log("goodbye!");
+    $(".info").removeClass("push-left");
+    $(this).removeClass("blur-hover").addClass("blur-full");
+  }
+);
+
+$(".explore").on("click", function() {
+  console.log("whaat!");
+  $(".info").addClass("push-left-full");
+  $(this).removeClass("blur-hover").addClass("blur-none");
+}
+);
