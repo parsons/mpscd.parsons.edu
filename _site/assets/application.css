@@ -12652,7 +12652,7 @@ img {
   position: absolute;
   background: #ffffff;
   border-right: 1px solid #000000;
-  width: 100%; }
+  width: 90%; }
   @media screen and (min-width: 576px) {
     .info {
       width: 75%;
@@ -12702,14 +12702,18 @@ img {
 .sidebar-title {
   transform: rotate(-90deg); }
 
-.nav, .footer {
+.footer {
   width: 100%;
   position: relative; }
 
 .nav {
+  width: 90%;
+  top: 0px;
+  left: 0px;
   background: #ffffff;
   position: fixed;
-  z-index: 12; }
+  z-index: 12;
+  border-right: 1px solid #000000; }
   @media screen and (min-width: 576px) {
     .nav {
       display: none; } }

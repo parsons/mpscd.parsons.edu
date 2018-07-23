@@ -20,16 +20,20 @@
 }
 
 
-.nav, .footer {
+.footer {
 width: 100%;
 position: relative;
 }
 
 
 .nav {
+  width: 90%;
+  top:0px;
+  left: 0px;
   background: $color-light;
   position: fixed;
   z-index: 12;
+  border-right: 1px solid $color-dark;
 
   @include sm {
     display: none;
