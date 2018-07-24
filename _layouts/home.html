@@ -40,12 +40,26 @@
       </div>
     </div>
 
-    <div class="ui-pill-black">{{ page.title }}</div>
+    <div class="pill-container">
+      <div class="ui-pill ui-pill-black" data-filter="{{ page.filter-class }}">{{ page.filter }}</div>
+      <div class="filter-list hidden">
+          <div class="ui-pill ">Filters +</div>
+          <div class="sub-menu hidden">
+          {% for filter in site.data.filters.filters %}
+            <p>
+              <div class="ui-pill" data-filter="{{ filter.class }}">{{ filter.title }}</div>
+            </p>
+          {% endfor %}
+          </div>
+      </div>
+    </div>
+    <div class="hover-caption hidden"></div>
+
     <div class="explore blur-full">
       <div class="explore-items container-fluid">
           {% for post in site.posts %}
+          <div class="explore-item col-4 col-offset-2 u-mtmd u-mbmd {{ post.tags | join:' ' }}">
           {% for image in post.images %}
-            <div class="explore-item col-4 col-offset-2 u-mtmd u-mbmd">
               <img src="{{ site.data.filepaths.desktop }}{{ image.src }}" alt="{{ image.alt }}" data-caption="{{ image.caption }}" data-creator="{{ image.creator }}">
             </div>
           {% endfor %}

@@ -12276,15 +12276,8 @@ body.preload .loader {
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "'America Mono Regular Web', Courier";
-  src: url("fonts/GT-America-Mono-Regular.eot");
-  src: url("fonts/GT-America-Mono-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/GT-America-Mono-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "'America Mono Regular Italic Web', Courier";
-  src: url("fonts/GT-America-Mono-Regular-Italic.eot");
-  src: url("fonts/GT-America-Mono-Regular-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/GT-America-Mono-Regular-Italic.woff") format("woff");
+  font-family: "'MPS-Sans-Regular', Courier";
+  src: url("fonts/MPS-Sans-Regular.woff");
   font-weight: normal;
   font-style: normal; }
 /* ////////////////////////////////////////////////
@@ -12398,7 +12391,7 @@ blockquote {
 
 code,
 pre {
-  font-family: "'America Mono Regular Web', Courier";
+  font-family: "'MPS-Sans-Regular', Courier";
   color: #000000; }
 
 pre {
@@ -12410,7 +12403,7 @@ table {
   width: 100%;
   border-collapse: collapse; }
   table * {
-    font-family: "'America Mono Regular Web', Courier";
+    font-family: "'MPS-Sans-Regular', Courier";
     text-align: left; }
   table tr {
     height: 48px; }
@@ -12584,9 +12577,9 @@ T-SET + T-READING
   .t-reading p em {
     font-family: "'Suisse Works Regular', 'Times New Roman'"; }
   .t-reading p strong {
-    font-family: "'America Mono Regular Web', Courier"; }
+    font-family: "'MPS-Sans-Regular', Courier"; }
   .t-reading p em strong {
-    font-family: "'America Mono Regular Web', Courier"; }
+    font-family: "'MPS-Sans-Regular', Courier"; }
 .t-reading em {
   font-family: "'Suisse Works Regular', 'Times New Roman'"; }
 .t-reading strong {
@@ -12637,7 +12630,7 @@ T-SET + T-READING
   font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif"; }
 
 .font-tertiary {
-  font-family: "'America Mono Regular Web', Courier"; }
+  font-family: "'MPS-Sans-Regular', Courier"; }
 
 .font-tertiary-italic {
   font-family: "'America Mono Regular Italic Web', Courier"; }
@@ -12653,7 +12646,7 @@ img {
   background: #ffffff;
   border-right: 1px solid #000000;
   width: 90%;
-  transition: 0.1s; }
+  transition: 0.4s; }
   @media screen and (min-width: 576px) {
     .info {
       width: 75%;
@@ -12762,8 +12755,6 @@ img {
 
 .footer p {
   font-size: 18px; }
-.footer a.hidden {
-  display: none; }
 
 * {
   -webkit-user-select: none;
@@ -12776,8 +12767,7 @@ img {
 body {
   background-color: #f1fff3;
   position: relative;
-  min-height: 100vh;
-  cursor: url(images/cursor/cursor-default.svg) 15 15, auto !important; }
+  min-height: 100vh; }
   .touch body {
     cursor: pointer; }
     .touch body div {
@@ -12845,23 +12835,34 @@ body {
     transform-origin: center;
     transform: rotate(180deg); }
 
-.ui-pill-black {
+.pill-container {
+  position: fixed;
+  z-index: 10;
+  right: 36px;
+  top: 36px; }
+
+.filter-list {
+  text-align: right; }
+
+.ui-pill {
   height: 36px;
   padding: 12px;
+  margin-bottom: 12px;
   font-size: 12px;
   font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
   text-align: center;
   border-radius: 36px;
-  right: 36px;
-  top: 36px;
-  position: fixed;
-  z-index: 10;
-  color: #ffffff;
-  background: #000000;
-  display: none; }
-  @media screen and (min-width: 576px) {
-    .ui-pill-black {
-      display: block; } }
+  color: #000000;
+  background: #ffffff;
+  display: inline-block; }
+  .ui-pill.ui-pill-black {
+    color: #ffffff;
+    background: #000000;
+    float: right;
+    margin-left: 12px; }
+  .ui-pill:hover {
+    color: #ffffff;
+    background: #000000; }
 
 .ul-md {
   list-style-type: none !important;
@@ -12883,16 +12884,6 @@ body {
     column-count: 2;
     column-gap: 36px; } }
 
-.hover-blink {
-  opacity: 1; }
-  .hover-blink:hover {
-    animation: blink 0.03s infinite alternate-reverse; }
-
-@keyframes blink {
-  0% {
-    opacity: 0.1; }
-  100% {
-    opacity: 1.0; } }
 .hover-caption {
   position: fixed;
   bottom: 0px;
@@ -12930,8 +12921,17 @@ body {
 .overflow-hidden {
   overflow: hidden; }
 
+.hidden {
+  display: none; }
+
 .push-left {
+  transition-timing-function: ease-in-out;
   transform: translateX(-36px); }
 
 .push-left-full {
   transform: translateX(-100%); }
+
+.blast-character-a.uppercase,
+.blast-character-d.uppercase,
+.blast-character-p.uppercase {
+  font-family: "'MPS-Sans-Regular', Courier"; }

@@ -43,7 +43,7 @@ $font-primary-italic:                    "'Suisse Works Regular', 'Times New Rom
 $font-primary-heavy:                     $font-primary-italic;
 $font-secondary:                         "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
 $font-secondary-heavy:                   "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
-$font-tertiary:                          "'America Mono Regular Web', Courier";
+$font-tertiary:                          "'MPS-Sans-Regular', Courier";
 $font-tertiary-italic:                   "'America Mono Regular Italic Web', Courier";
 
 // type sizes
@@ -189,7 +189,7 @@ body {
   background-color: $color-brand-secondary;
   position: relative;
   min-height: 100vh;
-  @include cursor-default;
+  // @include cursor-default;
 
   .touch & {
     cursor: pointer;
@@ -286,26 +286,47 @@ body {
 }
 
 
-.ui-pill-black {
+.pill-container {
+  position: fixed;
+  z-index: 10;
+  right: $space-sm;
+  top: $space-sm;
+
+}
+
+.filter-list {
+  // float: right;
+  text-align: right;
+}
+
+.ui-pill {
   height: $space-sm;
   padding: 12px;
+  margin-bottom: 12px;
   font-size: $text-xs;
   font-family: $font-secondary;
   text-align: center;
   border-radius: $space-sm;
-  // width: 200px;
-  right: $space-sm;
-  top: $space-sm;
-  position: fixed;
-  z-index: 10;
-  color: $color-light;
-  background: $color-dark;
-  display: none;
+  color: $color-dark;
+  background: $color-light;
+  display: inline-block;
 
-  @include sm {
-    display: block;
+  &.ui-pill-black {
+    color: $color-light;
+    background: $color-dark;
+    float: right;
+    margin-left: 12px;
   }
+
+  &:hover {
+      color: $color-light;
+      background: $color-dark;
+    }
+
 }
+
+
+
 
 .ul-md {
   list-style-type: none !important;
@@ -339,26 +360,6 @@ body {
   }
 }
 
-.hover-blink {
-  opacity: 1;
-  &:hover{
-    animation: blink 0.03s infinite alternate-reverse;
-  }
-}
-
-@keyframes blink {
-  0% { opacity: 0.1; }
-  100% { opacity: 1.0; }
-}
-
-// .explore-blur {
-//   filter: blur($blur-full);
-//   transition: 0.2s;
-
-//   &:hover {
-//     filter: blur($blur-hover);
-//   }
-// }
 
 .hover-caption {
   position: fixed;
@@ -417,10 +418,27 @@ body {
   overflow: hidden;
 }
 
+.hidden {
+  display:none;
+}
+
+
+// functionality for 
+
 .push-left {
+  transition-timing-function: ease-in-out;
   transform: translateX(-$sidebar-width);
 }
 
 .push-left-full {
   transform: translateX(-100%);
+}
+
+// text replacement!
+
+.blast-character-a,
+.blast-character-d,
+.blast-character-p {
+  &.uppercase
+  {font-family: $font-tertiary;}
 }

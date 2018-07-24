@@ -3,8 +3,7 @@ $font-primary-src:                    #{$font-filepath}SuisseWorksTrial-Regular;
 $font-primary-italic-src:             #{$font-filepath}SuisseWorksTrial-Regular;
 $font-secondary-src:                  #{$font-filepath}SuisseIntlTrial-Regular;
 $font-secondary-heavy-src:            #{$font-filepath}SuisseIntlTrial-Regular;
-$font-tertiary-src:                   #{$font-filepath}GT-America-Mono-Regular;
-$font-tertiary-italic-src:            #{$font-filepath}GT-America-Mono-Regular-Italic;
+$font-tertiary-src:                   #{$font-filepath}MPS-Sans-Regular;
 
 @font-face {
   font-family: $font-primary;
@@ -45,18 +44,9 @@ $font-tertiary-italic-src:            #{$font-filepath}GT-America-Mono-Regular-I
 
 @font-face {
   font-family: $font-tertiary;
-  src:url("#{$font-tertiary-src}.eot");
-  src:url("#{$font-tertiary-src}.eot?#iefix") format("embedded-opentype"),
-      url("#{$font-tertiary-src}.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: $font-tertiary-italic;
-  src:url("#{$font-tertiary-italic-src}.eot");
-  src:url("#{$font-tertiary-italic-src}.eot?#iefix") format("embedded-opentype"),
-      url("#{$font-tertiary-italic-src}.woff") format("woff");
+  src:url("#{$font-tertiary-src}.woff");
+  // src:url("#{$font-tertiary-src}.eot?#iefix") format("embedded-opentype"),
+  //     url("#{$font-tertiary-src}.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

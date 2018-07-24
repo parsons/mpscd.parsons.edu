@@ -12,14 +12,13 @@
     <div class="sidebar">
       <div class="sidebar-title"><h6>Parsons MPS Communication Design Digital Product Design</h6></div>
     </div>
-    
-    <div class="hover-caption"></div>
+
 
     <div class="ui-pill-black">{{ page.title }}</div>
     <div class="explore">
-        <div class="explore-items">
+        <div class="explore-items container-fluid">
         {% for post in site.posts %}
-        <div class="explore-item {{ post.tags }}">
+        <div class="explore-item col-4 col-offset-2 u-mtmd u-mbmd {{ post.tags }}">
           {% for image in post.images %}
               <img src="{{ site.data.filepaths.desktop }}{{ image.src }}" alt="{{ image.alt }}" data-caption="{{ image.caption }}" data-creator="{{ image.creator }}">
           {% endfor %}

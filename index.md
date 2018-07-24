@@ -5,4 +5,6 @@
 layout: home
 title: home
 include: _home.html
+filter: "Everything"
+filter-class: "everything"
 ---

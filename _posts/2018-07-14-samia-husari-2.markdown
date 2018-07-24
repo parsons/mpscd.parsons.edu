@@ -2,7 +2,9 @@
 layout: post
 title:  "Samia Husari"
 date:   2018-06-12 12:17:43 -0400
-tags: "Curriculum"
+tags:
+- "curriculum"
+- "twenty-eighteen"
 excerpt_separator: <!--more-->
 
 images:

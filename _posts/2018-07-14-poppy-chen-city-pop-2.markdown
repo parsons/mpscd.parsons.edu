@@ -2,7 +2,9 @@
 layout: post
 title:  "Poppy Chen City Pop App"
 date:   2018-06-12 12:17:43 -0400
-tags: "Student Projects"
+tags:
+- "student-projects"
+- "twenty-eighteen"
 excerpt_separator: <!--more-->
 
 images:

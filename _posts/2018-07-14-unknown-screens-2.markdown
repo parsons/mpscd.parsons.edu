@@ -2,12 +2,15 @@
 layout: post
 title:  "Patrick Serr Unknown Conference"
 date:   2018-06-12 12:17:43 -0400
-tags: "Student Projects"
+tags:
+- "student-projects"
+- "twenty-eighteen"
 excerpt_separator: <!--more-->
 
 images:
 - caption: Unknown Confererence
   creator: Patrick Serr
+  graduation-year: "2018"
   src: pserr01.png
   alt: Patrick Serr Unknown Conference
 ---
