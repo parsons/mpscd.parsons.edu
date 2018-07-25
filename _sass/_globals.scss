@@ -5,13 +5,18 @@
   border-right: 1px solid #000;
   position: fixed;
   z-index: 12;
-  display: none;
+  display: flex;
   align-items: center;
   white-space: nowrap;
   justify-content: center;
+  margin-left: -$space-sm;
+
+  &.explore-open {
+    margin-left: 0;
+  }
 
   @include sm {
-    display: flex;
+    margin-left: 0;
     }
 }
 

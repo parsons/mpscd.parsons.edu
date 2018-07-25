@@ -38,25 +38,8 @@ let addCaption = function(){
   caption = $(this).children("img").data("caption");
   creator = $(this).children("img").data("creator");
   $(".hover-caption").html("<h1 class='text-outline'>"+ caption +"</h1><h1 class='text-outline'>"+ creator +"</h1>");
-  
-  //blast text
   var text = $(".hover-caption");
-  $(text).blast({
-    delimiter: "character",
-    generateValueClass: true
-  });
-
-  // test for caps
-  $('.blast').each(function(){
-    var character = this.innerHTML;
-    // console.log(character);
-              if (character == character.toUpperCase()) {
-            //   console.log('upper case true');
-              $(this).addClass('uppercase');
-          } else {
-            $(this).addClass('lowercase');
-          }
-  });
+  blastText(text);
 };
 
 let removeCaption = function(){
@@ -129,20 +112,31 @@ $(".nav-title").on("click", function() {
 });
 
 
-// explore functionality
+// explore functionality -------------------------------
+
+// hover blur
 
 $(".explore").hover(function() {
-  $(".info").addClass("push-left");
-  $(this).removeClass("blur-full").addClass("blur-hover");
+  if (!$(".explore").hasClass("explore-open")){
+    $(".info").addClass("push-left");
+    $(this).removeClass("blur-full").addClass("blur-hover");
+  }
 },
   function() {
+    if (!$(".explore").hasClass("explore-open")){
     $(".info").removeClass("push-left");
     $(this).removeClass("blur-hover").addClass("blur-full");
+    }
   }
 );
 
+// clicking into explore section
+
 $(".explore").on("click", function() {
   $(".info").addClass("push-left-full");
+  $(".page-filter").addClass("explore-open");
+  $(".sidebar").addClass("explore-open");
+  $(".explore").addClass("explore-open");
   $(this).removeClass("blur-hover").addClass("blur-none");
   $(".hover-caption").removeClass("hidden");
   $(".filter-list").removeClass("hidden");
@@ -150,7 +144,7 @@ $(".explore").on("click", function() {
 );
 
 
-// filtering functions
+// image filtering functions
 
 $(".filter-list").children().first().on("click", function() {
   var $subMenu = $(this).siblings();
@@ -183,6 +177,11 @@ $(".filter-list").children(".sub-menu").children(".ui-pill").on("click", functio
 $(document).ready(function(){
 
   var text = $("h1, h3, h4");
+  blastText(text);
+});
+
+
+function blastText(text) {
   $(text).blast({
     delimiter: "character",
     generateValueClass: true
@@ -199,8 +198,7 @@ $(document).ready(function(){
             $(this).addClass('lowercase');
           }
   });
-
-});
+}
 
 
 
