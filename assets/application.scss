@@ -91,7 +91,7 @@ $text-letter-xl:                         .1em;
 
 // spacing
 $space-base:                             36px;
-$space-xxs:                              5px;
+$space-xxs:                              12px;
 $space-xs:                               18px !default;
 $space-sm:                               $space-base !default;
 $space-md:                               48px !default;
@@ -289,12 +289,13 @@ body {
 
 .push-left {
   transition-timing-function: ease-in-out;
-  transform: translateX(-$sidebar-width);
+  transform: translateX(-$space-xxs);
 }
 
 .push-left-full {
   transform: translateX(-100%);
 }
+
 
 // text replacement!
 

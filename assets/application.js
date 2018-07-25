@@ -137,6 +137,7 @@ $(".explore").on("click", function() {
   $(".page-filter").addClass("explore-open");
   $(".sidebar").addClass("explore-open");
   $(".explore").addClass("explore-open");
+  $(".explore-item").addClass("explore-open");
   $(this).removeClass("blur-hover").addClass("blur-none");
   $(".hover-caption").removeClass("hidden");
   $(".filter-list").removeClass("hidden");

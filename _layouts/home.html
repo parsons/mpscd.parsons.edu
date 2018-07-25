@@ -58,7 +58,7 @@
     <div class="explore blur-full">
       <div class="explore-items container-fluid">
           {% for post in site.posts %}
-          <div class="explore-item col-6 col-sm-4 col-md-3 col-xl-2 u-mtmd u-mbmd {{ post.tags | join:' ' }}">
+          <div class="explore-item col-10 col-sm-4 col-md-3 col-xl-2 {{ post.tags | join:' ' }}">
           {% for image in post.images %}
               <img src="{{ site.data.filepaths.desktop }}{{ image.src }}" alt="{{ image.alt }}" data-caption="{{ image.caption }}" data-creator="{{ image.creator }}">
             </div>

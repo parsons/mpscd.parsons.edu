@@ -6,7 +6,7 @@
   background: $color-light;
   border-right: 1px solid $color-dark;
   width: $info-width-xs;
-  transition: 0.4s;
+  transition: 0.2s;
 
   @include sm {
     width: $info-width-sm;
@@ -28,6 +28,21 @@
 
 
 .explore-item {
+  &.explore-open{
+    cursor: pointer;
+  }
+  &:nth-child(1n+1){
+    margin: $space-xl 0;
+  }
+  &:nth-child(2n+1){
+    margin: $space-sm 0 0 $space-md;
+  }
+  &:nth-child(3n+1){
+    margin: $space-md $space-sm;
+  }
+  &:nth-child(4n+1){
+    margin: $space-sm 0 $space-sm 0;
+  }
 }
 
 
@@ -183,11 +198,11 @@
 
 .hover-caption {
   position: fixed;
-  bottom: 0px;
-  left: $space-sm;
+  bottom: $space-xs;
+  left: $space-sm + $space-xs;
   z-index: 12;
   display:none;
-  
+
   @include sm {
     display:block;
   }
