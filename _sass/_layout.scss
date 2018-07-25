@@ -41,7 +41,7 @@
     margin: $space-md $space-sm;
   }
   &:nth-child(4n+1){
-    margin: $space-sm 0 $space-sm 0;
+    margin: $space-sm 0 $space-sm $space-lg;
   }
 }
 
@@ -204,6 +204,8 @@
   display:none;
 
   @include sm {
+    &.explore-open {
     display:block;
+    }
   }
 }

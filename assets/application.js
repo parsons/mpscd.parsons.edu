@@ -114,6 +114,11 @@ $(".nav-title").on("click", function() {
 
 // explore functionality -------------------------------
 
+
+// sets up array of elements to change in explore state
+let exploreArray = [".page-filter", ".sidebar", ".explore", ".explore-item", "sidebar-info", "sidebar-arrow", "hover-caption"];
+
+
 // hover blur
 
 $(".explore").hover(function() {
@@ -138,11 +143,23 @@ $(".explore").on("click", function() {
   $(".sidebar").addClass("explore-open");
   $(".explore").addClass("explore-open");
   $(".explore-item").addClass("explore-open");
+  $(".sidebar-info").addClass("explore-open");
+  $(".sidebar-arrow").addClass("explore-open");
   $(this).removeClass("blur-hover").addClass("blur-none");
   $(".hover-caption").removeClass("hidden");
   $(".filter-list").removeClass("hidden");
 }
 );
+
+// leaving the explore section
+
+$(".sidebar").on("click", function() {
+ if ($(this).hasClass("explore-open")) {
+    console.log("woohoo!");
+ }
+
+});
+
 
 
 // image filtering functions
