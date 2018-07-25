@@ -116,7 +116,7 @@ $(".nav-title").on("click", function() {
 
 
 // sets up array of elements to change in explore state
-let exploreArray = [".page-filter", ".sidebar", ".explore", ".explore-item", "sidebar-info", "sidebar-arrow", "hover-caption"];
+var exploreArray = [".page-filter", ".sidebar", ".explore", ".explore-item", ".sidebar-info", ".sidebar-arrow", ".hover-caption"];
 
 
 // hover blur
@@ -136,18 +136,21 @@ $(".explore").hover(function() {
 );
 
 // clicking into explore section
+function exploreOpen(element) {
+  $(element).addClass("explore-open"); 
+};
+
+function exploreClose(element) {
+  $(element).removeClass("explore-open"); 
+};
+
 
 $(".explore").on("click", function() {
   $(".info").addClass("push-left-full");
-  $(".page-filter").addClass("explore-open");
-  $(".sidebar").addClass("explore-open");
-  $(".explore").addClass("explore-open");
-  $(".explore-item").addClass("explore-open");
-  $(".sidebar-info").addClass("explore-open");
-  $(".sidebar-arrow").addClass("explore-open");
-  $(this).removeClass("blur-hover").addClass("blur-none");
-  $(".hover-caption").removeClass("hidden");
   $(".filter-list").removeClass("hidden");
+  $(this).removeClass("blur-hover").addClass("blur-none");
+
+  exploreArray.forEach(exploreOpen);
 }
 );
 
@@ -155,7 +158,11 @@ $(".explore").on("click", function() {
 
 $(".sidebar").on("click", function() {
  if ($(this).hasClass("explore-open")) {
-    console.log("woohoo!");
+  $(".info").removeClass("push-left-full");
+  $(".filter-list").addClass("hidden");
+  $(".explore").addClass("blur-full").removeClass("blur-none");
+
+  exploreArray.forEach(exploreClose);
  }
 
 });
