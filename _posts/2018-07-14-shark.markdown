@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Shark Week 2018"
+date:   2018-06-12 12:17:43 -0400
+tags:
+- "student-projects"
+- "twenty-eighteen"
+excerpt_separator: <!--more-->
+
+images:
+- caption: Shark Week
+  graduation-year: "2018"
+  src: giphy.gif
+  alt: Shark Week
+---
+
+![Unknown Conference]({{ site.url }}/assets/images/work/pserr01.png)
+
+<!--more-->
+
+Unknown Conference, a project by Patrick Serr, Poppy Chen, Vidya Keshavan and Carolyn Berry, Typography and Interaction I, Fall 2017
