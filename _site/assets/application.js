@@ -53,6 +53,8 @@ let addCaption = function(){
               if (character == character.toUpperCase()) {
             //   console.log('upper case true');
               $(this).addClass('uppercase');
+          } else {
+            $(this).addClass('lowercase');
           }
   });
 };
@@ -193,6 +195,8 @@ $(document).ready(function(){
               if (character == character.toUpperCase()) {
             //   console.log('upper case true');
               $(this).addClass('uppercase');
+          } else {
+            $(this).addClass('lowercase');
           }
   });
 

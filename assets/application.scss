@@ -438,7 +438,14 @@ body {
 
 .blast-character-a,
 .blast-character-d,
+.blast-character-m,
 .blast-character-p {
   &.uppercase
+  {font-family: $font-tertiary;}
+}
+
+.blast-character-o,
+.blast-character-g {
+  &.lowercase
   {font-family: $font-tertiary;}
 }

@@ -12933,5 +12933,10 @@ body {
 
 .blast-character-a.uppercase,
 .blast-character-d.uppercase,
+.blast-character-m.uppercase,
 .blast-character-p.uppercase {
+  font-family: "'MPS-Sans-Regular', Courier"; }
+
+.blast-character-o.lowercase,
+.blast-character-g.lowercase {
   font-family: "'MPS-Sans-Regular', Courier"; }
