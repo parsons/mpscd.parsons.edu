@@ -8,10 +8,10 @@ tags:
 excerpt_separator: <!--more-->
 
 images:
-- caption: Shark Week
+- caption: Watch Animation
   graduation-year: "2018"
   src: giphy.gif
-  alt: Shark Week
+  alt: Watch Animation
 ---
 
 ![Unknown Conference]({{ site.url }}/assets/images/work/pserr01.png)
