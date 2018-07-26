@@ -154,8 +154,10 @@ $info-width-sm:                          75%;
 $info-width-md:                          50%;
 $info-width-max-md:                      600px;
 
+$blur-extra:                              20px;
 $blur-full:                              10px;
 $blur-hover:                             3px;
+$blur-none:                             0px;
 
 $sidebar-width:                          36px;
 
@@ -187,7 +189,6 @@ $sidebar-width:                          36px;
 
 body {
   background-color: $color-brand-secondary;
-  background-image: url("images/work/desktop/windows_xp_bliss.jpg");
   position: relative;
   min-height: 100vh;
   // @include cursor-default;
@@ -219,7 +220,7 @@ body {
 }
 
 .hidden {
-  display:none;
+  display:none !important;
 }
 
 // blur 
@@ -275,6 +276,13 @@ body {
   color: $color-light !important;
   -webkit-text-stroke-width: 0.8px;
   -webkit-text-stroke-color: $color-base;
+
+  &.hover-reverse{
+    &:hover{    
+      color: rgba(0,0,0,0) !important;
+      -webkit-text-stroke-width: 0.8px;
+      -webkit-text-stroke-color: $color-base;}
+  }
 }
 
 .hover-text-outline {
@@ -301,9 +309,11 @@ body {
 // text replacement!
 
 .blast-character-a,
+.blast-character-c,
 .blast-character-d,
 .blast-character-m,
-.blast-character-p {
+.blast-character-p,
+.blast-character-s {
   &.uppercase
   {font-family: $font-tertiary;}
 }
@@ -312,4 +322,9 @@ body {
 .blast-character-g {
   &.lowercase
   {font-family: $font-tertiary;}
+}
+
+.blast-character-excl,
+.blast-character-quest {
+  font-family: $font-tertiary;
 }

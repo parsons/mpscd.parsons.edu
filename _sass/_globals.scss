@@ -13,6 +13,11 @@
 
   &.explore-open {
     margin-left: 0;
+    cursor:pointer;
+
+    &.lightbox-open{
+      filter: blur($blur-extra);
+    }
   }
 
   @include sm {
@@ -38,7 +43,12 @@
 
   &.explore-open {
     margin-left: 0;
-    display: flex;
+    display: flex;    
+    cursor: pointer;
+
+    &.lightbox-open{
+      filter: blur($blur-extra);
+    }
   }
 
   @include sm {
@@ -63,6 +73,11 @@
 
   &.explore-open {
     display: block;
+    cursor: pointer;
+
+    &.lightbox-open{
+      filter: blur($blur-extra);
+    }
   }
 
   &.text-outline {

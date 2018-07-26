@@ -29,24 +29,32 @@ $(window).resize(function(){
 });
 
 
-// caption showing for explore
+// Captioning
 
 let caption;
 let creator;
 
-let addCaption = function(){
-  caption = $(this).children("img").data("caption");
-  creator = $(this).children("img").data("creator");
-  $(".hover-caption").html("<h1 class='text-outline'>"+ caption +"</h1><h1 class='text-outline'>"+ creator +"</h1>");
-  var text = $(".hover-caption");
+let addCaption = function(source, destination){
+  caption = $(source).children("img").data("caption");
+  creator = $(source).children("img").data("creator");
+  $(destination).html("<h1 class='text-outline'>"+ caption +"</h1><h1 class='text-outline caption-student'>"+ creator +"</h1>");
+  var text = $(destination);
   blastText(text);
 };
 
-let removeCaption = function(){
-  $(".hover-caption").html("");
+let removeCaption = function(destination){
+  $(destination).html("");
 };
 
-$(".explore-item").hover(addCaption,removeCaption);
+
+// Caption for explore
+
+$(".explore-item").hover(function(){
+    source = $(this);
+    addCaption(source, ".hover-caption");
+},function(){
+    removeCaption(".hover-caption");
+});
 
 
 // isotope
@@ -116,7 +124,7 @@ $(".nav-title").on("click", function() {
 
 
 // sets up array of elements to change in explore state
-var exploreArray = [".page-filter", ".sidebar", ".explore", ".explore-item", ".sidebar-info", ".sidebar-arrow", ".hover-caption"];
+var exploreArray = [".page-filter", ".sidebar", ".explore", ".explore-item", ".sidebar-info", ".sidebar-arrow", ".hover-caption", ".background-container", ".lightbox-container"];
 
 
 // hover blur
@@ -156,16 +164,79 @@ $(".explore").on("click", function() {
 
 // leaving the explore section
 
-$(".sidebar").on("click", function() {
+$(".sidebar, .sidebar-info, .sidebar-arrow").hover(function() {
+    if ($(this).hasClass("explore-open")) {
+        $(".sidebar-arrow").addClass("text-outline");
+    }
+   }, function() {
+    if ($(this).hasClass("explore-open")) {
+        $(".sidebar-arrow").removeClass("text-outline");
+    }
+   }
+);
+
+
+$(".sidebar, .sidebar-info, .sidebar-arrow").on("click", function() {
  if ($(this).hasClass("explore-open")) {
   $(".info").removeClass("push-left-full");
   $(".filter-list").addClass("hidden");
   $(".explore").addClass("blur-full").removeClass("blur-none");
 
+    if ($(".sidebar-arrow").hasClass("text-outline")) {
+    $(".sidebar-arrow").removeClass("text-outline");
+    }
+    if ($(".info").hasClass("push-left")) {
+        $(".info").removeClass("push-left");
+        }
   exploreArray.forEach(exploreClose);
  }
 
 });
+
+// Lightbox!!!!
+function lightboxOpen(element) {
+    $(element).addClass("lightbox-open"); 
+  };
+  
+  function lightboxClose(element) {
+    $(element).removeClass("lightbox-open"); 
+  };
+
+function studentCaptionLink(source, link) {
+    var linkUrl = $(source).children("img").data("link");
+    console.log(linkUrl);
+    console.log(link);
+    $(link).addClass("hover-reverse");
+    $(link).wrap("<a href='" + linkUrl + "'></a>")
+};
+
+
+$(".explore-item").on("click", function(){
+    if($(this).hasClass("explore-open")) {
+        exploreArray.forEach(lightboxOpen);
+        $("body").addClass("overflow-hidden");
+        $(".hover-caption").addClass("hidden");
+        $(".filter-button").addClass("hidden");
+
+        source = $(this);
+        addCaption(source, ".lightbox-caption");
+
+        link = $(".lightbox-caption").children(".caption-student");
+        if (link.html()!== ""){link.append(" &rarr;");};
+        studentCaptionLink(source, link);
+    
+        var image = $(this).html();
+        $(".lightbox-detail").html(image);
+    };
+});
+
+$(".lightbox-close").on("click", function(){
+        exploreArray.forEach(lightboxClose);
+        $("body").removeClass("overflow-hidden");
+        $(".hover-caption").removeClass("hidden");
+        $(".filter-button").removeClass("hidden");
+});
+
 
 
 
@@ -212,13 +283,19 @@ function blastText(text) {
     generateValueClass: true
   });
 
-  // test for caps
+  // test for caps, 
   $('.blast').each(function(){
     var character = this.innerHTML;
     // console.log(character);
               if (character == character.toUpperCase()) {
             //   console.log('upper case true');
               $(this).addClass('uppercase');
+                    if ($(this).hasClass("blast-character-!")) {
+                        $(this).addClass("blast-character-excl").removeClass("blast-character-!");
+                    }
+                    if ($(this).hasClass("blast-character-?")) {
+                        $(this).addClass("blast-character-quest").removeClass("blast-character-?");
+                    }
           } else {
             $(this).addClass('lowercase');
           }

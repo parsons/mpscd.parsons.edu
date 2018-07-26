@@ -12660,10 +12660,15 @@ img {
 .explore {
   z-index: 0;
   position: absolute;
-  margin-left: 36px; }
+  margin-left: 36px;
+  cursor: pointer; }
+  .explore.explore-open {
+    cursor: default; }
+  .explore.lightbox-open {
+    filter: blur(20px); }
 
 .explore-item.explore-open {
-  cursor: pointer; }
+  cursor: zoom-in; }
 .explore-item:nth-child(1n+1) {
   margin: 100px 0; }
 .explore-item:nth-child(2n+1) {
@@ -12747,6 +12752,8 @@ img {
   display: none !important; }
   .page-filter.explore-open {
     display: inline-block !important; }
+    .page-filter.explore-open.lightbox-open {
+      filter: blur(20px); }
   @media screen and (min-width: 576px) {
     .page-filter {
       display: inline-block !important; } }
@@ -12779,7 +12786,65 @@ img {
   display: none; }
   @media screen and (min-width: 576px) {
     .hover-caption.explore-open {
-      display: block; } }
+      display: block; }
+      .hover-caption.explore-open.lightbox-open {
+        filter: blur(20px); } }
+
+.lightbox-container {
+  z-index: 20;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.2);
+  display: none; }
+  .lightbox-container.lightbox-open {
+    display: block; }
+
+.lightbox-detail {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; }
+  .lightbox-detail > img {
+    object-fit: contain; }
+
+.lightbox-caption {
+  position: fixed;
+  bottom: 18px;
+  left: 54px; }
+  .lightbox-caption > .caption-student {
+    color: #000000 !important;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: #000000; }
+
+.lightbox-close {
+  position: fixed;
+  top: 36px;
+  right: 36px; }
+  .lightbox-close:hover {
+    color: #ffffff;
+    cursor: pointer; }
+
+.background-container {
+  z-index: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(10px);
+  overflow: visible; }
+  .background-container.explore-open {
+    filter: blur(0px); }
+    .background-container.explore-open.lightbox-open {
+      filter: blur(20px); }
+
+.background-image {
+  width: 110vw;
+  height: 110vh;
+  margin-top: -5vh;
+  margin-left: -5vw;
+  background-image: url("images/work/desktop/windows_xp_bliss.jpg");
+  background-position: center;
+  background-size: cover; }
 
 .sidebar {
   width: 36px;
@@ -12794,7 +12859,10 @@ img {
   justify-content: center;
   margin-left: -36px; }
   .sidebar.explore-open {
-    margin-left: 0; }
+    margin-left: 0;
+    cursor: pointer; }
+    .sidebar.explore-open.lightbox-open {
+      filter: blur(20px); }
   @media screen and (min-width: 576px) {
     .sidebar {
       margin-left: 0; } }
@@ -12815,7 +12883,10 @@ img {
   display: none; }
   .sidebar-info.explore-open {
     margin-left: 0;
-    display: flex; }
+    display: flex;
+    cursor: pointer; }
+    .sidebar-info.explore-open.lightbox-open {
+      filter: blur(20px); }
   @media screen and (min-width: 576px) {
     .sidebar-info {
       margin-left: 0; } }
@@ -12835,7 +12906,10 @@ img {
   background-image: url("images/down-arrow.svg");
   display: none; }
   .sidebar-arrow.explore-open {
-    display: block; }
+    display: block;
+    cursor: pointer; }
+    .sidebar-arrow.explore-open.lightbox-open {
+      filter: blur(20px); }
   .sidebar-arrow.text-outline {
     background-image: url("images/down-arrow-open.svg"); }
 
@@ -12913,7 +12987,6 @@ img {
 
 body {
   background-color: #f1fff3;
-  background-image: url("images/work/desktop/windows_xp_bliss.jpg");
   position: relative;
   min-height: 100vh; }
   .touch body {
@@ -12934,7 +13007,7 @@ body {
   overflow: hidden; }
 
 .hidden {
-  display: none; }
+  display: none !important; }
 
 .blur-full {
   filter: blur(10px); }
@@ -12970,6 +13043,10 @@ body {
   color: #ffffff !important;
   -webkit-text-stroke-width: 0.8px;
   -webkit-text-stroke-color: #000000; }
+  .text-outline.hover-reverse:hover {
+    color: rgba(0, 0, 0, 0) !important;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: #000000; }
 
 .hover-text-outline:hover {
   color: #ffffff !important;
@@ -12984,11 +13061,17 @@ body {
   transform: translateX(-100%); }
 
 .blast-character-a.uppercase,
+.blast-character-c.uppercase,
 .blast-character-d.uppercase,
 .blast-character-m.uppercase,
-.blast-character-p.uppercase {
+.blast-character-p.uppercase,
+.blast-character-s.uppercase {
   font-family: "'MPS-Sans-Regular', Courier"; }
 
 .blast-character-o.lowercase,
 .blast-character-g.lowercase {
+  font-family: "'MPS-Sans-Regular', Courier"; }
+
+.blast-character-excl,
+.blast-character-quest {
   font-family: "'MPS-Sans-Regular', Courier"; }

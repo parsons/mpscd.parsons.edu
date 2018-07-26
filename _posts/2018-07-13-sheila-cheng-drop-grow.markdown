@@ -12,6 +12,7 @@ images:
   creator: Sheila Cheng
   src: scheng01.jpg
   alt: Sheila Cheng Drop and Grow
+  link: http://patrickserr.com/
 ---
 
 ![Drop and Grow]({{ site.url }}/assets/images/work/scheng01.jpg)

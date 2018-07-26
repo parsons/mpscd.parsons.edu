@@ -12,6 +12,7 @@ images:
   graduation-year: "2018"
   src: giphy.gif
   alt: Watch Animation
+  link: http://patrickserr.com/
 ---
 
 ![Unknown Conference]({{ site.url }}/assets/images/work/pserr01.png)

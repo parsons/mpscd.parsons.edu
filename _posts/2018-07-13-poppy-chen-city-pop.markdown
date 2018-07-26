@@ -12,6 +12,7 @@ images:
   creator: Poppy Chen
   src: pchen01.png
   alt: Poppy Chen City Pop App
+  link: http://patrickserr.com/
 ---
 
 ![Drop and Grow]({{ site.url }}/assets/images/work/pchen01.png)

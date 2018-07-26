@@ -12,6 +12,7 @@ images:
   creator: Patrick Serr
   src: pserr01.png
   alt: Patrick Serr Unknown Conference
+  link: http://patrickserr.com/
 ---
 
 ![Unknown Conference]({{ site.url }}/assets/images/work/pserr01.png)

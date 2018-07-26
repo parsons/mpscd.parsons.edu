@@ -11,6 +11,7 @@ images:
 - caption: Major Studio 2, Spring 2018
   src: class01.jpg
   alt: Major Studio 2
+  link: http://patrickserr.com/
 ---
 
 ![Samia Husari]({{ site.url }}/assets/images/work/class01.jpg)

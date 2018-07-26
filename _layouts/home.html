@@ -8,12 +8,22 @@
 {% include _head.html %}
 
   <body class="preload js-body with-mask" id="current-page-title">
-    
+    <div class="background-container">
+      <div class="background-image"></div>
+    </div>
+
     <div class="sidebar-info"><h6>INFO</h6></div>
     <div class="sidebar-arrow"></div>
     <div class="sidebar">
       <div class="sidebar-title"><h6>Parsons MPS Communication Design Digital Product Design</h6></div>
     </div>
+
+    <div class="lightbox-container">
+      <div class="lightbox-detail"></div>
+      <div class="lightbox-caption"></div>
+      <div class="lightbox-close"><h1 class="text-outline hover-reverse">X</h1></div>
+    </div>
+
     <div class="info">
       <div class="container-fluid">
         <div class="row">
@@ -37,7 +47,6 @@
 
             </div>
 
-
         </div>
       </div>
     </div>
@@ -55,6 +64,7 @@
           </div>
       </div>
     </div>
+
     <div class="hover-caption"></div>
 
     <div class="explore blur-full">
@@ -62,7 +72,7 @@
           {% for post in site.posts %}
           <div class="explore-item col-10 col-sm-4 col-md-3 col-xl-2 {{ post.tags | join:' ' }}">
           {% for image in post.images %}
-              <img src="{{ site.data.filepaths.desktop }}{{ image.src }}" alt="{{ image.alt }}" data-caption="{{ image.caption }}" data-creator="{{ image.creator }}">
+              <img src="{{ site.data.filepaths.desktop }}{{ image.src }}" alt="{{ image.alt }}" data-caption="{{ image.caption }}" data-creator="{{ image.creator }}" data-link="{{ image.link }}">
             </div>
           {% endfor %}
         {% endfor %}
