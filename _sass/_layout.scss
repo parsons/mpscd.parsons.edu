@@ -311,3 +311,58 @@
   background-position: center;
   background-size: cover;
 }
+
+
+
+// announcement -------------------------------------
+
+$announcement-color: #9013FE;
+$announcement-text: white;
+
+.announcement-container {
+  width: 14rem;
+  height: 100vh;
+  background: $announcement-color;
+  color: $announcement-text;
+  z-index: 30;
+  font-family: $font-secondary;
+  font-size: $text-md;
+  text-transform: uppercase;
+  padding: $space-xs;
+
+  position: fixed;
+  top:0;
+  left:0;
+
+  & a {
+    display: block;
+  }
+}
+
+.announcement-link {
+  background: $announcement-text;
+  color: $announcement-color;
+  margin: $space-xs 0;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: table;
+
+  & a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  &:hover {
+    background: $announcement-color;
+    border: solid 1px $announcement-text;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: $announcement-text;
+  }
+
+}
+
+.announcement-close {
+  text-decoration: underline;
+}

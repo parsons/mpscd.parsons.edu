@@ -12846,6 +12846,43 @@ img {
   background-position: center;
   background-size: cover; }
 
+.announcement-container {
+  width: 14rem;
+  height: 100vh;
+  background: #9013FE;
+  color: white;
+  z-index: 30;
+  font-family: "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 18px;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .announcement-container a {
+    display: block; }
+
+.announcement-link {
+  background: white;
+  color: #9013FE;
+  margin: 18px 0;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: table; }
+  .announcement-link a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+  .announcement-link:hover {
+    background: #9013FE;
+    border: solid 1px white;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: white; }
+
+.announcement-close {
+  text-decoration: underline; }
+
 .sidebar {
   width: 36px;
   height: 100vh;

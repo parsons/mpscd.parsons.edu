@@ -303,6 +303,19 @@ function blastText(text) {
 }
 
 
+// announcements
+
+function titleRepeat(title) {
+    var copy = title.html();
+    for(i = 0; i < 9; i++) {
+        title.append("<br>" + copy);
+    }
+}
+
+var announcementTitle = $('.announcement-title');
+
+titleRepeat(announcementTitle);
+
 
 // temporary include of blast.js --> learn how to use CodeKit to compile!
 

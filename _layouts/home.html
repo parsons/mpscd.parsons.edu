@@ -12,6 +12,21 @@
       <div class="background-image"></div>
     </div>
 
+    <div class="announcement-container">
+        {% for announcement in site.data.announcements.announcements %}
+        <p>
+          <div class="announcement-title">{{ announcement.title }}</div>
+          <div>{{ announcement.subtitle }}</div>
+          <div>{{ announcement.description }}</div>
+          <div>{{ announcement.decoration }}</div>
+          <div class="announcement-link"><a href="{{ announcement.link }}">Here</a></div>
+          <a href="{{ announcement.link }}" class="announcement-close">Close</a>
+        </p>
+        {% endfor %}
+    </div>
+
+
+
     <div class="sidebar-info"><h6>INFO</h6></div>
     <div class="sidebar-arrow"></div>
     <div class="sidebar">
