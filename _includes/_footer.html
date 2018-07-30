@@ -4,7 +4,7 @@
             <div class="row">
               <div class="col">
                 <hr>
-                <ul class="u-mbmd">
+                <ul class="u-mbmd footer-main">
                 {% for link in site.data.navigation.primary %}
                   {% assign class = nil %}
                   {% if page.url contains link.url %}
@@ -13,9 +13,10 @@
                   <li><h1><a href="{{ link.url }}" title="{{ link.title }}" class="{{ class }} hover-text-outline">{{ link.title }}</a></h1></li>
                 {% endfor %}
                 </ul>
-                <ul class="u-mbmd">
+                <ul class="u-mbmd footer-sub">
                 {% for link in site.data.navigation.secondary %}
-                  <li><h4><a href="{{ link.url }}" title="{{ link.title }}" class="hover-text-outline">{{ link.title }}</a></h4></li>
+                  <li><h4>{{ link.title }}</h4></li>
+                  <li>{{ link.caption }}<a href="{{ link.url }}" title="{{ link.url-title }}">{{ link.url-title }}</a></li>
                 {% endfor %}
                 </ul>
               </div>

@@ -175,6 +175,7 @@ position: relative;
 
 .footer {
 
+
   p,
   {
     font-size: $text-sm;
@@ -187,6 +188,32 @@ position: relative;
 
     &:hover {
 
+    }
+
+  }
+}
+
+.footer-main {
+  display: none;
+
+  @include sm {
+    display: block;
+  }
+}
+
+.footer-sub>li {
+  margin: $space-xs 0 !important;
+  font-size: $text-xs-xs;
+
+  @include sm {
+    font-size: $text-xs;
+  }
+
+  a {
+    border-bottom: 1px dotted $color-dark;
+    
+    &:hover {
+      border-bottom: 1px solid $color-dark;
     }
 
   }

@@ -11,10 +11,18 @@ primary:
 
 secondary:
   - title: "Request Information"
+    caption: "More information can be found from the New School Admission Office&rsquo;s "
+    url-title: Admissions Request Form
     url: https://newschool.askadmissions.net/emtinterestpage.aspx?ip=graduate&_ga=2.43064037.1577567439.1531343203-1635439531.1489622663
   - title: "Admission Events"
+    caption: "Find out about upcoming events using the "
+    url-title: Graduate Admission Events Calendar
     url: https://www.newschool.edu/parsons/grad-admission-events/
   - title: "Admission Contact"
+    caption: "Admissions Office: "
+    url-title: thinkparsonsgrad@newschool.edu
     url: mailto:thinkparsonsgrad@newschool.edu?subject=MPS Communication Design Program Inquiry
   - title: "Program Contact"
+    caption: "Brendan Griffiths, Program Director: "
+    url-title: "brendan@newschool.edu"
     url: mailto:brendan@newschool.edu?subject=MPS Communication Design Program Inquiry

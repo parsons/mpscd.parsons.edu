@@ -316,6 +316,11 @@ var announcementTitle = $('.announcement-title');
 
 titleRepeat(announcementTitle);
 
+$(".announcement-close").on("click", function(){
+    $(".announcement-container").addClass("hidden");
+});
+
+
 
 // temporary include of blast.js --> learn how to use CodeKit to compile!
 

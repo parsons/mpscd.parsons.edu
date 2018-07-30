@@ -326,7 +326,7 @@ $announcement-text: white;
   color: $announcement-text;
   z-index: 30;
   font-family: $font-secondary;
-  font-size: $text-md;
+  font-size: $text-xs-md;
   text-transform: uppercase;
   padding: $space-xs;
 
@@ -337,6 +337,11 @@ $announcement-text: white;
   & a {
     display: block;
   }
+
+  @include sm {
+    font-size: $text-md;
+  }
+
 }
 
 .announcement-link {
@@ -363,6 +368,18 @@ $announcement-text: white;
 
 }
 
+.announcement-subtitle {
+ margin-bottom: $space-md;
+}
+
+
 .announcement-close {
-  text-decoration: underline;
+  border-bottom: 1px dotted $announcement-text;
+  position: absolute;
+  bottom: $space-xs;
+
+  &:hover {
+    border-bottom: 1px solid $announcement-text;
+    cursor: pointer;
+  }
 }
