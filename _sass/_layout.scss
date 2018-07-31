@@ -9,6 +9,7 @@
   width: $info-width-xs;
   transition: 0.2s;
   overflow: scroll !important;
+  -webkit-overflow-scrolling: touch;
 
 
   @include sm {
