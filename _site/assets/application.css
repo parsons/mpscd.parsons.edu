@@ -12464,7 +12464,8 @@ h6.t-set, .t-set h6 {
       font-size: 12px; } }
 
 p.t-set, .t-set p, .t-set li {
-  margin-bottom: 36px; }
+  margin-bottom: 36px;
+  max-width: 600px; }
 
 li.t-set {
   margin-bottom: 0; }
@@ -12642,11 +12643,13 @@ img {
 
 .info {
   z-index: 10;
-  position: absolute;
+  position: fixed;
+  height: 100vh;
   background: #ffffff;
   border-right: 1px solid #000000;
   width: 90%;
-  transition: 0.2s; }
+  transition: 0.2s;
+  overflow: scroll !important; }
   @media screen and (min-width: 576px) {
     .info {
       width: 75%;
@@ -12654,16 +12657,17 @@ img {
   @media screen and (min-width: 1000px) {
     .info {
       width: 50%;
-      max-width: 600px;
+      max-width: 800px;
       padding-left: 36px; } }
 
 .explore {
   z-index: 0;
-  position: absolute;
+  position: relative;
   margin-left: 36px;
   cursor: pointer; }
   .explore.explore-open {
-    cursor: default; }
+    cursor: default;
+    position: absolute; }
   .explore.lightbox-open {
     filter: blur(20px); }
 
@@ -13138,5 +13142,11 @@ body {
   font-family: "'MPS-Sans-Regular', Courier"; }
 
 .blast-character-excl,
-.blast-character-quest {
+.blast-character-quest,
+.blast-character-one,
+.blast-character-two {
   font-family: "'MPS-Sans-Regular', Courier"; }
+
+.mps-sans {
+  font-family: "'MPS-Sans-Regular', Courier";
+  display: inline-block; }

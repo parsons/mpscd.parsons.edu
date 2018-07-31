@@ -283,6 +283,7 @@ h6 {
 p {
   &.t-set{
     margin-bottom: $space-sm;
+    max-width: 600px;
   }
 }
 

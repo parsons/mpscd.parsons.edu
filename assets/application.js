@@ -29,7 +29,7 @@ $(window).resize(function(){
 });
 
 
-// Captioning
+// Captioning ---------------------------------------------
 
 let caption;
 let creator;
@@ -47,7 +47,7 @@ let removeCaption = function(destination){
 };
 
 
-// Caption for explore
+// Caption for explore ----------------------------------------------
 
 $(".explore-item").hover(function(){
     source = $(this);
@@ -57,7 +57,7 @@ $(".explore-item").hover(function(){
 });
 
 
-// isotope
+// isotope ------------------------------------------------------------
 
 let $explore = $('.explore').isotope({
   // options
@@ -73,7 +73,7 @@ $explore.imagesLoaded().progress( function(){
 });
 
 
-// listing functionality
+// listing functionality -------------------------------------------------
 
 $(".listing").on("click", function() {
   var $description = $(this).children(".listing-description");
@@ -99,7 +99,7 @@ $(".listing").hover(
 );
 
 
-// nav functionality
+// nav functionality -----------------------------------------------------
 
 $(".nav-title").on("click", function() {
   console.log("hello!");
@@ -120,7 +120,7 @@ $(".nav-title").on("click", function() {
 });
 
 
-// explore functionality -------------------------------
+// explore functionality ---------------------------------------------------
 
 
 // sets up array of elements to change in explore state
@@ -143,7 +143,7 @@ $(".explore").hover(function() {
   }
 );
 
-// clicking into explore section
+// clicking into explore section ----------------------------------------------
 function exploreOpen(element) {
   $(element).addClass("explore-open"); 
 };
@@ -162,7 +162,7 @@ $(".explore").on("click", function() {
 }
 );
 
-// leaving the explore section
+// leaving the explore section ----------------------------------------------------
 
 $(".sidebar, .sidebar-info, .sidebar-arrow").hover(function() {
     if ($(this).hasClass("explore-open")) {
@@ -193,7 +193,8 @@ $(".sidebar, .sidebar-info, .sidebar-arrow").on("click", function() {
 
 });
 
-// Lightbox!!!!
+// Lightbox!!!! -------------------------------------------------
+
 function lightboxOpen(element) {
     $(element).addClass("lightbox-open"); 
   };
@@ -222,7 +223,7 @@ $(".explore-item").on("click", function(){
         addCaption(source, ".lightbox-caption");
 
         link = $(".lightbox-caption").children(".caption-student");
-        if (link.html()!== ""){link.append(" &rarr;");};
+        if (link.html()!== ""){link.append("<div class='mps-sans'>&#x2192;</div>");};
         studentCaptionLink(source, link);
     
         var image = $(this).html();
@@ -240,7 +241,7 @@ $(".lightbox-close").on("click", function(){
 
 
 
-// image filtering functions
+// image filtering functions --------------------------------------------------
 
 $(".filter-list").children().first().on("click", function() {
   var $subMenu = $(this).siblings();
@@ -269,7 +270,7 @@ $(".filter-list").children(".sub-menu").children(".ui-pill").on("click", functio
 
 
 
-// font replacer!
+// font replacer! --------------------------------------------------
 $(document).ready(function(){
 
   var text = $("h1, h3, h4");
@@ -296,6 +297,12 @@ function blastText(text) {
                     if ($(this).hasClass("blast-character-?")) {
                         $(this).addClass("blast-character-quest").removeClass("blast-character-?");
                     }
+                    if ($(this).hasClass("blast-character-1")) {
+                        $(this).addClass("blast-character-one").removeClass("blast-character-1");
+                    }
+                    if ($(this).hasClass("blast-character-2")) {
+                        $(this).addClass("blast-character-two").removeClass("blast-character-2");
+                    }
           } else {
             $(this).addClass('lowercase');
           }
@@ -303,7 +310,7 @@ function blastText(text) {
 }
 
 
-// announcements
+// announcements -----------------------------------------
 
 function titleRepeat(title) {
     var copy = title.html();
