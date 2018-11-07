@@ -68,6 +68,34 @@
 // listing stuff
 
 .listing {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  .listing-name {
+    margin-left: $space-xs;
+  }
+
+  h3::after {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-text-stroke-width: 0;
+    content: attr(data-external);
+    font-size: $text-xs-xxs;
+    margin-left: $space-xs;
+    color: black;
+    @include sm {
+      font-size: $text-xxs;
+    }
+  }
+
+  h3:hover::after {
+    opacity: 1;
+  }
 }
 
 .listing-description {
@@ -89,14 +117,14 @@
 
 .ui-arrow {
   width: 24px;
-  height: 18px;
+  height: 24px;
   margin-top: 8px;
   background-origin: content-box;
-  margin-left: -10px;
+  margin-right: $space-xs;
   background-position: center;
-  background-image: url("images/down-arrow.svg");
+  background-image: url("images/right-arrow.svg");
   display: inline-block;
-  background-size: 24px 18px;
+  background-size: 24px;
   background-repeat: no-repeat;
   transform-origin: center;
   transform: rotate(0deg);
@@ -108,12 +136,10 @@
   transition: all 0.2s ease-in-out;
 
   &.text-outline {
-    background-image: url("images/down-arrow-open.svg");
+    transform: rotate(-45deg);
   }
-  &.rotate-180 {
-    transform-origin: center;
-    transform: rotate(180deg);
-  }
+
+
 }
 
 
@@ -180,7 +206,7 @@
 
   &.explore-open{
     display: inline-block !important;
-    
+
     &.lightbox-open{
         filter: blur($blur-extra);
       }
@@ -228,7 +254,7 @@
   @include sm {
     &.explore-open {
     display:block;
-    
+
       &.lightbox-open{
         filter: blur($blur-extra);
       }

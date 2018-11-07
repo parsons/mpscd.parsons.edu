@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/.sass-cache/11d7036e85550eb146e60f0a57d71d12af5b7118/_alert.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -1021,16 +1028,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/_sass/_lib/ajaxchimp/jquery.ajaxchimp.langs-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/_sass/_lib/blast/blast.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/_sass/_lib/blast/blast-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -2441,6 +2438,16 @@
 		"oAP": "/_site/apply/index.html",
 		"oF": 0
 		},
+	"/_site/assets/application-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/_site/assets/application-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/_site/assets/application.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2548,6 +2555,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/_site/assets/images/right-arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/_site/assets/images/right-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/_site/assets/images/sizer.png": {
 		"ft": 32768,
@@ -2700,6 +2717,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/_site/assets/main-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/_site/assets/main-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/_site/assets/main.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2842,10 +2869,10 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/assets/application-min.js",
-		"oF": 0,
+		"oAP": "/_site/assets/application.min.js",
+		"oF": 3,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"/assets/application.scss": {
 		"aP": 0,
@@ -2983,6 +3010,16 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "/assets/images/placeholder/_placeholder-4-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/images/right-arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/right-arrow.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
