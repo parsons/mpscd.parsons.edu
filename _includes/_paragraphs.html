@@ -1,0 +1,11 @@
+{% assign data = site.data.pages[include.page] %}
+
+{% for p in data %}
+
+  <h1>{{ p.title }}</h1>
+
+  {% for paragraph in p.paragraphs %}
+    <p>{{ paragraph }}</p>
+  {% endfor %}
+
+{% endfor %}
