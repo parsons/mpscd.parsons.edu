@@ -12704,7 +12704,7 @@ img {
     @media screen and (min-width: 576px) {
       .listing h3::after {
         font-size: 12px; } }
-  .listing h3:hover::after {
+  .listing:hover h3::after {
     opacity: 1; }
 
 .listing-description {

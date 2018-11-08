@@ -93,7 +93,7 @@
     }
   }
 
-  h3:hover::after {
+  &:hover h3::after {
     opacity: 1;
   }
 }
