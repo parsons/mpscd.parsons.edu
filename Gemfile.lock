@@ -10,6 +10,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.3)
+    cssminify2 (2.0.1)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -20,6 +21,7 @@ GEM
     fastimage (2.1.4)
     ffi (1.9.25)
     forwardable-extended (2.6.0)
+    htmlcompressor (0.4.0)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -49,6 +51,11 @@ GEM
       sprockets (>= 3.3, < 4.1.beta)
     jekyll-feed (0.11.0)
       jekyll (~> 3.3)
+    jekyll-minifier (0.1.6)
+      cssminify2 (~> 2.0)
+      htmlcompressor (~> 0.3)
+      jekyll (~> 3.5)
+      uglifier (~> 3.2)
     jekyll-sanity (1.2.0)
       jekyll (~> 3.1)
     jekyll-sass-converter (1.5.2)
@@ -96,6 +103,8 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    uglifier (3.2.0)
+      execjs (>= 0.3.0, < 3)
 
 PLATFORMS
   ruby
@@ -104,6 +113,7 @@ DEPENDENCIES
   jekyll (~> 3.8.3)
   jekyll-assets
   jekyll-feed (~> 0.6)
+  jekyll-minifier
   minima (~> 2.0)
   tzinfo-data
 

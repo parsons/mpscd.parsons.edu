@@ -1,0 +1,158 @@
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  margin: 0;
+}
+
+body {
+  background-color: $color-brand-secondary;
+  position: relative;
+  min-height: 100vh;
+  // @include cursor-default;
+
+  .touch & {
+    cursor: pointer;
+
+    div {
+      cursor: pointer;
+    }
+  }
+}
+
+.sv-badge {
+  display: none !important;
+}
+
+::selection {
+  background: $color-mid;
+}
+
+
+/*
+// A few global styling classes
+*/
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.hidden {
+  display:none !important;
+}
+
+// blur
+
+.blur-full {
+  filter: blur(10px);
+}
+
+.blur-hover {
+  filter: blur(3px);
+
+  * {
+    filter: blur(3px);
+  }
+
+  img {
+    filter: blur(3px);
+  }
+}
+
+.blur-none, .blur-0 {
+  filter: blur(0);
+
+  * {
+    filter: blur(0);
+  }
+}
+
+
+
+// text styling classes
+
+.text-reverse {
+  color: $color-light !important;
+  background: $color-dark !important;
+}
+
+.apply-button {
+  padding-left: 18px;
+  padding-right: 18px;
+  color: $color-light !important;
+  background: $color-dark !important;
+
+  &:hover {
+    background: $color-light !important;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: $color-base;
+    border: 1px solid $color-base;
+  }
+}
+
+.text-outline {
+  color: $color-light !important;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: $color-base;
+
+  &.hover-reverse{
+    &:hover{
+      color: rgba(0,0,0,0) !important;
+      -webkit-text-stroke-width: 0.8px;
+      -webkit-text-stroke-color: $color-base;}
+  }
+}
+
+.hover-text-outline {
+  &:hover{
+  color: $color-light !important;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: $color-base;
+  }
+}
+
+
+// functionality for layer transitions
+
+.push-left {
+  transition-timing-function: ease-in-out;
+  transform: translateX(-$space-xxs);
+}
+
+.push-left-full {
+  transform: translateX(-100%);
+}
+
+
+// text replacement!
+
+.blast-character-a,
+.blast-character-c,
+.blast-character-d,
+.blast-character-m,
+.blast-character-p,
+.blast-character-s {
+  &.uppercase
+  {font-family: $font-tertiary;}
+}
+
+.blast-character-o,
+.blast-character-g {
+  &.lowercase
+  {font-family: $font-tertiary;}
+}
+
+.blast-character-excl,
+.blast-character-quest,
+.blast-character-one,
+.blast-character-two {
+  font-family: $font-tertiary;
+}
+
+
+.mps-sans {
+  font-family:  $font-tertiary;
+  display: inline-block;
+}

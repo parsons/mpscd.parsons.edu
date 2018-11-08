@@ -1,0 +1,12 @@
+<div class="announcement-container">
+    {% for announcement in site.data.announcements.announcements %}
+    <p>
+      <div class="announcement-title">{{ announcement.title }}</div>
+      <div class="announcement-subtitle">{{ announcement.subtitle }}</div>
+      <div>{{ announcement.description }}</div>
+      <div>{{ announcement.decoration }}</div>
+      <div class="announcement-link"><a href="{{ announcement.link }}">Here</a></div>
+      <div class="announcement-close">Close</div>
+    </p>
+    {% endfor %}
+</div>

@@ -2,7 +2,7 @@
 layout: home
 title: Apply
 permalink: /apply/
-include: _apply.html
+include: apply.html
 filter: "Everything"
 filter-class: "everything"
 ---

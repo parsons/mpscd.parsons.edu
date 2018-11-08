@@ -1,0 +1,25 @@
+<h1>Who makes the present?</h1>
+
+<p>The program is tailored to practicing designers seeking to enhance their digital skills and leadership potential as well as professionals with relevant design experience who want to enter the field. It encompasses the full product development cycle in communication design — from idea conception to prototyping to feedback-based refinements — and familiarizes you with business strategy.</p>
+
+<hr>
+
+<h1>2019</h1>
+
+<ul class="ul-md columns-2">
+  {% for student in site.data.students.twenty-eighteen %}
+    <li class="u-mbn">{{ student.name }}</li>  
+  {% endfor %}
+</ul>
+
+<hr>
+
+<h1>2018</h1>
+
+<ul class="ul-md columns-2">
+    {% for student in site.data.students.twenty-nineteen %}
+      <li class="u-mbn">
+        <a href="{{ student.url }}" title="{{ student.url-title }}">{{ student.name }}</a>
+      </li>  
+    {% endfor %}
+</ul>

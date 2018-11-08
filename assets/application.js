@@ -12,29 +12,47 @@
 */
 
 !function($) {
-
-
 }(window.jQuery);
 
-$(window).load(function(){
-  console.log('window loaded!');
+/////////////////
+// VARIABLES
+
+var $body = $('body');
+var $window = $(window);
+var $listing = $('div.listing');
+
+
+
+/////////////////
+// LOADING PAGE
+
+$window.load(function(){
   pageLoaded = true;
-  $("body").scrollTop(0);
-  $("body").removeClass("preload");
-
+  $body.scrollTop(0).removeClass("preload");
 });
 
-$(window).resize(function(){
-  console.log('window resized!');
+
+/////////////////
+// FACULTY PAGE
+
+// listing functionality -------------------------------------------------
+
+$listing.hover( function() {
+  $(this).find("h3, .ui-arrow").toggleClass("text-outline");
 });
+
+
+
+
+
 
 
 // Captioning ---------------------------------------------
 
-let caption;
-let creator;
+var caption;
+var creator;
 
-let addCaption = function(source, destination){
+var addCaption = function(source, destination){
   caption = $(source).children("img").data("caption");
   creator = $(source).children("img").data("creator");
   $(destination).html("<h1 class='text-outline'>"+ caption +"</h1><h1 class='text-outline caption-student'>"+ creator +"</h1>");
@@ -42,7 +60,7 @@ let addCaption = function(source, destination){
   blastText(text);
 };
 
-let removeCaption = function(destination){
+var removeCaption = function(destination){
   $(destination).html("");
 };
 
@@ -59,7 +77,7 @@ $(".explore-item").hover(function(){
 
 // isotope ------------------------------------------------------------
 
-let $explore = $('.explore').isotope({
+var $explore = $('.explore').isotope({
   // options
   itemSelector: '.explore-item',
   layoutMode: 'masonry'
@@ -73,18 +91,6 @@ $explore.imagesLoaded().progress( function(){
 });
 
 
-// listing functionality -------------------------------------------------
-
-$(".listing").hover(
-  function() {
-  $(this).children(".listing-name").find("h3").addClass("text-outline");
-  $(this).children(".ui-arrow").addClass("text-outline");
-  }, function() {
-    $(this).children(".listing-name").find("h3").removeClass("text-outline");
-    $(this).children(".ui-arrow").removeClass("text-outline");
-    }
-);
-
 
 // nav functionality -----------------------------------------------------
 
@@ -97,11 +103,11 @@ $(".nav-title").on("click", function() {
   {
     $menu.addClass("collapse");
     $title.html("menu");
-    $("body").removeClass("overflow-hidden");
+    $body.removeClass("overflow-hidden");
   } else {
     $menu.removeClass("collapse");
     $title.html("close");
-    $("body").addClass("overflow-hidden");
+    $body.addClass("overflow-hidden");
   }
 
 });
@@ -202,7 +208,7 @@ function studentCaptionLink(source, link) {
 $(".explore-item").on("click", function(){
     if($(this).hasClass("explore-open")) {
         exploreArray.forEach(lightboxOpen);
-        $("body").addClass("overflow-hidden");
+        $body.addClass("overflow-hidden");
         $(".hover-caption").addClass("hidden");
         $(".filter-button").addClass("hidden");
 
@@ -220,7 +226,7 @@ $(".explore-item").on("click", function(){
 
 $(".lightbox-close").on("click", function(){
         exploreArray.forEach(lightboxClose);
-        $("body").removeClass("overflow-hidden");
+        $body.removeClass("overflow-hidden");
         $(".hover-caption").removeClass("hidden");
         $(".filter-button").removeClass("hidden");
 });

@@ -2,7 +2,7 @@
 layout: home
 title: Faculty
 permalink: /faculty/
-include: _faculty.html
+include: faculty.html
 filter: "Faculty"
 filter-class: "faculty"
 ---
