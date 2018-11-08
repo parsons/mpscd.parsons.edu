@@ -2,62 +2,30 @@
 
 <hr>
 
-<h1>Summer</h1>
+{% for course in site.data.curriculum %}
 
-{% for course in site.data.curriculum.summer %}
-<div class="row listing">
-  <div class="col-12 col-sm-3">
-    <h6>{{ course.number }}<br/>{{ course.credits }}</h6>
-  </div>
-  <div class="col-11 col-sm-8">
-      <h3>{{ course.title }}</h3>
-  </div>
-  <div class="ui-arrow col-1"></div>
-  <div class="col-12 col-sm-9 offset-sm-3 listing-description">
-      {{ course.description | markdownify }}
-      <p><a href="{{ course.url }}">{{ course.url-title }}</a></p>
-  </div>
-</div>
-{% endfor %}
+  <h1>{{ course[1].title }}</h1>
 
-<hr>
+  {% for c in course[1].courses %}
 
-<h1>First Semester</h1>
-
-{% for course in site.data.curriculum.first-semester %}
-<div class="row listing">
-        <div class="col-12 col-sm-3">
-          <h6>{{ course.number }}<br/>{{ course.credits }}</h6>
-        </div>
-        <div class="col-11 col-sm-8">
-            <h3>{{ course.title }}</h3>
-        </div>
-        <div class="ui-arrow col-1"></div>
-        <div class="col-12 col-sm-9 offset-sm-3 listing-description">
-            {{ course.description | markdownify }}
-            <p><a href="{{ course.url }}">{{ course.url-title }}</a></p>
-        </div>
+    <div class="row listing">
+      <div class="col-12 col-sm-3">
+        <h6>{{ c.number }}<br/>{{ c.credits }}</h6>
       </div>
-{% endfor %}
-
-<hr>
-
-<h1>Second Semester</h1>
-
-{% for course in site.data.curriculum.second-semester %}
-<div class="row listing">
-        <div class="col-12 col-sm-3">
-          <h6>{{ course.number }}<br/>{{ course.credits }}</h6>
-        </div>
-        <div class="col-11 col-sm-8">
-            <h3>{{ course.title }}</h3>
-        </div>
-        <div class="ui-arrow col-1"></div>
-        <div class="col-12 col-sm-9 offset-sm-3 listing-description">
-            {{ course.description | markdownify }}
-            <p><a href="{{ course.url }}">{{ course.url-title }}</a></p>
-        </div>
+      <div class="col-11 col-sm-8">
+          <h3>{{ c.title }}</h3>
       </div>
+      <div class="ui-arrow col-1"></div>
+      <div class="col-12 col-sm-9 offset-sm-3 listing-description">
+          {{ c.description | markdownify }}
+          <p><a href="{{ c.url }}">{{ c.url-title }}</a></p>
+      </div>
+    </div>
+
+  {% endfor %}
+
+  <hr>
+
 {% endfor %}
 
 <h4 class="u-mtsm">For a complete listing of courses and course descriptions, visit the <a href="">University Course Catalog</a>.</h4>

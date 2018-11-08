@@ -1,54 +1,63 @@
-#course descriptions and links
+## Course descriptions and links
 
+## Summer
 summer:
-  - title: "Typography and Interaction: Skills"
-    number: PMCD 5000
-    credits: 1 Credit
-    url-title: "2018"
-    url: https://brendangriffiths.com
-    description: |
-      In this weeklong intensive we will explore intermediate skills and methods to design visual language, form, and interaction. Students will learn how to critically observe and describe visual aspects of language found in analog and digital media, informed by historic typographic precedents, core typographic principles, and contemporary interaction design fundamentals. Additionally, the intensive introduces students to programming within a design context, using code as a means to express ideas formally. Students will practice and utilize a shared vocabulary to critically address how the visual form of language impacts communication, navigation, and behavior in both analog and screen-based media. This intensive experience will prepare students to successfully participate in the subsequent core program classes.
+  title: Summer
+  courses:
+    - title: "Typography and Interaction: Skills"
+      number: PMCD 5000
+      credits: 1 Credit
+      url-title: "2018"
+      url: https://brendangriffiths.com
+      description: |
+        In this weeklong intensive we will explore intermediate skills and methods to design visual language, form, and interaction. Students will learn how to critically observe and describe visual aspects of language found in analog and digital media, informed by historic typographic precedents, core typographic principles, and contemporary interaction design fundamentals. Additionally, the intensive introduces students to programming within a design context, using code as a means to express ideas formally. Students will practice and utilize a shared vocabulary to critically address how the visual form of language impacts communication, navigation, and behavior in both analog and screen-based media. This intensive experience will prepare students to successfully participate in the subsequent core program classes.
 
+## First semester
 first-semester:
-  - title: "Major Studio 1"
-    number: PMCD 5101
-    credits: 6 Credits
-    description: |
-      In this course we will examine the fundamentals of digital product design, including user research techniques, production methods for interactive applications, wireframing, and prototyping. We will investigate the interface, mechanism, controls, and aims of digital platforms. Students will learn how to design and develop complex digital products and mobile applications as they undertake comprehensive research to direct their thinking process from brainstorming to final outcome. Students will utilize tools to conceive, plan, and develop an interactive system, and they will become well versed in their role within the development of interactive media. The course expands on students’ existing understanding of programming languages used for digital prototyping.
-  - title: "Typography and Interaction 1"
-    number: PMCD 5001
-    credits: 2 Credits
-    description: |
-      In this course we will build upon the Typography and Interaction 1 Skills Intensive. Engaging intermediate and advanced methods in typography and interaction design, our goal is to successfully meet the challenges of dynamic content in print and on the web. These comprehensive methods will support students as they work to complete projects in the core studio courses. Students will learn how to address design problems meaningfully within the context of current design practice and technology frameworks, and how individual processes and methodologies influence a design outcome. Students will use their newly acquired design vocabulary to critically discuss and critique work produced by themselves and others.
-  - title: "Visual Culture Seminar"
-    number: PMCD 5200
-    credits: 3 Credits
-    description: |
-      In this seminar we will explore contemporary positions in communication design and discuss its future places in society and industry. The course is an exercise in critical thinking to understand the transformed and expanded nature of globalized visual culture in the 21st century and how design has shifted. Through panel discussions, lectures, and workshops led by industry leaders, researchers, and New School faculty, students will be invited to discuss the cultural landscape of communication design and understand its practices and contemporary working methods. Topics include: counterculture, service design, designer as author, digital craft, social justice and visual narratives, digital storytelling, and digital product design. The diversity of visiting professionals will promote critical interaction with opposing viewpoints as well as provide networking opportunities for students. Students will collaborate in groups to write an essay inflected by one of the lectures or panel discussions that will be published as a microsite.
-  - title: "Elective"
-    number: " "
-    credits: 3 Credits
-    description: |
-      Students should explore their elective options with their advisors to create a coherent study plan.
+  title: First semester
+  courses:
+    - title: "Major Studio 1"
+      number: PMCD 5101
+      credits: 6 Credits
+      description: |
+        In this course we will examine the fundamentals of digital product design, including user research techniques, production methods for interactive applications, wireframing, and prototyping. We will investigate the interface, mechanism, controls, and aims of digital platforms. Students will learn how to design and develop complex digital products and mobile applications as they undertake comprehensive research to direct their thinking process from brainstorming to final outcome. Students will utilize tools to conceive, plan, and develop an interactive system, and they will become well versed in their role within the development of interactive media. The course expands on students’ existing understanding of programming languages used for digital prototyping.
+    - title: "Typography and Interaction 1"
+      number: PMCD 5001
+      credits: 2 Credits
+      description: |
+        In this course we will build upon the Typography and Interaction 1 Skills Intensive. Engaging intermediate and advanced methods in typography and interaction design, our goal is to successfully meet the challenges of dynamic content in print and on the web. These comprehensive methods will support students as they work to complete projects in the core studio courses. Students will learn how to address design problems meaningfully within the context of current design practice and technology frameworks, and how individual processes and methodologies influence a design outcome. Students will use their newly acquired design vocabulary to critically discuss and critique work produced by themselves and others.
+    - title: "Visual Culture Seminar"
+      number: PMCD 5200
+      credits: 3 Credits
+      description: |
+        In this seminar we will explore contemporary positions in communication design and discuss its future places in society and industry. The course is an exercise in critical thinking to understand the transformed and expanded nature of globalized visual culture in the 21st century and how design has shifted. Through panel discussions, lectures, and workshops led by industry leaders, researchers, and New School faculty, students will be invited to discuss the cultural landscape of communication design and understand its practices and contemporary working methods. Topics include: counterculture, service design, designer as author, digital craft, social justice and visual narratives, digital storytelling, and digital product design. The diversity of visiting professionals will promote critical interaction with opposing viewpoints as well as provide networking opportunities for students. Students will collaborate in groups to write an essay inflected by one of the lectures or panel discussions that will be published as a microsite.
+    - title: "Elective"
+      number: " "
+      credits: 3 Credits
+      description: |
+        Students should explore their elective options with their advisors to create a coherent study plan.
 
+## Second semester
 second-semester:
-  - title: "Major Studio 2"
-    number: PMCD 5102
-    credits: 6 Credits
-    description: |
-      In this seminar, we explore contemporary positions in communication design and discuss its future place in society and industry. The course is an exercise in critical thinking in which students come to understand the transformed and expanded nature of globalized visual culture in the 21st century and how design has shifted. Through panel discussions, lectures, and workshops led by industry leaders, researchers, and New School faculty, students are invited to discuss the cultural landscape of communication design and understand its practices and contemporary working methods. Topics covered include counterculture, service design, designer as author, digital craft, social justice and visual narratives, digital storytelling, and digital product design. The diversity of visiting professionals promotes critical interaction with opposing viewpoints and provides networking opportunities for students. Students collaborate in groups to write an essay informed by one of the lectures or panel discussions that will be published as a microsite.
-  - title: "Typography and Interaction 2"
-    number: PMCD 5002
-    credits: 3 Credits
-    description: |
-      In this course, we build upon knowledge of dynamic content and interactivity by addressing advanced typographic strategies and interactive skills oriented toward publishing and archiving. Sessions focus on methods relevant to digital production, including content management systems, databases, and responsive workflows. Students apply their understanding of typography and interaction principles to design screen-based projects from start to finish. This course culminates in the production of a functional portfolio site critically informed by students’ design practice and developed in tandem with the Methods and Practices class.
-  - title: "Methods and Practices"
-    number: PMCD 5300
-    credits: 3 Credits
-    description: |
-      In this course we will explore contemporary working methods and models for communication designers with a focus on digital product design. Students will be exposed to a wide variety of practice models via a series of guest lectures, workshops, and presentations from independent small studios to in-house creative teams and large agencies. As the discipline of design expands, this course attempts to chart novel and alternative working contexts within the industry. Students will discuss professional working processes which include but are not limited to: business communication best practices, business plans, marketing and promotion, bidding, ethics, copyright, editing and packaging work for delivery, and networking.
-  - title: "Collab"
-    number: PMCD 5550
-    credits: 3 Credits
-    description: |
-      Students should explore their elective options with their advisors to create a coherent study plan.
+  title: Second semester
+  courses:
+    - title: "Major Studio 2"
+      number: PMCD 5102
+      credits: 6 Credits
+      description: |
+        In this seminar, we explore contemporary positions in communication design and discuss its future place in society and industry. The course is an exercise in critical thinking in which students come to understand the transformed and expanded nature of globalized visual culture in the 21st century and how design has shifted. Through panel discussions, lectures, and workshops led by industry leaders, researchers, and New School faculty, students are invited to discuss the cultural landscape of communication design and understand its practices and contemporary working methods. Topics covered include counterculture, service design, designer as author, digital craft, social justice and visual narratives, digital storytelling, and digital product design. The diversity of visiting professionals promotes critical interaction with opposing viewpoints and provides networking opportunities for students. Students collaborate in groups to write an essay informed by one of the lectures or panel discussions that will be published as a microsite.
+    - title: "Typography and Interaction 2"
+      number: PMCD 5002
+      credits: 3 Credits
+      description: |
+        In this course, we build upon knowledge of dynamic content and interactivity by addressing advanced typographic strategies and interactive skills oriented toward publishing and archiving. Sessions focus on methods relevant to digital production, including content management systems, databases, and responsive workflows. Students apply their understanding of typography and interaction principles to design screen-based projects from start to finish. This course culminates in the production of a functional portfolio site critically informed by students’ design practice and developed in tandem with the Methods and Practices class.
+    - title: "Methods and Practices"
+      number: PMCD 5300
+      credits: 3 Credits
+      description: |
+        In this course we will explore contemporary working methods and models for communication designers with a focus on digital product design. Students will be exposed to a wide variety of practice models via a series of guest lectures, workshops, and presentations from independent small studios to in-house creative teams and large agencies. As the discipline of design expands, this course attempts to chart novel and alternative working contexts within the industry. Students will discuss professional working processes which include but are not limited to: business communication best practices, business plans, marketing and promotion, bidding, ethics, copyright, editing and packaging work for delivery, and networking.
+    - title: "Collab"
+      number: PMCD 5550
+      credits: 3 Credits
+      description: |
+        Students should explore their elective options with their advisors to create a coherent study plan.
