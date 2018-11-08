@@ -19,8 +19,14 @@
 
 var $body = $('body');
 var $window = $(window);
-var $listing = $('div.listing');
+var $document = $(document);
 
+var blastArray = [];
+
+var $listing = $('div.listing');
+var $textReplaced = $("h1, h3, h4");
+var regexLetters = new RegExp("^[a-z]+$");
+var letterRecurrence = 3; // Ex: 4 = 1/4 of the letters replaced
 
 
 /////////////////
@@ -29,6 +35,32 @@ var $listing = $('div.listing');
 $window.load(function(){
   pageLoaded = true;
   $body.scrollTop(0).removeClass("preload");
+});
+
+
+/////////////////
+// TYPEFACE
+
+var blastText = function() {
+  $textReplaced.blast({
+    delimiter: "character",
+    generateValueClass: true
+  });
+  $('.blast').each(function(){
+    if (regexLetters.test(this.innerHTML)) {
+      blastArray.push(this);
+    };
+  });
+  blastArray.sort(function() {
+    return 0.5 - Math.random()
+  });
+  for (var i = 0; i < blastArray.length; i = i + letterRecurrence){
+    blastArray[i].classList.add('mps-sans');
+  }
+};
+
+$document.ready(function(){
+  blastText();
 });
 
 
@@ -47,6 +79,18 @@ $listing.hover( function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 // Captioning ---------------------------------------------
 
 var caption;
@@ -57,7 +101,7 @@ var addCaption = function(source, destination){
   creator = $(source).children("img").data("creator");
   $(destination).html("<h1 class='text-outline'>"+ caption +"</h1><h1 class='text-outline caption-student'>"+ creator +"</h1>");
   var text = $(destination);
-  blastText(text);
+  // blastText(text);
 };
 
 var removeCaption = function(destination){
@@ -264,43 +308,6 @@ $(".filter-list").children(".sub-menu").children(".ui-pill").on("click", functio
 
 
 // font replacer! --------------------------------------------------
-$(document).ready(function(){
-
-  var text = $("h1, h3, h4");
-  blastText(text);
-});
-
-
-function blastText(text) {
-  $(text).blast({
-    delimiter: "character",
-    generateValueClass: true
-  });
-
-  // test for caps,
-  $('.blast').each(function(){
-    var character = this.innerHTML;
-    // console.log(character);
-              if (character == character.toUpperCase()) {
-            //   console.log('upper case true');
-              $(this).addClass('uppercase');
-                    if ($(this).hasClass("blast-character-!")) {
-                        $(this).addClass("blast-character-excl").removeClass("blast-character-!");
-                    }
-                    if ($(this).hasClass("blast-character-?")) {
-                        $(this).addClass("blast-character-quest").removeClass("blast-character-?");
-                    }
-                    if ($(this).hasClass("blast-character-1")) {
-                        $(this).addClass("blast-character-one").removeClass("blast-character-1");
-                    }
-                    if ($(this).hasClass("blast-character-2")) {
-                        $(this).addClass("blast-character-two").removeClass("blast-character-2");
-                    }
-          } else {
-            $(this).addClass('lowercase');
-          }
-  });
-}
 
 
 // announcements -----------------------------------------

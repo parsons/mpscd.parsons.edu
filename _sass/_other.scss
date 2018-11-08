@@ -128,31 +128,12 @@ body {
 
 // text replacement!
 
-.blast-character-a,
-.blast-character-c,
-.blast-character-d,
-.blast-character-m,
-.blast-character-p,
-.blast-character-s {
-  &.uppercase
-  {font-family: $font-tertiary;}
-}
-
-.blast-character-o,
-.blast-character-g {
-  &.lowercase
-  {font-family: $font-tertiary;}
-}
-
-.blast-character-excl,
-.blast-character-quest,
-.blast-character-one,
-.blast-character-two {
-  font-family: $font-tertiary;
+.blast{
+  white-space:nowrap;
 }
 
 
 .mps-sans {
   font-family:  $font-tertiary;
-  display: inline-block;
+  white-space:nowrap;
 }
