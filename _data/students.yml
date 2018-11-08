@@ -1,77 +1,81 @@
 #faculty descriptions and links
 
 twenty-eighteen:
-  - name: "Husani Barnwell"
-    url-title: "Husani Barnwell"
-    url: http://husanibarnwell.com
-  - name: "Carolyn Berry"
-    url-title: "Carolyn Berry"
-    url: ""
-  - name: "Poppy Chen"
-    url-title: "Poppy Chen"
-    url: http://poppychen.com
-  - name: "Sheila Cheng"
-    url-title: "Sheila Cheng"
-    url: http://sheilacheng.com
-  - name: "Samia Husari"
-    url-title: "Samia Husari"
-    url: http://samia.design
-  - name: "Vidya Keshavan"
-    url-title: "Vidya Keshavan"
-    url: ""
-  - name: "Diana Mejia"
-    url-title: "Diana Mejia"
-    url: ""
-  - name: "Nikhil Misra"
-    url-title: "Nikhil Misra"
-    url: http://www.nikhilmisra.com
-  - name: "Patricia Robinson"
-    url-title: "Patricia Robinson"
-    url: https://patriciarobinson.com
-  - name: "Sonali Sampat"
-    url-title: "Sonali Sampat"
-    url: https://www.sonalisampat.com
-  - name: "Danielle Santucci"
-    url-title: "Danielle Santucci"
-    url: http://danielle-santucci.com
-  - name: "Patrick Serr"
-    url-title: "Patrick Serr"
-    url: http://patrickserr.com
+  year: 2018
+  students:
+    - name: "Husani Barnwell"
+      url-title: "Husani Barnwell"
+      url: http://husanibarnwell.com
+    - name: "Carolyn Berry"
+      url-title: "Carolyn Berry"
+      url: ""
+    - name: "Poppy Chen"
+      url-title: "Poppy Chen"
+      url: http://poppychen.com
+    - name: "Sheila Cheng"
+      url-title: "Sheila Cheng"
+      url: http://sheilacheng.com
+    - name: "Samia Husari"
+      url-title: "Samia Husari"
+      url: http://samia.design
+    - name: "Vidya Keshavan"
+      url-title: "Vidya Keshavan"
+      url: ""
+    - name: "Diana Mejia"
+      url-title: "Diana Mejia"
+      url: ""
+    - name: "Nikhil Misra"
+      url-title: "Nikhil Misra"
+      url: http://www.nikhilmisra.com
+    - name: "Patricia Robinson"
+      url-title: "Patricia Robinson"
+      url: https://patriciarobinson.com
+    - name: "Sonali Sampat"
+      url-title: "Sonali Sampat"
+      url: https://www.sonalisampat.com
+    - name: "Danielle Santucci"
+      url-title: "Danielle Santucci"
+      url: http://danielle-santucci.com
+    - name: "Patrick Serr"
+      url-title: "Patrick Serr"
+      url: http://patrickserr.com
 
 twenty-nineteen:
-  - name: "Husani Barnwell"
-    url-title: "Husani Barnwell"
-    url: http://husanibarnwell.com
-  - name: "Carolyn Berry"
-    url-title: "Carolyn Berry"
-    url: ""
-  - name: "Poppy Chen"
-    url-title: "Poppy Chen"
-    url: http://poppychen.com
-  - name: "Sheila Cheng"
-    url-title: "Sheila Cheng"
-    url: http://sheilacheng.com
-  - name: "Samia Husari"
-    url-title: "Samia Husari"
-    url: http://samia.design
-  - name: "Vidya Keshavan"
-    url-title: "Vidya Keshavan"
-    url: ""
-  - name: "Diana Mejia"
-    url-title: "Diana Mejia"
-    url: ""
-  - name: "Nikhil Misra"
-    url-title: "Nikhil Misra"
-    url: http://www.nikhilmisra.com
-  - name: "Patricia Robinson"
-    url-title: "Patricia Robinson"
-    url: https://patriciarobinson.com
-  - name: "Sonali Sampat"
-    url-title: "Sonali Sampat"
-    url: https://www.sonalisampat.com
-  - name: "Danielle Santucci"
-    url-title: "Danielle Santucci"
-    url: http://danielle-santucci.com
-  - name: "Patrick Serr"
-    url-title: "Patrick Serr"
-    url: http://patrickserr.com
+  year: 2019
+  students:
+    - name: "Husani Barnwell"
+      url-title: "Husani Barnwell"
+      url: http://husanibarnwell.com
+    - name: "Carolyn Berry"
+      url-title: "Carolyn Berry"
+      url: ""
+    - name: "Poppy Chen"
+      url-title: "Poppy Chen"
+      url: http://poppychen.com
+    - name: "Sheila Cheng"
+      url-title: "Sheila Cheng"
+      url: http://sheilacheng.com
+    - name: "Samia Husari"
+      url-title: "Samia Husari"
+      url: http://samia.design
+    - name: "Vidya Keshavan"
+      url-title: "Vidya Keshavan"
+      url: ""
+    - name: "Diana Mejia"
+      url-title: "Diana Mejia"
+      url: ""
+    - name: "Nikhil Misra"
+      url-title: "Nikhil Misra"
+      url: http://www.nikhilmisra.com
+    - name: "Patricia Robinson"
+      url-title: "Patricia Robinson"
+      url: https://patriciarobinson.com
+    - name: "Sonali Sampat"
+      url-title: "Sonali Sampat"
+      url: https://www.sonalisampat.com
+    - name: "Danielle Santucci"
+      url-title: "Danielle Santucci"
+      url: http://danielle-santucci.com
+    - name: "Patrick Serr"
+      url-title: "Patrick Serr"
+      url: http://patrickserr.com

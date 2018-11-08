@@ -1,7 +1,9 @@
 {% include _paragraphs.html page="apply" %}
 
 <div>
-  <h1><a href="https://app.applyyourself.com/AYApplicantLogin/fl_ApplicantConnectLogin.asp?id=newschool&_ga=2.43064037.1577567439.1531343203-1635439531.1489622663" class="text-reverse apply-button">Apply &rarr;</a></h1>
+  <h1><a href="{{ site.data.website.apply.link }}" class="text-reverse apply-button">Apply &rarr;</a></h1>
 </div>
 
-<h4>For more information, please contact our <a href="https://newschool.askadmissions.net/emtinterestpage.aspx?ip=graduate&_ga=2.43064037.1577567439.1531343203-1635439531.1489622663">admissions office</a>.</h4>
+<h4>{{ site.data.website.apply.contact-text | markdownify }}</h4>
+
+<hr>

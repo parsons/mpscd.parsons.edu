@@ -4,8 +4,6 @@
 
   <h1>{{ p.title }}</h1>
 
-  {% for paragraph in p.paragraphs %}
-    <p>{{ paragraph }}</p>
-  {% endfor %}
+  {{ p.paragraphs | markdownify }}
 
 {% endfor %}

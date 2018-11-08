@@ -28,4 +28,6 @@
 
 {% endfor %}
 
-<h4 class="u-mtsm">For a complete listing of courses and course descriptions, visit the <a href="">University Course Catalog</a>.</h4>
+<h4 class="u-mtsm">{{ site.data.website.curriculum.complete-list | markdownify }}</h4>
+
+<hr>
