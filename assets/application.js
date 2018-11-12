@@ -24,6 +24,7 @@ var $document = $(document);
 var blastArray = [];
 
 var $listing = $('div.listing');
+var $listingCurriculum = $('div.listing-curriculum');
 var $textReplaced = $("h1, h3, h4");
 var regexLetters = new RegExp("^[a-z]+$");
 var letterRecurrence = 3; // Ex: 4 = 1/4 of the letters replaced
@@ -71,6 +72,16 @@ $document.ready(function(){
 
 $listing.hover( function() {
   $(this).find("h3, .ui-arrow").toggleClass("text-outline");
+});
+
+
+/////////////////
+// CURRICULUM PAGE
+
+// listing toggle -------------------------------------------------
+
+$listingCurriculum.click( function() {
+  $(this).toggleClass("expanded");
 });
 
 

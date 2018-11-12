@@ -3,7 +3,7 @@
 <hr>
 
 {% for instructor in site.data.faculty.instructors %}
-  <div class="row listing">
+  <div class="row listing listing-faculty">
       <div class="listing-name">
           {% assign parsons = site.data.external.parsons %}
           <a href="{{ parsons.url }}" target="_blank"><h3 data-external="{{ parsons.text }}">{{ instructor.name }}</h3></a>

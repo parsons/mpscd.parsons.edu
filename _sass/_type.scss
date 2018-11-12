@@ -76,7 +76,7 @@ h6, {
 
 h1 {
   font-size: $text-xs-xxl;
-  
+
   @include sm {
     font-size: $text-xxl;
   }
@@ -84,7 +84,7 @@ h1 {
 
 h2 {
   font-size: $text-xs-xl;
-  
+
   @include sm {
     font-size: $text-xl;
   }
@@ -92,7 +92,7 @@ h2 {
 
 h3 {
   font-size: $text-xs-lg;
-  
+
   @include sm {
     font-size: $text-lg;
   }
@@ -100,7 +100,7 @@ h3 {
 
 h4 {
   font-size: $text-xs-md;
-  
+
   @include sm {
     font-size: $text-md;
   }
@@ -108,7 +108,7 @@ h4 {
 
 h5 {
   font-size: $text-xs-sm;
-  
+
   @include sm {
     font-size: $text-sm;
   }
@@ -116,7 +116,7 @@ h5 {
 
 h6 {
   font-size: $text-xs-xs;
-  
+
   @include sm {
     font-size: $text-xs;
   }
@@ -451,18 +451,18 @@ hr {
     }
   }
 
-  h1 {@extend h1.t-set;}
-  h2 {@extend h2.t-set;}
-  h3 {@extend h3.t-set;}
-  h4 {@extend h4.t-set;}
-  h5 {@extend h5.t-set;}
-  h6 {@extend h6.t-set;}
-  p, li {@extend p.t-set;}
-  ol {@extend ol.t-set;}
-  ul {@extend ul.t-set;}
-  a {@extend a.t-set;}
-  blockquote {@extend blockquote.t-set;}
-  hr {@extend hr.t-set;}
+  h1 {@extend .t-set;}
+  h2 {@extend .t-set;}
+  h3 {@extend .t-set;}
+  h4 {@extend .t-set;}
+  h5 {@extend .t-set;}
+  h6 {@extend .t-set;}
+  p, li {@extend .t-set;}
+  ol {@extend .t-set;}
+  ul {@extend .t-set;}
+  a {@extend .t-set;}
+  blockquote {@extend .t-set;}
+  hr {@extend .t-set;}
 }
 
 /* ////////////////////////////////////////////////
