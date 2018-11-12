@@ -317,10 +317,6 @@ $(".filter-list").children(".sub-menu").children(".ui-pill").on("click", functio
 
 
 
-
-// font replacer! --------------------------------------------------
-
-
 // announcements -----------------------------------------
 
 function titleRepeat(title) {

@@ -1,0 +1,54 @@
+.sidebar, .sidebar-info {
+  width: $sidebar-width;
+  position: fixed;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: center;
+  margin-left: -$space-sm;
+  &.explore-open {
+    margin-left: 0;
+    cursor:pointer;
+
+    &.lightbox-open{
+      filter: blur($blur-extra);
+    }
+  }
+  @include sm {
+    margin-left: 0;
+  }
+}
+
+.sidebar {
+  height: 100vh;
+  background: $color-light;
+  border-right: $border-sm;
+  z-index: 12;
+  display: flex;
+}
+
+.sidebar-info {
+  height: 112px;
+  display: none;
+  z-index: 13;
+  &.explore-open {
+    display: flex;
+  }
+  h6::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    margin-bottom: -1px;
+    margin-left: 10px;
+    background-origin: content-box;
+    background-position: center;
+    background-image: url("images/right-arrow.svg");
+    display: inline-block;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+  }
+}
+
+.sidebar-title, .sidebar-info {
+  transform: rotate(-90deg);
+}
