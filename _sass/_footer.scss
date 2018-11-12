@@ -1,0 +1,31 @@
+footer {
+  width: 100%;
+  position: relative;
+
+  p {
+    font-size: $text-sm;
+  }
+
+  .footer-main {
+    display: none;
+    @include sm {
+      display: block;
+    }
+  }
+
+  .footer-sub > li {
+    margin: $space-xs 0 !important;
+    font-size: $text-xs-xs;
+
+    @include sm {
+      font-size: $text-xs;
+    }
+
+    a {
+      border-bottom: $border-dotted;
+      &:hover {
+        border-bottom: $border-sm;
+      }
+    }
+  }
+}

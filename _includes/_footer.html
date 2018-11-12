@@ -1,37 +1,34 @@
-<!-- foot -->
-<div class="footer">
-    <div class="container-fluid">
-            <div class="row">
-              <div class="col">
-                <ul class="u-mbmd footer-main">
-                {% for link in site.data.navigation.primary %}
-                  {% assign class = nil %}
-                  {% if page.url contains link.url %}
-                    {% assign class = 'hidden' %}
-                  {% endif %}
-                  <li><h1><a href="{{ link.url }}" title="{{ link.title }}" class="{{ class }} hover-text-outline">{{ link.title }}</a></h1></li>
-                {% endfor %}
-                </ul>
-                <ul class="u-mbmd footer-sub">
-                {% for link in site.data.navigation.secondary %}
-                  <li><h4>{{ link.title }}</h4></li>
-                  <li>{{ link.caption }}<a href="{{ link.url }}" title="{{ link.url-title }}">{{ link.url-title }}</a></li>
-                {% endfor %}
-                </ul>
-              </div>
-            </div>
-
-          <div class="row u-mblg">
-              <div class="col-xs-6 col-sm-6 u-pbsm visible-xs">
-                <img src="{{ site.data.filepaths.desktop }}parsons_logo.jpg" alt="Parsons The New School for Design">
-              </div>
-              <div class="col-xs-6 col-sm-6 u-pbsm u-sm-pbn">
-                <p>Parsons<br/>
-                  The New School for Design<br/>
-                  66 5th Avenue<br/>
-                  New York, NY<br/>
-                </p>
-              </div>
-           </div>
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <ul class="u-mbmd footer-main">
+          {% for link in site.data.navigation.primary %}
+          {% assign class = nil %}
+          {% if page.url contains link.url %}
+          {% assign class = 'hidden' %}
+          {% endif %}
+          <li><h1><a href="{{ link.url }}" title="{{ link.title }}" class="{{ class }} hover-text-outline">{{ link.title }}</a></h1>
+          </li>
+          {% endfor %}
+        </ul>
+        <ul class="u-mbmd footer-sub">
+          {% for link in site.data.navigation.secondary %}
+          <li><h4>{{ link.title }}</h4>
+          </li>
+          <li>{{ link.caption }}<a href="{{ link.url }}" title="{{ link.url-title }}">{{ link.url-title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
-</div>
+
+    <div class="row u-mblg">
+      <div class="col-xs-6 col-sm-6 u-pbsm visible-xs">
+        <img src="{{ site.data.filepaths.desktop }}parsons_logo.jpg" alt="Parsons The New School for Design">
+              </div>
+        <div class="col-xs-6 col-sm-6 u-pbsm u-sm-pbn">
+          <p>{{ site.data.website.address | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+</footer>
