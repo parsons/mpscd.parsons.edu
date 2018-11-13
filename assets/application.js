@@ -27,10 +27,10 @@ var $listing = $('div.listing');
 var $listingCurriculum = $('div.listing-curriculum');
 var $announcement = $('.announcement-container');
 var $announcementTitle = $('.announcement-title');
+var $announcementClose = $('.announcement-close');
 var $textReplaced = $("h1, h3, h4");
 var regexLetters = new RegExp("^[a-z]+$");
 var letterRecurrence = 3; // Ex: 4 = 1/4 of the letters replaced
-var announcementTitle = $announcementTitle.html();
 
 
 
@@ -92,28 +92,14 @@ $listingCurriculum.click( function() {
 /////////////////
 // ANNOUNCEMENTS
 
-var repeatTitle = function() {
-  var aHeight = $announcement.innerHeight() - 36;
-  var bHeight = $('.announcement-middle').outerHeight() + $('.announcement-bottom').outerHeight() + 48;
-  var fontSize = parseInt($announcementTitle.css('font-size'), 10);
-  var z = Math.floor((aHeight - bHeight) / fontSize);
-  console.log(aHeight, bHeight, fontSize, z);
-  $announcementTitle.empty();
-  for (var i = 0; i < z; i++) {
-    $announcementTitle.append(announcementTitle);
-  }
-}
-
 $document.ready(function(){
-  repeatTitle();
+  for (var i = 0; i < 12; i++) {
+    $announcementTitle.append($announcementTitle.html());
+  }
 });
 
-$window.resize(function(){
-  repeatTitle();
-});
-
-$(".announcement-close").on("click", function(){
-    $(".announcement-container").addClass("hidden");
+$announcementClose.on("click", function(){
+  $announcement.addClass("hidden");
 });
 
 

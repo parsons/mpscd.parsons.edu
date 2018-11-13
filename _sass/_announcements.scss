@@ -14,7 +14,7 @@
   left:0;
 
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
 
   p {
@@ -27,6 +27,16 @@
     font-size: $text-md;
   }
 
+}
+
+.announcement-top {
+  flex: 1;
+  overflow: hidden;
+  .announcement-title {
+    -webkit-column-width: calc(14rem - #{$space-xs} * 2);
+    column-width: calc(14rem - #{$space-xs} * 2);
+    height: 100%;
+  }
 }
 
 .announcement-link {
