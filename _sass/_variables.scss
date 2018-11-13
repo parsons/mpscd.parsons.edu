@@ -32,13 +32,13 @@ $container-max-widths: (
 );
 
 // fonts
-$font-primary:                           "'Suisse Works Regular', 'Times New Roman'";
-$font-primary-italic:                    "'Suisse Works Regular', 'Times New Roman'";
+$font-primary:                           'Suisse Works Regular', 'Times New Roman';
+$font-primary-italic:                    'Suisse Works Regular', 'Times New Roman';
 $font-primary-heavy:                     $font-primary-italic;
-$font-secondary:                         "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
-$font-secondary-heavy:                   "'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif";
-$font-tertiary:                          "'MPS-Sans-Regular', Courier";
-$font-tertiary-italic:                   "'America Mono Regular Italic Web', Courier";
+$font-secondary:                         'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-secondary-heavy:                   'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-tertiary:                          'MPS-Sans-Regular', Courier;
+$font-tertiary-italic:                   'America Mono Regular Italic Web', Courier;
 
 // type sizes
 $text-base:                              18px !default;
