@@ -5,12 +5,11 @@
   position: fixed;
   height: 100vh;
   background: $color-light;
-  border-right: 1px solid $color-dark;
+  border-right: $border-sm;
   width: $info-width-xs;
   transition: 0.2s;
   overflow: scroll !important;
   -webkit-overflow-scrolling: touch;
-
 
   @include sm {
     width: $info-width-sm;
@@ -169,10 +168,6 @@ div.listing {
     font-size: $text-md;
     }
   }
-}
-
-.ul-xxl {
-
 }
 
 .columns-2 {
@@ -349,76 +344,4 @@ div.listing {
   background-image: url("images/work/desktop/windows_xp_bliss.jpg");
   background-position: center;
   background-size: cover;
-}
-
-
-
-// announcement -------------------------------------
-
-$announcement-color: #9013FE;
-$announcement-text: white;
-
-.announcement-container {
-  width: 14rem;
-  height: 100vh;
-  background: $announcement-color;
-  color: $announcement-text;
-  z-index: 30;
-  font-family: $font-secondary;
-  font-size: $text-xs-md;
-  text-transform: uppercase;
-  padding: $space-xs;
-
-  position: fixed;
-  top:0;
-  left:0;
-
-  & a {
-    display: block;
-  }
-
-  @include sm {
-    font-size: $text-md;
-  }
-
-}
-
-.announcement-link {
-  background: $announcement-text;
-  color: $announcement-color;
-  margin: $space-xs 0;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  display: table;
-
-  & a {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-  }
-
-  &:hover {
-    background: $announcement-color;
-    border: solid 1px $announcement-text;
-    -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: $announcement-text;
-  }
-
-}
-
-.announcement-subtitle {
- margin-bottom: $space-md;
-}
-
-
-.announcement-close {
-  border-bottom: 1px dotted $announcement-text;
-  position: absolute;
-  bottom: $space-xs;
-
-  &:hover {
-    border-bottom: 1px solid $announcement-text;
-    cursor: pointer;
-  }
 }

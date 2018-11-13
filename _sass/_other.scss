@@ -11,11 +11,8 @@ body {
   background-color: $color-brand-secondary;
   position: relative;
   min-height: 100vh;
-  // @include cursor-default;
-
   .touch & {
     cursor: pointer;
-
     div {
       cursor: pointer;
     }
@@ -131,7 +128,6 @@ body {
 .blast{
   white-space:nowrap;
 }
-
 
 .mps-sans {
   font-family:  $font-tertiary;

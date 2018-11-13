@@ -1,0 +1,69 @@
+.announcement-container {
+  width: 14rem;
+  height: 100vh;
+  background: $announcement-color;
+  z-index: 30;
+  padding: $space-xs;
+  color: $announcement-text;
+  font-family: $font-secondary;
+  font-size: $text-xs-md;
+  text-transform: uppercase;
+
+  position: fixed;
+  top:0;
+  left:0;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+
+  p {
+    color: $announcement-text;
+    font-family: $font-secondary;
+    font-size: $text-xs-md;
+    text-transform: uppercase;
+  }
+  @include sm {
+    font-size: $text-md;
+  }
+
+}
+
+.announcement-link {
+  background: $announcement-text;
+  color: $announcement-color;
+  margin: $space-xs 0;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: table;
+
+  & a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  &:hover {
+    background: $announcement-color;
+    border: solid 1px $announcement-text;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: $announcement-text;
+  }
+
+}
+
+.announcement-subtitle, .announcement-middle {
+  padding-bottom: $space-md;
+}
+
+.announcement-close {
+  border-bottom: 1px dotted $announcement-text;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px solid $announcement-text;
+
+  }
+}
