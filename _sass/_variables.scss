@@ -125,8 +125,10 @@ $color-mid:                              gray;
 $color-light:                            #ffffff;
 $color-disabled:                         $color-gray;
 $color-alert:                            red;
-$announcement-color: #9013FE;
-$announcement-text: white;
+$announcement-color:                     #9013FE;
+$announcement-text:                      white;
+$cookies-color:                          #A0E752;
+$cookies-text:                           black;
 
 // borders
 $border-base:                            1px solid $color-base;
@@ -157,3 +159,5 @@ $blur-hover:                             3px;
 $blur-none:                             0px;
 
 $sidebar-width:                          36px;
+$announcement-width:                     14rem;
+$cookies-width:                          12rem;

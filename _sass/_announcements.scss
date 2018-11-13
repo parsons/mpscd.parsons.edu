@@ -1,5 +1,5 @@
 .announcement-container {
-  width: 14rem;
+  width: $announcement-width;
   height: 100vh;
   background: $announcement-color;
   z-index: 30;
@@ -7,6 +7,7 @@
   color: $announcement-text;
   font-family: $font-secondary;
   font-size: $text-xs-md;
+  line-height: $text-line-sm;
   text-transform: uppercase;
 
   position: fixed;
@@ -17,11 +18,19 @@
   flex-flow: column nowrap;
   justify-content: space-between;
 
+  transform: translateX(0);
+  transition: transform .3s ease;
+
+  &.off {
+    transform: translateX(-100%);
+  }
+
   p {
     color: $announcement-text;
     font-family: $font-secondary;
     font-size: $text-xs-md;
     text-transform: uppercase;
+    line-height: $text-line-sm;
   }
   @include sm {
     font-size: $text-md;
@@ -33,8 +42,8 @@
   flex: 1;
   overflow: hidden;
   .announcement-title {
-    -webkit-column-width: calc(14rem - #{$space-xs} * 2);
-    column-width: calc(14rem - #{$space-xs} * 2);
+    -webkit-column-width: calc(#{$announcement-width} - #{$space-xs} * 2);
+    column-width: calc(#{$announcement-width} - #{$space-xs} * 2);
     height: 100%;
   }
 }

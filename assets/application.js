@@ -28,10 +28,27 @@ var $listingCurriculum = $('div.listing-curriculum');
 var $announcement = $('.announcement-container');
 var $announcementTitle = $('.announcement-title');
 var $announcementClose = $('.announcement-close');
+var $cookies = $('.cookies-container');
+var $cookiesTitle = $('.cookies-title');
+var $cookiesClose = $('.cookies-close');
 var $textReplaced = $("h1, h3, h4");
 var regexLetters = new RegExp("^[a-z]+$");
 var letterRecurrence = 3; // Ex: 4 = 1/4 of the letters replaced
 
+
+/////////////////
+// COOKIES CONFIG
+
+var announcementCookies = function() {
+  if (Cookies.get('announcement') == 'seen') {
+    $announcement.addClass("hidden");
+  } 
+  if (Cookies.get('cookies') == 'seen') {
+    $cookies.addClass("hidden");
+  }
+}
+
+announcementCookies();
 
 
 /////////////////
@@ -99,7 +116,23 @@ $document.ready(function(){
 });
 
 $announcementClose.on("click", function(){
-  $announcement.addClass("hidden");
+  $announcement.addClass("off");
+  Cookies.set('announcement', 'seen');
+});
+
+
+/////////////////
+// COOKIES
+
+$document.ready(function(){
+  for (var i = 0; i < 12; i++) {
+    $cookiesTitle.append($cookiesTitle.html());
+  }
+});
+
+$cookiesClose.on("click", function(){
+  $cookies.addClass("off");
+  Cookies.set('cookies', 'seen');
 });
 
 
