@@ -7,7 +7,7 @@
   background: $color-light;
   border-right: $border-sm;
   width: $info-width-xs;
-  transition: 0.2s;
+  transition: $base-transition;
   overflow: scroll !important;
   -webkit-overflow-scrolling: touch;
 
@@ -83,23 +83,13 @@ div.listing {
     transform-origin: center;
     margin: 0 $space-xs;
     margin-top: 8px;
-
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    transition: $base-transition-sm;
   }
 
   .listing-description {
     max-height: 0px;
     overflow: hidden;
-
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    transition: $base-transition-sm;
   }
 
   &.listing-curriculum {

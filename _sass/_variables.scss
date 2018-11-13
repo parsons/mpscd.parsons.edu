@@ -161,3 +161,6 @@ $blur-none:                             0px;
 $sidebar-width:                          36px;
 $announcement-width:                     14rem;
 $cookies-width:                          12rem;
+
+$base-transition:                       all .5s cubic-bezier(.215, .61, .355, 1);
+$base-transition-sm:                    all .25s cubic-bezier(.215, .61, .355, 1);

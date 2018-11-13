@@ -114,7 +114,7 @@ body {
 // functionality for layer transitions
 
 .push-left {
-  transition-timing-function: ease-in-out;
+  transition: $base-transition-sm;
   transform: translateX(-$space-xxs);
 }
 
