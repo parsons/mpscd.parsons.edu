@@ -1,0 +1,63 @@
+.explore {
+  z-index: 0;
+  margin-left: $space-sm;
+  height: 100vh;
+  position: relative;
+
+  &.explore-open {
+    cursor: default;
+    position: relative;
+    #exploreArea .explore-items {
+      cursor: url("images/hand.png"), auto;
+    }
+  }
+
+  &.lightbox-open{
+    filter: blur($blur-extra);
+  }
+
+  #exploreArea {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .explore-items {
+      top: -40%;
+      left: -40%;
+      width: 200vw;
+      cursor: pointer;
+      .explore-item {
+        width: 30vw;
+        position: absolute;
+        display: inline-block;
+        margin: 5vw;
+        img {
+          max-width: 100%;
+          -webkit-filter: drop-shadow(5px 5px 5px #222);
+          filter: drop-shadow(5px 5px 5px #222);
+        }
+        &.explore-open{
+          cursor: url("images/zoom.png"), auto;
+        }
+      }
+    }
+  }
+}
+
+.hover-caption {
+  position: fixed;
+  bottom: $space-xs;
+  left: $space-sm + $space-xs;
+  z-index: 12;
+  display:none;
+  pointer-events: none;
+
+  @include sm {
+    &.explore-open {
+    display:block;
+
+      &.lightbox-open{
+        filter: blur($blur-extra);
+      }
+    }
+  }
+}
