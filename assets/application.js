@@ -31,7 +31,7 @@ var $announcementClose = $('.announcement-close');
 var $cookies = $('.cookies-container');
 var $cookiesTitle = $('.cookies-title');
 var $cookiesClose = $('.cookies-close');
-var $textReplaced = $("h1, h3, h4");
+var $textReplaced = $("h1, h3, nav h4");
 var regexLetters = new RegExp("^[a-z]+$");
 var letterRecurrence = 3; // Ex: 4 = 1/4 of the letters replaced
 
@@ -42,7 +42,7 @@ var letterRecurrence = 3; // Ex: 4 = 1/4 of the letters replaced
 var announcementCookies = function() {
   if (Cookies.get('announcement') == 'seen') {
     $announcement.addClass("hidden");
-  } 
+  }
   if (Cookies.get('cookies') == 'seen') {
     $cookies.addClass("hidden");
   }
