@@ -32,7 +32,15 @@ var $cookies = $('.cookies-container');
 var $cookiesTitle = $('.cookies-title');
 var $cookiesClose = $('.cookies-close');
 var $textReplaced = $("h1, h3, nav h4");
+var $exploreOuter = $('.explore');
 var $draggable = $('.explore-items');
+var $sidebar = $('.sidebar');
+var $exploreArray = $('.exploreOff');
+var $exploreItem = $('.explore-item');
+var $caption = $('.hover-caption');
+var $lightboxCaption = $(".lightbox-caption");
+var $lightboxClose = $(".lightbox-close");
+var $info = $('.info');
 
 var regexLetters = new RegExp("^[a-z]+$");
 var letterRecurrence = 3; // Ex: 4 = 1/4 of the letters replaced
@@ -44,16 +52,14 @@ var pad = 5;
 /////////////////
 // COOKIES CONFIG
 
-var announcementCookies = function() {
+$document.ready(function(){
   if (Cookies.get('announcement') == 'seen') {
     $announcement.addClass("hidden");
   }
   if (Cookies.get('cookies') == 'seen') {
     $cookies.addClass("hidden");
   }
-}
-
-announcementCookies();
+});
 
 
 /////////////////
@@ -68,7 +74,7 @@ $window.load(function(){
 /////////////////
 // TYPEFACE
 
-var blastText = function() {
+$document.ready(function(){
   $textReplaced.blast({
     delimiter: "character",
     generateValueClass: true
@@ -84,10 +90,6 @@ var blastText = function() {
   for (var i = 0; i < blastArray.length; i = i + letterRecurrence){
     blastArray[i].classList.add('mps-sans');
   }
-};
-
-$document.ready(function(){
-  blastText();
 });
 
 
@@ -164,7 +166,6 @@ $document.ready(function() {
 
       if(ui.position.top > 0) ui.position.top = 0;
       else if(ui.position.top < -heightDifference) ui.position.top = -heightDifference;
-
       }
 	});
 });
@@ -182,44 +183,63 @@ $explore.imagesLoaded().progress( function(){
 });
 
 
+// open/close explore section ----------------------------------------------
 
+$exploreOuter.on("click", function() {
+  $info.addClass("push-left-full");
+  $exploreOuter.removeClass("blur-hover").addClass("blur-none");
+  $exploreArray.addClass("explore-open");
+  // $(".filter-list").removeClass("hidden");
+});
 
-
-
-
-
-
+$sidebar.on("click", function() {
+  if ($(this).hasClass("explore-open")) {
+    $info.removeClass("push-left-full");
+    $exploreOuter.addClass("blur-full").removeClass("blur-none");
+    $exploreArray.removeClass("explore-open");
+  }
+});
 
 
 // Captioning ---------------------------------------------
 
-var caption;
-var creator;
-
-var addCaption = function(source, destination){
-  caption = $(source).children("img").data("caption");
-  creator = $(source).children("img").data("creator");
-  $(destination).html("<h1 class='text-outline'>"+ caption +"</h1><h1 class='text-outline caption-student'>"+ creator +"</h1>");
-  var text = $(destination);
-  // blastText(text);
-};
-
-var removeCaption = function(destination){
-  $(destination).html("");
-};
-
-
-// Caption for explore ----------------------------------------------
-
-$(".explore-item").hover(function(){
-    source = $(this);
-    addCaption(source, ".hover-caption");
+$exploreItem.hover(function(){
+  $caption.html("<h1 class='text-outline'>" + $(this).find('img').data('caption') +
+  "</h1><h1 class='text-outline caption-student'>" + $(this).find('img').data('creator') + "</h1>");
 },function(){
-    removeCaption(".hover-caption");
+  $caption.html("");
 });
 
 
-// isotope ------------------------------------------------------------
+/////////////////
+// LIGHTBOX
+
+$exploreItem.on("click", function(){
+  if($(this).hasClass("explore-open")) {
+    $exploreArray.addClass("lightbox-open");
+    $body.addClass("overflow-hidden");
+    $(".hover-caption, .filter-button").addClass("hidden");
+    $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img').data('caption') +
+    "</h1><h1 class='text-outline caption-student'><a class='hover-reverse' href='" + $(this).find('img').data('link') + "'>" + $(this).find('img').data('creator') + "</a></h1>");
+    $(".lightbox-detail").html($(this).html());
+  };
+});
+
+$lightboxClose.on("click", function(){
+    $exploreArray.removeClass("lightbox-open");
+    $body.removeClass("overflow-hidden");
+    $(".hover-caption, .filter-button").removeClass("hidden");
+});
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -249,10 +269,6 @@ $(".nav-title").on("click", function() {
 // explore functionality ---------------------------------------------------
 
 
-// sets up array of elements to change in explore state
-var exploreArray = [".page-filter", ".sidebar", ".explore", ".explore-item", ".sidebar-info", ".sidebar-arrow", ".hover-caption", ".background-container", ".lightbox-container"];
-
-
 // hover blur
 
 $(".explore").hover(function() {
@@ -269,100 +285,15 @@ $(".explore").hover(function() {
   }
 );
 
-// clicking into explore section ----------------------------------------------
-function exploreOpen(element) {
-  $(element).addClass("explore-open");
-};
 
-function exploreClose(element) {
-  $(element).removeClass("explore-open");
-};
-
-
-$(".explore").on("click", function() {
-  $(".info").addClass("push-left-full");
-  $(".filter-list").removeClass("hidden");
-  $(this).removeClass("blur-hover").addClass("blur-none");
-
-  exploreArray.forEach(exploreOpen);
-}
-);
 
 // leaving the explore section ----------------------------------------------------
 
-$(".sidebar, .sidebar-info, .sidebar-arrow").hover(function() {
-    if ($(this).hasClass("explore-open")) {
-        $(".sidebar-arrow").addClass("text-outline");
-    }
-   }, function() {
-    if ($(this).hasClass("explore-open")) {
-        $(".sidebar-arrow").removeClass("text-outline");
-    }
-   }
-);
 
 
-$(".sidebar, .sidebar-info, .sidebar-arrow").on("click", function() {
- if ($(this).hasClass("explore-open")) {
-  $(".info").removeClass("push-left-full");
-  $(".filter-list").addClass("hidden");
-  $(".explore").addClass("blur-full").removeClass("blur-none");
-
-    if ($(".sidebar-arrow").hasClass("text-outline")) {
-    $(".sidebar-arrow").removeClass("text-outline");
-    }
-    if ($(".info").hasClass("push-left")) {
-        $(".info").removeClass("push-left");
-        }
-  exploreArray.forEach(exploreClose);
- }
-
-});
-
-// Lightbox!!!! -------------------------------------------------
-
-function lightboxOpen(element) {
-    $(element).addClass("lightbox-open");
-  };
-
-  function lightboxClose(element) {
-    $(element).removeClass("lightbox-open");
-  };
-
-function studentCaptionLink(source, link) {
-    var linkUrl = $(source).children("img").data("link");
-    console.log(linkUrl);
-    console.log(link);
-    $(link).addClass("hover-reverse");
-    $(link).wrap("<a href='" + linkUrl + "'></a>")
-};
 
 
-$(".explore-item").on("click", function(){
-    if($(this).hasClass("explore-open")) {
-        exploreArray.forEach(lightboxOpen);
-        $body.addClass("overflow-hidden");
-        $(".hover-caption").addClass("hidden");
-        $(".filter-button").addClass("hidden");
 
-        source = $(this);
-        addCaption(source, ".lightbox-caption");
-
-        link = $(".lightbox-caption").children(".caption-student");
-        if (link.html()!== ""){link.append("<div class='mps-sans'>&#x2192;</div>");};
-        studentCaptionLink(source, link);
-
-        var image = $(this).html();
-        $(".lightbox-detail").html(image);
-    };
-});
-
-$(".lightbox-close").on("click", function(){
-        exploreArray.forEach(lightboxClose);
-        $body.removeClass("overflow-hidden");
-        $(".hover-caption").removeClass("hidden");
-        $(".filter-button").removeClass("hidden");
-});
 
 
 

@@ -1,8 +1,8 @@
-<div class="explore blur-full">
+<div class="explore blur-full exploreOff">
   <div id="exploreArea">
     <div class="explore-items draggable">
       {% for post in site.posts %}
-        <div class="explore-item {{ post.tags | join:' ' }}">
+        <div class="explore-item exploreOff {{ post.tags | join:' ' }}">
           {% for image in post.images %}
               <img src="{{ site.data.filepaths.desktop }}{{ image.src }}" alt="{{ image.alt }}" data-caption="{{ image.caption }}" data-creator="{{ image.creator }}" data-link="{{ image.link }}">
           {% endfor %}

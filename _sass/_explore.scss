@@ -50,7 +50,7 @@ $exp: calc(#{$exp-x} - #{$exp-y});
 .hover-caption {
   position: fixed;
   bottom: $space-xs;
-  left: $space-sm + $space-xs;
+  left: $sidebar-width + $space-sm;
   z-index: 12;
   display:none;
   pointer-events: none;
