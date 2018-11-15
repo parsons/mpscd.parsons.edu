@@ -18,6 +18,7 @@ $exp: calc(#{$exp-x} - #{$exp-y});
 
   &.lightbox-open{
     filter: blur($blur-extra);
+    pointer-events: none;
   }
 
   #exploreArea {
@@ -61,6 +62,7 @@ $exp: calc(#{$exp-x} - #{$exp-y});
 
       &.lightbox-open{
         filter: blur($blur-extra);
+        pointer-events: none;
       }
     }
   }

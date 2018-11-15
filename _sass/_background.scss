@@ -5,12 +5,11 @@
   height: 100vh;
   filter: blur($blur-full);
   overflow: visible;
-
   &.explore-open {
     filter: blur($blur-none);
-
     &.lightbox-open{
       filter: blur($blur-extra);
+      pointer-events: none;
     }
   }
 }
