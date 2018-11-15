@@ -1,3 +1,7 @@
+$exp-x: $explore-img-nb * $explore-img-width;
+$exp-y: -2 * $explore-img-nb * $space-md;
+$exp: calc(#{$exp-x} - #{$exp-y});
+
 .explore {
   z-index: 0;
   margin-left: $space-sm;
@@ -23,13 +27,13 @@
     .explore-items {
       top: -40%;
       left: -40%;
-      width: 200vw;
+      width: $exp;
       cursor: pointer;
       .explore-item {
         width: 30vw;
         position: absolute;
         display: inline-block;
-        margin: 5vw;
+        margin: $space-md;
         img {
           max-width: 100%;
           -webkit-filter: drop-shadow(5px 5px 5px #222);
