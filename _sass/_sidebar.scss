@@ -39,15 +39,10 @@
       }
     }
   }
-  &.explore-open {
-    filter: blur($blur-none);
+  &.exploreOn {
     cursor:pointer;
     .sidebar-info {
       opacity: 1;
-    }
-    &.lightbox-open{
-      filter: blur($blur-extra);
-      pointer-events: none;
     }
   }
   &:hover {

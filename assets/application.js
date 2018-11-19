@@ -35,12 +35,13 @@ var $textReplaced = $("h1, h3, nav h4");
 var $exploreOuter = $('.explore');
 var $draggable = $('.explore-items');
 var $sidebar = $('.sidebar');
-var $exploreArray = $('.exploreOff');
 var $exploreItem = $('.explore-item');
 var $caption = $('.hover-caption');
+var $lightbox = $(".lightbox-container");
 var $lightboxCaption = $(".lightbox-caption");
 var $lightboxClose = $(".lightbox-close");
 var $info = $('.info');
+var $main = $('main');
 
 var regexLetters = new RegExp("^[a-z]+$");
 var letterRecurrence = 3; // Ex: 4 = 1/4 of the letters replaced
@@ -186,17 +187,17 @@ $explore.imagesLoaded().progress( function(){
 // open/close explore section ----------------------------------------------
 
 $exploreOuter.on("click", function() {
-  $info.addClass("push-left-full");
-  $exploreOuter.removeClass("blur-hover").addClass("blur-none");
-  $exploreArray.addClass("explore-open");
+  if ($(this).hasClass("exploreOff")) {
+    $('.exploreOff').removeClass('exploreOff').addClass("exploreOn");
+    $('.blurOn').addClass("blurOff").removeClass("blurOn");
+  }
   // $(".filter-list").removeClass("hidden");
 });
 
 $sidebar.on("click", function() {
-  if ($(this).hasClass("explore-open")) {
-    $info.removeClass("push-left-full");
-    $exploreOuter.addClass("blur-full").removeClass("blur-none");
-    $exploreArray.removeClass("explore-open");
+  if ($(this).hasClass("exploreOn")) {
+    $('.exploreOn').removeClass('exploreOn').addClass("exploreOff");
+    $('.blurOff').addClass("blurOn").removeClass("blurOff");
   }
 });
 
@@ -215,20 +216,20 @@ $exploreItem.hover(function(){
 // LIGHTBOX
 
 $exploreItem.on("click", function(){
-  if($(this).hasClass("explore-open")) {
-    $exploreArray.addClass("lightbox-open");
-    $body.addClass("overflow-hidden");
-    $(".hover-caption, .filter-button").addClass("hidden");
-    $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img').data('caption') +
-    "</h1><h1 class='text-outline caption-student'><a class='hover-reverse' href='" + $(this).find('img').data('link') + "'>" + $(this).find('img').data('creator') + "</a></h1>");
-    $(".lightbox-detail").html($(this).html());
-  };
+  $main.addClass("blurOn").removeClass("blurOff");
+  $lightbox.addClass('lightboxOn');
+  $body.addClass("overflow-hidden");
+  $(".hover-caption, .filter-button").addClass("hidden");
+  $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img').data('caption') +
+  "</h1><h1 class='text-outline caption-student'><a class='hover-reverse' href='" + $(this).find('img').data('link') + "'>" + $(this).find('img').data('creator') + "</a></h1>");
+  $(".lightbox-detail").html($(this).html());
 });
 
 $lightboxClose.on("click", function(){
-    $exploreArray.removeClass("lightbox-open");
-    $body.removeClass("overflow-hidden");
-    $(".hover-caption, .filter-button").removeClass("hidden");
+  $lightbox.removeClass('lightboxOn');
+  $main.addClass("blurOff").removeClass("blurOn");
+  $body.removeClass("overflow-hidden");
+  $(".hover-caption, .filter-button").removeClass("hidden");
 });
 
 
@@ -264,36 +265,6 @@ $(".nav-title").on("click", function() {
   }
 
 });
-
-
-// explore functionality ---------------------------------------------------
-
-
-// hover blur
-
-$(".explore").hover(function() {
-  if (!$(".explore").hasClass("explore-open")){
-    $(".info").addClass("push-left");
-    $(this).removeClass("blur-full").addClass("blur-hover");
-  }
-},
-  function() {
-    if (!$(".explore").hasClass("explore-open")){
-    $(".info").removeClass("push-left");
-    $(this).removeClass("blur-hover").addClass("blur-full");
-    }
-  }
-);
-
-
-
-// leaving the explore section ----------------------------------------------------
-
-
-
-
-
-
 
 
 

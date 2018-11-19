@@ -1,13 +1,14 @@
 .lightbox-container {
   z-index: 20;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background: rgba(255,255,255,0.2);
   display:none;
-
-  &.lightbox-open {
-    display:block;
+  &.lightboxOn {
+    display: block;
   }
 }
 

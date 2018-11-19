@@ -21,6 +21,10 @@
     max-width: $info-width-max-md;
     padding-left: $sidebar-width;
   }
+
+  &.exploreOn {
+    transform: translateX(-100%);
+  }
 }
 
 
@@ -154,13 +158,8 @@ div.listing {
 .page-filter{
   display: none !important;
 
-  &.explore-open{
+  &.exploreOn{
     display: inline-block !important;
-
-    &.lightbox-open{
-        filter: blur($blur-extra);
-        pointer-events: none;
-      }
   }
 
   @include sm {

@@ -8,17 +8,18 @@ $exp: calc(#{$exp-x} - #{$exp-y});
   height: 100vh;
   position: relative;
 
-  &.explore-open {
+  &.exploreOff {
+    &:hover {
+      @extend .blurInter;
+    }
+  }
+
+  &.exploreOn {
     cursor: default;
     position: relative;
     #exploreArea .explore-items {
       cursor: url("images/hand.png"), auto;
     }
-  }
-
-  &.lightbox-open{
-    filter: blur($blur-extra);
-    pointer-events: none;
   }
 
   #exploreArea {
@@ -35,13 +36,15 @@ $exp: calc(#{$exp-x} - #{$exp-y});
         position: absolute;
         display: inline-block;
         margin: $space-md;
+        pointer-events: none;
         img {
           max-width: 100%;
           -webkit-filter: drop-shadow(5px 5px 5px #222);
           filter: drop-shadow(5px 5px 5px #222);
         }
-        &.explore-open{
+        &.exploreOn{
           cursor: url("images/zoom.png"), auto;
+          pointer-events: all;
         }
       }
     }
@@ -57,13 +60,8 @@ $exp: calc(#{$exp-x} - #{$exp-y});
   pointer-events: none;
 
   @include sm {
-    &.explore-open {
+    &.exploreOn {
     display:block;
-
-      &.lightbox-open{
-        filter: blur($blur-extra);
-        pointer-events: none;
-      }
     }
   }
 }
