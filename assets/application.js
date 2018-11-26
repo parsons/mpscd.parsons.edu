@@ -167,7 +167,17 @@ $document.ready(function() {
 
       if(ui.position.top > 0) ui.position.top = 0;
       else if(ui.position.top < -heightDifference) ui.position.top = -heightDifference;
-      }
+    },
+    start: function(event, ui) {
+      ui.helper.bind("click.prevent", function(event) {
+        event.preventDefault();
+      });
+    },
+    stop: function(event, ui) {
+      setTimeout(function(){
+        ui.helper.unbind("click.prevent");
+      }, 300);
+    }
 	});
 });
 
@@ -205,8 +215,7 @@ $sidebar.on("click", function() {
 // Captioning ---------------------------------------------
 
 $exploreItem.hover(function(){
-  $caption.html("<h1 class='text-outline'>" + $(this).find('img').data('caption') +
-  "</h1><h1 class='text-outline caption-student'>" + $(this).find('img').data('creator') + "</h1>");
+  $caption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
 },function(){
   $caption.html("");
 });
@@ -216,18 +225,21 @@ $exploreItem.hover(function(){
 // LIGHTBOX
 
 $exploreItem.on("click", function(){
-  $main.addClass("blurOn").removeClass("blurOff");
+  $main.addClass("blurred");
   $lightbox.addClass('lightboxOn');
   $body.addClass("overflow-hidden");
   $(".hover-caption, .filter-button").addClass("hidden");
-  $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img').data('caption') +
-  "</h1><h1 class='text-outline caption-student'><a class='hover-reverse' href='" + $(this).find('img').data('link') + "'>" + $(this).find('img').data('creator') + "</a></h1>");
-  $(".lightbox-detail").html($(this).html());
+  $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
+  if (!$(this).hasClass('imagepost')) {
+    $(".lightbox-detail").html('<div>' + $(this).find('div').html() + '</div>');
+  } else {
+    $(".lightbox-detail").html($(this).html());
+  }
 });
 
 $lightboxClose.on("click", function(){
   $lightbox.removeClass('lightboxOn');
-  $main.addClass("blurOff").removeClass("blurOn");
+  $main.removeClass("blurred");
   $body.removeClass("overflow-hidden");
   $(".hover-caption, .filter-button").removeClass("hidden");
 });

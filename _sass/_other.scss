@@ -42,7 +42,7 @@ body {
 
 // blur
 
-.blurOn {
+.blurOn, .blurred {
   filter: blur($blurOn);
 }
 

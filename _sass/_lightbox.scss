@@ -25,6 +25,16 @@
     width: auto;
     height: auto;
   }
+
+  & > div {
+    margin: 0 $sidebar-width + $space-sm;
+    p {
+      @extend h2;
+      color: $color-light !important;
+      -webkit-text-stroke-width: 0.8px;
+      -webkit-text-stroke-color: $color-base;
+    }
+  }
 }
 
 .lightbox-caption {

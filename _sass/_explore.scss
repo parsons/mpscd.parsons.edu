@@ -46,6 +46,17 @@ $exp: calc(#{$exp-x} - #{$exp-y});
           cursor: url("images/zoom.png"), auto;
           pointer-events: all;
         }
+        div.explore-text{
+          background-color: $explore-color;
+          padding: $space-xs;
+          -webkit-filter: drop-shadow(5px 5px 5px #222);
+          filter: drop-shadow(5px 5px 5px #222);
+          p {
+            font-size: $text-md;
+            mix-blend-mode: difference;
+            color: white;
+          }
+        }
       }
     }
   }
