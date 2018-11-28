@@ -35,7 +35,7 @@ var $textReplaced = $("h1, h3, nav h4");
 var $exploreOuter = $('.explore');
 var $draggable = $('.explore-items');
 var $sidebar = $('.sidebar');
-var $exploreItem = $('.explore-item');
+var $exploreItem = $('.explore-item:not(.important)');
 var $caption = $('.hover-caption');
 var $lightbox = $(".lightbox-container");
 var $lightboxCaption = $(".lightbox-caption");
@@ -187,9 +187,6 @@ var $explore = $('.explore-items').isotope({
 });
 
 $explore.imagesLoaded().progress( function(){
-  var $filter = $(".ui-pill-black").data("filter");
-  if ($filter === "everything") { $explore.isotope({ filter: "*" }); }
-  else { $explore.isotope({ filter: "." + $filter }); }
   $explore.isotope("layout");
 });
 
@@ -201,7 +198,6 @@ $exploreOuter.on("click", function() {
     $('.exploreOff').removeClass('exploreOff').addClass("exploreOn");
     $('.blurOn').addClass("blurOff").removeClass("blurOn");
   }
-  // $(".filter-list").removeClass("hidden");
 });
 
 $sidebar.on("click", function() {
@@ -219,6 +215,49 @@ $exploreItem.hover(function(){
 },function(){
   $caption.html("");
 });
+
+
+// Filtering ----------------------------------------------
+
+var filters = {};
+$("span#title-sections").text('Everything');
+
+$(".filter-list").on('click', '.ui-pill', function(e) {
+  var $button = $(e.currentTarget);
+  var $buttonGroup = $button.parents('.sub-menu');
+  var filterGroup = $buttonGroup.attr('data-filter-group');
+  filters[ filterGroup ] = $button.attr('data-filter');
+  var filterValue = concatValues( filters );
+  $explore.isotope({ filter: filterValue });
+});
+
+$('.sub-menu').each(function(i, buttonGroup) {
+  var $buttonGroup = $(buttonGroup);
+  $buttonGroup.on('click', '.ui-pill', function(e) {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    var $button = $(e.currentTarget);
+    $button.addClass('is-checked');
+    var t = 'span#title-' + $(this).parent().attr('id');
+    if(!$button.hasClass('filter-button')){
+      $(t).text($button.text());
+    } else {
+      if($buttonGroup.attr('id') == "sections"){
+        $(t).text('Everything');
+      } else {
+        $(t).empty();
+      }
+    }
+  });
+});
+
+function concatValues( obj ) {
+  var value = '';
+  for ( var prop in obj ) {
+    value += obj[ prop ];
+  }
+  return value;
+}
+
 
 
 /////////////////
@@ -249,7 +288,8 @@ $lightboxClose.on("click", function(){
   $lightbox.removeClass('lightboxOn');
   $main.removeClass("blurred");
   $body.removeClass("overflow-hidden");
-  $(".hover-caption, .filter-button").removeClass("hidden");
+  $lightboxCaption.css('transform', 'translateY(0)');
+  $('.lightbox-description').removeClass('active');
   $('.lightbox-description').html("");
 });
 
@@ -270,60 +310,28 @@ $(".lightbox-more").on("click", function(){
 
 
 
-
-
-
-
-
-
-
-
-
-// nav functionality -----------------------------------------------------
-
-$(".nav-title").on("click", function() {
-  console.log("hello!");
-  var $menu = $(".nav-menu");
-  var $title = $(this).children("h4");
-
-  if(!$menu.hasClass("collapse"))
-  {
-    $menu.addClass("collapse");
-    $title.html("menu");
-    $body.removeClass("overflow-hidden");
-  } else {
-    $menu.removeClass("collapse");
-    $title.html("close");
-    $body.addClass("overflow-hidden");
-  }
-
-});
-
-
-
-
 // image filtering functions --------------------------------------------------
 
-$(".filter-list").children().first().on("click", function() {
-  var $subMenu = $(this).siblings();
-
-  if ( !$(this).hasClass("expanded") ) {
-    $(this).html("Filters -");
-    $subMenu.removeClass("hidden");
-    $(this).addClass("expanded");
-  } else {
-    $(this).html("Filters +");
-    $subMenu.addClass("hidden");
-    $(this).removeClass("expanded");
-  }
-}
-);
-
-$(".filter-list").children(".sub-menu").children(".ui-pill").on("click", function() {
-  var $title = $(this).html();
-  $(".ui-pill-black").html($title);
-  var $filter = $(this).data("filter");
-  if ($filter === "everything") { $explore.isotope({ filter: "*" }); }
-  else { $explore.isotope({ filter: "." + $filter }); }
-}
-);
+// $(".filter-list").children().first().on("click", function() {
+//   var $subMenu = $(this).siblings();
+//
+//   if ( !$(this).hasClass("expanded") ) {
+//     $(this).html("Filters -");
+//     $subMenu.removeClass("hidden");
+//     $(this).addClass("expanded");
+//   } else {
+//     $(this).html("Filters +");
+//     $subMenu.addClass("hidden");
+//     $(this).removeClass("expanded");
+//   }
+// }
+// );
+//
+// $(".filter-list").children(".sub-menu").children(".ui-pill").on("click", function() {
+//   var $title = $(this).html();
+//   $(".ui-pill-black").html($title);
+//   var $filter = $(this).data("filter");
+//   if ($filter === "everything") { $explore.isotope({ filter: "*" }); }
+//   else { $explore.isotope({ filter: "." + $filter }); }
+// }
+// );

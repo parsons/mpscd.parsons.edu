@@ -1,15 +1,21 @@
 #faculty descriptions and links
 
 filters:
-  - title: "2018"
-    class: "twenty-eighteen"
-  - title: "Curriculum"
-    class: "curriculum"
-  - title: "Events"
-    class: "events"
-  - title: "Everything"
-    class: "everything"
-  - title: "Faculty"
-    class: "faculty"
-  - title: "Student Projects"
-    class: "student-projects"
+  - sections:
+    type: "Sections"
+    filters:
+      - title: "Curriculum"
+        class: "curriculum"
+      - title: "Events"
+        class: "event"
+      - title: "Faculty"
+        class: "faculty"
+      - title: "Student Projects"
+        class: "projects"
+  - years:
+    type: "Years"
+    filters:
+      - title: "2018"
+        class: "2018"
+      - title: "2019"
+        class: "2019"

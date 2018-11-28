@@ -41,7 +41,7 @@
   position: fixed;
   bottom: $space-xs;
   left: $sidebar-width + $space-sm;
-  width: 60%;
+  width: 75%;
   transform: translateY(0);
   transition: $base-transition;
   transition-property: transform;
@@ -84,7 +84,7 @@
   padding-top: $space-sm;
   position: fixed;
   z-index: 20;
-  width: 60%;
+  width: 75%;
   margin-left: $sidebar-width + $space-sm;
   transform: translateY(100%);
   transition: $base-transition;

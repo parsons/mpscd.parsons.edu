@@ -1,13 +1,17 @@
 <div class="pill-container">
-  <div class="ui-pill ui-pill-black page-filter exploreOff" data-filter="{{ page.filter-class }}">{{ page.filter }}</div>
-  <div class="filter-list hidden">
-      <div class="ui-pill filter-button">Filters +</div>
-      <div class="sub-menu hidden">
-      {% for filter in site.data.filters.filters %}
-        <p>
-          <div class="ui-pill" data-filter="{{ filter.class }}">{{ filter.title }}</div>
-        </p>
-      {% endfor %}
-      </div>
+  <div class="ui-pill ui-pill-black page-filter exploreOff titles">
+    {% for type in site.data.filters.filters %}
+      <span id="title-{{ type.type | downcase }}"></span>
+    {% endfor %}
+  </div>
+  <div class="filter-list">
+    {% for type in site.data.filters.filters %}
+      <ul class="sub-menu" id="{{ type.type | downcase }}" data-filter-group="{{ type.type | downcase }}">
+        <li class="ui-pill filter-button" data-filter="">{{ type.type }}</li>
+        {% for subfilter in type.filters reversed %}
+          <li class="ui-pill" data-filter=".{{ subfilter.class }}">{{ subfilter.title }}</li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
   </div>
 </div>

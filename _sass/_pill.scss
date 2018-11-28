@@ -1,0 +1,97 @@
+
+// Filter styling
+
+
+.pill-container {
+  position: fixed;
+  z-index: 10;
+  right: $space-xs;
+  top: $space-xs;
+  text-align: right;
+
+  @include sm {
+    right: $space-sm;
+    top: $space-sm;
+  }
+}
+
+.filter-list {
+  text-align: right;
+}
+
+.page-filter{
+  display: none !important;
+  &.exploreOn{
+    display: inline-block !important;
+  }
+  @include sm {
+    display: inline-block !important;
+  }
+}
+
+.ui-pill {
+  height: $space-sm;
+  padding: 11px;
+  margin-left: 5px;
+  margin-bottom: 11px;
+  font-size: $text-xs;
+  font-family: $font-secondary;
+  text-align: center;
+  border-radius: $space-sm;
+  color: $color-dark;
+  background: $color-light;
+  display: inline-block;
+
+  &.ui-pill-black, &.is-checked {
+    color: $color-light;
+    background: $color-dark;
+  }
+
+  &:hover {
+      color: $color-light;
+      background: $color-dark;
+    }
+
+}
+
+
+ul.sub-menu {
+  display: flow-root;
+  cursor: pointer;
+  li {
+    float: right;
+    &:first-of-type {
+      background: $color-gray;
+      &:hover, &.is-checked {
+        color: $color-base;
+      }
+    }
+    &:not(:first-of-type) {
+      display: none;
+    }
+  }
+  &:hover {
+    li:not(:first-of-type) {
+      display: inline-block;
+    }
+  }
+}
+
+div.titles span{
+  &:empty {
+    display:none;
+  }
+  &:not(:empty)::before {
+    content: ' ';
+    white-space: pre;
+  }
+}
+
+span#title-years:not(:empty)::before{
+  content: 'in ';
+  white-space: pre;
+}
+
+span#title-sections::before{
+  content: '';
+}

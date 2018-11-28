@@ -2,18 +2,34 @@
   <div id="exploreArea">
     <div class="explore-items draggable">
       {% for post in site.posts %}
-        <div class="explore-item exploreOff {{ post.tags | join:' ' }} {% if post.images %}imagepost{% endif %}">
-          {% if post.images %}
-            {% for image in post.images %}
-                <img src="{{ site.data.filepaths.desktop }}{{ image.src }}" alt="{{ post.title }}" {% if post.content %}data-content="{{ post.content }}"{% endif %} data-caption="{{ post.title }} {% if image.student %}<h1 class='text-outline caption-student'><a class='hover-reverse' href='{{ image.link }}'>{{ image.student }}</a></h1>{% endif %}" data-link="{{ image.link }}">
-            {% endfor %}
-          {% else %}
-            <div class="explore-text" data-caption="{{ post.title }}" {% if post.color %}style="background-color: {{ post.color }}"{% endif %}>
-              {{ post.content }}
-            </div>
-          {% endif %}
-        </div>
+        {% if post.tags contains "important" %}
+          <div class="explore-item exploreOff {{ post.tags | join:' ' }}">
+            <a href="{{ post.link }}" target="_blank">
+              <div class="explore-text" {% if post.color %}style="background-color: {{ post.color }}"{% endif %}>
+                {{ post.content }}
+              </div>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+      {% for post in site.posts %}
+        {% unless post.tags contains "important" %}
+          <div class="explore-item exploreOff {{ post.tags | join:' ' }} {% if post.images %}imagepost{% endif %}">
+            {% if post.images %}
+              {% for image in post.images %}
+                  <img src="{{ site.data.filepaths.desktop }}{{ image.src }}" alt="{{ post.title }}" {% if post.content %}data-content="{{ post.content }}"{% endif %} data-caption="{{ post.title }} {% if image.student %}<h1 class='text-outline caption-student'><a class='hover-reverse' href='{{ image.link }}'>{{ image.student }}</a></h1>{% endif %}" data-link="{{ image.link }}">
+              {% endfor %}
+            {% else %}
+              <div class="explore-text" data-caption="{{ post.title }}" {% if post.color %}style="background-color: {{ post.color }}"{% endif %}>
+                {{ post.content }}
+              </div>
+            {% endif %}
+          </div>
+        {% endunless %}
       {% endfor %}
     </div>
   </div>
+
+  {% include _pill.html %}
+  
 </div>

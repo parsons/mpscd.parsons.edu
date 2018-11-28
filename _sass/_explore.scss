@@ -8,6 +8,13 @@ $exp: calc(#{$exp-x} - #{$exp-y});
   height: 100vh;
   position: relative;
 
+  &.blurOn {
+    pointer-events: all;
+    * {
+      pointer-events: none;
+    }
+  }
+
   &.exploreOff {
     &:hover {
       @extend .blurInter;
@@ -27,9 +34,8 @@ $exp: calc(#{$exp-x} - #{$exp-y});
     height: 100%;
     overflow: hidden;
     .explore-items {
-      top: -40%;
-      left: -40%;
       width: $exp;
+      min-height: 100vh;
       cursor: pointer;
       .explore-item {
         width: 30vw;
@@ -42,9 +48,29 @@ $exp: calc(#{$exp-x} - #{$exp-y});
           -webkit-filter: drop-shadow(5px 5px 5px #222);
           filter: drop-shadow(5px 5px 5px #222);
         }
+        a {
+          cursor: url("images/hand.png"), auto;
+        }
         &.exploreOn{
           cursor: url("images/zoom.png"), auto;
           pointer-events: all;
+        }
+        &.important {
+          height: 30vw;
+          border-radius: 50%;
+          div.explore-text {
+            height: 100%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+              font-size: $text-xl;
+              color: black;
+              text-align: center;
+              mix-blend-mode: normal;
+            }
+          }
         }
         div.explore-text{
           background-color: $explore-color;

@@ -15,12 +15,27 @@
   .sidebar-info, .sidebar-empty {
     width: 45px;
   }
+  .sidebar-title {
+    overflow: hidden;
+    h6 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+    }
+  }
   .sidebar-info {
     margin-right: 18px;
+    margin-left: 18px;
     opacity: 0;
+    overflow: hidden;
     transition: $base-transition-sm;
     transition-property: opacity;
     h6 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
       &::after {
         content: '';
         width: 12px;
