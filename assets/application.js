@@ -229,11 +229,19 @@ $exploreItem.on("click", function(){
   $lightbox.addClass('lightboxOn');
   $body.addClass("overflow-hidden");
   $(".hover-caption, .filter-button").addClass("hidden");
-  $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
+  var content = $(this).find('img').length !== 0 ? $(this).find('img').attr('data-content').trim() : '';
+  if (content != '') {
+    $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
+    $('.lightbox-more').show();
+  } else {
+    $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
+    $('.lightbox-more').hide();
+  }
   if (!$(this).hasClass('imagepost')) {
     $(".lightbox-detail").html('<div>' + $(this).find('div').html() + '</div>');
   } else {
     $(".lightbox-detail").html($(this).html());
+    $('.lightbox-description').html($(this).find('img').attr('data-content'));
   }
 });
 
@@ -242,7 +250,20 @@ $lightboxClose.on("click", function(){
   $main.removeClass("blurred");
   $body.removeClass("overflow-hidden");
   $(".hover-caption, .filter-button").removeClass("hidden");
+  $('.lightbox-description').html("");
 });
+
+$(".lightbox-more").on("click", function(){
+  var t = $('.lightbox-description').outerHeight();
+  $('.lightbox-description').toggleClass('active');
+  if($('.lightbox-description').hasClass('active')){
+    $(".lightbox-more").find('h1').text('—');
+    $lightboxCaption.css('transform', 'translateY(-' + t + 'px)');
+  } else {
+    $(".lightbox-more").find('h1').text('+');
+    $lightboxCaption.css('transform', 'translateY(0)');
+  }
+})
 
 
 

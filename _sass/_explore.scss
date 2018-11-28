@@ -67,8 +67,14 @@ $exp: calc(#{$exp-x} - #{$exp-y});
   bottom: $space-xs;
   left: $sidebar-width + $space-sm;
   z-index: 12;
+  width: 60%;
   display:none;
   pointer-events: none;
+
+  a {
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: $color-base;
+  }
 
   @include sm {
     &.exploreOn {
