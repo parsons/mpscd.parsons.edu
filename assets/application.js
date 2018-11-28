@@ -66,7 +66,7 @@ $document.ready(function(){
 /////////////////
 // LOADING PAGE
 
-$window.load(function(){
+$window.on('load', function(){
   pageLoaded = true;
   $body.scrollTop(0).removeClass("preload");
 });
@@ -304,34 +304,3 @@ $(".lightbox-more").on("click", function(){
     $lightboxCaption.css('transform', 'translateY(0)');
   }
 })
-
-
-
-
-
-
-// image filtering functions --------------------------------------------------
-
-// $(".filter-list").children().first().on("click", function() {
-//   var $subMenu = $(this).siblings();
-//
-//   if ( !$(this).hasClass("expanded") ) {
-//     $(this).html("Filters -");
-//     $subMenu.removeClass("hidden");
-//     $(this).addClass("expanded");
-//   } else {
-//     $(this).html("Filters +");
-//     $subMenu.addClass("hidden");
-//     $(this).removeClass("expanded");
-//   }
-// }
-// );
-//
-// $(".filter-list").children(".sub-menu").children(".ui-pill").on("click", function() {
-//   var $title = $(this).html();
-//   $(".ui-pill-black").html($title);
-//   var $filter = $(this).data("filter");
-//   if ($filter === "everything") { $explore.isotope({ filter: "*" }); }
-//   else { $explore.isotope({ filter: "." + $filter }); }
-// }
-// );
