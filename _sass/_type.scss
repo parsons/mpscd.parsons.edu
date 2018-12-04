@@ -135,11 +135,14 @@ li {
   @include secondary;
   letter-spacing: $text-letter-md;
   line-height: $text-line-md;
-  font-size: $text-sm;
   color: $color-base;
   margin: 0;
   padding: 0;
   text-transform: none;
+  font-size: $text-xs-sm;
+  @include sm {
+    font-size: $text-sm;
+  }
 }
 
 ul, ol {
@@ -222,10 +225,11 @@ h6 {
 
 h1 {
   &.t-set {
-    margin-bottom: $space-md;
+    margin-bottom: $space-xs;
     font-size: $text-xs-xxl;
 
     @include sm {
+      margin-bottom: $space-sm;
       font-size: $text-xxl;
     }
   }
@@ -299,7 +303,10 @@ li {
   &.t-set {
     @include primary;
     @extend .t-hyphenate;
-    font-size: $text-base;
+    font-size: $text-xs-sm;
+    @include sm {
+      font-size: $text-sm;
+    }
     letter-spacing: $text-letter-base;
     line-height: $text-line-lg;
 
@@ -395,11 +402,14 @@ blockquote {
 
 hr {
   &.t-set {
-    margin: $space-sm 0;
     background: $hr-border-color;
     height: $hr-border-width;
     width: 100%;
     border-top: 0;
+    margin: $space-xs 0;
+    @include sm {
+      margin: $space-sm 0;
+    }
   }
 }
 

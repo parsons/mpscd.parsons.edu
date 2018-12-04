@@ -100,7 +100,7 @@ $document.ready(function(){
 // listing functionality -------------------------------------------------
 
 $listing.hover( function() {
-  $(this).find("h3, .ui-arrow").toggleClass("text-outline");
+  $(this).find("h3, .ui-arrow").toggleClass("text-outline-screen");
 });
 
 

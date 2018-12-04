@@ -2,6 +2,13 @@ footer {
   width: 100%;
   position: relative;
 
+  hr {
+    display: none;
+    @include sm {
+      display: block;
+    }
+  }
+
   p {
     font-size: $text-sm;
   }
@@ -14,8 +21,10 @@ footer {
   }
 
   .footer-sub {
-    column-count: 2;
-    column-gap: $space-xs * 2;
+    @include sm {
+      column-count: 2;
+      column-gap: $space-xs * 2;
+    }
   }
 
   .footer-sub > li {

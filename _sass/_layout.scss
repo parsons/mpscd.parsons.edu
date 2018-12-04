@@ -35,6 +35,10 @@ div.listing {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin-bottom: $space-xxs;
+  @include sm {
+    margin-bottom: 0;
+  }
 
   .ui-arrow {
     width: 24px;
@@ -42,13 +46,16 @@ div.listing {
     background-origin: content-box;
     background-position: center;
     background-image: url("images/right-arrow.svg");
-    display: inline-block;
+    display: none;
     background-size: 24px;
     background-repeat: no-repeat;
     transform-origin: center;
     margin: 0 $space-xs;
     margin-top: 8px;
     transition: $base-transition-sm;
+    @include sm {
+      display: inline-block;
+    }
   }
 
   .listing-description {
@@ -66,6 +73,10 @@ div.listing {
     }
     & > div:nth-child(1) {
       margin-top: 8px;
+      margin-bottom: 8px;
+      @include sm {
+        margin-bottom: 0;
+      }
     }
 
     & > div:nth-child(2) {

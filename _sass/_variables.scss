@@ -43,21 +43,21 @@ $font-tertiary-italic:                   'America Mono Regular Italic Web', Cour
 // type sizes
 $text-base:                              18px !default;
 $text-xxs:                               12px !default;
-$text-xs:                                12px !default;
+$text-xs:                                14px !default;
 $text-sm:                                $text-base !default;
 $text-md:                                30px !default;
 $text-lg:                                42px !default;
-$text-xl:                                56px !default;
-$text-xxl:                               96px !default;
+$text-xl:                                48px !default;
+$text-xxl:                               86px !default;
 
 // mobile sizes
-$text-xs-xxs:                            12px !default;
-$text-xs-xs:                             $text-base !default;
+$text-xs-xxs:                            10px !default;
+$text-xs-xs:                             12px !default;
 $text-xs-sm:                             16px !default;
 $text-xs-md:                             28px !default;
-$text-xs-lg:                             36px !default;
-$text-xs-xl:                             42px !default;
-$text-xs-xxl:                            56px !default;
+$text-xs-lg:                             30px !default;
+$text-xs-xl:                             32px !default;
+$text-xs-xxl:                            42px !default;
 
 // variable type sizes
 $text-v-base:                            2vw;
@@ -85,7 +85,7 @@ $text-letter-xl:                         .1em;
 
 // spacing
 $space-base:                             36px;
-$space-xxs:                              12px !default;
+$space-xxs:                              10px !default;
 $space-xs:                               18px !default;
 $space-sm:                               $space-base !default;
 $space-md:                               48px !default;
@@ -167,6 +167,8 @@ $base-transition:                       all .5s cubic-bezier(.215, .61, .355, 1)
 $base-transition-sm:                    all .25s cubic-bezier(.215, .61, .355, 1);
 
 $explore-img-width:                     30vw;
+$explore-img-width-mobile:              70vw;
 $explore-img-nb:                        5;
+$explore-img-nb-mobile:                 3;
 
 $explore-hover:                         130px;

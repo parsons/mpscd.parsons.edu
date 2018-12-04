@@ -78,15 +78,22 @@ body {
 }
 
 .text-outline {
-  color: $color-light !important;
-  -webkit-text-stroke-width: 0.8px;
-  -webkit-text-stroke-color: $color-base;
-
+    color: $color-light !important;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: $color-base;
   &.hover-reverse{
     &:hover{
       color: rgba(0,0,0,0) !important;
       -webkit-text-stroke-width: 0.8px;
       -webkit-text-stroke-color: $color-base;}
+  }
+}
+
+.text-outline-screen {
+  @include sm {
+    color: $color-light !important;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: $color-base;
   }
 }
 

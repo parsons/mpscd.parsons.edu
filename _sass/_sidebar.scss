@@ -12,6 +12,7 @@
   background: $color-light;
   border-bottom: $border-sm;
   z-index: 12;
+
   .sidebar-info, .sidebar-empty {
     width: 45px;
   }
@@ -58,6 +59,12 @@
     cursor:pointer;
     .sidebar-info {
       opacity: 1;
+    }
+  }
+  &.exploreOff {
+    display: none;
+    @include sm {
+      display: flex;
     }
   }
   &:hover {

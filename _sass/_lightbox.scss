@@ -27,7 +27,10 @@
   }
 
   & > div {
-    margin: 0 $sidebar-width + $space-sm;
+    margin: 0 $space-xxs;
+    @include sm {
+      margin: 0 $sidebar-width + $space-sm;
+    }
     p {
       @extend h2;
       color: $color-light !important;
@@ -39,12 +42,16 @@
 
 .lightbox-caption {
   position: fixed;
-  bottom: $space-xs;
-  left: $sidebar-width + $space-sm;
+  bottom: $space-xxs;
+  left: $space-xxs;
   width: 75%;
   transform: translateY(0);
   transition: $base-transition;
   transition-property: transform;
+  @include sm {
+    bottom: $space-xs;
+    left: $sidebar-width + $space-sm;
+  }
 
   & > .caption-student, & > .caption-student a {
     color: $color-light !important;
@@ -58,8 +65,12 @@
 
 .lightbox-close{
   position: fixed;
-  top: $space-xs;
-  right: $space-sm;
+  top: $space-xxs;
+  right: $space-xxs;
+  @include sm {
+    top: $space-xs;
+    right: $space-sm;
+  }
 
   &:hover{
     color: $color-light;
@@ -69,8 +80,12 @@
 
 .lightbox-more{
   position: fixed;
-  bottom: $space-xs;
-  right: $space-sm;
+  bottom: $space-xxs;
+  right: $space-xxs;
+  @include sm {
+    bottom: $space-xs;
+    right: $space-sm;
+  }
 
   &:hover{
     color: $color-light;
@@ -80,15 +95,21 @@
 
 .lightbox-description{
   bottom: 0;
-  padding-bottom: $space-xs;
-  padding-top: $space-sm;
+  padding-bottom: $space-xxs;
+  padding-top: $space-xxs;
   position: fixed;
   z-index: 20;
-  width: 75%;
-  margin-left: $sidebar-width + $space-sm;
+  width: 75vw;
+  margin-left: $space-xxs;
   transform: translateY(100%);
   transition: $base-transition;
   transition-property: transform;
+  @include sm {
+    width: 75vw;
+    padding-bottom: $space-xs;
+    padding-top: $space-sm;
+    margin-left: $sidebar-width + $space-sm;
+  }
   &.active {
     transform: translateY(0);
   }

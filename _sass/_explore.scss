@@ -1,6 +1,9 @@
 $exp-x: $explore-img-nb * $explore-img-width;
+$exp-x-mobile: $explore-img-nb-mobile * $explore-img-width-mobile;
 $exp-y: -2 * $explore-img-nb * $space-md;
+$exp-y-mobile: -2 * $explore-img-nb-mobile * $space-sm;
 $exp: calc(#{$exp-x} - #{$exp-y});
+$exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
 
 .explore {
   z-index: 0;
@@ -35,15 +38,22 @@ $exp: calc(#{$exp-x} - #{$exp-y});
     height: 100%;
     overflow: hidden;
     .explore-items {
-      width: $exp;
+      width: $exp-mobile;
       min-height: 100vh;
       cursor: pointer;
+      @include sm {
+        width: $exp;
+      }
       .explore-item {
-        width: 30vw;
+        width: $explore-img-width-mobile;
+        margin: $space-sm;
         position: absolute;
         display: inline-block;
-        margin: $space-md;
         pointer-events: none;
+        @include sm {
+          width: $explore-img-width;
+          margin: $space-md;
+        }
         img {
           max-width: 100%;
           -webkit-filter: drop-shadow(5px 5px 5px #222);
@@ -57,7 +67,10 @@ $exp: calc(#{$exp-x} - #{$exp-y});
           pointer-events: all;
         }
         &.important {
-          height: 30vw;
+          height: $explore-img-width-mobile;
+          @include sm  {
+            height: $explore-img-width;
+          }
           border-radius: 50%;
           div.explore-text {
             height: 100%;
@@ -66,7 +79,10 @@ $exp: calc(#{$exp-x} - #{$exp-y});
             justify-content: center;
             align-items: center;
             p {
-              font-size: $text-xl;
+              font-size: $text-xs-xl;
+              @include sm{
+                font-size: $text-xl;
+              }
               color: black;
               text-align: center;
               mix-blend-mode: normal;
@@ -79,7 +95,10 @@ $exp: calc(#{$exp-x} - #{$exp-y});
           -webkit-filter: drop-shadow(5px 5px 5px #222);
           filter: drop-shadow(5px 5px 5px #222);
           p {
-            font-size: $text-md;
+            font-size: $text-xs-sm;
+            @include sm {
+              font-size: $text-md;
+            }
             mix-blend-mode: difference;
             color: white;
           }
