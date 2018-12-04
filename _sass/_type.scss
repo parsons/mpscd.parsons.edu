@@ -126,6 +126,7 @@ hr {
   margin: $space-sm 0;
   background: $hr-border-color;
   height: $hr-border-width;
+  border-top: 0;
   width: 100%;
 }
 
@@ -398,6 +399,7 @@ hr {
     background: $hr-border-color;
     height: $hr-border-width;
     width: 100%;
+    border-top: 0;
   }
 }
 

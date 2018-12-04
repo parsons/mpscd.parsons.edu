@@ -279,7 +279,7 @@ $exploreItem.on("click", function(){
   $main.addClass("blurred");
   $lightbox.addClass('lightboxOn');
   $body.addClass("overflow-hidden");
-  $(".hover-caption, .filter-button").addClass("hidden");
+  $(".hover-caption").addClass("hidden");
   var content = $(this).find('img').length !== 0 ? $(this).find('img').attr('data-content').trim() : '';
   if (content != '') {
     $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
