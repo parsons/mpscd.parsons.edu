@@ -130,6 +130,7 @@ $announcement-text:                      white;
 $cookies-color:                          #A0E752;
 $cookies-text:                           black;
 $explore-color:                          #A0E752;
+$explore-hover-color:                    black;
 
 // borders
 $border-base:                            1px solid $color-base;
@@ -167,3 +168,5 @@ $base-transition-sm:                    all .25s cubic-bezier(.215, .61, .355, 1
 
 $explore-img-width:                     30vw;
 $explore-img-nb:                        5;
+
+$explore-hover:                         130px;

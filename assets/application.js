@@ -191,12 +191,24 @@ $explore.imagesLoaded().progress( function(){
 });
 
 
+// hover explore section ----------------------------------------------
+
+$document.on('mousemove', function(e) {
+  if ($(e.target).hasClass("exploreOff") && $(e.target).hasClass("explore")) {
+    $('div#exploreHover').removeClass('hidden').css({'top': e.pageY, 'left': e.pageX});
+  } else {
+    $('div#exploreHover').addClass('hidden');
+  }
+});
+
+
 // open/close explore section ----------------------------------------------
 
 $exploreOuter.on("click", function() {
   if ($(this).hasClass("exploreOff")) {
     $('.exploreOff').removeClass('exploreOff').addClass("exploreOn");
     $('.blurOn').addClass("blurOff").removeClass("blurOn");
+    $('div#exploreHover').addClass('hidden');
   }
 });
 

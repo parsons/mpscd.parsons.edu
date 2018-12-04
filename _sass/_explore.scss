@@ -18,6 +18,7 @@ $exp: calc(#{$exp-x} - #{$exp-y});
   &.exploreOff {
     &:hover {
       @extend .blurInter;
+      cursor: pointer;
     }
   }
 
@@ -106,5 +107,23 @@ $exp: calc(#{$exp-x} - #{$exp-y});
     &.exploreOn {
     display:block;
     }
+  }
+}
+
+div#exploreHover {
+  position: absolute;
+  width: $explore-hover;
+  height: $explore-hover;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  background: $explore-hover-color;
+  margin-left: $explore-hover * -0.5;
+  margin-top: $explore-hover * -0.5;
+  pointer-events: none;
+  cursor: pointer;
+  h4 {
+    color: $color-light;
   }
 }
