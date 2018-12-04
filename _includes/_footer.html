@@ -12,9 +12,10 @@
           </li>
           {% endfor %}
         </ul>
+        <hr />
         <ul class="u-mbmd footer-sub">
           {% for link in site.data.navigation.secondary %}
-          <li><h4>{{ link.title }}</h4>
+          <li><p>{{ link.title }}</p>
           </li>
           <li>{{ link.caption }}<a href="{{ link.url }}" title="{{ link.url-title }}">{{ link.url-title }}</a></li>
           {% endfor %}
@@ -25,10 +26,10 @@
     <div class="row u-mbsm">
       <div class="col-xs-6 col-sm-6 u-pbsm visible-xs">
         <img src="{{ site.data.filepaths.main }}parsons_logo.svg" alt="Parsons The New School for Design">
-              </div>
-        <div class="col-xs-6 col-sm-6 u-pbsm u-sm-pbn">
-          {{ site.data.website.address | markdownify }}
-        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 u-pbsm u-sm-pbn">
+        {{ site.data.website.address | markdownify }}
       </div>
     </div>
+  </div>
 </footer>

@@ -13,9 +13,18 @@ footer {
     }
   }
 
+  .footer-sub {
+    column-count: 2;
+    column-gap: $space-xs * 2;
+  }
+
   .footer-sub > li {
     margin: $space-xs 0 !important;
     font-size: $text-xs-xs;
+
+    &:first-of-type {
+      margin-top: 0 !important;
+    }
 
     @include sm {
       font-size: $text-xs;

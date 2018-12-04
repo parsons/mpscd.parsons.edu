@@ -124,8 +124,8 @@ h6 {
 
 hr {
   margin: $space-sm 0;
-  background: #000;
-  height: 3px;
+  background: $hr-border-color;
+  height: $hr-border-width;
   width: 100%;
 }
 
@@ -395,8 +395,8 @@ blockquote {
 hr {
   &.t-set {
     margin: $space-sm 0;
-    background: #000;
-    height: 3px;
+    background: $hr-border-color;
+    height: $hr-border-width;
     width: 100%;
   }
 }
