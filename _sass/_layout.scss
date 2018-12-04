@@ -142,3 +142,39 @@ div.listing {
     column-gap: 36px;
   }
 }
+
+
+// 404
+
+div#four-o-four{
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  left: 0;
+  padding: $space-xxs;
+  @include sm {
+    width: calc(100vw - #{$sidebar-width});
+    left: $sidebar-width;
+    padding: $space-xs $space-sm;
+  }
+  p {
+    @extend h2;
+    color: $color-light !important;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: $color-base;
+  }
+  a{
+    @extend h2;
+    color: $color-base !important;
+    -webkit-text-stroke-width: 0px;
+    &:hover {
+      color: $color-light !important;
+      -webkit-text-stroke-width: 0.8px;
+      -webkit-text-stroke-color: $color-base;
+    }
+  }
+}
