@@ -97,7 +97,6 @@ $document.ready(function(){
       }
       newLetters -= 1;
     } else {
-      console.log('stop')
       clearInterval(lettersInterval);
     }
   }, 3000)
