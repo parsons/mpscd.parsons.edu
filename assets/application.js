@@ -22,6 +22,7 @@ var $window = $(window);
 var $document = $(document);
 
 var blastArray = [];
+var newLetters = 8;
 
 var $listing = $('div.listing');
 var $listingCurriculum = $('div.listing-curriculum');
@@ -85,12 +86,21 @@ $document.ready(function(){
       blastArray.push(this);
     };
   });
-  blastArray.sort(function() {
-    return 0.5 - Math.random()
-  });
-  for (var i = 0; i < blastArray.length; i = i + letterRecurrence){
-    blastArray[i].classList.add('mps-sans');
-  }
+  var lettersInterval = setInterval(function(){
+    if (newLetters != 0){
+
+      blastArray.sort(function() {
+        return 0.5 - Math.random()
+      });
+      for (var i = 0; i < blastArray.length; i = i + newLetters){
+        blastArray[i].classList.add('mps-sans');
+      }
+      newLetters -= 1;
+    } else {
+      console.log('stop')
+      clearInterval(lettersInterval);
+    }
+  }, 3000)
 });
 
 
