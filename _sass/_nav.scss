@@ -9,9 +9,12 @@ nav {
     }
   }
 
+  h4 {
+    height: $text-line-sm * 1em;
+  }
+
   li {
     display: block;
-
     a {
       &.active::before, &:hover::before {
         content: ' ';

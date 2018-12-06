@@ -3,7 +3,7 @@ $font-primary-src:                    #{$font-filepath}SuisseWorks-Regular;
 $font-primary-italic-src:             #{$font-filepath}SuisseWorks-Regular;
 $font-secondary-src:                  #{$font-filepath}SuisseIntl-Regular;
 $font-secondary-heavy-src:            #{$font-filepath}SuisseIntl-Regular;
-$font-tertiary-src:                   #{$font-filepath}MPS-Sans-Regular;
+$font-tertiary-src:                   #{$font-filepath}MPSSans-PixelMax;
 
 @font-face {
   font-family: 'Suisse Works Regular';
@@ -43,7 +43,7 @@ $font-tertiary-src:                   #{$font-filepath}MPS-Sans-Regular;
 
 
 @font-face {
-  font-family: 'MPS-Sans-Regular';
+  font-family: 'MPSSans-PixelMax';
   // src:url("#{$font-tertiary-src}.woff");
   src:url("#{$font-tertiary-src}.woff2") format("woff2"),
       url("#{$font-tertiary-src}.woff") format("woff");
