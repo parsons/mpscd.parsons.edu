@@ -22,6 +22,10 @@
     padding-left: $sidebar-width;
   }
 
+  @include xl {
+    padding-left: $sidebar-big-width;
+  }
+
   &.exploreOn {
     transform: translateX(-100%);
   }
@@ -55,6 +59,12 @@ div.listing {
     transition: $base-transition-sm;
     @include sm {
       display: inline-block;
+    }
+    @include xl {
+      width: 36px;
+      height: 36px;
+      background-size: 36px;
+      margin-top: 10px;
     }
   }
 

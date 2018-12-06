@@ -80,8 +80,9 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
             align-items: center;
             p {
               font-size: $text-xs-xl;
+              line-height: $text-line-sm;
               @include sm{
-                font-size: 5vw;
+                font-size: $text-v-xs;
               }
               color: black;
               text-align: center;
@@ -98,6 +99,9 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
             font-size: $text-xs-sm;
             @include sm {
               font-size: $text-md;
+            }
+            @include xl {
+              font-size: $text-lg;
             }
             mix-blend-mode: difference;
             color: white;

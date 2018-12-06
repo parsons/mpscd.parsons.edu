@@ -12,9 +12,15 @@
   background: $color-light;
   border-bottom: $border-sm;
   z-index: 12;
+  @include xl {
+    height: $sidebar-big-width;
+  }
 
   .sidebar-info, .sidebar-empty {
     width: 50px;
+    @include xl {
+      width: 75px;
+    }
   }
   .sidebar-title {
     overflow: hidden;
@@ -52,6 +58,11 @@
         transform: rotate(-90deg);
         transition: $base-transition-sm;
         transition-property: transform;
+        @include xl {
+          width: 18px;
+          height: 18px;
+          background-size: 18px;
+        }
       }
     }
   }

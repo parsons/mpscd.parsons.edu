@@ -28,6 +28,7 @@
 
   & > div {
     margin: 0 $space-xxs;
+    max-width: 1000px;
     @include sm {
       margin: 0 $sidebar-width + $space-sm;
     }

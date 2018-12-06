@@ -59,9 +59,18 @@ $text-xs-lg:                             30px !default;
 $text-xs-xl:                             32px !default;
 $text-xs-xxl:                            42px !default;
 
+// large type sizes
+$text-xl-xxs:                            14px !default;
+$text-xl-xs:                             24px !default;
+$text-xl-sm:                             22px !default;
+$text-xl-md:                             30px !default;
+$text-xl-lg:                             52px !default;
+$text-xl-xl:                             64px !default;
+$text-xl-xxl:                            100px !default;
+
 // variable type sizes
 $text-v-base:                            2vw;
-$text-v-xs:                              6vw;
+$text-v-xs:                              5vw;
 $text-v-sm:                              8vw;
 $text-v-md:                              $text-v-base;
 $text-v-lg:                              10vw;
@@ -160,6 +169,7 @@ $blurInter:                              3px;
 $blurOff:                                0px;
 
 $sidebar-width:                          36px;
+$sidebar-big-width:                      44px;
 $announcement-width:                     14rem;
 $cookies-width:                          12rem;
 

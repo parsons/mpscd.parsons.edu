@@ -1,30 +1,24 @@
 /* ////////////////////////////////////////////////
 Typogrpahy
-*/ ////////////////////////////////////////////////
-
-
+*/
+////////////////////////////////////////////////
 // Mixins
 // Edit default font appearance here
 @mixin primary {
   font-family: $font-primary;
 }
-
 @mixin primary-italic {
   font-family: $font-primary-italic;
 }
-
 @mixin secondary {
   font-family: $font-secondary;
 }
-
 @mixin secondary-heavy {
   font-family: $font-secondary-heavy;
 }
-
 @mixin tertiary {
   font-family: $font-tertiary;
 }
-
 @mixin tertiary-italic {
   font-family: $font-tertiary-italic;
 }
@@ -41,7 +35,8 @@ body {
     @include primary-italic;
   }
 
-  b, strong {
+  b,
+  strong {
     @include secondary-heavy;
   }
 
@@ -64,7 +59,7 @@ h2,
 h3,
 h4,
 h5,
-h6, {
+h6 {
   @include secondary;
   letter-spacing: $text-letter-base;
   line-height: $text-line-base;
@@ -76,49 +71,61 @@ h6, {
 
 h1 {
   font-size: $text-xs-xxl;
-
   @include sm {
     font-size: $text-xxl;
+  }
+  @include xl {
+    font-size: $text-xl-xxl;
   }
 }
 
 h2 {
   font-size: $text-xs-xl;
-
   @include sm {
     font-size: $text-xl;
+  }
+  @include xl {
+    font-size: $text-xl-xl;
   }
 }
 
 h3 {
   font-size: $text-xs-lg;
-
   @include sm {
     font-size: $text-lg;
+  }
+  @include xl {
+    font-size: $text-xl-lg;
   }
 }
 
 h4 {
   font-size: $text-xs-md;
-
   @include sm {
     font-size: $text-md;
+  }
+  @include xl {
+    font-size: $text-xl-md;
   }
 }
 
 h5 {
   font-size: $text-xs-sm;
-
   @include sm {
     font-size: $text-sm;
+  }
+  @include xl {
+    font-size: $text-xl-sm;
   }
 }
 
 h6 {
   font-size: $text-xs-xs;
-
   @include sm {
     font-size: $text-xs;
+  }
+  @include xl {
+    font-size: $text-xl-xs;
   }
 }
 
@@ -130,8 +137,8 @@ hr {
   width: 100%;
 }
 
-p,
-li {
+li,
+p {
   @include secondary;
   letter-spacing: $text-letter-md;
   line-height: $text-line-md;
@@ -145,7 +152,8 @@ li {
   }
 }
 
-ul, ol {
+ol,
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -161,8 +169,8 @@ a {
 
   &:active,
   &:focus,
-  &:visited,
-  &:hover {
+  &:hover,
+  &:visited {
     outline: 0;
     color: inherit;
     text-decoration: none;
@@ -186,7 +194,6 @@ pre {
   width: 100%;
   overflow-x: scroll;
 }
-
 // hr {
 //   background: transparent;
 //   border-top: $border-base;
@@ -205,11 +212,11 @@ table {
     height: $space-md;
   }
 }
-
 /* ////////////////////////////////////////////////
 T-SET
 `.t-set`
-*/ ////////////////////////////////////////////////
+*/
+////////////////////////////////////////////////
 
 h1,
 h2,
@@ -227,11 +234,12 @@ h1 {
   &.t-set {
     margin-bottom: $space-xs;
     font-size: $text-xs-xxl;
-    max-width: 600px;
-
     @include sm {
       margin-bottom: $space-sm;
       font-size: $text-xxl;
+    }
+    @include xl {
+      font-size: $text-xl-xxl;
     }
   }
 }
@@ -239,9 +247,11 @@ h1 {
 h2 {
   &.t-set {
     font-size: $text-xs-xl;
-
     @include sm {
       font-size: $text-xl;
+    }
+    @include xl {
+      font-size: $text-xl-xl;
     }
   }
 }
@@ -252,61 +262,71 @@ h3 {
     @include sm {
       font-size: $text-lg;
     }
+    @include xl {
+      font-size: $text-xl-lg;
+    }
   }
 }
 
 h4 {
   &.t-set {
     font-size: $text-xs-md;
-
     @include sm {
       font-size: $text-md;
+    }
+    @include xl {
+      font-size: $text-xl-md;
     }
   }
 }
 
 h5 {
   &.t-set {
-
     font-size: $text-xs-sm;
     @include sm {
       font-size: $text-sm;
+    }
+    @include xl {
+      font-size: $text-xl-sm;
     }
   }
 }
 
 h6 {
   &.t-set {
-
     font-size: $text-xs-xxs;
-
     @include sm {
       font-size: $text-xxs;
+    }
+    @include xl {
+      font-size: $text-xl-xxs;
     }
   }
 }
 
 p {
-  &.t-set{
+  &.t-set {
     margin-bottom: $space-sm;
-    max-width: 600px;
   }
 }
 
 li {
-  &.t-set{
+  &.t-set {
     margin-bottom: 0;
   }
 }
 
-p,
-li {
+li,
+p {
   &.t-set {
     @include primary;
     @extend .t-hyphenate;
     font-size: $text-xs-sm;
     @include sm {
       font-size: $text-sm;
+    }
+    @include xl {
+      font-size: $text-xl-sm;
     }
     letter-spacing: $text-letter-base;
     line-height: $text-line-lg;
@@ -333,11 +353,13 @@ li {
   }
 }
 
-ol, ul {
+ol,
+ul {
   &.t-set {
     margin-bottom: 0;
 
-    ol, ul {
+    ol,
+    ul {
       margin-left: $space-md;
     }
   }
@@ -348,14 +370,12 @@ ol {
     list-style: decimal;
 
     ol {
-
       li {
         list-style: lower-roman;
       }
     }
 
     ul {
-
       li {
         list-style: disc;
       }
@@ -368,14 +388,12 @@ ul {
     list-style: disc;
 
     ol {
-
       li {
         list-style: decimal;
       }
     }
 
     ul {
-
       li {
         list-style: circle;
       }
@@ -411,7 +429,6 @@ hr {
 }
 
 .t-set {
-
   img {
     margin: $space-sm 0;
     max-width: 100%;
@@ -450,7 +467,8 @@ hr {
       border-bottom: $border-sm;
     }
 
-    th, td {
+    td,
+    th {
       border-right: $border-sm;
       padding: $space-xs;
 
@@ -460,27 +478,62 @@ hr {
     }
   }
 
-  h1 {@extend .t-set;}
-  h2 {@extend .t-set;}
-  h3 {@extend .t-set;}
-  h4 {@extend .t-set;}
-  h5 {@extend .t-set;}
-  h6 {@extend .t-set;}
-  p, li {@extend .t-set;}
-  ol {@extend .t-set;}
-  ul {@extend .t-set;}
-  a {@extend .t-set;}
-  blockquote {@extend .t-set;}
-  hr {@extend .t-set;}
-}
+  h1 {
+    @extend .t-set;
+  }
 
+  h2 {
+    @extend .t-set;
+  }
+
+  h3 {
+    @extend .t-set;
+  }
+
+  h4 {
+    @extend .t-set;
+  }
+
+  h5 {
+    @extend .t-set;
+  }
+
+  h6 {
+    @extend .t-set;
+  }
+
+  li,
+  p {
+    @extend .t-set;
+  }
+
+  ol {
+    @extend .t-set;
+  }
+
+  ul {
+    @extend .t-set;
+  }
+
+  a {
+    @extend .t-set;
+  }
+
+  blockquote {
+    @extend .t-set;
+  }
+
+  hr {
+    @extend .t-set;
+  }
+}
 /* ////////////////////////////////////////////////
 T-SET + T-READING
 `.t-set.t-reading`
-*/ ////////////////////////////////////////////////
+*/
+////////////////////////////////////////////////
 
 .t-reading {
-
   h1,
   h2,
   h3,
@@ -491,23 +544,17 @@ T-SET + T-READING
     margin-bottom: $space-md;
   }
 
-  h1 {
-  }
+  h1 {}
 
-  h2 {
-  }
+  h2 {}
 
-  h3 {
-  }
+  h3 {}
 
-  h4 {
-  }
+  h4 {}
 
-  h5 {
-  }
+  h5 {}
 
-  h6 {
-  }
+  h6 {}
 
   p {
     margin-bottom: $space-sm;
@@ -522,7 +569,6 @@ T-SET + T-READING
 
     strong {
       @include tertiary;
-
     }
 
     em strong {
@@ -542,11 +588,12 @@ T-SET + T-READING
     @include secondary-heavy;
   }
 
-  ul,
-  ol {
+  ol,
+  ul {
     margin-bottom: $space-sm;
 
-    ul, ol {
+    ol,
+    ul {
       margin-bottom: 0;
     }
   }
@@ -559,7 +606,6 @@ T-SET + T-READING
     font-size: $text-lg;
   }
 }
-
 // typographic helpers
 .t-disabled {
   color: $color-disabled;
@@ -579,8 +625,7 @@ T-SET + T-READING
   }
 }
 
-.t-indented-none
-.t-indented-0 {
+.t-indented-none .t-indented-0 {
   text-indent: 0;
 
   p,
@@ -588,12 +633,29 @@ T-SET + T-READING
     text-indent: 0;
   }
 }
-
 // helper classes for fonts
 // do not edit
-.font-primary {@include primary;}
-.font-primary-italic {@include primary-italic;}
-.font-secondary {@include secondary;}
-.font-secondary-heavy {@include secondary-heavy;}
-.font-tertiary {@include tertiary;}
-.font-tertiary-italic {@include tertiary-italic;}
+
+.font-primary {
+  @include primary;
+}
+
+.font-primary-italic {
+  @include primary-italic;
+}
+
+.font-secondary {
+  @include secondary;
+}
+
+.font-secondary-heavy {
+  @include secondary-heavy;
+}
+
+.font-tertiary {
+  @include tertiary;
+}
+
+.font-tertiary-italic {
+  @include tertiary-italic;
+}

@@ -1,5 +1,7 @@
 .announcement-container {
-  width: $announcement-width;
+  min-width: $announcement-width;
+  max-width: 30vw;
+  width: auto;
   height: 100vh;
   background: $announcement-color;
   z-index: 30;

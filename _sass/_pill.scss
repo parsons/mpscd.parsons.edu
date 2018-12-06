@@ -32,11 +32,14 @@
 
 .ui-pill {
   font-size: $text-xs-xs;
+  padding: $space-xxs;
   @include sm {
     font-size: $text-xs;
   }
-  height: $space-sm;
-  padding: $space-xxs;
+  @include xl {
+    font-size: $text-xl-xs;
+    padding: $space-xs;
+  }
   margin-left: $space-xxs / 2;
   margin-bottom: $space-xxs;
   font-family: $font-secondary;

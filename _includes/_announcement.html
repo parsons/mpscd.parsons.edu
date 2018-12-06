@@ -5,7 +5,7 @@
       </div>
       <div class="announcement-middle">
         <div class="announcement-subtitle">{{ announcement.subtitle }}</div>
-        <div>{{ announcement.description }}</div>
+        <div>{{ announcement.description | markdownify }}</div>
         <div>{{ announcement.decoration }}</div>
         <div class="announcement-link"><a href="{{ announcement.link }}">Here</a></div>
       </div>

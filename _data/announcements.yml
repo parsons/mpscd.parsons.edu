@@ -3,6 +3,9 @@
 announcements:
   - title: symposium
     subtitle: free
-    description: RSVP january 12
+    description: |
+      RSVP
+
+      January 12
     decoration: ""
     link: google.com
