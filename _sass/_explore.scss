@@ -56,8 +56,8 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
         }
         img {
           max-width: 100%;
-          -webkit-filter: drop-shadow(5px 5px 5px #222);
-          filter: drop-shadow(5px 5px 5px #222);
+          // -webkit-filter: drop-shadow(5px 5px 5px #222);
+          // filter: drop-shadow(5px 5px 5px #222);
         }
         a {
           cursor: url("images/alias.png"), auto;
@@ -81,7 +81,7 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
             p {
               font-size: $text-xs-xl;
               @include sm{
-                font-size: $text-xl;
+                font-size: 5vw;
               }
               color: black;
               text-align: center;
@@ -92,8 +92,8 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
         div.explore-text{
           background-color: $explore-color;
           padding: $space-xs;
-          -webkit-filter: drop-shadow(5px 5px 5px #222);
-          filter: drop-shadow(5px 5px 5px #222);
+          // -webkit-filter: drop-shadow(5px 5px 5px #222);
+          // filter: drop-shadow(5px 5px 5px #222);
           p {
             font-size: $text-xs-sm;
             @include sm {

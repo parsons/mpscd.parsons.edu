@@ -67,7 +67,7 @@ div.listing {
   &.listing-curriculum {
     .ui-arrow {
       transform: rotate(45deg);
-      &.text-outline {
+      &.text-outline-screen {
         transform: rotate(90deg);
       }
     }
@@ -89,7 +89,7 @@ div.listing {
   &.listing-faculty {
     .ui-arrow {
       transform: rotate(0deg);
-      &.text-outline {
+      &.text-outline-screen {
         transform: rotate(-45deg);
       }
     }
@@ -105,7 +105,7 @@ div.listing {
     }
     .ui-arrow {
       transform: rotate(-45deg);
-      &.text-outline {
+      &.text-outline-screen {
         transform: rotate(-90deg);
       }
     }

@@ -227,6 +227,7 @@ h1 {
   &.t-set {
     margin-bottom: $space-xs;
     font-size: $text-xs-xxl;
+    max-width: 600px;
 
     @include sm {
       margin-bottom: $space-sm;
@@ -309,10 +310,6 @@ li {
     }
     letter-spacing: $text-letter-base;
     line-height: $text-line-lg;
-
-    @include from(2000px) {
-      font-size: 100px;
-    }
 
     > a {
       border-bottom: 1px dotted $color-base;
