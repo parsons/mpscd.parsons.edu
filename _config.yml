@@ -1,16 +1,23 @@
-# Site settings
+---
 title: Parsons MPS Communication Design
-description: >
-  A one-year graduate degree program for Digital Product Design.
-email: email@email.com
-url: ""
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+description: 'A one-year graduate degree program for Digital Product Design.
 
-# Build settings
+'
+email: email@email.com
+url: ''
 markdown: kramdown
 theme: minima
 sass:
   sass_dir: _sass
   style: compressed
 plugins:
-  - jekyll-feed
-  - jekyll-minifier
+- jekyll-feed
+- jekyll-minifier
