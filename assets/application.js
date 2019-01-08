@@ -93,7 +93,7 @@ $document.ready(function(){
         return 0.5 - Math.random()
       });
       for (var i = 0; i < blastArray.length; i = i + newLetters){
-        blastArray[i].classList.add('mps-sans');
+        blastArray[i].classList.add('mps-pixel');
       }
       newLetters -= 1;
     } else {
