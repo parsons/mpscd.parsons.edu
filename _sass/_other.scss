@@ -112,7 +112,13 @@ body {
   white-space:nowrap;
 }
 
-.mps-sans {
-  font-family:  $font-tertiary;
+.mps-pixel {
+  font-family:  $font-tertiary-pixel;
   white-space:nowrap;
 }
+
+.mps-expressive {
+  font-family:  $font-tertiary-expressive;
+  white-space:nowrap;
+}
+

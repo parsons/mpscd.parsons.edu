@@ -3,7 +3,8 @@ $font-primary-src:                    #{$font-filepath}SuisseWorks-Regular;
 $font-primary-italic-src:             #{$font-filepath}SuisseWorks-Regular;
 $font-secondary-src:                  #{$font-filepath}SuisseIntl-Regular;
 $font-secondary-heavy-src:            #{$font-filepath}SuisseIntl-Regular;
-$font-tertiary-src:                   #{$font-filepath}MPSSans-PixelMax;
+$font-tertiary-pixel-src:             #{$font-filepath}MPSSans-Pixel;
+$font-tertiary-expressive-src:        #{$font-filepath}MPSSans-Expressive;
 
 @font-face {
   font-family: 'Suisse Works Regular';
@@ -43,10 +44,20 @@ $font-tertiary-src:                   #{$font-filepath}MPSSans-PixelMax;
 
 
 @font-face {
-  font-family: 'MPSSans-PixelMax';
+  font-family: 'MPSSans-Pixel';
   // src:url("#{$font-tertiary-src}.woff");
-  src:url("#{$font-tertiary-src}.woff2") format("woff2"),
-      url("#{$font-tertiary-src}.woff") format("woff");
+  src:url("#{$font-tertiary-pixel-src}.woff2") format("woff2"),
+      url("#{$font-tertiary-pixel-src}.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'MPSSans-Expressive';
+  // src:url("#{$font-tertiary-src}.woff");
+  src:url("#{$font-tertiary-expressive-src}.woff2") format("woff2"),
+      url("#{$font-tertiary-expressive-src}.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
