@@ -1,8 +1,10 @@
 ---
-layout: post
 title: City Pop App
-tags: [projects, 2018]
-
+date: 2018-07-14 00:00:00 Z
+tags:
+- projects
+- 2018
+layout: post
 images:
 - src: pchen01.png
   creator: Poppy Chen
