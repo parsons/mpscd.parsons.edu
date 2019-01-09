@@ -82,7 +82,7 @@ $document.ready(function(){
     generateValueClass: true
   });
   $('.blast').each(function(){
-    if (regexLetters.test(this.innerHTML)) {
+    if (regexLetters.test(this.innerHTML) && $(this).parents('.text-outline').length < 1) {
       blastArray.push(this);
     };
   });
@@ -92,9 +92,11 @@ $document.ready(function(){
     });
     for (var i = 0; i < blastArray.length; i = i + letterRecurrence){
       blastArray[i].classList.remove('mps-expressive');
-      blastArray[i + 1].classList.remove('mps-pixel');
       blastArray[i].classList.add('mps-pixel');
+      blastArray[i + 1].classList.remove('mps-pixel');
       blastArray[i + 1].classList.add('mps-expressive');
+      blastArray[i + 2].classList.remove('mps-pixel');
+      blastArray[i + 2].classList.remove('mps-expressive');
     }
   }, letterTiming)
 });
