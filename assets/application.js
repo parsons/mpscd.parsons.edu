@@ -157,37 +157,38 @@ $cookiesClose.on("click", function(){
 
 // draggable and random positioning -------------------------------------------------
 
-$document.ready(function() {
-  $draggable.draggable({
-    drag : function(event,ui){
-      var parent = ui.helper[0].parentNode;
+// $document.ready(function() {
+//   $draggable.draggable({
+//     drag : function(event,ui){
+//       var parent = ui.helper[0].parentNode;
 
-		  var dragWidth = ui.helper[0].clientWidth;
-      var parentWidth = parent.clientWidth;
-      var dragHeight = ui.helper[0].clientHeight;
-      var parentHeight = parent.clientHeight;
+// 		  var dragWidth = ui.helper[0].clientWidth;
+//       var parentWidth = parent.clientWidth;
+//       var dragHeight = ui.helper[0].clientHeight;
+//       var parentHeight = parent.clientHeight;
 
-      var widthDifference = dragWidth - parentWidth;
-      var heightDifference = dragHeight - parentHeight;
+//       var widthDifference = dragWidth - parentWidth;
+//       var heightDifference = dragHeight - parentHeight;
 
-      if(ui.position.left > 0) ui.position.left = 0;
-      else if(ui.position.left < -widthDifference) ui.position.left = -widthDifference;
+//       if(ui.position.left > 0) ui.position.left = 0;
+//       else if(ui.position.left < -widthDifference) ui.position.left = -widthDifference;
 
-      if(ui.position.top > 0) ui.position.top = 0;
-      else if(ui.position.top < -heightDifference) ui.position.top = -heightDifference;
-    },
-    start: function(event, ui) {
-      ui.helper.bind("click.prevent", function(event) {
-        event.preventDefault();
-      });
-    },
-    stop: function(event, ui) {
-      setTimeout(function(){
-        ui.helper.unbind("click.prevent");
-      }, 300);
-    }
-	});
-});
+//       if(ui.position.top > 0) ui.position.top = 0;
+//       else if(ui.position.top < -heightDifference) ui.position.top = -heightDifference;
+//     },
+//     start: function(event, ui) {
+//       ui.helper.bind("click.prevent", function(event) {
+//         event.preventDefault();
+//       });
+//     },
+//     stop: function(event, ui) {
+//       setTimeout(function(){
+//         ui.helper.unbind("click.prevent");
+//       }, 300);
+//     },
+//     scroll: true
+// 	});
+// });
 
 var $explore = $('.explore-items').isotope({
   itemSelector: '.explore-item',

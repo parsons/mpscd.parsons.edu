@@ -35,8 +35,8 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
 
   #exploreArea {
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: 100vh;
+    overflow: auto;
     .explore-items {
       width: $exp-mobile;
       min-height: 100vh;
