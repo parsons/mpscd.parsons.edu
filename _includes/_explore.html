@@ -12,7 +12,8 @@
           </div>
         {% endif %}
       {% endfor %}
-      {% for post in site.posts %}
+      {% assign shuffled_array = site.posts | shuffle %}
+      {% for post in shuffled_array %}
         {% unless post.tags contains "important" %}
           <div class="explore-item exploreOff {{ post.tags | join:' ' }} {% if post.images %}imagepost{% endif %}">
             {% if post.images %}
