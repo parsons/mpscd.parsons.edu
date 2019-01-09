@@ -23,3 +23,35 @@ filter-class: faculty
 {% endfor %}
 
 <hr>
+
+<h1>Past faculty</h1>
+
+<ul class="ul-md columns-2">
+  {% for past in site.data.faculty.past %}
+    <li class="u-mbn">
+      {% if past.url %}
+        <a href="{{ past.url }}">{{ past.name }}</a>
+      {% else %}
+        {{ past.name }}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<hr>
+
+<h1>Guests</h1>
+
+<ul class="ul-md columns-2">
+  {% for guests in site.data.faculty.guests %}
+    <li class="u-mbn">
+      {% if guests.url %}
+        <a href="{{ guests.url }}">{{ guests.name }}</a>
+      {% else %}
+        {{ guests.name }}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<hr>

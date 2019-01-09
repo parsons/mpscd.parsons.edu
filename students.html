@@ -16,7 +16,13 @@ filter-class: projects
 
   <ul class="ul-md columns-2">
     {% for student in year[1].students %}
-      <li class="u-mbn">{{ student.name }}</li>
+      <li class="u-mbn">
+        {% if student.url %}
+          <a href="{{ student.url }}">{{ student.name }}</a>
+        {% else %}
+          {{ student.name }}
+        {% endif %}
+      </li>
     {% endfor %}
   </ul>
 

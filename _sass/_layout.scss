@@ -137,7 +137,10 @@ div.listing {
   margin: none;
 
   & a {
-    border-bottom: none;
+    border-bottom: $border-dotted;
+    &:hover {
+      border-bottom: $border-sm;
+    }
   }
 
   @include sm {
