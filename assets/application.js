@@ -22,7 +22,6 @@ var $window = $(window);
 var $document = $(document);
 
 var blastArray = [];
-var newLetters = 8;
 
 var $listing = $('div.listing');
 var $listingCurriculum = $('div.listing-curriculum');
@@ -44,8 +43,9 @@ var $lightboxClose = $(".lightbox-close");
 var $info = $('.info');
 var $main = $('main');
 
-var regexLetters = new RegExp("^[a-z]+$");
-var letterRecurrence = 3; // Ex: 4 = 1/4 of the letters replaced
+var regexLetters = new RegExp("^[A-Za-z]+$");
+var letterRecurrence = 6; // Ex: 4 = 1/4 of the letters replaced
+var letterTiming = 3000;
 var imagesMin = 150;
 var imagesMax = 250;
 var pad = 5;
@@ -87,19 +87,16 @@ $document.ready(function(){
     };
   });
   var lettersInterval = setInterval(function(){
-    if (newLetters != 0){
-
-      blastArray.sort(function() {
-        return 0.5 - Math.random()
-      });
-      for (var i = 0; i < blastArray.length; i = i + newLetters){
-        blastArray[i].classList.add('mps-pixel');
-      }
-      newLetters -= 1;
-    } else {
-      clearInterval(lettersInterval);
+    blastArray.sort(function() {
+      return 0.5 - Math.random()
+    });
+    for (var i = 0; i < blastArray.length; i = i + letterRecurrence){
+      blastArray[i].classList.remove('mps-expressive');
+      blastArray[i + 1].classList.remove('mps-pixel');
+      blastArray[i].classList.add('mps-pixel');
+      blastArray[i + 1].classList.add('mps-expressive');
     }
-  }, 3000)
+  }, letterTiming)
 });
 
 
