@@ -22,12 +22,22 @@
 
 .page-filter{
   display: none !important;
+  cursor: pointer;
   &.exploreOn{
     display: inline-block !important;
   }
   @include sm {
     display: inline-block !important;
   }
+  &:hover {
+    &::after {
+      content: "Reset filters";
+    }
+    span {
+      display: none;
+    }
+  }
+
 }
 
 .ui-pill {

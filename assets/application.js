@@ -217,6 +217,13 @@ $(".filter-list").on('click', '.ui-pill', function(e) {
   $explore.isotope({ filter: filterValue });
 });
 
+$('.page-filter').on('click', function(e) {
+  $('.sub-menu').find('.is-checked').removeClass('is-checked');
+  $explore.isotope({ filter: '' });
+  $(this).find('span').empty();
+  $(find).find('span#title-sections').text('Everything');
+})
+
 $('.sub-menu').each(function(i, buttonGroup) {
   var $buttonGroup = $(buttonGroup);
   $buttonGroup.on('click', '.ui-pill', function(e) {
