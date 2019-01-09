@@ -62,7 +62,7 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
         a {
           cursor: url("images/alias.png"), auto;
         }
-        &.exploreOn{
+        &.exploreOn.imagepost{
           cursor: url("images/zoom.png"), auto;
           pointer-events: all;
         }
