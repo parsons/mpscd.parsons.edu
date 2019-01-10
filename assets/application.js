@@ -69,7 +69,16 @@ $document.ready(function(){
 
 $window.on('load', function(){
   pageLoaded = true;
-  $body.scrollTop(0).removeClass("preload");
+  $body.scrollTop(0)
+  var $explore = $('.explore-items');
+  $explore.imagesLoaded( function(){
+    $explore.isotope({
+      itemSelector: '.explore-item',
+      layoutMode: 'masonry'
+    });
+  });
+  $explore.isotope('layout');
+  $body.removeClass("preload");
 });
 
 
@@ -154,16 +163,6 @@ $cookiesClose.on("click", function(){
 
 /////////////////
 // EXPLORE
-
-var $explore = $('.explore-items').isotope({
-  itemSelector: '.explore-item',
-  layoutMode: 'masonry'
-});
-
-$explore.imagesLoaded().progress( function(){
-  $explore.isotope("layout");
-});
-
 
 // hover explore section ----------------------------------------------
 
