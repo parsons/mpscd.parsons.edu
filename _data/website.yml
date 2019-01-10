@@ -5,6 +5,7 @@ website:
   subtitle: Digital Product Design
   description: |
     A one-year graduate degree program for Digital Product Design.
+  starting-page: learn # learn or explore
 
 apply:
   link: https://app.applyyourself.com/AYApplicantLogin/fl_ApplicantConnectLogin.asp?id=newschool&_ga=2.43064037.1577567439.1531343203-1635439531.1489622663

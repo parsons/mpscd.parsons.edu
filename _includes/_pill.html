@@ -1,5 +1,5 @@
 <div class="pill-container">
-  <div class="ui-pill ui-pill-black page-filter exploreOff titles">
+  <div class="ui-pill ui-pill-black page-filter {% if site.data.website.website.starting-page == 'explore' and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %} titles">
     {% for type in site.data.filters.filters %}
       <span id="title-{{ type.type | downcase }}"></span>
     {% endfor %}
