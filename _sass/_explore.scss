@@ -51,8 +51,20 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
         display: inline-block;
         pointer-events: none;
         @include sm {
-          width: $explore-img-width;
           margin: $space-md;
+          width: $explore-img-width;
+        }
+        &.small {
+          width: $explore-img-width-mobile;
+          @include sm {
+            width: $explore-img-width / 1.5;
+          }
+        }
+        &.large {
+          width: $explore-img-width-mobile;
+          @include sm {
+            width: $explore-img-width * 1.5;
+          }
         }
         img {
           max-width: 100%;
@@ -65,6 +77,7 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
         &.exploreOn.imagepost{
           cursor: url("images/zoom.png"), auto;
           pointer-events: all;
+          text-align: center;
         }
         &.important {
           height: $explore-img-width-mobile;

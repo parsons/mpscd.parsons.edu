@@ -15,7 +15,7 @@
       {% assign shuffled_array = site.posts | shuffle %}
       {% for post in shuffled_array %}
         {% unless post.tags contains "important" %}
-          <div class="explore-item exploreOff {{ post.tags | join:' ' }} {% if post.images %}imagepost{% endif %}">
+          <div class="explore-item exploreOff {{ post.tags | join:' ' }} {% if post.images %}imagepost {% for image in post.images %}{{ image.size }}{% endfor %}{% endif %}">
             {% if post.images %}
               {% for image in post.images %}
                   <img src="{{ site.data.filepaths.desktop }}{{ image.src }}" alt="{{ post.title }}" {% if post.content %}data-content="{{ post.content }}"{% endif %} data-caption="{{ post.title }} {% if image.student %}<h1 class='text-outline caption-student'><a class='hover-reverse' href='{{ image.link }}'>{{ image.student }}</a></h1>{% endif %}" data-link="{{ image.link }}">

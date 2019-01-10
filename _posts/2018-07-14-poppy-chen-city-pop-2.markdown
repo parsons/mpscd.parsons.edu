@@ -8,6 +8,7 @@ layout: post
 images:
 - src: pchen01.png
   creator: Poppy Chen
+  size: normal
   link: http://patrickserr.com/
 ---
 

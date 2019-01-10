@@ -7,6 +7,7 @@ tags:
 layout: post
 images:
 - src: scheng01.jpg
+  size: large
   student: Sheila Cheng
   link: http://patrickserr.com/
 ---
