@@ -49,7 +49,6 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
         margin: $space-sm;
         position: absolute;
         display: inline-block;
-        pointer-events: none;
         @include sm {
           margin: $space-md;
           width: $explore-img-width;
@@ -76,7 +75,6 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
         }
         &.exploreOn.imagepost{
           cursor: url("images/zoom.png"), auto;
-          pointer-events: all;
           text-align: center;
         }
         &.important {

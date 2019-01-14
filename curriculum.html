@@ -27,7 +27,7 @@ filter-class: curriculum
       <div class="col-12 col-sm-9 offset-sm-3 listing-description">
           {{ c.description | markdownify }}
           {% if c.learn-more-url %}
-            <p><a href="{{ c.learn-more-url }}">Learn more</a></p>
+            <p><a href="{{ c.learn-more-url }}" target="_blank">Learn more</a> <span class="font-secondary u-mlxxs">↗</span></p>
           {% endif %}
       </div>
     </div>

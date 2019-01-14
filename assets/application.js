@@ -33,7 +33,7 @@ var $cookiesTitle = $('.cookies-title');
 var $cookiesClose = $('.cookies-close');
 var $textReplaced = $("h1, h3, nav h4");
 var $exploreOuter = $('.explore');
-var $draggable = $('.explore-items');
+var $explore = $('.explore-items');
 var $sidebar = $('.sidebar');
 var $exploreItem = $('.explore-item:not(.important)');
 var $caption = $('.hover-caption');
@@ -49,6 +49,7 @@ var letterTiming = 3000;
 var imagesMin = 150;
 var imagesMax = 250;
 var pad = 5;
+var down = false;
 
 
 /////////////////
@@ -70,15 +71,21 @@ $document.ready(function(){
 $window.on('load', function(){
   pageLoaded = true;
   $body.scrollTop(0)
-  var $explore = $('.explore-items');
   $explore.imagesLoaded( function(){
     $explore.isotope({
       itemSelector: '.explore-item',
       layoutMode: 'masonry'
     });
+    $explore.isotope('layout');
+
   });
-  $explore.isotope('layout');
   $body.removeClass("preload");
+});
+
+$(document).mousedown(function() {
+  down = true;
+}).mouseup(function() {
+  down = false;  
 });
 
 
@@ -102,10 +109,14 @@ $document.ready(function(){
     for (var i = 0; i < blastArray.length; i = i + letterRecurrence){
       blastArray[i].classList.remove('mps-expressive');
       blastArray[i].classList.add('mps-pixel');
-      blastArray[i + 1].classList.remove('mps-pixel');
-      blastArray[i + 1].classList.add('mps-expressive');
-      blastArray[i + 2].classList.remove('mps-pixel');
-      blastArray[i + 2].classList.remove('mps-expressive');
+      if (blastArray[i + 1]) {
+        blastArray[i + 1].classList.remove('mps-pixel');
+        blastArray[i + 1].classList.add('mps-expressive');
+      }
+      if (blastArray[i + 2]) {
+        blastArray[i + 2].classList.remove('mps-pixel');
+        blastArray[i + 2].classList.remove('mps-expressive');
+      }
     }
   }, letterTiming)
 });
@@ -117,7 +128,7 @@ $document.ready(function(){
 // listing functionality -------------------------------------------------
 
 $listing.hover( function() {
-  $(this).find("h3, .ui-arrow").toggleClass("text-outline-screen");
+  $(this).find("h3:not(.no-url), .ui-arrow").toggleClass("text-outline-screen");
 });
 
 
@@ -128,6 +139,7 @@ $listing.hover( function() {
 
 $listingCurriculum.click( function() {
   $(this).toggleClass("expanded");
+  $(this).find('.listing-description').click(function(e) { e.stopPropagation(); })
 });
 
 
@@ -200,6 +212,16 @@ $exploreItem.hover(function(){
 },function(){
   $caption.html("");
 });
+
+$('.explore-item').hover(function() {
+  if (!down) {
+    $('#exploreArea').removeClass('dragscroll');
+    dragscroll.reset()
+  } 
+}, function(){
+  $('#exploreArea').addClass('dragscroll');
+  dragscroll.reset()
+})
 
 
 // Filtering ----------------------------------------------
