@@ -1,8 +1,6 @@
 ---
 title: Visual Culture Seminar
 date: 2019-01-15 14:16:00 -05:00
-tags:
-- first
 position: 2
 credit: 3 Credits
 pmcd: PMCD 5200
