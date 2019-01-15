@@ -20,6 +20,14 @@ collections:
   uploads:
     title: Uploads
     output: true
+defaults:
+- scope:
+    path: ''
+    type: curriculum
+  values:
+    credit: 
+    pmcd: 
+    learn_more: 
 subtitle: Digital Product Design
 is_explore_open: false
 background_image: "/uploads/windows_xp_bliss.jpg"
@@ -33,12 +41,3 @@ sass:
 plugins:
 - jekyll-feed
 - jekyll-minifier
-defaults:
-  -
-    scope:
-      path: ""
-      type: "curriculum"
-    values:
-      credit:
-      pmcd:
-      learn_more:
