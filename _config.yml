@@ -32,12 +32,12 @@ defaults:
     path: ''
     type: students
   values:
-    url: 
+    list: 
 - scope:
     path: ''
     type: faculty
   values:
-    url: 
+    list: 
 subtitle: Digital Product Design
 is_explore_open: false
 background_image: "/uploads/windows_xp_bliss.jpg"
