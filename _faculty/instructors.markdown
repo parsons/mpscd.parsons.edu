@@ -5,7 +5,7 @@ position: 0
 list:
 - "[Brendan Griffiths](https://brendangriffiths.com)"
 - Adam Brodowski
-- Jacob Heftmann
+- "[Jacob Heftmann](http://www.jacobheftmann.com)"
 - Erica Heinz
 - "[Nick Schaden](http://www.nickschaden.com)"
 - "[Brian Watterson](https://brianwatterson.com)"
