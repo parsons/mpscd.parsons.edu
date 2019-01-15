@@ -9,6 +9,7 @@ address text: |-
   New York, NY
 curriculum text: For a complete listing of courses and course descriptions, visit
   the [University Course Catalog]().
+parsons url: https://www.newschool.edu/parsons/
 ---
 
 A one-year graduate degree program for Digital Product Design.
