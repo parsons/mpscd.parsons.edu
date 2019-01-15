@@ -3,7 +3,7 @@ title: Typography and Interaction 1
 date: 2019-01-15 14:15:00 -05:00
 tags:
 - first
-position: 3
+position: 2
 credit: 2 Credits
 pmcd: PMCD 5001
 ---
