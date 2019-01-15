@@ -8,6 +8,9 @@ collections:
   students:
     title: Students
     output: true
+  texts:
+    title: Texts
+    output: true
   uploads:
     title: Uploads
     output: true
