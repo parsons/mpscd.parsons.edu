@@ -1,8 +1,6 @@
 ---
 title: Major Studio 1
 date: 2019-01-15 14:14:00 -05:00
-tags:
-- first
 position: 0
 credit: 6 Credits
 pmcd: PMCD 5101
