@@ -6,7 +6,7 @@
 <!--[if (gt IE 9)|!(IE)]> <html class="no-js"> <![endif]-->
 
   <head>
-    <title>{{ site.data.website.website.title }}</title>
+    <title>{{ site.title }}</title>
 
     <meta name="author" content="">
     <meta name="description" content="">
@@ -16,15 +16,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <meta property="og:url" content="http://www.newschool.edu">
+    <meta property="og:url" content="{{ site.url }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ site.data.website.website.title }}">
-    <meta property="og:description" content="{{ site.data.website.website.description }}">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.pages[7].content }}">
     <meta property="og:image" content="{{ site.data.filepaths.main }}xxix-og-rect.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="{{ site.data.website.website.description }}">
-    <meta name="twitter:title" content="{{ site.data.website.website.title }}">
+    <meta name="twitter:description" content="{{ site.pages[7].content }}">
+    <meta name="twitter:title" content="{{ site.title }}">
     <meta name="twitter:image" content="{{ site.data.filepaths.main }}xxix-og-rect.png">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

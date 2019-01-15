@@ -1,5 +1,0 @@
-# background options
-
-image: windows_xp_bliss.jpg
-layout: cover # can be cover / contain / repeat
-color: white # only visible with layout: contain

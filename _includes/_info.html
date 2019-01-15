@@ -1,4 +1,4 @@
-<div class="info {% if site.data.website.website.starting-page == 'explore' and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %}">
+<div class="info {% if site.is_explore_open == 'true' and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %}">
   <div class="container-fluid">
     <div class="row">
         <div class="col">

@@ -1,4 +1,4 @@
-<div class="lightbox-container {% if site.data.website.website.starting-page == 'explore' and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %}">
+<div class="lightbox-container {% if site.is_explore_open == 'true' and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %}">
   <div class="lightbox-detail"></div>
   <div class="lightbox-caption"></div>
   <div class="lightbox-close"><h1 class="text-outline hover-reverse">×</h1></div>

@@ -1,5 +1,5 @@
-<div class="sidebar {% if site.data.website.website.starting-page == 'explore' and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %}">
+<div class="sidebar {% if site.is_explore_open == 'true' and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %}">
   <div class="sidebar-empty"></div>
-  <div class="sidebar-title"><h6>{{ site.data.website.website.title }} {{ site.data.website.website.subtitle }}</h6></div>
+  <div class="sidebar-title"><h6>{{ site.title }} {{ site.subtitle }}</h6></div>
   <div class="sidebar-info"><h6>Info</h6></div>
 </div>
