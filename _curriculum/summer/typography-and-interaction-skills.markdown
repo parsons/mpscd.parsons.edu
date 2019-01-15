@@ -1,8 +1,6 @@
 ---
 title: 'Typography and Interaction: Skills'
 date: 2019-01-15 14:07:00 -05:00
-tags:
-- summer
 position: 0
 credit: 1 Credit
 pmcd: PMCD 5000
