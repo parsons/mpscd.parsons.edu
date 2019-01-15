@@ -3,7 +3,7 @@ title: Major Studio 2
 date: 2019-01-15 14:17:00 -05:00
 tags:
 - second
-position: 0
+position: 6
 credit: 6 Credits
 pmcd: PMCD 5102
 ---
