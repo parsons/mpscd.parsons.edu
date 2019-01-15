@@ -10,52 +10,33 @@ filter-class: faculty
 
 <hr>
 
-{% for instructor in site.data.faculty.instructors %}
+{% assign sorted_faculty = site.faculty | sort:"position" %}
+{% for faculty in sorted_faculty %}
+{% if faculty.slug contains 'instructors' %}
+
+{% for instructor in faculty.list %}
   <div class="row listing listing-faculty">
       <div class="listing-name">
-          {% assign parsons = site.data.external.parsons %}
-          {% if instructor.url %}
-            <a href="{{ instructor.url }}" target="_blank"><h3 data-external="{{ parsons.text }}">{{ instructor.name }}</h3></a>
-          {% else %}
-            <h3 data-external="{{ parsons.text }}" class="no-url">{{ instructor.name }}</h3>
-          {% endif %}
+        <h3 {% unless instructor contains '](' %} class='no-url'{% endunless %} >{{ instructor | markdownify | remove: '</p>' | remove: '<p>' }}</h3>
       </div>
-      {% if instructor.url %}
+      {% if instructor contains '](' %}
         <div class="ui-arrow"></div>
       {% endif %}
   </div>
 {% endfor %}
 
-<hr>
+{% else %}
 
-<h1>Past faculty</h1>
+<h1>{{ faculty.title }}</h1>
 
 <ul class="ul-md columns-2">
-  {% for past in site.data.faculty.past %}
+  {% for instructor in faculty.list %}
     <li class="u-mbn">
-      {% if past.url %}
-        <a href="{{ past.url }}">{{ past.name }}</a>
-      {% else %}
-        {{ past.name }}
-      {% endif %}
+        {{ instructor | markdownify | remove: '</p>' | remove: '<p>' }}
     </li>
   {% endfor %}
 </ul>
 
+{% endif %}
 <hr>
-
-<h1>Guests</h1>
-
-<ul class="ul-md columns-2">
-  {% for guests in site.data.faculty.guests %}
-    <li class="u-mbn">
-      {% if guests.url %}
-        <a href="{{ guests.url }}">{{ guests.name }}</a>
-      {% else %}
-        {{ guests.name }}
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
-
-<hr>
+{% endfor %}
