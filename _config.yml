@@ -28,6 +28,16 @@ defaults:
     credit: 
     pmcd: 
     learn_more: 
+- scope:
+    path: ''
+    type: students
+  values:
+    url:
+- scope:
+    path: ''
+    type: faculty
+  values:
+    url: 
 subtitle: Digital Product Design
 is_explore_open: false
 background_image: "/uploads/windows_xp_bliss.jpg"
