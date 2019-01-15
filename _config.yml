@@ -33,3 +33,12 @@ sass:
 plugins:
 - jekyll-feed
 - jekyll-minifier
+defaults:
+  -
+    scope:
+      path: ""
+      type: "curriculum"
+    values:
+      credit:
+      pmcd:
+      learn_more:
