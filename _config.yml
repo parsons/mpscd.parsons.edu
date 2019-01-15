@@ -2,9 +2,6 @@
 title: Parsons MPS Communication Design
 timezone: UTC
 collections:
-  people:
-    title: People
-    output: true
   posts:
     title: Posts
     output: true
