@@ -1,6 +1,6 @@
 ---
 title: Parsons MPS Communication Design
-timezone: UTC
+timezone: America/New_York
 collections:
   posts:
     title: Projects
@@ -12,9 +12,6 @@ collections:
     title: Uploads
     output: true
 subtitle: Digital Product Design
-description: 'A one-year graduate degree program for Digital Product Design.
-
-'
 is explore open: false
 markdown: kramdown
 theme: minima
