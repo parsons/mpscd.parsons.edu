@@ -22,6 +22,8 @@ collections:
     output: true
 subtitle: Digital Product Design
 is explore open: false
+background image: "/uploads/windows_xp_bliss.jpg"
+background color: "#ffffff"
 markdown: kramdown
 theme: minima
 sass:
