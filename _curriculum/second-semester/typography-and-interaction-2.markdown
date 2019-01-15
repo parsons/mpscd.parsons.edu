@@ -1,6 +1,7 @@
 ---
 title: Typography and Interaction 2
 date: 2019-01-15 14:20:00 -05:00
+position: 1
 credit: 3 Credits
 pmcd: PMCD 5002
 ---
