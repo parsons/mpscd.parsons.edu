@@ -1,11 +1,5 @@
 ---
 title: Parsons MPS Communication Design
-subtitle: Digital Product Design
-is_explore_open: false
-background_image: "/uploads/windows_xp_bliss.jpg"
-background_color: "#ffffff"
-url: http://www.newschool.edu
-
 timezone: America/New_York
 collections:
   curriculum:
@@ -26,6 +20,11 @@ collections:
   uploads:
     title: Uploads
     output: true
+subtitle: Digital Product Design
+is_explore_open: false
+background_image: "/uploads/windows_xp_bliss.jpg"
+background_color: "#ffffff"
+url: http://www.newschool.edu
 markdown: kramdown
 theme: minima
 sass:

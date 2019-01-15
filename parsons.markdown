@@ -11,7 +11,8 @@ address_text: |-
   66 5th Avenue
 
   New York, NY
-curriculum_text: For a complete listing of courses and course descriptions, visit the [University Course Catalog]().
+curriculum_text: For a complete listing of courses and course descriptions, visit
+  the [University Course Catalog]().
 parsons_url: https://www.newschool.edu/parsons/
 parsons_logo_image: "/uploads/parsons_logo.svg"
 ---
