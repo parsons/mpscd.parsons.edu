@@ -10,31 +10,41 @@ filter-class: curriculum
 
 <hr>
 
-{% for course in site.data.curriculum %}
+{% assign sorted_curriculum = site.curriculum | where: "tags", "toplevel" | sort:"position" %}
+{% for course in sorted_curriculum %}
 
-  <h1>{{ course[1].title }}</h1>
+<h1>{{ course.title }}</h1>
 
-  {% for c in course[1].courses %}
+{% assign courses = site.curriculum | sort:"position" %}
+{% for c in courses %}
+{% if c.url contains course.slug %}
+{% unless c.tags contains 'toplevel' %}
 
-    <div class="row listing listing-curriculum">
-      <div class="col-12 col-sm-3">
-        <h6><div>{{ c.number }}</div><div>{{ c.credits }}</div></h6>
-      </div>
-      <div class="col-11">
-          <h3>{{ c.title }}</h3>
-      </div>
-      <div class="ui-arrow"></div>
-      <div class="col-12 col-sm-9 offset-sm-3 listing-description">
-          {{ c.description | markdownify }}
-          {% if c.learn-more-url %}
-            <p><a href="{{ c.learn-more-url }}" target="_blank">Learn more</a> <span class="font-secondary u-mlxxs">↗</span></p>
-          {% endif %}
-      </div>
-    </div>
 
-  {% endfor %}
+<div class="row listing listing-curriculum">
+  <div class="col-12 col-sm-3">
+    <h6>
+      <div>{{ c.pmcd }}</div>
+      <div>{{ c.credit }}</div>
+    </h6>
+  </div>
+  <div class="col-11">
+    <h3>{{ c.title }}</h3>
+  </div>
+  <div class="ui-arrow"></div>
+  <div class="col-12 col-sm-9 offset-sm-3 listing-description">
+    {{ c.content | markdownify }}
+    {% if c.learn_more %}
+    <p><a href="{{ c.learn_more }}" target="_blank">Learn more</a> <span class="font-secondary u-mlxxs">↗</span></p>
+    {% endif %}
+  </div>
+</div>
 
-  <hr>
+{% endunless %}
+{% endif %}
+{% endfor %}
+
+<hr>
 
 {% endfor %}
 
