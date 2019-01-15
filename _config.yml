@@ -11,11 +11,11 @@ collections:
   uploads:
     title: Uploads
     output: true
+subtitle: Digital Product Design
 description: 'A one-year graduate degree program for Digital Product Design.
 
 '
-email: email@email.com
-url: ''
+is explore open: false
 markdown: kramdown
 theme: minima
 sass:
