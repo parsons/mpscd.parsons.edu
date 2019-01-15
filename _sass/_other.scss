@@ -71,37 +71,33 @@ body {
 
   &:hover {
     background: $color-light !important;
-    -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: $color-base;
+    text-shadow: 0.0px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px 0.1px 0.02px $color-base, -0.3px 0.1px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px -0.0px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.3px -0.1px 0.02px $color-base, 0.3px -0.1px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, -0.0px -0.3px 0.02px $color-base, 0.2px 0.2px 0.02px $color-base, -0.3px -0.0px 0.02px $color-base, 0.3px -0.2px 0.02px $color-base, -0.1px 0.3px 0.02px $color-base, -0.1px -0.3px 0.02px $color-base, 0.3px 0.2px 0.02px $color-base, -0.3px 0.0px 0.02px $color-base, 0.2px -0.2px 0.02px $color-base, -0.0px 0.3px 0.02px $color-base;
     border: 1px solid $color-base;
   }
 }
 
 .text-outline {
     color: $color-light !important;
-    -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: $color-base;
+    text-shadow: 0.0px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px 0.1px 0.02px $color-base, -0.3px 0.1px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px -0.0px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.3px -0.1px 0.02px $color-base, 0.3px -0.1px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, -0.0px -0.3px 0.02px $color-base, 0.2px 0.2px 0.02px $color-base, -0.3px -0.0px 0.02px $color-base, 0.3px -0.2px 0.02px $color-base, -0.1px 0.3px 0.02px $color-base, -0.1px -0.3px 0.02px $color-base, 0.3px 0.2px 0.02px $color-base, -0.3px 0.0px 0.02px $color-base, 0.2px -0.2px 0.02px $color-base, -0.0px 0.3px 0.02px $color-base;
   &.hover-reverse{
     &:hover{
       color: rgba(0,0,0,0) !important;
-      -webkit-text-stroke-width: 0.8px;
-      -webkit-text-stroke-color: $color-base;}
+      text-shadow: 0.0px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px 0.1px 0.02px $color-base, -0.3px 0.1px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px -0.0px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.3px -0.1px 0.02px $color-base, 0.3px -0.1px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, -0.0px -0.3px 0.02px $color-base, 0.2px 0.2px 0.02px $color-base, -0.3px -0.0px 0.02px $color-base, 0.3px -0.2px 0.02px $color-base, -0.1px 0.3px 0.02px $color-base, -0.1px -0.3px 0.02px $color-base, 0.3px 0.2px 0.02px $color-base, -0.3px 0.0px 0.02px $color-base, 0.2px -0.2px 0.02px $color-base, -0.0px 0.3px 0.02px $color-base;
+    }
   }
 }
 
 .text-outline-screen {
   @include sm {
     color: $color-light !important;
-    -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: $color-base;
+    text-shadow: 0.0px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px 0.1px 0.02px $color-base, -0.3px 0.1px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px -0.0px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.3px -0.1px 0.02px $color-base, 0.3px -0.1px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, -0.0px -0.3px 0.02px $color-base, 0.2px 0.2px 0.02px $color-base, -0.3px -0.0px 0.02px $color-base, 0.3px -0.2px 0.02px $color-base, -0.1px 0.3px 0.02px $color-base, -0.1px -0.3px 0.02px $color-base, 0.3px 0.2px 0.02px $color-base, -0.3px 0.0px 0.02px $color-base, 0.2px -0.2px 0.02px $color-base, -0.0px 0.3px 0.02px $color-base;
   }
 }
 
 .hover-text-outline {
   &:hover{
   color: $color-light !important;
-  -webkit-text-stroke-width: 0.8px;
-  -webkit-text-stroke-color: $color-base;
+  text-shadow: 0.0px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px 0.1px 0.02px $color-base, -0.3px 0.1px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px -0.0px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.3px -0.1px 0.02px $color-base, 0.3px -0.1px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, -0.0px -0.3px 0.02px $color-base, 0.2px 0.2px 0.02px $color-base, -0.3px -0.0px 0.02px $color-base, 0.3px -0.2px 0.02px $color-base, -0.1px 0.3px 0.02px $color-base, -0.1px -0.3px 0.02px $color-base, 0.3px 0.2px 0.02px $color-base, -0.3px 0.0px 0.02px $color-base, 0.2px -0.2px 0.02px $color-base, -0.0px 0.3px 0.02px $color-base;
   }
 }
 
