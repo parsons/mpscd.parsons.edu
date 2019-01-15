@@ -3,7 +3,7 @@ title: Parsons MPS Communication Design
 timezone: UTC
 collections:
   posts:
-    title: Posts
+    title: Projects
     output: true
   uploads:
     title: Uploads
