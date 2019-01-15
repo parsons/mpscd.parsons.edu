@@ -2,6 +2,9 @@
 title: Parsons MPS Communication Design
 timezone: America/New_York
 collections:
+  faculty:
+    title: Faculty
+    output: true
   posts:
     title: Projects
     output: true
