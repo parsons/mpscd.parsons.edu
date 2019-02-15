@@ -1,6 +1,6 @@
 $exp-x: $explore-img-nb * $explore-img-width;
 $exp-x-mobile: $explore-img-nb-mobile * $explore-img-width-mobile;
-$exp-y: -2 * $explore-img-nb * $space-md;
+$exp-y: -2 * $explore-img-nb * $space-sm;
 $exp-y-mobile: -2 * $explore-img-nb-mobile * $space-sm;
 $exp: calc(#{$exp-x} - #{$exp-y});
 $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
@@ -36,13 +36,14 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
   #exploreArea {
     width: 100%;
     height: 100vh;
-    overflow: auto;
+    overflow: hidden;
     .explore-items {
       width: $exp-mobile;
       min-height: 100vh;
       cursor: pointer;
       @include sm {
         width: $exp;
+        transform: translateX(calc((100vw - 100%) / 2)) translateY(calc((100vh - 100%) / 2));
       }
       .explore-item {
         width: $explore-img-width-mobile;
@@ -50,19 +51,19 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
         position: absolute;
         display: inline-block;
         @include sm {
-          margin: $space-md;
+          margin: $space-sm;
           width: $explore-img-width;
         }
         &.small {
           width: $explore-img-width-mobile;
           @include sm {
-            width: $explore-img-width / 1.5;
+            width: $explore-img-width / 1;
           }
         }
         &.large {
           width: $explore-img-width-mobile;
           @include sm {
-            width: $explore-img-width * 1.5;
+            width: $explore-img-width * 1;
           }
         }
         img {
@@ -109,10 +110,10 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
           p {
             font-size: $text-xs-sm;
             @include sm {
-              font-size: $text-md;
+              font-size: $text-sm;
             }
             @include xl {
-              font-size: $text-lg;
+              font-size: $text-md;
             }
             mix-blend-mode: difference;
             color: white;

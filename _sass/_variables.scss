@@ -70,7 +70,7 @@ $text-xl-xxl:                            100px !default;
 
 // variable type sizes
 $text-v-base:                            2vw;
-$text-v-xs:                              5vw;
+$text-v-xs:                              3vw;
 $text-v-sm:                              8vw;
 $text-v-md:                              $text-v-base;
 $text-v-lg:                              10vw;
@@ -176,8 +176,8 @@ $cookies-width:                          12rem;
 $base-transition:                       all .5s cubic-bezier(.215, .61, .355, 1);
 $base-transition-sm:                    all .25s cubic-bezier(.215, .61, .355, 1);
 
-$explore-img-width:                     30vw;
-$explore-img-width-mobile:              70vw;
+$explore-img-width:                     18vw;
+$explore-img-width-mobile:              40vw;
 $explore-img-nb:                        5;
 $explore-img-nb-mobile:                 3;
 

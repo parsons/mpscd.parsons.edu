@@ -51,6 +51,18 @@ var imagesMax = 250;
 var pad = 5;
 var down = false;
 
+/////////////////
+// TARGET BLANK
+
+function targetBla(){
+  $('.info a').each(function() {
+    if (this.host !== window.location.host) {
+      $(this).attr('target', '_blank');
+    }
+  });
+}
+
+targetBla();
 
 /////////////////
 // COOKIES CONFIG
@@ -80,12 +92,6 @@ $window.on('load', function(){
 
   });
   $body.removeClass("preload");
-});
-
-$(document).mousedown(function() {
-  down = true;
-}).mouseup(function() {
-  down = false;  
 });
 
 
@@ -184,7 +190,21 @@ $document.on('mousemove', function(e) {
   } else {
     $('div#exploreHover').addClass('hidden');
   }
+  exploreMove(e);
 });
+
+function exploreMove(e) {
+  var exploreLeft = $exploreOuter.offset().left;
+  var exploreWidth = $exploreOuter.width();
+  var exploreW = exploreWidth + exploreLeft;
+  var exploreHeight = $exploreOuter.height();
+  
+  var mouseLeft = e.pageX / exploreWidth * 100;
+  var mouseL = e.pageX / exploreW * 100;
+  var mouseTop = e.pageY / exploreHeight * 100;
+
+  $explore.css('transform', 'translateX(calc(' + mouseL + 'vw - ' + mouseLeft + '%)) translateY(calc(' + mouseTop + 'vh - ' + mouseTop + '%))')  
+}
 
 
 // open/close explore section ----------------------------------------------
@@ -213,15 +233,6 @@ $exploreItem.hover(function(){
   $caption.html("");
 });
 
-$('.explore-item').hover(function() {
-  if (!down) {
-    $('#exploreArea').removeClass('dragscroll');
-    dragscroll.reset()
-  } 
-}, function(){
-  $('#exploreArea').addClass('dragscroll');
-  dragscroll.reset()
-})
 
 
 // Filtering ----------------------------------------------
@@ -301,6 +312,7 @@ $lightboxClose.on("click", function(){
   $main.removeClass("blurred");
   $body.removeClass("overflow-hidden");
   $lightboxCaption.css('transform', 'translateY(0)');
+  $(".hover-caption").removeClass("hidden");
   $('.lightbox-description').removeClass('active');
   $('.lightbox-description').html("");
 });
