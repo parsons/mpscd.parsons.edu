@@ -8,8 +8,8 @@ filter-class: everything
 
 {% include _paragraphs.html page="apply" %}
 
-<div>
-  <h1><a href="{% for text in site.texts %}{% if text.slug contains 'apply' %}{{ text.admission_link }}{% endif %}{% endfor %}" class="text-reverse apply-button">Apply &rarr;</a></h1>
+<div class='apply-button'>
+  <a href="{% for text in site.texts %}{% if text.slug contains 'apply' %}{{ text.admission_link }}{% endif %}{% endfor %}">Apply &rarr;</a>
 </div>
 
 <h4>{% for text in site.texts %}{% if text.slug contains 'apply' %}{{ text.admission_text | markdownify }}{% endif %}{% endfor %}</h4>

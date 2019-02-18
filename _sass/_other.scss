@@ -63,19 +63,6 @@ body {
   background: $color-dark !important;
 }
 
-.apply-button {
-  padding-left: 18px;
-  padding-right: 18px;
-  color: $color-light !important;
-  background: $color-dark !important;
-
-  &:hover {
-    background: $color-light !important;
-    text-shadow: 0.0px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px 0.1px 0.02px $color-base, -0.3px 0.1px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px -0.0px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.3px -0.1px 0.02px $color-base, 0.3px -0.1px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, -0.0px -0.3px 0.02px $color-base, 0.2px 0.2px 0.02px $color-base, -0.3px -0.0px 0.02px $color-base, 0.3px -0.2px 0.02px $color-base, -0.1px 0.3px 0.02px $color-base, -0.1px -0.3px 0.02px $color-base, 0.3px 0.2px 0.02px $color-base, -0.3px 0.0px 0.02px $color-base, 0.2px -0.2px 0.02px $color-base, -0.0px 0.3px 0.02px $color-base;
-    border: 1px solid $color-base;
-  }
-}
-
 .text-outline {
     color: $color-light !important;
     text-shadow: 0.0px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px 0.1px 0.02px $color-base, -0.3px 0.1px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px -0.0px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.3px -0.1px 0.02px $color-base, 0.3px -0.1px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, -0.0px -0.3px 0.02px $color-base, 0.2px 0.2px 0.02px $color-base, -0.3px -0.0px 0.02px $color-base, 0.3px -0.2px 0.02px $color-base, -0.1px 0.3px 0.02px $color-base, -0.1px -0.3px 0.02px $color-base, 0.3px 0.2px 0.02px $color-base, -0.3px 0.0px 0.02px $color-base, 0.2px -0.2px 0.02px $color-base, -0.0px 0.3px 0.02px $color-base;

@@ -54,10 +54,7 @@
     left: $sidebar-width + $space-sm;
   }
 
-  & > .caption-student, & > .caption-student a {
-    color: $color-light !important;
-    -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: $color-base;
+  & > .caption-student {
     &.hover-reverse:hover {
       color: rgba(0,0,0,0) !important;
     }

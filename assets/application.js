@@ -24,7 +24,7 @@ var $document = $(document);
 var blastArray = [];
 
 var $listing = $('div.listing');
-var $listingCurriculum = $('div.listing-curriculum');
+var $listingCurriculum = $('div.listing-curriculum .col-11');
 var $announcement = $('.announcement-container');
 var $announcementTitle = $('.announcement-title');
 var $announcementClose = $('.announcement-close');
@@ -144,8 +144,9 @@ $listing.hover( function() {
 // listing toggle -------------------------------------------------
 
 $listingCurriculum.click( function() {
-  $(this).toggleClass("expanded");
-  $(this).find('.listing-description').click(function(e) { e.stopPropagation(); })
+  console.log($(this));
+  $(this).parent('.listing-curriculum').toggleClass("expanded");
+  $(this).parent('.listing-curriculum').find('.listing-description').click(function(e) { e.stopPropagation(); })
 });
 
 

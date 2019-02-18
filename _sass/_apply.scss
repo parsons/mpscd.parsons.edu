@@ -1,0 +1,18 @@
+.apply-button {
+    @extend h1;
+    display: inline-block;
+    color: $color-light;
+    background: $color-base;
+    padding: 10px 15px 15px 15px;
+    box-shadow: 0.0px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px 0.1px 0.02px $color-base, -0.3px 0.1px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px -0.0px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.3px -0.1px 0.02px $color-base, 0.3px -0.1px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, -0.0px -0.3px 0.02px $color-base, 0.2px 0.2px 0.02px $color-base, -0.3px -0.0px 0.02px $color-base, 0.3px -0.2px 0.02px $color-base, -0.1px 0.3px 0.02px $color-base, -0.1px -0.3px 0.02px $color-base, 0.3px 0.2px 0.02px $color-base, -0.3px 0.0px 0.02px $color-base, 0.2px -0.2px 0.02px $color-base, -0.0px 0.3px 0.02px $color-base;
+    cursor: pointer;
+    a {
+      display: inline-block;
+    }
+    &:hover{
+      background: $color-light;
+      a {
+        text-shadow: 0.0px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px 0.1px 0.02px $color-base, -0.3px 0.1px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px -0.0px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.3px -0.1px 0.02px $color-base, 0.3px -0.1px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, -0.0px -0.3px 0.02px $color-base, 0.2px 0.2px 0.02px $color-base, -0.3px -0.0px 0.02px $color-base, 0.3px -0.2px 0.02px $color-base, -0.1px 0.3px 0.02px $color-base, -0.1px -0.3px 0.02px $color-base, 0.3px 0.2px 0.02px $color-base, -0.3px 0.0px 0.02px $color-base, 0.2px -0.2px 0.02px $color-base, -0.0px 0.3px 0.02px $color-base;
+      }
+    }
+  }

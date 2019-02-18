@@ -344,6 +344,7 @@ p {
 
       &:hover {
         text-decoration: none;
+        border-bottom: 1px solid $color-base;
       }
 
       &:visited {
