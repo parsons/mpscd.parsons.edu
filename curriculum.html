@@ -48,6 +48,6 @@ filter-class: curriculum
 
 {% endfor %}
 
-<h4 class="u-mtsm">{{ site.pages[7].curriculum_text | markdownify }}</h4>
+<h4 class="u-mtsm">{% for text in site.texts %}{% if text.slug contains 'curriculum' %}{{ text.curriculum_text | markdownify }}{% endif %}{% endfor %}</h4>
 
 <hr>
