@@ -8,14 +8,14 @@ collections:
   faculty:
     title: Faculty
     output: true
+  texts:
+    title: Page intro texts
+    output: true
   posts:
     title: Projects
     output: true
   students:
     title: Students
-    output: true
-  texts:
-    title: Texts
     output: true
   uploads:
     title: Uploads
