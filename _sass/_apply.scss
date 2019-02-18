@@ -4,7 +4,7 @@
     color: $color-light;
     background: $color-base;
     padding: 10px 15px 15px 15px;
-    box-shadow: 0.0px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px 0.1px 0.02px $color-base, -0.3px 0.1px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px -0.0px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.3px -0.1px 0.02px $color-base, 0.3px -0.1px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, -0.0px -0.3px 0.02px $color-base, 0.2px 0.2px 0.02px $color-base, -0.3px -0.0px 0.02px $color-base, 0.3px -0.2px 0.02px $color-base, -0.1px 0.3px 0.02px $color-base, -0.1px -0.3px 0.02px $color-base, 0.3px 0.2px 0.02px $color-base, -0.3px 0.0px 0.02px $color-base, 0.2px -0.2px 0.02px $color-base, -0.0px 0.3px 0.02px $color-base;
+    border: 1px solid black;
     cursor: pointer;
     a {
       display: inline-block;
@@ -12,7 +12,10 @@
     &:hover{
       background: $color-light;
       a {
-        text-shadow: 0.0px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px 0.1px 0.02px $color-base, -0.3px 0.1px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.2px -0.2px 0.02px $color-base, 0.3px -0.0px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, 0.1px -0.3px 0.02px $color-base, 0.1px 0.3px 0.02px $color-base, -0.3px -0.1px 0.02px $color-base, 0.3px -0.1px 0.02px $color-base, -0.2px 0.2px 0.02px $color-base, -0.0px -0.3px 0.02px $color-base, 0.2px 0.2px 0.02px $color-base, -0.3px -0.0px 0.02px $color-base, 0.3px -0.2px 0.02px $color-base, -0.1px 0.3px 0.02px $color-base, -0.1px -0.3px 0.02px $color-base, 0.3px 0.2px 0.02px $color-base, -0.3px 0.0px 0.02px $color-base, 0.2px -0.2px 0.02px $color-base, -0.0px 0.3px 0.02px $color-base;
+        color: $color-light !important;
+        -webkit-text-fill-color: $color-light; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $color-dark;
       }
     }
   }
