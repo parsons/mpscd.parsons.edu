@@ -1,6 +1,7 @@
 .cookies-container {
-  width: min-content;
-  width: -moz-min-content;
+  min-width: 10vw;
+  max-width: 30vw;
+  width: auto;
   height: 100vh;
   background: $cookies-color;
   z-index: 35;

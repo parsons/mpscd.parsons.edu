@@ -1,7 +1,7 @@
 <div class="cookies-container">
     {% for cookie in site.data.cookies.cookies %}
       <div class="cookies-top">
-          <div>{{ cookie.description }}</div>
+          <div>{{ cookie.description | markdownify }}</div>
       </div>
       <div class="cookies-middle">
           <div class="cookies-close">Close</div>
