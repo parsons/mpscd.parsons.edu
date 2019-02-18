@@ -271,6 +271,7 @@ h3 {
 h4 {
   &.t-set {
     font-size: $text-xs-md;
+    line-height: $text-line-md;
     @include sm {
       font-size: $text-md;
     }
@@ -295,6 +296,7 @@ h5 {
 h6 {
   &.t-set {
     font-size: $text-xs-xxs;
+    line-height: $text-line-md;
     @include sm {
       font-size: $text-xxs;
     }
