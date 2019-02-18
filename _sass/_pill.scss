@@ -18,6 +18,8 @@
 
 .filter-list {
   text-align: right;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-filter{
@@ -73,7 +75,6 @@
 
 
 ul.sub-menu {
-  display: flow-root;
   cursor: pointer;
   li {
     float: right;
