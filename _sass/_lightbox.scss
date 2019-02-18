@@ -35,7 +35,8 @@
     p {
       @extend h2;
       color: $color-light !important;
-      -webkit-text-stroke-width: 0.8px;
+      -webkit-text-fill-color: $color-light; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: $color-base;
     }
   }
@@ -114,7 +115,8 @@
   p {
     @extend h2;
     color: $color-light !important;
-    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-fill-color: $color-light; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $color-base;
   }
 }
