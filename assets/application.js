@@ -191,8 +191,13 @@ $document.on('mousemove', function(e) {
   } else {
     $('div#exploreHover').addClass('hidden');
   }
-  exploreMove(e);
 });
+
+$(document).on('mousemove', function(e) {
+  if (!$exploreOuter.hasClass("blurOn") && !$main.hasClass('blurred')) {
+    exploreMove(e);
+  }
+})
 
 function exploreMove(e) {
   var exploreLeft = $exploreOuter.offset().left;
@@ -210,12 +215,17 @@ function exploreMove(e) {
 
 // open/close explore section ----------------------------------------------
 
-$exploreOuter.on("click", function() {
+$exploreOuter.on("click", function(e) {
   if ($(this).hasClass("exploreOff")) {
     $('.exploreOff').removeClass('exploreOff').addClass("exploreOn");
     $('.blurOn').addClass("blurOff").removeClass("blurOn");
     $('div#exploreHover').addClass('hidden');
   }
+  $explore.css('transition', 'transform .3s ease');
+  exploreMove(e);
+  setTimeout(function(){
+    $explore.css('transition', 'none');
+  }, 300)
 });
 
 $sidebar.on("click", function() {
@@ -316,6 +326,11 @@ $lightboxClose.on("click", function(){
   $(".hover-caption").removeClass("hidden");
   $('.lightbox-description').removeClass('active');
   $('.lightbox-description').html("");
+  $explore.css('transition', 'transform .3s ease');
+  exploreMove(e);
+  setTimeout(function(){
+    $explore.css('transition', 'none');
+  }, 300)
 });
 
 $(".lightbox-more").on("click", function(){
