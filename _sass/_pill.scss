@@ -45,6 +45,7 @@
 .ui-pill {
   font-size: $text-xs-xs;
   padding: $space-xxs;
+  line-height: 1;
   @include sm {
     font-size: $text-xs;
   }
