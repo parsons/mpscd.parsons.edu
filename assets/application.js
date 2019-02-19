@@ -42,6 +42,7 @@ var $lightboxCaption = $(".lightbox-caption");
 var $lightboxClose = $(".lightbox-close");
 var $info = $('.info');
 var $main = $('main');
+var $outline = $('.text-outline, .text-outline-screen');
 
 var regexLetters = new RegExp("^[A-Za-z]+$");
 var letterRecurrence = 6; // Ex: 4 = 1/4 of the letters replaced
@@ -63,6 +64,16 @@ function targetBla(){
 }
 
 targetBla();
+
+
+/////////////////
+/// IE BORDER
+
+$document.ready(function() {
+  if(document.documentMode) {
+    $outline.addClass('text-shadow');
+  }
+});
 
 /////////////////
 // COOKIES CONFIG
