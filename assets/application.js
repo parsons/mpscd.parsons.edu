@@ -42,7 +42,7 @@ var $lightboxCaption = $(".lightbox-caption");
 var $lightboxClose = $(".lightbox-close");
 var $info = $('.info');
 var $main = $('main');
-var $outline = $('.text-outline, .text-outline-screen');
+var $outline = $('.text-outline, .text-outline-screen, .text-outline a, .hover-reverse, .hover-text-outline, .lightbox-description p, .lightbox-detail p');
 
 var regexLetters = new RegExp("^[A-Za-z]+$");
 var letterRecurrence = 6; // Ex: 4 = 1/4 of the letters replaced
