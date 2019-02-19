@@ -71,6 +71,7 @@ targetBla();
 
 $document.ready(function() {
   if(document.documentMode) {
+    console.log('IE, Text shadow')
     $outline.each(function(){
       $(this).addClass('text-shadow');
     })
