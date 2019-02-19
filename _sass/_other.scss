@@ -44,14 +44,14 @@ body {
 // blur
 
 .blurOn, .blurred {
-  filter: url(images/blur3.svg#blur);
+  filter: url(assets/images/blur3.svg#blur);
 	-webkit-filter: blur($blurOn);
 	filter: blur($blurOn);
 	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
 }
 
 .blurInter {
-  filter: url(images/blur10.svg#blur);
+  filter: url(assets/images/blur10.svg#blur);
 	-webkit-filter: blur($blurInter);
 	filter: blur($blurInter);
 	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
