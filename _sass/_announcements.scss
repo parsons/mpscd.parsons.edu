@@ -74,6 +74,9 @@
     -webkit-text-fill-color: $announcement-color; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $announcement-text;
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      color: white;
+    }
   }
 
 }
