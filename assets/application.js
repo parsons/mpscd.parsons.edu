@@ -71,7 +71,9 @@ targetBla();
 
 $document.ready(function() {
   if(document.documentMode) {
-    $outline.addClass('text-shadow');
+    $outline.each(function(){
+      $(this).addClass('text-shadow');
+    })
   }
 });
 
