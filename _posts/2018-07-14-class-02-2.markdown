@@ -7,6 +7,5 @@ tags:
 layout: post
 images:
 - src: class02.jpg
-  size: large
 ---
 

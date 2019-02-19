@@ -8,7 +8,6 @@ layout: post
 images:
 - src: pserr01.png
   creator: Patrick Serr
-  size: normal
   link: http://patrickserr.com/
 ---
 

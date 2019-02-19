@@ -7,7 +7,6 @@ tags:
 layout: post
 images:
 - src: pserr01.png
-  size: small
   student: Patrick Serr
   link: http://patrickserr.com/
 ---

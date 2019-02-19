@@ -203,7 +203,7 @@ function exploreMove(e) {
   var exploreLeft = $exploreOuter.offset().left;
   var exploreWidth = $exploreOuter.width() - 250;
   var exploreW = exploreWidth + exploreLeft;
-  var exploreHeight = $exploreOuter.height() - 200;
+  var exploreHeight = $exploreOuter.height() - 250;
   
   var mouseLeft = e.pageX / exploreWidth * 100;
   var mouseL = e.pageX / exploreW * 100;

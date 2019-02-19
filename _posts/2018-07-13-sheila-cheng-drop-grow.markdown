@@ -8,7 +8,6 @@ layout: post
 images:
 - src: scheng01.jpg
   creator: Sheila Cheng
-  size: small
   link: http://patrickserr.com/
 ---
 

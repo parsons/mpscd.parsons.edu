@@ -1,7 +1,7 @@
 $exp-x: $explore-img-nb * $explore-img-width;
 $exp-x-mobile: $explore-img-nb-mobile * $explore-img-width-mobile;
 $exp-y: -2 * $explore-img-nb * $space-sm;
-$exp-y-mobile: -2 * $explore-img-nb-mobile * $space-sm;
+$exp-y-mobile: -2 * $explore-img-nb-mobile * $space-xs;
 $exp: calc(#{$exp-x} - #{$exp-y});
 $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
 
@@ -51,23 +51,17 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
       }
       .explore-item {
         width: $explore-img-width-mobile;
-        margin: $space-sm;
+        margin: $space-xs;
         position: absolute;
         display: inline-block;
         @include sm {
           margin: $space-sm;
           width: $explore-img-width;
         }
-        &.small {
-          width: $explore-img-width-mobile;
-          @include sm {
-            width: $explore-img-width / 1;
-          }
-        }
         &.large {
-          width: $explore-img-width-mobile;
+          width: calc((#{$explore-img-width-mobile} * 2) - #{$space-xs} * -2);
           @include sm {
-            width: $explore-img-width * 1;
+            width: calc((#{$explore-img-width} * 2) - #{$space-sm} * -2);
           }
         }
         img {
@@ -95,7 +89,7 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
             justify-content: center;
             align-items: center;
             p {
-              font-size: $text-xs-xl;
+              font-size: $text-xl-sm;
               line-height: $text-line-sm;
               @include sm{
                 font-size: $text-v-xs;

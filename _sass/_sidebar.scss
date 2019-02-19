@@ -16,6 +16,12 @@
     height: $sidebar-big-width;
   }
 
+  h6 {
+    @include xl {
+      font-size: $text-sm;
+    }
+  }
+
   .sidebar-info, .sidebar-empty {
     width: 50px;
     @include xl {
