@@ -44,19 +44,24 @@ body {
 // blur
 
 .blurOn, .blurred {
-  filter: blur($blurOn);
-  filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='10'); 
+  filter: url(images/blur3.svg#blur);
+	-webkit-filter: blur($blurOn);
+	filter: blur($blurOn);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
 }
 
 .blurInter {
-  filter: blur($blurInter) !important;
-  filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='3'%20/></filter></svg>#blur");
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3'); 
+  filter: url(images/blur10.svg#blur);
+	-webkit-filter: blur($blurInter);
+	filter: blur($blurInter);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
 }
 
 .blurOff {
-  filter: blur($blurOff);
+  filter: none;
+	-webkit-filter: blur($blurOff);
+	filter: blur($blurOff);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
 }
 
 
