@@ -1,6 +1,6 @@
 ---
 title: Samia Husari
-date: 2018-07-12 00:00:00 Z
+date: 2018-07-11 20:00:00 -04:00
 tags:
 - curriculum
 - 2018

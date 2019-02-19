@@ -1,6 +1,6 @@
 ---
 title: Drop and Grow
-date: 2018-07-13 00:00:00 Z
+date: 2018-07-12 20:00:00 -04:00
 tags:
 - projects
 - 2018
