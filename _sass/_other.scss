@@ -83,7 +83,7 @@ body {
     }
   &.hover-reverse{
     &:hover{
-      color: rgba(0,0,0,0) !important;
+      color: $color-base !important;
       -webkit-text-fill-color: $color-dark; /* Will override color (regardless of order) */
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: $color-dark;

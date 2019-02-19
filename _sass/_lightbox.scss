@@ -57,7 +57,7 @@
 
   & > .caption-student {
     &.hover-reverse:hover {
-      color: rgba(0,0,0,0) !important;
+      color: $color-base !important;
     }
   }
 }
