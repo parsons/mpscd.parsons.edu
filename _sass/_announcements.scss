@@ -1,6 +1,6 @@
 .announcement-container {
   min-width: $announcement-width;
-  max-width: 30vw;
+  max-width: 80vw;
   width: auto;
   height: 100vh;
   background: $announcement-color;
@@ -35,8 +35,10 @@
     text-transform: uppercase;
     line-height: $text-line-sm;
   }
+
   @include sm {
     font-size: $text-md;
+    max-width: 30vw;
   }
 
 }

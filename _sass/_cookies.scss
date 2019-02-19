@@ -1,6 +1,6 @@
 .cookies-container {
   min-width: 10vw;
-  max-width: 30vw;
+  max-width: 80vw;
   width: auto;
   height: 100vh;
   background: $cookies-color;
@@ -35,8 +35,10 @@
     text-transform: uppercase;
     line-height: $text-line-sm;
   }
+
   @include sm {
     font-size: $text-md;
+    max-width: 30vw;
   }
 
 }
