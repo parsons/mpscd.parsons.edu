@@ -71,7 +71,6 @@ targetBla();
 
 $document.ready(function() {
   if (/MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
-    console.log('IE, Text shadow')
     $outline.each(function(){
       $(this).addClass('text-shadow');
     })
@@ -215,15 +214,17 @@ $(document).on('mousemove', function(e) {
 
 function exploreMove(e) {
   var exploreLeft = $exploreOuter.offset().left;
-  var exploreWidth = $exploreOuter.width() - 250;
-  var exploreW = exploreWidth + exploreLeft;
-  var exploreHeight = $exploreOuter.height() - 250;
+
+  var exploreWidth = $exploreOuter.outerWidth() - 10;
+  var exploreHeight = $exploreOuter.outerHeight();
+
+  var mL = e.pageX - exploreLeft;
   
-  var mouseLeft = e.pageX / exploreWidth * 100;
-  var mouseL = e.pageX / exploreW * 100;
+  var mouseLeft = mL / exploreWidth * 100;
   var mouseTop = e.pageY / exploreHeight * 100;
 
-  $explore.css('transform', 'translateX(calc(' + mouseL + 'vw - ' + mouseLeft + '%)) translateY(calc(' + mouseTop + 'vh - ' + mouseTop + '%))')  
+  if (mouseLeft <= 0) { mouseLeft = 0 } else if (mouseLeft >= 100) { mouseLeft = 100 };
+  $explore.css('transform', 'translateX(calc(' + mouseLeft + 'vw - ' + exploreLeft / 2 + 'px - ' + mouseLeft + '%)) translateY(calc(' + mouseTop + 'vh - ' + mouseTop + '%))')  
 }
 
 function transitionExplore(e) {

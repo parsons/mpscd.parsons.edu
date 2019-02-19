@@ -2,8 +2,8 @@ $exp-x: $explore-img-nb * $explore-img-width;
 $exp-x-mobile: $explore-img-nb-mobile * $explore-img-width-mobile;
 $exp-y: -2 * $explore-img-nb * $space-sm;
 $exp-y-mobile: -2 * $explore-img-nb-mobile * $space-xs;
-$exp: calc(#{$exp-x} - #{$exp-y});
-$exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
+$exp: calc(#{$exp-x} - #{$exp-y} - -100px);
+$exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile} - -100px);
 
 .explore {
   z-index: 0;
@@ -45,7 +45,7 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
       min-height: 100vh;
       cursor: pointer;
       @include sm {
-        margin: 50px;
+        padding: 25px 50px;
         width: $exp;
         transform: translateX(calc((100vw - 100%) / 2)) translateY(calc((100vh - 100%) / 2));
       }
