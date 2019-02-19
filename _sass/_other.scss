@@ -44,17 +44,17 @@ body {
 // blur
 
 .blurOn, .blurred {
-  filter: url("images/blur3.svg#blur");
+  filter: url("images/blur10.svg");
 	-webkit-filter: blur($blurOn);
 	filter: blur($blurOn);
-	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
 }
 
 .blurInter {
-  filter: url("images/blur10.svg#blur");
+  filter: url("images/blur3.svg");
 	-webkit-filter: blur($blurInter);
 	filter: blur($blurInter);
-	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
 }
 
 .blurOff {
