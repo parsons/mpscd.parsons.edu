@@ -134,7 +134,7 @@ $document.ready(function(){
 // listing functionality -------------------------------------------------
 
 $listing.hover( function() {
-  $(this).find("h3:not(.no-url), .ui-arrow").toggleClass("text-outline-screen");
+  $(this).find("h3:not(.no-url) a").toggleClass("text-outline-screen");
 });
 
 
