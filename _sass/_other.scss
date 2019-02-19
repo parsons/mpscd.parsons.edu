@@ -11,6 +11,7 @@ body {
   background-color: $color-brand-secondary;
   position: relative;
   min-height: 100vh;
+  overflow: hidden;
   .touch & {
     cursor: pointer;
     div {
@@ -44,10 +45,14 @@ body {
 
 .blurOn, .blurred {
   filter: blur($blurOn);
+  filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='10'); 
 }
 
 .blurInter {
   filter: blur($blurInter) !important;
+  filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='3'%20/></filter></svg>#blur");
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3'); 
 }
 
 .blurOff {

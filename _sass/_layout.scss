@@ -8,8 +8,9 @@
   border-right: $border-sm;
   width: $info-width-xs;
   transition: $base-transition;
-  overflow: scroll !important;
+  overflow-y: scroll !important;
   -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
 
   @include sm {
     width: $info-width-sm;
