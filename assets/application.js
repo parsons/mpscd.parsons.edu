@@ -194,22 +194,30 @@ $document.on('mousemove', function(e) {
 });
 
 $(document).on('mousemove', function(e) {
-  if (!$exploreOuter.hasClass("blurOn") && !$main.hasClass('blurred')) {
+  if (!$exploreOuter.hasClass("blurOn") && !$main.hasClass('blurred') && !Modernizr.mq('(max-width: 576px)')) {
     exploreMove(e);
   }
 })
 
 function exploreMove(e) {
   var exploreLeft = $exploreOuter.offset().left;
-  var exploreWidth = $exploreOuter.width();
+  var exploreWidth = $exploreOuter.width() - 250;
   var exploreW = exploreWidth + exploreLeft;
-  var exploreHeight = $exploreOuter.height();
+  var exploreHeight = $exploreOuter.height() - 200;
   
   var mouseLeft = e.pageX / exploreWidth * 100;
   var mouseL = e.pageX / exploreW * 100;
   var mouseTop = e.pageY / exploreHeight * 100;
 
   $explore.css('transform', 'translateX(calc(' + mouseL + 'vw - ' + mouseLeft + '%)) translateY(calc(' + mouseTop + 'vh - ' + mouseTop + '%))')  
+}
+
+function transitionExplore(e) {
+  $explore.css('transition', 'transform .3s ease');
+  exploreMove(e);
+  setTimeout(function(){
+    $explore.css('transition', 'none');
+  }, 300)
 }
 
 
@@ -221,11 +229,10 @@ $exploreOuter.on("click", function(e) {
     $('.blurOn').addClass("blurOff").removeClass("blurOn");
     $('div#exploreHover').addClass('hidden');
   }
-  $explore.css('transition', 'transform .3s ease');
-  exploreMove(e);
-  setTimeout(function(){
-    $explore.css('transition', 'none');
-  }, 300)
+  if (!Modernizr.mq('(max-width: 576px)')) {
+    console.log('Max');
+    transitionExplore(e);
+  } 
 });
 
 $sidebar.on("click", function() {
@@ -326,11 +333,10 @@ $lightboxClose.on("click", function(){
   $(".hover-caption").removeClass("hidden");
   $('.lightbox-description').removeClass('active');
   $('.lightbox-description').html("");
-  $explore.css('transition', 'transform .3s ease');
-  exploreMove(e);
-  setTimeout(function(){
-    $explore.css('transition', 'none');
-  }, 300)
+  if (!Modernizr.mq('(max-width: 576px)')) {
+    console.log('Max');
+    transitionExplore(e);
+  } 
 });
 
 $(".lightbox-more").on("click", function(){
