@@ -70,7 +70,7 @@ targetBla();
 /// IE BORDER
 
 $document.ready(function() {
-  if(document.documentMode) {
+  if (/MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
     console.log('IE, Text shadow')
     $outline.each(function(){
       $(this).addClass('text-shadow');
