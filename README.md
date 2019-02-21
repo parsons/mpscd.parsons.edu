@@ -17,7 +17,3 @@
 - v0
   - Bootstrap
 - usage
-
-
-## Code review
-+ ~~generally best to avoid styling `.col-`, `.row`, etc.~~
