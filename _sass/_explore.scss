@@ -44,6 +44,7 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
       width: $exp-mobile;
       min-height: 100vh;
       cursor: pointer;
+      padding-bottom: 50px;
       @include sm {
         padding: 25px 50px;
         width: $exp;
