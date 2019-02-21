@@ -245,7 +245,6 @@ $exploreOuter.on("click", function(e) {
     $('div#exploreHover').addClass('hidden');
   }
   if (!Modernizr.mq('(max-width: 576px)')) {
-    console.log('Max');
     transitionExplore(e);
   } 
 });
@@ -340,7 +339,7 @@ $exploreItem.on("click", function(){
   }
 });
 
-$lightboxClose.on("click", function(){
+$lightboxClose.on("click", function(e){
   $lightbox.removeClass('lightboxOn');
   $main.removeClass("blurred");
   $body.removeClass("overflow-hidden");
@@ -349,7 +348,6 @@ $lightboxClose.on("click", function(){
   $('.lightbox-description').removeClass('active');
   $('.lightbox-description').html("");
   if (!Modernizr.mq('(max-width: 576px)')) {
-    console.log('Max');
     transitionExplore(e);
   } 
 });
