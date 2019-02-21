@@ -1,0 +1,97 @@
+.announcement-container {
+  min-width: $announcement-width;
+  max-width: 80vw;
+  width: auto;
+  height: 100vh;
+  background: $announcement-color;
+  z-index: 30;
+  padding: $space-xs;
+  color: $announcement-text;
+  font-family: $font-secondary;
+  font-size: $text-xs-md;
+  line-height: $text-line-sm;
+  text-transform: uppercase;
+
+  position: fixed;
+  top:0;
+  left:0;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+
+  transform: translateX(0);
+  transition: $base-transition;
+  transition-property: transform;
+
+  &.off {
+    transform: translateX(-100%);
+  }
+
+  p {
+    color: $announcement-text;
+    font-family: $font-secondary;
+    font-size: $text-xs-md;
+    text-transform: uppercase;
+    line-height: $text-line-sm;
+  }
+
+  @include sm {
+    font-size: $text-md;
+    max-width: 30vw;
+  }
+
+}
+
+.announcement-bottom {
+  flex: 1;
+  overflow: hidden;
+  .announcement-title {
+    -webkit-column-width: calc(#{$announcement-width} - #{$space-xs} * 2);
+    column-width: calc(#{$announcement-width} - #{$space-xs} * 2);
+    height: 100%;
+  }
+}
+
+.announcement-link {
+  background: $announcement-text;
+  color: $announcement-color;
+  margin: $space-xs 0;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: table;
+
+  & a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  &:hover {
+    background: $announcement-color;
+    border: solid 1px $announcement-text;
+    -webkit-text-fill-color: $announcement-color; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $announcement-text;
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      color: white;
+    }
+  }
+
+}
+
+.announcement-subtitle, .announcement-middle {
+  padding-bottom: $space-md;
+}
+
+.announcement-close {
+  border-bottom: 1px dotted $announcement-text;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px solid $announcement-text;
+
+  }
+}

@@ -1,21 +1,11 @@
 ---
-layout: post
-title:  "Major Studio 2 Photo"
-date:   2018-06-12 12:17:43 -0400
+title: Major Studio 2, Spring 2018
+date: 2018-07-13 20:00:00 -04:00
 tags:
-- "curriculum"
-- "twenty-eighteen"
-excerpt_separator: <!--more-->
-
+- curriculum
+- 2017
+layout: post
 images:
-- caption: Major Studio 2, Spring 2018
-  src: class02.jpg
-  alt: Major Studio 2
-  link: http://patrickserr.com/
+- src: class02.jpg
 ---
 
-![Major Studio 2]({{ site.url }}/assets/images/work/class02.jpg)
-
-<!--more-->
-
-Photo from Major Studio 2, Spring 2018

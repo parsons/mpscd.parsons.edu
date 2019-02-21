@@ -1,0 +1,133 @@
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  margin: 0;
+}
+
+body {
+  background-color: $color-brand-secondary;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  .touch & {
+    cursor: pointer;
+    div {
+      cursor: pointer;
+    }
+  }
+}
+
+.sv-badge {
+  display: none !important;
+}
+
+::selection {
+  background: $color-mid;
+}
+
+
+/*
+// A few global styling classes
+*/
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.hidden {
+  display:none !important;
+}
+
+// blur
+
+.blurOn, .blurred {
+  filter: url("images/blur10.svg");
+	-webkit-filter: blur($blurOn);
+	filter: blur($blurOn);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
+}
+
+.blurInter {
+  filter: url("images/blur3.svg");
+	-webkit-filter: blur($blurInter);
+	filter: blur($blurInter);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+}
+
+.blurOff {
+  filter: none;
+	-webkit-filter: blur($blurOff);
+	filter: blur($blurOff);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+}
+
+
+
+// text styling classes
+
+.text-reverse {
+  color: $color-light !important;
+  background: $color-dark !important;
+}
+
+.text-outline {
+    color: $color-light !important;
+    -webkit-text-fill-color: $color-light; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $color-dark;
+    a {
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $color-dark;
+      &:hover {
+        color: $color-dark !important;
+        -webkit-text-fill-color: $color-dark; 
+      }
+    }
+  &.hover-reverse{
+    &:hover{
+      color: $color-base !important;
+      -webkit-text-fill-color: $color-dark; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $color-dark;
+    }
+  }
+}
+
+.text-outline-screen {
+  @include sm {
+    color: $color-light !important;
+    -webkit-text-fill-color: $color-light; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $color-dark;
+  }
+}
+
+.hover-text-outline {
+  &:hover{
+    color: $color-light !important;
+    -webkit-text-fill-color: $color-light; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $color-dark;
+  }
+}
+
+
+// text replacement!
+
+.blast{
+  white-space:nowrap;
+}
+
+.mps-pixel {
+  font-family:  $font-tertiary-pixel;
+  white-space:nowrap;
+}
+
+.mps-expressive {
+  font-family:  $font-tertiary-expressive;
+  white-space:nowrap;
+}
+

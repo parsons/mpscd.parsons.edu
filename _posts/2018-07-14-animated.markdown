@@ -1,22 +1,11 @@
 ---
-layout: post
-title:  "Animated Watch"
-date:   2018-06-12 12:17:43 -0400
+title: Animated Watch
+date: 2018-07-14 00:00:00 Z
 tags:
-- "student-projects"
-- "twenty-eighteen"
-excerpt_separator: <!--more-->
-
-images:
-- caption: Watch Animation
-  graduation-year: "2018"
-  src: giphy.gif
-  alt: Watch Animation
-  link: http://patrickserr.com/
+- projects
+- 2017
+layout: post
+color: "#00f"
 ---
-
-![Unknown Conference]({{ site.url }}/assets/images/work/pserr01.png)
-
-<!--more-->
 
 Unknown Conference, a project by Patrick Serr, Poppy Chen, Vidya Keshavan and Carolyn Berry, Typography and Interaction I, Fall 2017

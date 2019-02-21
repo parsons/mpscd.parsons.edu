@@ -1,0 +1,53 @@
+---
+title: Curriculum
+permalink: "/curriculum/"
+layout: home
+filter: Curriculum
+filter-class: curriculum
+---
+
+{% include _paragraphs.html page="curriculum" %}
+
+<hr>
+
+{% assign sorted_curriculum = site.curriculum | where: "tags", "toplevel" | sort:"position" %}
+{% for course in sorted_curriculum %}
+
+<h1>{{ course.title }}</h1>
+
+{% assign courses = site.curriculum | sort:"position" %}
+{% for c in courses %}
+{% if c.url contains course.slug %}
+{% unless c.tags contains 'toplevel' %}
+
+
+<div class="row listing listing-curriculum">
+  <div class="col-12 col-sm-3">
+    <h6>
+      <div>{{ c.pmcd }}</div>
+      <div>{{ c.credit }}</div>
+    </h6>
+  </div>
+  <div class="col-11">
+    <h3>{{ c.title }}</h3>
+  </div>
+  <div class="ui-arrow"></div>
+  <div class="col-12 col-sm-9 offset-sm-3 listing-description">
+    {{ c.content | markdownify }}
+    {% if c.learn_more %}
+    <p><a href="{{ c.learn_more }}" target="_blank">Learn more</a> <span class="font-secondary u-mlxxs">↗</span></p>
+    {% endif %}
+  </div>
+</div>
+
+{% endunless %}
+{% endif %}
+{% endfor %}
+
+<hr>
+
+{% endfor %}
+
+<h4 class="u-mtsm">{% for text in site.texts %}{% if text.slug contains 'curriculum' %}{{ text.curriculum_text | markdownify }}{% endif %}{% endfor %}</h4>
+
+<hr>

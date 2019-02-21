@@ -1,0 +1,122 @@
+.lightbox-container {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255,255,255,0.2);
+  display:none;
+  &.lightboxOn {
+    display: block;
+  }
+}
+
+.lightbox-detail {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  & > div {
+    margin: 0 $space-xxs;
+    max-width: 1000px;
+    @include sm {
+      margin: 0 $sidebar-width + $space-sm;
+    }
+    p {
+      @extend h2;
+      color: $color-light !important;
+      -webkit-text-fill-color: $color-light; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $color-base;
+    }
+  }
+}
+
+.lightbox-caption {
+  position: fixed;
+  bottom: $space-xxs;
+  left: $space-xxs;
+  width: 60%;
+  transform: translateY(0);
+  transition: $base-transition;
+  transition-property: transform;
+  @include sm {
+    bottom: $space-xs;
+    left: $sidebar-width + $space-sm;
+  }
+
+  & > .caption-student {
+    &.hover-reverse:hover {
+      color: $color-base !important;
+    }
+  }
+}
+
+.lightbox-close{
+  position: fixed;
+  top: $space-xxs;
+  right: $space-xxs;
+  @include sm {
+    top: $space-xs;
+    right: $space-sm;
+  }
+
+  &:hover{
+    color: $color-light;
+    cursor: pointer;
+  }
+}
+
+.lightbox-more{
+  position: fixed;
+  bottom: $space-xxs;
+  right: $space-xxs;
+  @include sm {
+    bottom: $space-xs;
+    right: $space-sm;
+  }
+
+  &:hover{
+    color: $color-light;
+    cursor: pointer;
+  }
+}
+
+.lightbox-description{
+  bottom: 0;
+  padding-bottom: $space-xxs;
+  padding-top: $space-xxs;
+  position: fixed;
+  z-index: 20;
+  width: 75vw;
+  margin-left: $space-xxs;
+  transform: translateY(100%);
+  transition: $base-transition;
+  transition-property: transform;
+  @include sm {
+    width: 75vw;
+    padding-bottom: $space-xs;
+    padding-top: $space-sm;
+    margin-left: $sidebar-width + $space-sm;
+  }
+  &.active {
+    transform: translateY(0);
+  }
+  p {
+    @extend h2;
+    color: $color-light !important;
+    -webkit-text-fill-color: $color-light; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $color-base;
+  }
+}

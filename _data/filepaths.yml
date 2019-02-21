@@ -1,5 +1,7 @@
 #a place to put filepaths
 
+main: /assets/images/
+favicon: /assets/images/favicon/
 thumb: /assets/images/work/thumb/
 mobile: /assets/images/work/mobile/
 desktop: /assets/images/work/desktop/

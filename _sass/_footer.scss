@@ -1,0 +1,54 @@
+footer {
+  width: 100%;
+  position: relative;
+  margin-bottom: $space-md;
+
+  @include sm {
+    margin-bottom: 0;
+  }
+
+  hr {
+    display: none;
+    @include sm {
+      display: block;
+    }
+  }
+
+  p {
+    font-size: $text-sm;
+  }
+
+  .footer-main {
+    display: none;
+    @include sm {
+      display: block;
+    }
+  }
+
+  .footer-sub {
+    @include sm {
+      column-count: 2;
+      column-gap: $space-xs * 2;
+    }
+  }
+
+  .footer-sub > li {
+    margin: $space-xs 0 !important;
+    font-size: $text-xs-xs;
+
+    &:first-of-type {
+      margin-top: 0 !important;
+    }
+
+    @include sm {
+      font-size: $text-xs;
+    }
+
+    a {
+      border-bottom: $border-dotted;
+      &:hover {
+        border-bottom: $border-sm;
+      }
+    }
+  }
+}

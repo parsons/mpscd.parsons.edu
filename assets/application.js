@@ -12,806 +12,354 @@
 */
 
 !function($) {
-
-
 }(window.jQuery);
 
-$(window).load(function(){
-  console.log('window loaded!');
-  pageLoaded = true;
-  $("body").scrollTop(0);
-  $("body").removeClass("preload");
+/////////////////
+// VARIABLES
 
+var $body = $('body');
+var $window = $(window);
+var $document = $(document);
+
+var blastArray = [];
+
+var $listing = $('div.listing');
+var $listingCurriculum = $('div.listing-curriculum .col-11');
+var $announcement = $('.announcement-container');
+var $announcementTitle = $('.announcement-title');
+var $announcementClose = $('.announcement-close');
+var $cookies = $('.cookies-container');
+var $cookiesTitle = $('.cookies-title');
+var $cookiesClose = $('.cookies-close');
+var $textReplaced = $("h1, h3, nav h4");
+var $exploreOuter = $('.explore');
+var $explore = $('.explore-items');
+var $sidebar = $('.sidebar');
+var $exploreItem = $('.explore-item:not(.important)');
+var $caption = $('.hover-caption');
+var $lightbox = $(".lightbox-container");
+var $lightboxCaption = $(".lightbox-caption");
+var $lightboxClose = $(".lightbox-close");
+var $info = $('.info');
+var $main = $('main');
+var $outline = $('.text-outline, .text-outline-screen, .text-outline a, .hover-reverse, .hover-text-outline, .lightbox-description p, .lightbox-detail p');
+
+var regexLetters = new RegExp("^[A-Za-z]+$");
+var letterRecurrence = 6; // Ex: 4 = 1/4 of the letters replaced
+var letterTiming = 3000;
+var imagesMin = 150;
+var imagesMax = 250;
+var pad = 5;
+var down = false;
+
+/////////////////
+// TARGET BLANK
+
+function targetBla(){
+  $('.info a').each(function() {
+    if (this.host !== window.location.host) {
+      $(this).attr('target', '_blank');
+    }
+  });
+}
+
+targetBla();
+
+
+/////////////////
+/// IE BORDER
+
+$document.ready(function() {
+  if (/MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
+    $outline.each(function(){
+      $(this).addClass('text-shadow');
+    })
+  }
 });
 
-$(window).resize(function(){
-  console.log('window resized!');
+/////////////////
+// COOKIES CONFIG
+
+$document.ready(function(){
+  if (Cookies.get('announcement') == 'seen') {
+    $announcement.addClass("hidden");
+  }
+  if (Cookies.get('cookies') == 'seen') {
+    $cookies.addClass("hidden");
+  }
+});
+
+
+/////////////////
+// LOADING PAGE
+
+$window.on('load', function(){
+  pageLoaded = true;
+  $body.scrollTop(0)
+  $explore.imagesLoaded( function(){
+    $explore.isotope({
+      itemSelector: '.explore-item',
+      layoutMode: 'masonry'
+    });
+    $explore.isotope('layout');
+
+  });
+  $body.removeClass("preload");
+});
+
+
+/////////////////
+// TYPEFACE
+
+$document.ready(function(){
+  $textReplaced.blast({
+    delimiter: "character",
+    generateValueClass: true
+  });
+  $('.blast').each(function(){
+    if (regexLetters.test(this.innerHTML) && $(this).parents('.text-outline').length < 1) {
+      blastArray.push(this);
+    };
+  });
+  var lettersInterval = setInterval(function(){
+    blastArray.sort(function() {
+      return 0.5 - Math.random()
+    });
+    for (var i = 0; i < blastArray.length; i = i + letterRecurrence){
+      blastArray[i].classList.remove('mps-expressive');
+      blastArray[i].classList.add('mps-pixel');
+      if (blastArray[i + 1]) {
+        blastArray[i + 1].classList.remove('mps-pixel');
+        blastArray[i + 1].classList.add('mps-expressive');
+      }
+      if (blastArray[i + 2]) {
+        blastArray[i + 2].classList.remove('mps-pixel');
+        blastArray[i + 2].classList.remove('mps-expressive');
+      }
+    }
+  }, letterTiming)
+});
+
+
+/////////////////
+// FACULTY PAGE
+
+// listing functionality -------------------------------------------------
+
+$listing.hover( function() {
+  $(this).find("h3:not(.no-url) a, .ui-arrow").toggleClass("text-outline-screen");
+});
+
+
+/////////////////
+// CURRICULUM PAGE
+
+// listing toggle -------------------------------------------------
+
+$listingCurriculum.click( function() {
+  console.log($(this));
+  $(this).parent('.listing-curriculum').toggleClass("expanded");
+  $(this).parent('.listing-curriculum').find('.listing-description').click(function(e) { e.stopPropagation(); })
+});
+
+
+/////////////////
+// ANNOUNCEMENTS
+
+$document.ready(function(){
+  for (var i = 0; i < 12; i++) {
+    $announcementTitle.append($announcementTitle.html());
+  }
+});
+
+$announcementClose.on("click", function(){
+  $announcement.addClass("off");
+  Cookies.set('announcement', 'seen');
+});
+
+
+/////////////////
+// COOKIES
+
+$document.ready(function(){
+  for (var i = 0; i < 12; i++) {
+    $cookiesTitle.append($cookiesTitle.html());
+  }
+});
+
+$cookiesClose.on("click", function(){
+  $cookies.addClass("off");
+  Cookies.set('cookies', 'seen');
+});
+
+
+/////////////////
+// EXPLORE
+
+// hover explore section ----------------------------------------------
+
+$document.on('mousemove', function(e) {
+  if ($(e.target).hasClass("exploreOff") && $(e.target).hasClass("explore")) {
+    $('div#exploreHover').removeClass('hidden').css({'top': e.pageY, 'left': e.pageX});
+  } else {
+    $('div#exploreHover').addClass('hidden');
+  }
+});
+
+$(document).on('mousemove', function(e) {
+  if (!$exploreOuter.hasClass("blurOn") && !$main.hasClass('blurred') && !Modernizr.mq('(max-width: 576px)')) {
+    exploreMove(e);
+  }
+})
+
+function exploreMove(e) {
+  var exploreLeft = $exploreOuter.offset().left;
+
+  var exploreWidth = $exploreOuter.outerWidth() - 10;
+  var exploreHeight = $exploreOuter.outerHeight();
+
+  var mL = e.pageX - exploreLeft;
+  
+  var mouseLeft = mL / exploreWidth * 100;
+  var mouseTop = e.pageY / exploreHeight * 100;
+
+  if (mouseLeft <= 0) { mouseLeft = 0 } else if (mouseLeft >= 100) { mouseLeft = 100 };
+  $explore.css('transform', 'translateX(calc(' + mouseLeft + 'vw - ' + exploreLeft / 2 + 'px - ' + mouseLeft + '%)) translateY(calc(' + mouseTop + 'vh - ' + mouseTop + '%))')  
+}
+
+function transitionExplore(e) {
+  $explore.css('transition', 'transform .3s ease');
+  exploreMove(e);
+  setTimeout(function(){
+    $explore.css('transition', 'none');
+  }, 300)
+}
+
+
+// open/close explore section ----------------------------------------------
+
+$exploreOuter.on("click", function(e) {
+  if ($(this).hasClass("exploreOff")) {
+    $('.exploreOff').removeClass('exploreOff').addClass("exploreOn");
+    $('.blurOn').addClass("blurOff").removeClass("blurOn");
+    $('div#exploreHover').addClass('hidden');
+  }
+  if (!Modernizr.mq('(max-width: 576px)')) {
+    transitionExplore(e);
+  } 
+});
+
+$sidebar.on("click", function() {
+  if ($(this).hasClass("exploreOn")) {
+    $('.exploreOn').removeClass('exploreOn').addClass("exploreOff");
+    $('.blurOff').addClass("blurOn").removeClass("blurOff");
+  }
 });
 
 
 // Captioning ---------------------------------------------
 
-let caption;
-let creator;
-
-let addCaption = function(source, destination){
-  caption = $(source).children("img").data("caption");
-  creator = $(source).children("img").data("creator");
-  $(destination).html("<h1 class='text-outline'>"+ caption +"</h1><h1 class='text-outline caption-student'>"+ creator +"</h1>");
-  var text = $(destination);
-  blastText(text);
-};
-
-let removeCaption = function(destination){
-  $(destination).html("");
-};
-
-
-// Caption for explore ----------------------------------------------
-
-$(".explore-item").hover(function(){
-    source = $(this);
-    addCaption(source, ".hover-caption");
+$exploreItem.hover(function(){
+  $caption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
 },function(){
-    removeCaption(".hover-caption");
+  $caption.html("");
 });
 
 
-// isotope ------------------------------------------------------------
 
-let $explore = $('.explore').isotope({
-  // options
-  itemSelector: '.explore-item',
-  layoutMode: 'masonry'
+// Filtering ----------------------------------------------
+
+var filters = {};
+$("span#title-sections").text('Everything');
+
+$(".filter-list").on('click', '.ui-pill', function(e) {
+  var $button = $(e.currentTarget);
+  var $buttonGroup = $button.parents('.sub-menu');
+  var filterGroup = $buttonGroup.attr('data-filter-group');
+  filters[ filterGroup ] = $button.attr('data-filter');
+  var filterValue = concatValues( filters );
+  $explore.isotope({ filter: filterValue });
 });
 
-$explore.imagesLoaded().progress( function(){
-  var $filter = $(".ui-pill-black").data("filter");
-  if ($filter === "everything") { $explore.isotope({ filter: "*" }); }
-  else { $explore.isotope({ filter: "." + $filter }); }  
-  $explore.isotope("layout");
-});
+$('.page-filter').on('click', function(e) {
+  $('.sub-menu').find('.is-checked').removeClass('is-checked');
+  $explore.isotope({ filter: '' });
+  $(this).find('span').empty();
+  $(find).find('span#title-sections').text('Everything');
+})
 
-
-// listing functionality -------------------------------------------------
-
-$(".listing").on("click", function() {
-  var $description = $(this).children(".listing-description");
-
-  if(!$description.hasClass("expanded"))
-  {
-    $description.addClass("expanded");
-    $(this).children(".ui-arrow").addClass("rotate-180");
-  } else {
-    $description.removeClass("expanded");
-    $(this).children(".ui-arrow").removeClass("rotate-180");
-  }
-});
-
-$(".listing").hover( 
-  function() {
-  $(this).children(".col-sm-8").children("h3").addClass("text-outline");
-  $(this).children(".ui-arrow").addClass("text-outline");
-  }, function() {
-    $(this).children(".col-sm-8").children("h3").removeClass("text-outline");
-    $(this).children(".ui-arrow").removeClass("text-outline");
+$('.sub-menu').each(function(i, buttonGroup) {
+  var $buttonGroup = $(buttonGroup);
+  $buttonGroup.on('click', '.ui-pill', function(e) {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    var $button = $(e.currentTarget);
+    $button.addClass('is-checked');
+    var t = 'span#title-' + $(this).parent().attr('id');
+    if(!$button.hasClass('filter-button')){
+      $(t).text($button.text());
+    } else {
+      if($buttonGroup.attr('id') == "sections"){
+        $(t).text('Everything');
+      } else {
+        $(t).empty();
+      }
     }
-);
-
-
-// nav functionality -----------------------------------------------------
-
-$(".nav-title").on("click", function() {
-  console.log("hello!");
-  var $menu = $(".nav-menu");
-  var $title = $(this).children("h4");
-
-  if(!$menu.hasClass("collapse"))
-  {
-    $menu.addClass("collapse");
-    $title.html("menu");
-    $("body").removeClass("overflow-hidden");
-  } else {
-    $menu.removeClass("collapse");
-    $title.html("close");
-    $("body").addClass("overflow-hidden");
-  }
-
-});
-
-
-// explore functionality ---------------------------------------------------
-
-
-// sets up array of elements to change in explore state
-var exploreArray = [".page-filter", ".sidebar", ".explore", ".explore-item", ".sidebar-info", ".sidebar-arrow", ".hover-caption", ".background-container", ".lightbox-container"];
-
-
-// hover blur
-
-$(".explore").hover(function() {
-  if (!$(".explore").hasClass("explore-open")){
-    $(".info").addClass("push-left");
-    $(this).removeClass("blur-full").addClass("blur-hover");
-  }
-},
-  function() {
-    if (!$(".explore").hasClass("explore-open")){
-    $(".info").removeClass("push-left");
-    $(this).removeClass("blur-hover").addClass("blur-full");
-    }
-  }
-);
-
-// clicking into explore section ----------------------------------------------
-function exploreOpen(element) {
-  $(element).addClass("explore-open"); 
-};
-
-function exploreClose(element) {
-  $(element).removeClass("explore-open"); 
-};
-
-
-$(".explore").on("click", function() {
-  $(".info").addClass("push-left-full");
-  $(".filter-list").removeClass("hidden");
-  $(this).removeClass("blur-hover").addClass("blur-none");
-
-  exploreArray.forEach(exploreOpen);
-}
-);
-
-// leaving the explore section ----------------------------------------------------
-
-$(".sidebar, .sidebar-info, .sidebar-arrow").hover(function() {
-    if ($(this).hasClass("explore-open")) {
-        $(".sidebar-arrow").addClass("text-outline");
-    }
-   }, function() {
-    if ($(this).hasClass("explore-open")) {
-        $(".sidebar-arrow").removeClass("text-outline");
-    }
-   }
-);
-
-
-$(".sidebar, .sidebar-info, .sidebar-arrow").on("click", function() {
- if ($(this).hasClass("explore-open")) {
-  $(".info").removeClass("push-left-full");
-  $(".filter-list").addClass("hidden");
-  $(".explore").addClass("blur-full").removeClass("blur-none");
-
-    if ($(".sidebar-arrow").hasClass("text-outline")) {
-    $(".sidebar-arrow").removeClass("text-outline");
-    }
-    if ($(".info").hasClass("push-left")) {
-        $(".info").removeClass("push-left");
-        }
-  exploreArray.forEach(exploreClose);
- }
-
-});
-
-// Lightbox!!!! -------------------------------------------------
-
-function lightboxOpen(element) {
-    $(element).addClass("lightbox-open"); 
-  };
-  
-  function lightboxClose(element) {
-    $(element).removeClass("lightbox-open"); 
-  };
-
-function studentCaptionLink(source, link) {
-    var linkUrl = $(source).children("img").data("link");
-    console.log(linkUrl);
-    console.log(link);
-    $(link).addClass("hover-reverse");
-    $(link).wrap("<a href='" + linkUrl + "'></a>")
-};
-
-
-$(".explore-item").on("click", function(){
-    if($(this).hasClass("explore-open")) {
-        exploreArray.forEach(lightboxOpen);
-        $("body").addClass("overflow-hidden");
-        $(".hover-caption").addClass("hidden");
-        $(".filter-button").addClass("hidden");
-
-        source = $(this);
-        addCaption(source, ".lightbox-caption");
-
-        link = $(".lightbox-caption").children(".caption-student");
-        if (link.html()!== ""){link.append("<div class='mps-sans'>&#x2192;</div>");};
-        studentCaptionLink(source, link);
-    
-        var image = $(this).html();
-        $(".lightbox-detail").html(image);
-    };
-});
-
-$(".lightbox-close").on("click", function(){
-        exploreArray.forEach(lightboxClose);
-        $("body").removeClass("overflow-hidden");
-        $(".hover-caption").removeClass("hidden");
-        $(".filter-button").removeClass("hidden");
-});
-
-
-
-
-// image filtering functions --------------------------------------------------
-
-$(".filter-list").children().first().on("click", function() {
-  var $subMenu = $(this).siblings();
-
-  if ( !$(this).hasClass("expanded") ) {
-    $(this).html("Filters -");
-    $subMenu.removeClass("hidden");
-    $(this).addClass("expanded");
-  } else {
-    $(this).html("Filters +");
-    $subMenu.addClass("hidden");
-    $(this).removeClass("expanded");
-  }
-}
-);
-
-$(".filter-list").children(".sub-menu").children(".ui-pill").on("click", function() {
-  var $title = $(this).html();
-  $(".ui-pill-black").html($title);
-  var $filter = $(this).data("filter");
-  if ($filter === "everything") { $explore.isotope({ filter: "*" }); }
-  else { $explore.isotope({ filter: "." + $filter }); }  
-}
-);
-
-
-
-
-// font replacer! --------------------------------------------------
-$(document).ready(function(){
-
-  var text = $("h1, h3, h4");
-  blastText(text);
-});
-
-
-function blastText(text) {
-  $(text).blast({
-    delimiter: "character",
-    generateValueClass: true
   });
-
-  // test for caps, 
-  $('.blast').each(function(){
-    var character = this.innerHTML;
-    // console.log(character);
-              if (character == character.toUpperCase()) {
-            //   console.log('upper case true');
-              $(this).addClass('uppercase');
-                    if ($(this).hasClass("blast-character-!")) {
-                        $(this).addClass("blast-character-excl").removeClass("blast-character-!");
-                    }
-                    if ($(this).hasClass("blast-character-?")) {
-                        $(this).addClass("blast-character-quest").removeClass("blast-character-?");
-                    }
-                    if ($(this).hasClass("blast-character-1")) {
-                        $(this).addClass("blast-character-one").removeClass("blast-character-1");
-                    }
-                    if ($(this).hasClass("blast-character-2")) {
-                        $(this).addClass("blast-character-two").removeClass("blast-character-2");
-                    }
-          } else {
-            $(this).addClass('lowercase');
-          }
-  });
-}
-
-
-// announcements -----------------------------------------
-
-function titleRepeat(title) {
-    var copy = title.html();
-    for(i = 0; i < 9; i++) {
-        title.append("<br>" + copy);
-    }
-}
-
-var announcementTitle = $('.announcement-title');
-
-titleRepeat(announcementTitle);
-
-$(".announcement-close").on("click", function(){
-    $(".announcement-container").addClass("hidden");
 });
 
-
-
-// temporary include of blast.js --> learn how to use CodeKit to compile!
-
-console.log('blast ready');
-/****************
-    Blast.js
-****************/
-
-/*! Blast.js (2.0.0): julian.com/research/blast (C) 2015 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
-
-;(function ($, window, document, undefined) {
-
-    /*********************
-       Helper Functions
-    *********************/
-
-    /* IE detection. Gist: https://gist.github.com/julianshapiro/9098609 */
-    var IE = (function () {
-        if (document.documentMode) {
-            return document.documentMode;
-        } else {
-            for (var i = 7; i > 0; i--) {
-                var div = document.createElement("div");
-
-                div.innerHTML = "<!--[if IE " + i + "]><span></span><![endif]-->";
-
-                if (div.getElementsByTagName("span").length) {
-                    div = null;
-
-                    return i;
-                }
-
-                div = null;
-            }
-        }
-
-        return undefined;
-    })();
-
-    /* Shim to prevent console.log() from throwing errors on IE<=7. */
-    var console = window.console || { log: function () {}, time: function () {} };
-
-    /*****************
-        Constants
-    *****************/
-
-    var NAME = "blast",
-        characterRanges = {
-            latinPunctuation: "â€“â€”â€²â€™'â€œâ€³â€ž\"(Â«.â€¦Â¡Â¿â€²â€™'â€â€³â€œ\")Â».â€¦!?",
-            latinLetters: "\\u0041-\\u005A\\u0061-\\u007A\\u00C0-\\u017F\\u0100-\\u01FF\\u0180-\\u027F"
-        },
-        Reg = {
-            /* If the abbreviations RegEx is missing a title abbreviation that you find yourself needing to often escape manually, tweet me: @Shapiro. */
-            abbreviations: new RegExp("[^" + characterRanges.latinLetters + "](e\\.g\\.)|(i\\.e\\.)|(mr\\.)|(mrs\\.)|(ms\\.)|(dr\\.)|(prof\\.)|(esq\\.)|(sr\\.)|(jr\\.)[^" + characterRanges.latinLetters + "]", "ig"),
-            innerWordPeriod: new RegExp("[" + characterRanges.latinLetters + "]\.[" + characterRanges.latinLetters + "]", "ig"),
-            onlyContainsPunctuation: new RegExp("[^" + characterRanges.latinPunctuation + "]"),
-            adjoinedPunctuation: new RegExp("^[" + characterRanges.latinPunctuation + "]+|[" + characterRanges.latinPunctuation + "]+$", "g"),
-            skippedElements: /(script|style|select|textarea)/i,
-            hasPluginClass: new RegExp("(^| )" + NAME + "( |$)", "gi")
-        };
-
-    /****************
-       $.fn.blast
-    ****************/
-
-    $.fn[NAME] = function (options) {
-
-        /*************************
-           Punctuation Escaping
-        *************************/
-
-        /* Escape likely false-positives of sentence-final periods. Escaping is performed by wrapping a character's ASCII equivalent in double curly brackets,
-           which is then reversed (deencodcoded) after delimiting. */
-        function encodePunctuation (text) {
-            return text
-                    /* Escape the following Latin abbreviations and English titles: e.g., i.e., Mr., Mrs., Ms., Dr., Prof., Esq., Sr., and Jr. */
-                    .replace(Reg.abbreviations, function(match) {
-                        return match.replace(/\./g, "{{46}}");
-                    })
-                    /* Escape inner-word (non-space-delimited) periods. For example, the period inside "Blast.js". */
-                    .replace(Reg.innerWordPeriod, function(match) {
-                        return match.replace(/\./g, "{{46}}");
-                    });
-        }
-
-        /* Used to decode both the output of encodePunctuation() and punctuation that has been manually escaped by users. */
-        function decodePunctuation (text) {
-            return text.replace(/{{(\d{1,3})}}/g, function(fullMatch, subMatch) {
-                return String.fromCharCode(subMatch);
-            });
-        }
-
-        /******************
-           DOM Traversal
-        ******************/
-
-        function wrapNode (node, opts) {
-            var wrapper = document.createElement(opts.tag);
-
-            /* Assign the element a class of "blast". */
-            wrapper.className = NAME;
-
-            /* If a custom class was provided, assign that too. */
-            if (opts.customClass) {
-                wrapper.className += " " + opts.customClass;
-
-                /* If an opts.customClass is provided, generate an ID consisting of customClass and a number indicating the match's iteration. */
-                if (opts.generateIndexID) {
-                    wrapper.id = opts.customClass + "-" + Element.blastedIndex;
-                }
-            }
-
-            /* For the "all" delimiter, prevent space characters from collapsing. */
-            if (opts.delimiter === "all" && /\s/.test(node.data)) {
-                wrapper.style.whiteSpace = "pre-line";
-            }
-
-            /* Assign the element a class equal to its escaped inner text. Only applicable to the character and word delimiters (since they do not contain spaces). */
-            if (opts.generateValueClass === true && !opts.search && (opts.delimiter === "character" || opts.delimiter === "word")) {
-                var valueClass,
-                    text = node.data;
-
-                /* For the word delimiter, remove adjoined punctuation, which is unlikely to be desired as part of the match -- unless the text
-                   consists solely of punctuation (e.g. "!!!"), in which case we leave the text as-is. */
-                if (opts.delimiter === "word" && Reg.onlyContainsPunctuation.test(text)) {
-                    /* E: Remove punctuation that's adjoined to either side of the word match. */
-                    text = text.replace(Reg.adjoinedPunctuation, "");
-                }
-
-                valueClass = NAME + "-" + opts.delimiter.toLowerCase() + "-" + text.toLowerCase();
-
-                wrapper.className += " " + valueClass;
-            }
-
-            /* Hide the wrapper elements from screenreaders now that we've set the target's aria-label attribute. */
-            if (opts.aria) {
-                wrapper.setAttribute("aria-hidden", "true");
-            }
-
-            wrapper.appendChild(node.cloneNode(false));
-
-            return wrapper;
-        }
-
-        function traverseDOM (node, opts) {
-            var matchPosition = -1,
-                skipNodeBit = 0;
-
-            /* Only proceed if the node is a text node and isn't empty. */
-            if (node.nodeType === 3 && node.data.length) {
-                /* Perform punctuation encoding/decoding once per original whole text node (before it gets split up into bits). */
-                if (Element.nodeBeginning) {
-                    /* For the sentence delimiter, we first escape likely false-positive sentence-final punctuation. For all other delimiters,
-                       we must decode the user's manually-escaped punctuation so that the RegEx can match correctly (without being thrown off by characters in {{ASCII}}). */
-                    node.data = (!opts.search && opts.delimiter === "sentence") ? encodePunctuation(node.data) : decodePunctuation(node.data);
-
-                    Element.nodeBeginning = false;
-                }
-
-                matchPosition = node.data.search(delimiterRegex);
-
-                /* If there's a RegEx match in this text node, proceed with element wrapping. */
-                if (matchPosition !== -1) {
-                    var match = node.data.match(delimiterRegex),
-                        matchText = match[0],
-                        subMatchText = match[1] || false;
-
-                    /* RegEx queries that can return empty strings (e.g ".*") produce an empty matchText which throws the entire traversal process into an infinite loop due to the position index not incrementing.
-                       Thus, we bump up the position index manually, resulting in a zero-width split at this location followed by the continuation of the traversal process. */
-                    if (matchText === "") {
-                        matchPosition++;
-                    /* If a RegEx submatch is produced that is not identical to the full string match, use the submatch's index position and text.
-                       This technique allows us to avoid writing multi-part RegEx queries for submatch finding. */
-                    } else if (subMatchText && subMatchText !== matchText) {
-                        matchPosition += matchText.indexOf(subMatchText);
-                        matchText = subMatchText;
-                    }
-
-                    /* Split this text node into two separate nodes at the position of the match, returning the node that begins after the match position. */
-                    var middleBit = node.splitText(matchPosition);
-
-                    /* Split the newly-produced text node at the end of the match's text so that middleBit is a text node that consists solely of the matched text. The other newly-created text node, which begins
-                       at the end of the match's text, is what will be traversed in the subsequent loop (in order to find additional matches in the containing text node). */
-                    middleBit.splitText(matchText.length);
-
-                    /* Over-increment the loop counter (see below) so that we skip the extra node (middleBit) that we've just created (and already processed). */
-                    skipNodeBit = 1;
-
-                    if (!opts.search && opts.delimiter === "sentence") {
-                        /* Now that we've forcefully escaped all likely false-positive sentence-final punctuation, we must decode the punctuation back from ASCII. */
-                        middleBit.data = decodePunctuation(middleBit.data);
-                    }
-
-                    /* Create the wrapped node. */
-                    var wrappedNode = wrapNode(middleBit, opts, Element.blastedIndex);
-                    /* Then replace the middleBit text node with its wrapped version. */
-                    middleBit.parentNode.replaceChild(wrappedNode, middleBit);
-
-                    /* Push the wrapper onto the Element.wrappers array (for later use with stack manipulation). */
-                    Element.wrappers.push(wrappedNode);
-
-                    Element.blastedIndex++;
-
-                    /* Note: We use this slow splice-then-iterate method because every match needs to be converted into an HTML element node. A text node's text cannot have HTML elements inserted into it. */
-                    /* TODO: To improve performance, use documentFragments to delay node manipulation so that DOM queries and updates can be batched across elements. */
-                }
-            /* Traverse the DOM tree until we find text nodes. Skip script and style elements. Skip select and textarea elements since they contain special text nodes that users would not want wrapped.
-               Additionally, check for the existence of our plugin's class to ensure that we do not retraverse elements that have already been blasted. */
-            /* Note: This basic DOM traversal technique is copyright Johann Burkard <http://johannburkard.de>. Licensed under the MIT License: http://en.wikipedia.org/wiki/MIT_License */
-            } else if (node.nodeType === 1 && node.hasChildNodes() && !Reg.skippedElements.test(node.tagName) && !Reg.hasPluginClass.test(node.className)) {
-                /* Note: We don't cache childNodes' length since it's a live nodeList (which changes dynamically with the use of splitText() above). */
-                for (var i = 0; i < node.childNodes.length; i++) {
-                    Element.nodeBeginning = true;
-
-                    i += traverseDOM(node.childNodes[i], opts);
-                }
-            }
-
-            return skipNodeBit;
-        }
-
-        /*******************
-           Call Variables
-        *******************/
-
-        var opts = $.extend({}, $.fn[NAME].defaults, options),
-            delimiterRegex,
-            /* Container for variables specific to each element targeted by the Blast call. */
-            Element = {};
-
-        /***********************
-           Delimiter Creation
-        ***********************/
-
-        /* Ensure that the opts.delimiter search variable is a non-empty string. */
-        if (opts.search.length && (typeof opts.search === "string" || /^\d/.test(parseFloat(opts.search)))) {
-            /* Since the search is performed as a Regex (see below), we escape the string's Regex meta-characters. */
-            opts.delimiter = opts.search.toString().replace(/[-[\]{,}(.)*+?|^$\\\/]/g, "\\$&");
-
-            /* Note: This matches the apostrophe+s of the phrase's possessive form: {PHRASE's}. */
-            /* Note: This will not match text that is part of a compound word (two words adjoined with a dash), e.g. "front" won't match inside "front-end". */
-            /* Note: Based on the way the search algorithm is implemented, it is not possible to search for a string that consists solely of punctuation characters. */
-            /* Note: By creating boundaries at Latin alphabet ranges instead of merely spaces, we effectively match phrases that are inlined alongside any type of non-Latin-letter,
-               e.g. word|, word!, â™¥wordâ™¥ will all match. */
-            delimiterRegex = new RegExp("(?:^|[^-" + characterRanges.latinLetters + "])(" + opts.delimiter + "('s)?)(?![-" + characterRanges.latinLetters + "])", "i");
-        } else {
-            /* Normalize the string's case for the delimiter switch check below. */
-            if (typeof opts.delimiter === "string") {
-                opts.delimiter = opts.delimiter.toLowerCase();
-            }
-
-            switch (opts.delimiter) {
-                case "all":
-                    /* Matches every character then later sets spaces to "white-space: pre-line" so they don't collapse. */
-                    delimiterRegex = /(.)/;
-                    break;
-
-                case "letter":
-                case "char":
-                case "character":
-                    /* Matches every non-space character. */
-                    /* Note: This is the slowest delimiter. However, its slowness is only noticeable when it's used on larger bodies of text (of over 500 characters) on <=IE8.
-                       (Run Blast with opts.debug=true to monitor execution times.) */
-                    delimiterRegex = /(\S)/;
-                    break;
-
-                case "word":
-                    /* Matches strings in between space characters. */
-                    /* Note: Matches will include any punctuation that's adjoined to the word, e.g. "Hey!" will be a full match. */
-                    /* Note: Remember that, with Blast, every HTML element marks the start of a brand new string. Hence, "in<b>si</b>de" matches as three separate words. */
-                    delimiterRegex = /\s*(\S+)\s*/;
-                    break;
-
-                case "sentence":
-                    /* Matches phrases either ending in Latin alphabet punctuation or located at the end of the text. (Linebreaks are not considered punctuation.) */
-                    /* Note: If you don't want punctuation to demarcate a sentence match, replace the punctuation character with {{ASCII_CODE_FOR_DESIRED_PUNCTUATION}}. ASCII codes: .={{46}}, ?={{63}}, !={{33}} */
-                    delimiterRegex = /(?=\S)(([.]{2,})?[^!?]+?([.â€¦!?]+|(?=\s+$)|$)(\s*[â€²â€™'â€â€³â€œ")Â»]+)*)/;
-                    /* RegExp explanation (Tip: Use Regex101.com to play around with this expression and see which strings it matches):
-                       - Expanded view: /(?=\S) ( ([.]{2,})? [^!?]+? ([.â€¦!?]+|(?=\s+$)|$) (\s*[â€²â€™'â€â€³â€œ")Â»]+)* )
-                       - (?=\S) --> Match must contain a non-space character.
-                       - ([.]{2,})? --> Match may begin with a group of periods.
-                       - [^!?]+? --> Grab everything that isn't an unequivocally-terminating punctuation character, but stop at the following condition...
-                       - ([.â€¦!?]+|(?=\s+$)|$) --> Match the last occurrence of sentence-final punctuation or the end of the text (optionally with left-side trailing spaces).
-                       - (\s*[â€²â€™'â€â€³â€œ")Â»]+)* --> After the final punctuation, match any and all pairs of (optionally space-delimited) quotes and parentheses.
-                    */
-                    break;
-
-                case "element":
-                    /* Matches text between HTML tags. */
-                    /* Note: Wrapping always occurs inside of elements, i.e. <b><span class="blast">Bolded text here</span></b>. */
-                    delimiterRegex = /(?=\S)([\S\s]*\S)/;
-                    break;
-
-                /*****************
-                   Custom Regex
-                *****************/
-
-                default:
-                    /* You can pass in /your-own-regex/. */
-                    if (opts.delimiter instanceof RegExp) {
-                        delimiterRegex = opts.delimiter;
-                    } else {
-                        console.log(NAME + ": Unrecognized delimiter, empty search string, or invalid custom Regex. Aborting.");
-
-                        /* Abort this Blast call. */
-                        return true;
-                    }
-            }
-        }
-
-        /**********************
-           Element Iteration
-        **********************/
-
-        this.each(function() {
-            var $this = $(this),
-                text = $this.text();
-
-            /* When anything except false is passed in for the options object, Blast is initiated. */
-            if (options !== false) {
-
-                /**********************
-                   Element Variables
-                **********************/
-
-                Element = {
-                    /* The index of each wrapper element generated by blasting. */
-                    blastedIndex: 0,
-                    /* Whether we're just entering this node. */
-                    nodeBeginning: false,
-                    /* Keep track of the elements generated by Blast so that they can (optionally) be pushed onto the jQuery call stack. */
-                    wrappers: Element.wrappers || []
-                };
-
-                /*****************
-                   Housekeeping
-                *****************/
-
-                /* Unless a consecutive opts.search is being performed, an element's existing Blast call is reversed before proceeding. */
-                if ($this.data(NAME) !== undefined && ($this.data(NAME) !== "search" || opts.search === false)) {
-                    reverse($this, opts);
-
-                    if (opts.debug) console.log(NAME + ": Removed element's existing Blast call.");
-                }
-
-                /* Store the current delimiter type so that it can be compared against on subsequent calls (see above). */
-                $this.data(NAME, opts.search !== false ? "search" : opts.delimiter);
-
-                if (opts.aria) {
-                    $this.attr("aria-label", text);
-                }
-
-                /****************
-                   Preparation
-                ****************/
-
-                /* Perform optional HTML tag stripping. */
-                if (opts.stripHTMLTags) {
-                    $this.html(text);
-                }
-
-                /* If the browser throws an error for the provided element type (browers whitelist the letters and types of the elements they accept), fall back to using "span". */
-                try {
-                    document.createElement(opts.tag);
-                } catch (error) {
-                    opts.tag = "span";
-
-                    if (opts.debug) console.log(NAME + ": Invalid tag supplied. Defaulting to span.");
-                }
-
-                /* For reference purposes when reversing Blast, assign the target element a root class. */
-                $this.addClass(NAME + "-root");
-
-                /* Initiate the DOM traversal process. */
-                if (opts.debug) console.time(NAME);
-                traverseDOM(this, opts);
-                if (opts.debug) console.timeEnd(NAME);
-
-            /* If false is passed in as the first parameter, reverse Blast. */
-            } else if (options === false && $this.data(NAME) !== undefined) {
-                reverse($this, opts);
-            }
-
-            /**************
-               Debugging
-            **************/
-
-            /* Output the full string of each wrapper element and color alternate the wrappers. This is in addition to the performance timing that has already been outputted. */
-            if (opts.debug) {
-                $.each(Element.wrappers, function(index, element) {
-                    console.log(NAME + " [" + opts.delimiter + "] " + this.outerHTML);
-                    this.style.backgroundColor = index % 2 ? "#f12185" : "#075d9a";
-                });
-            }
-        });
-
-        /************
-           Reverse
-        ************/
-
-        function reverse ($this, opts) {
-            if (opts.debug) console.time("blast reversal");
-
-            var skippedDescendantRoot = false;
-
-            $this
-                .removeClass(NAME + "-root")
-                .removeAttr("aria-label")
-                .find("." + NAME)
-                    .each(function () {
-                        var $this = $(this);
-                        /* Do not reverse Blast on descendant root elements. (Before you can reverse Blast on an element, you must reverse Blast on any parent elements that have been Blasted.) */
-                        if (!$this.closest("." + NAME + "-root").length) {
-                            var thisParentNode = this.parentNode;
-
-                            /* This triggers some sort of node layout, thereby solving a node normalization bug in <=IE7 for reasons unknown. If you know the specific reason, tweet me: @Shapiro. */
-                            if (IE <= 7) (thisParentNode.firstChild.nodeName);
-
-                            /* Strip the HTML tags off of the wrapper elements by replacing the elements with their child node's text. */
-                            thisParentNode.replaceChild(this.firstChild, this);
-
-                            /* Normalize() parents to remove empty text nodes and concatenate sibling text nodes. (This cleans up the DOM after our manipulation.) */
-                            thisParentNode.normalize();
-                        } else {
-                            skippedDescendantRoot = true;
-                        }
-                    });
-
-            /* Zepto core doesn't include cache-based $.data(), so we mimic data-attr removal by setting it to undefined. */
-            if (window.Zepto) {
-                $this.data(NAME, undefined);
-            } else {
-                $this.removeData(NAME);
-            }
-
-            if (opts.debug) {
-                console.log(NAME + ": Reversed Blast" + ($this.attr("id") ? " on #" + $this.attr("id") + "." : ".") + (skippedDescendantRoot ? " Skipped reversal on the children of one or more descendant root elements." : ""));
-                console.timeEnd("blast reversal");
-            }
-        }
-
-        /*************
-            Chain
-        *************/
-
-        /* Either return a stack composed of our call's Element.wrappers or return the element(s) originally targeted by the Blast call. */
-        /* Note: returnGenerated can only be disabled on a per-call basis (not a per-element basis). */
-        if (options !== false && opts.returnGenerated === true) {
-            /* A reimplementation of jQuery's $.pushStack() (since Zepto does not provide this function). */
-            var newStack = $().add(Element.wrappers);
-            newStack.prevObject = this;
-            newStack.context = this.context;
-
-            return newStack;
-        } else {
-            return this;
-        }
-    };
-
-    /***************
-        Defaults
-    ***************/
-
-    $.fn.blast.defaults = {
-        returnGenerated: true,
-        delimiter: "word",
-        tag: "span",
-        search: false,
-        customClass: "",
-        generateIndexID: false,
-        generateValueClass: false,
-        stripHTMLTags: false,
-        aria: true,
-        debug: false
-    };
-})(window.jQuery || window.Zepto, window, document);
-
-/*****************
-   Known Issues
-*****************/
-
-/* In <=IE7, when Blast is called on the same element more than once with opts.stripHTMLTags=false, calls after the first may not target the entirety of the element and/or may
-   inject excess spacing between inner text parts due to <=IE7's faulty node normalization. */
-
-// demo
-// text = $("h1");
-// $(text).blast({ delimiter: "character" });
+function concatValues( obj ) {
+  var value = '';
+  for ( var prop in obj ) {
+    value += obj[ prop ];
+  }
+  return value;
+}
+
+
+
+/////////////////
+// LIGHTBOX
+
+$exploreItem.on("click", function(){
+  if ($(this).hasClass('imagepost')) {
+    $main.addClass("blurred");
+    $lightbox.addClass('lightboxOn');
+    $body.addClass("overflow-hidden");
+    $(".hover-caption").addClass("hidden");
+    var content = $(this).find('img').length !== 0 ? $(this).find('img').attr('data-content').trim() : '';
+    if (content != '') {
+      $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
+      $('.lightbox-more').show();
+    } else {
+      $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
+      $('.lightbox-more').hide();
+    }
+    $(".lightbox-detail").html($(this).html());
+    $('.lightbox-description').html($(this).find('img').attr('data-content'));
+  }
+});
+
+$lightboxClose.on("click", function(e){
+  $lightbox.removeClass('lightboxOn');
+  $main.removeClass("blurred");
+  $body.removeClass("overflow-hidden");
+  $lightboxCaption.css('transform', 'translateY(0)');
+  $(".hover-caption").removeClass("hidden");
+  $('.lightbox-description').removeClass('active');
+  $('.lightbox-description').html("");
+  if (!Modernizr.mq('(max-width: 576px)')) {
+    transitionExplore(e);
+  } 
+});
+
+$(".lightbox-more").on("click", function(){
+  var t = $('.lightbox-description').outerHeight();
+  $('.lightbox-description').toggleClass('active');
+  if($('.lightbox-description').hasClass('active')){
+    $(".lightbox-more").find('h1').text('—');
+    $lightboxCaption.css('transform', 'translateY(-' + t + 'px)');
+  } else {
+    $(".lightbox-more").find('h1').text('+');
+    $lightboxCaption.css('transform', 'translateY(0)');
+  }
+})

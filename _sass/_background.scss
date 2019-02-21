@@ -1,0 +1,29 @@
+.background-container {
+  z-index: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: visible;
+}
+
+.background-image {
+  width: 110vw;
+  height: 110vh;
+  margin-top: -5vh;
+  margin-left: -5vw;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &.contain {
+    background-size: contain;
+  }
+
+  &.cover {
+    background-size: cover;
+  }
+
+  &.repeat {
+    background-repeat: repeat;
+    background-size: 43vw;
+  }
+}

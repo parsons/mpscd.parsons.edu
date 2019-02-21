@@ -1,35 +1,71 @@
-<head>
-  <title>{{ global.title }}</title>
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]> <html class="no-js"> <![endif]-->
 
-  <meta name="author" content="">
-  <meta name="description" content="">
+  <head lang="en">
+    <title>{{ site.title }}</title>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="">
+    <meta name="description" content="">
 
-  <meta property="og:url" content="http://www.newschool.edu">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Parsons MPS Communication Design">
-  <meta property="og:description" content="A one-year graduate degree program for Digital Product Design.">
-  <meta property="og:image" content="/_assets/images/xxix-og-rect.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:description" content="A one-year graduate degree program for Digital Product Design.">
-  <meta name="twitter:title" content="Parsons MPS Communication Design">
-  <meta name="twitter:image" content="/_assets/images/xxix-og-rect.png">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.pages[7].content }}">
+    <meta property="og:image" content="{{ site.background_image }}">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"   integrity="sha256-DI6NdAhhFRnO2k51mumYeDShet3I8AKCQf/tf7ARNhI="   crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="{{ site.pages[7].content }}">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:image" content="{{ site.background_image }}">
 
-  <link rel="stylesheet" href="{{ '/assets/application.css' | relative_url }}" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.data.filepaths.favicon }}parsons-57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.data.filepaths.favicon }}parsons-114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.data.filepaths.favicon }}parsons-72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.data.filepaths.favicon }}parsons-144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.data.filepaths.favicon }}parsons-60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.data.filepaths.favicon }}parsons-120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.data.filepaths.favicon }}parsons-76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.data.filepaths.favicon }}parsons-152.png" />
+    <link rel="icon" type="image/png" href="{{ site.data.filepaths.favicon }}parsons-196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="{{ site.data.filepaths.favicon }}parsons-96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="{{ site.data.filepaths.favicon }}parsons-32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ site.data.filepaths.favicon }}parsons-16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="{{ site.data.filepaths.favicon }}parsons-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="{{ site.data.filepaths.favicon }}parsons-144.png" />
+    <meta name="msapplication-square70x70logo" content="{{ site.data.filepaths.favicon }}parsons-70.png" />
+    <meta name="msapplication-square150x150logo" content="{{ site.data.filepaths.favicon }}parsons-150.png" />
+    <meta name="msapplication-wide310x150logo" content="{{ site.data.filepaths.favicon }}parsons-310-wide.png" />
+    <meta name="msapplication-square310x310logo" content="{{ site.data.filepaths.favicon }}parsons-310.png" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js" integrity="sha256-DI6NdAhhFRnO2k51mumYeDShet3I8AKCQf/tf7ARNhI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/blast-text@2.0.0/jquery.blast.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 
-  <!--[if lt IE 9]>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
+    <link rel="stylesheet" href="{{ '/assets/application.css' | relative_url }}" />
+
+    <link rel="preload" href="{{ '/assets/fonts/MPSSans-Pixel.woff' | relative_url }}" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="{{ '/assets/fonts/MPSSans-Pixel.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="{{ '/assets/fonts/MPSSans-Expressive.woff' | relative_url }}" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="{{ '/assets/fonts/MPSSans-Expressive.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="preload js-body with-mask" id="current-page-title">

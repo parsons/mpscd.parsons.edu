@@ -1,0 +1,5 @@
+{% for text in site.texts %}
+{% if text.slug contains include.page %}
+{{ text.content | markdownify }}
+{% endif %}
+{% endfor %}

@@ -1,0 +1,52 @@
+nav {
+
+  margin-top: 0px;
+
+  .col:not(:last-of-type) {
+    margin-bottom: $space-xs;
+    @include sm {
+      margin-bottom: 0;
+    }
+  }
+
+  li {
+    display: block;
+    a {
+      &.active::before, &:hover::before {
+        content: ' ';
+        display: none;
+        height: 22px;
+        width: 22px;
+        border-radius: 50%;
+        margin-left: -30px;
+        margin-right: 8px;
+        @include sm {
+          display: inline-block;
+        }
+      }
+      &.active {
+          &::before {
+            background: $color-dark;
+          }
+        }
+      &:hover {
+        &::before {
+          background: $color-light;
+          border: $border-sm;
+        }
+      }
+      &.active::after {
+        content: ' ';
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin-left: 10px;
+        background: $color-dark;
+        @include sm {
+          display: none;
+        }
+      }
+    }
+  }
+}

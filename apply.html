@@ -1,0 +1,17 @@
+---
+title: Apply
+permalink: "/apply/"
+layout: home
+filter: Everything
+filter-class: everything
+---
+
+{% include _paragraphs.html page="apply" %}
+
+<div class='apply-button'>
+  <a href="{% for text in site.texts %}{% if text.slug contains 'apply' %}{{ text.admission_link }}{% endif %}{% endfor %}">Apply &rarr;</a>
+</div>
+
+<h4>{% for text in site.texts %}{% if text.slug contains 'apply' %}{{ text.admission_text | markdownify }}{% endif %}{% endfor %}</h4>
+
+<hr>

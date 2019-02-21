@@ -5,12 +5,12 @@
   position: fixed;
   height: 100vh;
   background: $color-light;
-  border-right: 1px solid $color-dark;
+  border-right: $border-sm;
   width: $info-width-xs;
-  transition: 0.2s;
-  overflow: scroll !important;
+  transition: $base-transition;
+  overflow-y: scroll !important;
   -webkit-overflow-scrolling: touch;
-
+  overflow-x: hidden;
 
   @include sm {
     width: $info-width-sm;
@@ -22,44 +22,13 @@
     max-width: $info-width-max-md;
     padding-left: $sidebar-width;
   }
-}
 
-.explore {
-  z-index: 0;
-  position: relative;
-  margin-left: $space-sm;
-  cursor: pointer;
-
-  // &:hover{
-  //   position: absolute;
-  // }
-
-  &.explore-open {
-    cursor: default;
-    position: absolute;
+  @include xl {
+    padding-left: $sidebar-big-width;
   }
 
-  &.lightbox-open{
-    filter: blur($blur-extra);
-  }
-}
-
-
-.explore-item {
-  &.explore-open{
-    cursor: zoom-in;
-  }
-  &:nth-child(1n+1){
-    margin: $space-xl 0;
-  }
-  &:nth-child(2n+1){
-    margin: $space-sm 0 0 $space-md;
-  }
-  &:nth-child(3n+1){
-    margin: $space-md $space-sm;
-  }
-  &:nth-child(4n+1){
-    margin: $space-sm 0 $space-sm $space-lg;
+  &.exploreOn {
+    transform: translateX(-100%);
   }
 }
 
@@ -67,55 +36,92 @@
 
 // listing stuff
 
-.listing {
-}
-
-.listing-description {
-  max-height: 0px;
-  overflow: hidden;
-
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.listing-description.expanded {
-  padding-top: $space-sm;
-  max-height: 1000px !important;
-}
-
-
-.ui-arrow {
-  width: 24px;
-  height: 18px;
-  margin-top: 8px;
-  background-origin: content-box;
-  margin-left: -10px;
-  background-position: center;
-  background-image: url("images/down-arrow.svg");
-  display: inline-block;
-  background-size: 24px 18px;
-  background-repeat: no-repeat;
-  transform-origin: center;
-  transform: rotate(0deg);
-
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-
-  &.text-outline {
-    background-image: url("images/down-arrow-open.svg");
+div.listing {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: $space-xxs;
+  @include sm {
+    margin-bottom: 0;
   }
-  &.rotate-180 {
+
+  .ui-arrow {
+    width: 24px;
+    height: 24px;
+    background-origin: content-box;
+    background-position: center;
+    background-image: url("images/right-arrow.svg");
+    display: none;
+    background-size: 24px;
+    background-repeat: no-repeat;
     transform-origin: center;
-    transform: rotate(180deg);
+    margin: 0 $space-xs;
+    margin-top: 8px;
+    transition: $base-transition-sm;
+    @include sm {
+      display: inline-block;
+    }
+    @include xl {
+      width: 36px;
+      height: 36px;
+      background-size: 36px;
+      margin-top: 10px;
+    }
+  }
+
+  .listing-description {
+    max-height: 0px;
+    overflow: hidden;
+    transition: $base-transition-sm;
+  }
+
+  &.listing-curriculum {
+    .ui-arrow {
+      transform: rotate(45deg);
+      &.text-outline-screen {
+        transform: rotate(90deg);
+      }
+    }
+    & > div:nth-child(1) {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      @include sm {
+        margin-bottom: 0;
+      }
+    }
+
+    & > div:nth-child(2) {
+      flex: 1;
+      padding: 0 $space-xs;
+      cursor: pointer;
+    }
+  }
+
+  &.listing-faculty {
+    .ui-arrow {
+      transform: rotate(0deg);
+      &.text-outline-screen {
+        transform: rotate(-45deg);
+      }
+    }
+    .listing-name {
+      margin-left: $space-xs;
+    }
+  }
+
+  &.expanded {
+    .listing-description {
+      padding-top: $space-sm;
+      max-height: 1000px !important;
+    }
+    .ui-arrow {
+      transform: rotate(-45deg);
+      &.text-outline-screen {
+        transform: rotate(-90deg);
+      }
+    }
   }
 }
-
 
 
 // student list styles
@@ -132,17 +138,16 @@
   margin: none;
 
   & a {
-    border-bottom: none;
+    border-bottom: $border-dotted;
+    &:hover {
+      border-bottom: $border-sm;
+    }
   }
 
   @include sm {
     font-size: $text-md;
     }
   }
-}
-
-.ul-xxl {
-
 }
 
 .columns-2 {
@@ -153,242 +158,39 @@
 }
 
 
+// 404
 
-// Filter styling
-
-
-.pill-container {
+div#four-o-four{
   position: fixed;
-  z-index: 10;
-  right: $space-xs;
-  top: $space-xs;
-
-  @include sm {
-    right: $space-sm;
-    top: $space-sm;
-  }
-
-}
-
-.filter-list {
-  // float: right;
-  text-align: right;
-}
-
-.page-filter{
-  display: none !important;
-
-  &.explore-open{
-    display: inline-block !important;
-    
-    &.lightbox-open{
-        filter: blur($blur-extra);
-      }
-  }
-
-  @include sm {
-    display: inline-block !important;
-  }
-}
-
-.ui-pill {
-  height: $space-sm;
-  padding: 12px;
-  margin-bottom: 12px;
-  font-size: $text-xs;
-  font-family: $font-secondary;
-  text-align: center;
-  border-radius: $space-sm;
-  color: $color-dark;
-  background: $color-light;
-  display: inline-block;
-
-  &.ui-pill-black {
-    color: $color-light;
-    background: $color-dark;
-    float: right;
-    margin-left: 12px;
-  }
-
-  &:hover {
-      color: $color-light;
-      background: $color-dark;
-    }
-
-}
-
-
-.hover-caption {
-  position: fixed;
-  bottom: $space-xs;
-  left: $space-sm + $space-xs;
-  z-index: 12;
-  display:none;
-
-  @include sm {
-    &.explore-open {
-    display:block;
-    
-      &.lightbox-open{
-        filter: blur($blur-extra);
-      }
-    }
-  }
-}
-
-
-// lightbox stuff
-
-.lightbox-container {
-  z-index: 20;
-  position: fixed;
-  width: 100vw;
   height: 100vh;
-  background: rgba(255,255,255,0.2);
-  display:none;
-
-  &.lightbox-open {
-    display:block;
-  }
-}
-
-.lightbox-detail {
-  width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: center;
-
-  &>img {
-    object-fit: contain;
-    //do we need an ie fix??
-    // max-height: 100%;
-    // max-width: 100%;
-    // width: auto;
-    // height: auto;
+  top: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  left: 0;
+  padding: $space-xxs;
+  @include sm {
+    width: calc(100vw - #{$sidebar-width});
+    left: $sidebar-width;
+    padding: $space-xs $space-sm;
   }
-}
-
-.lightbox-caption {
-  position: fixed;
-  bottom: $space-xs;
-  left: $space-sm + $space-xs;
-
-  &>.caption-student {
-    color: $color-base !important;
-    -webkit-text-stroke-width: 0.8px;
+  p {
+    @extend h2;
+    color: $color-light !important;
+    -webkit-text-fill-color: $color-light; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $color-base;
   }
-}
-
-.lightbox-close{
-  position: fixed;
-  top: $space-sm;
-  right: $space-sm;
-
-  &:hover{
-    color: $color-light;
-    cursor: pointer;
-  }
-}
-
-
-//background-stuff
-
-.background-container {
-  z-index: 0;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  filter: blur($blur-full);
-  overflow: visible;
-
-  &.explore-open {
-    filter: blur($blur-none);
-
-    &.lightbox-open{
-      filter: blur($blur-extra);
+  a{
+    @extend h2;
+    color: $color-base !important;
+    -webkit-text-stroke-width: 0px;
+    &:hover {
+      color: $color-light !important;
+      -webkit-text-fill-color: $color-light; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $color-base;
     }
-  }
-}
-
-.background-image {
-  width: 110vw;
-  height: 110vh;
-  margin-top: -5vh;
-  margin-left: -5vw;
-  background-image: url("images/work/desktop/windows_xp_bliss.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-
-
-// announcement -------------------------------------
-
-$announcement-color: #9013FE;
-$announcement-text: white;
-
-.announcement-container {
-  width: 14rem;
-  height: 100vh;
-  background: $announcement-color;
-  color: $announcement-text;
-  z-index: 30;
-  font-family: $font-secondary;
-  font-size: $text-xs-md;
-  text-transform: uppercase;
-  padding: $space-xs;
-
-  position: fixed;
-  top:0;
-  left:0;
-
-  & a {
-    display: block;
-  }
-
-  @include sm {
-    font-size: $text-md;
-  }
-
-}
-
-.announcement-link {
-  background: $announcement-text;
-  color: $announcement-color;
-  margin: $space-xs 0;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  display: table;
-
-  & a {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-  }
-
-  &:hover {
-    background: $announcement-color;
-    border: solid 1px $announcement-text;
-    -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: $announcement-text;
-  }
-
-}
-
-.announcement-subtitle {
- margin-bottom: $space-md;
-}
-
-
-.announcement-close {
-  border-bottom: 1px dotted $announcement-text;
-  position: absolute;
-  bottom: $space-xs;
-
-  &:hover {
-    border-bottom: 1px solid $announcement-text;
-    cursor: pointer;
   }
 }

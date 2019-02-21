@@ -42,7 +42,8 @@ body.preload {
   position: fixed;
   right: 0;
   top: 0;
-  transition: all 0.5s ease-in-out 0.25s;
+  transition: $base-transition-sm;
+  transition-delay: .25s;
   visibility: hidden;
   z-index: 999999999;
 }

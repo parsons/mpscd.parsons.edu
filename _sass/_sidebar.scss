@@ -1,0 +1,93 @@
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg) translateX(-100%);
+  width: 100vh;
+  transform-origin: top left;
+  height: $sidebar-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $color-light;
+  border-bottom: $border-sm;
+  z-index: 12;
+  @include xl {
+    height: $sidebar-big-width;
+  }
+
+  h6 {
+    @include xl {
+      font-size: $text-sm;
+    }
+  }
+
+  .sidebar-info, .sidebar-empty {
+    width: 50px;
+    @include xl {
+      width: 75px;
+    }
+  }
+  .sidebar-title {
+    overflow: hidden;
+    h6 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      line-height: 2;
+    }
+  }
+  .sidebar-info {
+    margin-right: 18px;
+    margin-left: 18px;
+    opacity: 0;
+    overflow: hidden;
+    transition: $base-transition-sm;
+    transition-property: opacity;
+    h6 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      &::after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        margin-bottom: -1px;
+        margin-left: 10px;
+        background-origin: content-box;
+        background-position: center;
+        background-image: url("images/right-arrow.svg");
+        display: inline-block;
+        background-size: 12px;
+        background-repeat: no-repeat;
+        transform: rotate(-90deg);
+        transition: $base-transition-sm;
+        transition-property: transform;
+        @include xl {
+          width: 18px;
+          height: 18px;
+          background-size: 18px;
+        }
+      }
+    }
+  }
+  &.exploreOn {
+    cursor:pointer;
+    .sidebar-info {
+      opacity: 1;
+    }
+  }
+  &.exploreOff {
+    display: none;
+    @include sm {
+      display: flex;
+    }
+  }
+  &:hover {
+    h6::after {
+      transform: rotate(90deg);
+    }
+  }
+}

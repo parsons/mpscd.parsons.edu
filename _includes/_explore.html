@@ -1,0 +1,38 @@
+<div class="explore {% if site.is_explore_open == 'true' and page.url == '/' %}exploreOn blurOff{% else %}exploreOff blurOn{% endif %}">
+  <div id="exploreArea">
+    <div class="explore-items">
+      {% for post in site.posts %}
+        {% if post.tags contains "important" %}
+          <div class="explore-item {% if site.is_explore_open == 'true' and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %} {{ post.tags | join:' ' }}">
+            <a href="{{ post.link }}" target="_blank">
+              <div class="explore-text" {% if post.color %}style="background-color: {{ post.color }}"{% endif %}>
+                {{ post.content }}
+              </div>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+      {% assign shuffled_array = site.posts | shuffle %}
+      {% for post in shuffled_array %}
+        {% unless post.tags contains "important" %}
+          <div class="explore-item {% if site.is_explore_open == 'true' and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %} {{ post.tags | join:' ' }} {% if post.images %}imagepost {% else %}large {% endif %}">
+            {% if post.images %}
+              {% for image in post.images %}
+                  <img src="{{ site.data.filepaths.desktop }}{{ image.src }}" alt="{{ post.title }}" {% if post.content %}data-content="{{ post.content }}"{% endif %} data-caption="{{ post.title }} {% if image.student %}<h1 class='text-outline caption-student'><a class='hover-reverse' href='{{ image.link }}' target='_blank'>{{ image.student }}</a></h1>{% endif %}" data-link="{{ image.link }}">
+              {% endfor %}
+            {% else %}
+              <div class="explore-text" data-caption="{{ post.title }}" {% if post.color %}style="background-color: {{ post.color }}"{% endif %}>
+                {{ post.content }}
+              </div>
+            {% endif %}
+          </div>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+
+  {% include _pill.html %}
+
+</div>
+
+<div id="exploreHover" class='hidden'><h4>Explore</h4></div>

@@ -1,22 +1,12 @@
 ---
-layout: post
-title:  "Poppy Chen City Pop App"
-date:   2018-06-12 12:17:43 -0400
+title: City Pop App
+date: 2018-07-12 20:00:00 -04:00
 tags:
-- "student-projects"
-- "twenty-eighteen"
-excerpt_separator: <!--more-->
-
+- projects
+- 2018
+layout: post
 images:
-- caption: City Pop App
-  creator: Poppy Chen
-  src: pchen01.png
-  alt: Poppy Chen City Pop App
-  link: http://patrickserr.com/
+- src: pchen01.png
 ---
-
-![Drop and Grow]({{ site.url }}/assets/images/work/pchen01.png)
-
-<!--more-->
 
 City Pop, a project by Poppy Chen for Major Studio 2, Spring 2018

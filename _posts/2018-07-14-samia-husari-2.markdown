@@ -1,21 +1,11 @@
 ---
-layout: post
-title:  "Samia Husari"
-date:   2018-06-12 12:17:43 -0400
+title: Major Studio 2, Spring 2018
+date: 2018-07-13 20:00:00 -04:00
 tags:
-- "curriculum"
-- "twenty-eighteen"
-excerpt_separator: <!--more-->
-
+- curriculum
+- 2018
+layout: post
 images:
-- caption: Major Studio 2, Spring 2018
-  src: class01.jpg
-  alt: Major Studio 2
-  link: http://patrickserr.com/
+- src: class01.jpg
 ---
 
-![Samia Husari]({{ site.url }}/assets/images/work/class01.jpg)
-
-<!--more-->
-
-Samia Husari, photo taken from Major Studio 2, Spring 2018

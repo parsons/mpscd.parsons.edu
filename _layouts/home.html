@@ -1,99 +1,23 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]> <html class="no-js"> <!--<![endif]-->
-
 {% include _head.html %}
 
-  <body class="preload js-body with-mask" id="current-page-title">
-    <div class="background-container">
-      <div class="background-image"></div>
-    </div>
+<main>
+  {% include _background.html %}
 
-    <div class="announcement-container">
-        {% for announcement in site.data.announcements.announcements %}
-        <p>
-          <div class="announcement-title">{{ announcement.title }}</div>
-          <div class="announcement-subtitle">{{ announcement.subtitle }}</div>
-          <div>{{ announcement.description }}</div>
-          <div>{{ announcement.decoration }}</div>
-          <div class="announcement-link"><a href="{{ announcement.link }}">Here</a></div>
-          <div class="announcement-close">Close</div>
-        </p>
-        {% endfor %}
-    </div>
+  {% include _cookies.html %}
 
+  {% include _announcement.html %}
 
+  {% include _sidebar.html %}
 
-    <div class="sidebar-info"><h6>INFO</h6></div>
-    <div class="sidebar-arrow"></div>
-    <div class="sidebar">
-      <div class="sidebar-title"><h6>Parsons MPS Communication Design Digital Product Design</h6></div>
-    </div>
+  {% include _info.html %}
 
-    <div class="lightbox-container">
-      <div class="lightbox-detail"></div>
-      <div class="lightbox-caption"></div>
-      <div class="lightbox-close"><h1 class="text-outline hover-reverse">X</h1></div>
-    </div>
+  {% include _explore.html %}
+</main>
 
-    <div class="info">
-      <div class="container-fluid">
-        <div class="row">
+{% include _lightbox.html %}
 
-            <div class="col">
+<div class="hover-caption exploreOff"></div>
 
-              <div class="row">
-                {% include _nav.html %}
-              </div>
+{% include _loader.html %}
 
-              <div class="row t-set">
-                <div class="col">
-                <!-- check for content conditionally -->
-                {% include {{ page.include }} %}
-                </div>
-              </div>
-
-              <div class="row">
-                {% include _footer.html %}
-              </div>
-
-            </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="pill-container">
-      <div class="ui-pill ui-pill-black page-filter" data-filter="{{ page.filter-class }}">{{ page.filter }}</div>
-      <div class="filter-list hidden">
-          <div class="ui-pill filter-button">Filters +</div>
-          <div class="sub-menu hidden">
-          {% for filter in site.data.filters.filters %}
-            <p>
-              <div class="ui-pill" data-filter="{{ filter.class }}">{{ filter.title }}</div>
-            </p>
-          {% endfor %}
-          </div>
-      </div>
-    </div>
-
-    <div class="hover-caption"></div>
-
-    <div class="explore blur-full">
-      <div class="explore-items container-fluid">
-          {% for post in site.posts %}
-          <div class="explore-item col-10 col-sm-4 col-md-3 col-xl-2 {{ post.tags | join:' ' }}">
-          {% for image in post.images %}
-              <img src="{{ site.data.filepaths.desktop }}{{ image.src }}" alt="{{ image.alt }}" data-caption="{{ image.caption }}" data-creator="{{ image.creator }}" data-link="{{ image.link }}">
-            </div>
-          {% endfor %}
-        {% endfor %}
-      </div>
-    </div>
-
-    <script type="text/javascript" src="/assets/application.js"></script>
-  </body>
-</html>
+{% include _foot.html %}

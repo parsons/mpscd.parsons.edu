@@ -1,0 +1,185 @@
+$base-unit:                              18px;
+
+$screen-xs-min:                          0 !default;
+$screen-sm-min:                          576px !default;
+$screen-md-min:                          1000px !default;
+$screen-lg-min:                          1200px !default;
+$screen-xl-min:                          1500px !default;
+$screen-xxl-min:                         1800px !default;
+
+// grid
+$grid-columns:                           12 !default;
+$grid-gutter-width:                      36px !default;
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: $screen-xs-min,
+  // Small screen / phone
+  sm: $screen-sm-min,
+  // Medium screen / tablet
+  md: $screen-md-min,
+  // Large screen / desktop
+  lg: $screen-lg-min,
+  // Extra large screen / wide desktop
+  xl: $screen-xl-min,
+  // Jumbotron
+  xxl: $screen-xxl-min
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+// fonts
+$font-primary:                           'Suisse Works Regular', 'Times New Roman', Times, serif;
+$font-primary-italic:                    'Suisse Works Regular', 'Times New Roman', Times, serif;
+$font-primary-heavy:                     $font-primary-italic;
+$font-secondary:                         'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-secondary-heavy:                   'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-tertiary-pixel:                    'MPSSans-Pixel', 'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-tertiary-expressive:               'MPSSans-Expressive', 'Suisse International Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// type sizes
+$text-base:                              18px !default;
+$text-xxs:                               12px !default;
+$text-xs:                                14px !default;
+$text-sm:                                $text-base !default;
+$text-md:                                30px !default;
+$text-lg:                                42px !default;
+$text-xl:                                48px !default;
+$text-xxl:                               86px !default;
+
+// mobile sizes
+$text-xs-xxs:                            10px !default;
+$text-xs-xs:                             12px !default;
+$text-xs-sm:                             16px !default;
+$text-xs-md:                             28px !default;
+$text-xs-lg:                             30px !default;
+$text-xs-xl:                             32px !default;
+$text-xs-xxl:                            42px !default;
+
+// large type sizes
+$text-xl-xxs:                            14px !default;
+$text-xl-xs:                             24px !default;
+$text-xl-sm:                             22px !default;
+$text-xl-md:                             30px !default;
+$text-xl-lg:                             52px !default;
+$text-xl-xl:                             64px !default;
+$text-xl-xxl:                            100px !default;
+
+// variable type sizes
+$text-v-base:                            2vw;
+$text-v-xs:                              3vw;
+$text-v-sm:                              8vw;
+$text-v-md:                              $text-v-base;
+$text-v-lg:                              10vw;
+$text-v-xl:                              12vw;
+
+// line height
+$text-line-base:                         1.0;
+$text-line-xs:                           0.9 !default;
+$text-line-sm:                           $text-line-base !default;
+$text-line-md:                           1.2 !default;
+$text-line-lg:                           1.5 !default;
+$text-line-xl:                           2.0 !default;
+
+// letterspacing
+$text-letter-base:                       0;
+$text-letter-xs:                         -.01em;
+$text-letter-sm:                         $text-letter-base;
+$text-letter-md:                         .03em;
+$text-letter-lg:                         .05em;
+$text-letter-xl:                         .1em;
+
+// spacing
+$space-base:                             36px;
+$space-xxs:                              10px !default;
+$space-xs:                               18px !default;
+$space-sm:                               $space-base !default;
+$space-md:                               48px !default;
+$space-lg:                               75px !default;
+$space-xl:                               100px !default;
+$space-xxl:                              200px !default;
+
+// spacing – new (Bootstrap)
+// override bootstrap spacers
+// $spacer:               25px !default;
+// $spacer-1:             5px;
+// $spacer-2:             10px;
+// $spacer-3:             25px;
+// $spacer-4:             50px;
+// $spacer-5:             75px;
+// $spacer-6:             100px;
+
+$spacers: () !default;
+$spacers: map-merge((
+  0: 0,
+  1: ($space-xxs),
+  2: ($space-xs),
+  3: ($space-sm),
+  4: ($space-md),
+  5: ($space-lg),
+  6: ($space-xl),
+  7: ($space-xxl)
+), $spacers);
+
+// color
+$color-base:                             #000000;
+$color-brand:                            #ffeb0b;
+$color-brand-secondary:                  #f1fff3;
+$color-gray:                             #e3e7e1;
+$color-dark:                             #000000;
+$color-mid:                              gray;
+$color-light:                            #ffffff;
+$color-disabled:                         $color-gray;
+$color-alert:                            red;
+$announcement-color:                     #9013FE;
+$announcement-text:                      white;
+$cookies-color:                          #A0E752;
+$cookies-text:                           black;
+$explore-color:                          #A0E752;
+$explore-hover-color:                    black;
+
+// borders
+$border-base:                            1px solid $color-base;
+$border-sm:                              $border-base;
+$border-dotted:                          1px dotted $color-base;
+$border-md:                              2px solid $color-base;
+$border-lg:                              5px solid $color-base;
+
+/*
+// project variables
+*/
+
+$image-filepath:                         "images/";
+
+$t-color-children:                       "p, li, a, h1, h2, h3, h4, h5, h6, span";
+
+$gutter:                                 $space-base;
+$layout-outer:                           $gutter * 2;
+$nav-height:                             $space-md;
+
+$info-width-xs:                          90%;
+$info-width-sm:                          75%;
+$info-width-md:                          50%;
+$info-width-max-md:                      800px;
+
+$blurOn:                                 10px;
+$blurInter:                              3px;
+$blurOff:                                0px;
+
+$sidebar-width:                          36px;
+$sidebar-big-width:                      44px;
+$announcement-width:                     14rem;
+$cookies-width:                          12rem;
+
+$base-transition:                       all .5s cubic-bezier(.215, .61, .355, 1);
+$base-transition-sm:                    all .25s cubic-bezier(.215, .61, .355, 1);
+
+$explore-img-width:                     18vw;
+$explore-img-width-mobile:              40vw;
+$explore-img-nb:                        5;
+$explore-img-nb-mobile:                 3;
+
+$explore-hover:                         130px;
