@@ -347,6 +347,7 @@ $lightboxClose.on("click", function(e){
   $(".hover-caption").removeClass("hidden");
   $('.lightbox-description').removeClass('active');
   $('.lightbox-description').html("");
+  $(".lightbox-more").find('h1').text('+');
   if (!Modernizr.mq('(max-width: 576px)')) {
     transitionExplore(e);
   } 

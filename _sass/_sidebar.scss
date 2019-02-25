@@ -78,6 +78,9 @@
     .sidebar-info {
       opacity: 1;
     }
+    a {
+      pointer-events: none;
+    }
   }
   &.exploreOff {
     display: none;

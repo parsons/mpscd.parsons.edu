@@ -51,15 +51,15 @@ div.listing {
     background-origin: content-box;
     background-position: center;
     background-image: url("images/right-arrow.svg");
-    display: none;
+    display: inline-block;
     background-size: 24px;
     background-repeat: no-repeat;
     transform-origin: center;
     margin: 0 $space-xs;
-    margin-top: 8px;
+    margin-top: 2px;
     transition: $base-transition-sm;
     @include sm {
-      display: inline-block;
+      margin-top: 8px;
     }
     @include xl {
       width: 36px;
@@ -79,7 +79,9 @@ div.listing {
     .ui-arrow {
       transform: rotate(45deg);
       &.text-outline-screen {
-        transform: rotate(90deg);
+        @include sm {
+          transform: rotate(90deg);
+        }
       }
     }
     & > div:nth-child(1) {
@@ -101,7 +103,9 @@ div.listing {
     .ui-arrow {
       transform: rotate(0deg);
       &.text-outline-screen {
-        transform: rotate(-45deg);
+        @include sm {
+          transform: rotate(-45deg);
+        }
       }
     }
     .listing-name {
@@ -117,7 +121,9 @@ div.listing {
     .ui-arrow {
       transform: rotate(-45deg);
       &.text-outline-screen {
-        transform: rotate(-90deg);
+        @include sm {
+          transform: rotate(-90deg);
+        }
       }
     }
   }
