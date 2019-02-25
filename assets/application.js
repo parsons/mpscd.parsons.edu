@@ -104,7 +104,9 @@ $window.on('load', function(){
     $explore.isotope('layout');
 
   });
-  $body.removeClass("preload");
+  setTimeout(function(){
+    $body.removeClass("preload");
+  }, 800)
 });
 
 
