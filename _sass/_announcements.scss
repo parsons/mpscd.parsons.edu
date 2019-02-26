@@ -34,6 +34,9 @@
     font-size: $text-xs-md;
     text-transform: uppercase;
     line-height: $text-line-sm;
+    @include sm {
+      font-size: $text-md;
+    }
   }
 
   @include sm {
