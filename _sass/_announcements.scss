@@ -71,7 +71,6 @@
   &:hover {
     background: $announcement-color;
     border: solid 1px $announcement-text;
-    -webkit-text-fill-color: $announcement-color; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $announcement-text;
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {

@@ -335,14 +335,14 @@ $exploreItem.on("click", function(){
     var content = $(this).find('img').length !== 0 ? $(this).find('img').attr('data-content').trim() : '';
     if (content != '') {
       if (/MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
-        $lightboxCaption.html("<h1 class='text-outline text-shadow'>" + $(this).find('img, div').data('caption') + "</h1>");
+        $lightboxCaption.html("<h1 class='text-outline text-shadow'>" + $(this).find('img, div').data('caption').replace('hover-reverse', 'hover-reverse text-shadow') + "</h1>");
       } else {
         $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
       }
       $('.lightbox-more').show();
     } else {
       if (/MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
-        $lightboxCaption.html("<h1 class='text-outline text-shadow'>" + $(this).find('img, div').data('caption') + "</h1>");
+        $lightboxCaption.html("<h1 class='text-outline text-shadow'>" + $(this).find('img, div').data('caption').replace('hover-reverse', 'hover-reverse text-shadow') + "</h1>");
       } else {
         $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
       }
