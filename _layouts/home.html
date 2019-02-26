@@ -5,9 +5,9 @@
 
   {% include _cookies.html %}
   
-  {% unless site.pages[1].is_displayed == 'false' %}
+  {% if site.pages[1].is_displayed == true %}
     {% include _announcement.html %}
-  {% endunless %}
+  {% endif %}
 
   {% include _sidebar.html %}
 
