@@ -1,60 +1,25 @@
 .cookies-container {
-  min-width: 10vw;
-  max-width: 80vw;
-  width: auto;
-  height: 100vh;
   background: $cookies-color;
   z-index: 35;
-  padding: $space-xs;
   color: $cookies-text;
   font-family: $font-secondary;
-  font-size: $text-xs-md;
+  font-size: $text-xxs;
   line-height: $text-line-sm;
-  text-transform: uppercase;
-
   position: fixed;
-  top:0;
-  left:0;
-
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-
-  transform: translateX(0);
-  transition: $base-transition;
-  transition-property: transform;
-
-  &.off {
-    transform: translateX(-100%);
-  }
-
-  p {
-    color: $cookies-text;
-    font-family: $font-secondary;
-    font-size: $text-xs-md;
-    text-transform: uppercase;
-    line-height: $text-line-sm;
-  }
+  right: $space-xs;
+  bottom: $space-xs;
+  border-radius: $space-sm;
+  padding: $space-xs;
 
   @include sm {
-    font-size: $text-md;
-    max-width: 30vw;
+    right: $space-sm;
+    bottom: $space-sm;
   }
 
-}
-
-.cookies-bottom {
-  flex: 1;
-  overflow: hidden;
-  .cookies-title {
-    -webkit-column-width: calc(#{$cookies-width} - #{$space-xs} * 2);
-    column-width: calc(#{$cookies-width} - #{$space-xs} * 2);
-    height: 100%;
+  &.off {
+    display: none;
   }
-}
 
-.cookies-middle {
-  padding: $space-md 0;
 }
 
 .cookies-close {
@@ -64,6 +29,5 @@
 
   &:hover {
     border-bottom: 1px solid $cookies-text;
-
   }
 }
