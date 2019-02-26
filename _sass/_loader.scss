@@ -15,12 +15,6 @@ body {
 }
 
 body.preload {
-  * {
-    display: none !important;
-    transition: none !important;
-    animation-name: none !important;
-  }
-
   .loader {
     display: block !important;
     opacity: 1;

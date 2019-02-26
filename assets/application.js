@@ -104,7 +104,9 @@ $window.on('load', function(){
     $explore.isotope('layout');
 
   });
-  $body.removeClass("preload");
+  setTimeout(function(){
+    $body.removeClass("preload");
+  }, 800)
 });
 
 
@@ -260,7 +262,11 @@ $sidebar.on("click", function() {
 // Captioning ---------------------------------------------
 
 $exploreItem.hover(function(){
-  $caption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
+  if (/MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
+    $caption.html("<h1 class='text-outline text-shadow'>" + $(this).find('img, div').data('caption') + "</h1>");
+  } else {
+    $caption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
+  }
 },function(){
   $caption.html("");
 });
@@ -328,10 +334,18 @@ $exploreItem.on("click", function(){
     $(".hover-caption").addClass("hidden");
     var content = $(this).find('img').length !== 0 ? $(this).find('img').attr('data-content').trim() : '';
     if (content != '') {
-      $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
+      if (/MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
+        $lightboxCaption.html("<h1 class='text-outline text-shadow'>" + $(this).find('img, div').data('caption').replace('hover-reverse', 'hover-reverse text-shadow') + "</h1>");
+      } else {
+        $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
+      }
       $('.lightbox-more').show();
     } else {
-      $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
+      if (/MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
+        $lightboxCaption.html("<h1 class='text-outline text-shadow'>" + $(this).find('img, div').data('caption').replace('hover-reverse', 'hover-reverse text-shadow') + "</h1>");
+      } else {
+        $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
+      }
       $('.lightbox-more').hide();
     }
     $(".lightbox-detail").html($(this).html());
@@ -347,6 +361,7 @@ $lightboxClose.on("click", function(e){
   $(".hover-caption").removeClass("hidden");
   $('.lightbox-description').removeClass('active');
   $('.lightbox-description').html("");
+  $(".lightbox-more").find('h1').text('+');
   if (!Modernizr.mq('(max-width: 576px)')) {
     transitionExplore(e);
   } 

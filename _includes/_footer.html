@@ -28,7 +28,9 @@
         <img src="{{ site.pages[7].parsons_logo_image }}" alt="Parsons The New School for Design">
       </div>
       <div class="col-xs-6 col-sm-6 u-sm-pbn">
-        {{ site.pages[7].address_text | markdownify }}
+        <a href="{{ site.pages[7].address_url }}" target="_blank">
+            {{ site.pages[7].address_text | markdownify }}
+        </a>
       </div>
     </div>
   </div>
