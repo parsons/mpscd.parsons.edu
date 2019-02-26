@@ -1,16 +1,14 @@
-{% unless site.pages[1].published == 'false' %}
-    <div class="announcement-container">
-        {% assign announcement = site.pages[1] %}
-        <div class="announcement-top">
-            <div class="announcement-subtitle">{{ announcement.announcement_subtitle }}</div>
-            <div>{{ announcement.content | markdownify }}</div>
-            <div class="announcement-link"><a href="{{ announcement.external_url }}" target="_blank">Here</a></div>     
-        </div>
-        <div class="announcement-middle">
-            <div class="announcement-close">Close</div>
-        </div>
-        <div class="announcement-bottom">
-            <div class="announcement-title">{{ announcement.announcement_title | markdownify }}</div>
-        </div>
+<div class="announcement-container">
+    {% assign announcement = site.pages[1] %}
+    <div class="announcement-top">
+        <div class="announcement-subtitle">{{ announcement.announcement_subtitle }}</div>
+        <div>{{ announcement.content | markdownify }}</div>
+        <div class="announcement-link"><a href="{{ announcement.external_url }}" target="_blank">Here</a></div>     
     </div>
-{% endunless %}
+    <div class="announcement-middle">
+        <div class="announcement-close">Close</div>
+    </div>
+    <div class="announcement-bottom">
+        <div class="announcement-title">{{ announcement.announcement_title | markdownify }}</div>
+    </div>
+</div>
