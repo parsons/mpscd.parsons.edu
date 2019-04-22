@@ -15,7 +15,10 @@
 - v0
 - Bootstrap
 
-## Font export from Glyphs
+## Typeface
+The typeface is open-source and available here: https://github.com/XXIX/mps-typeface
+
+Exporting from Glyphs.app
 1. Open `MPS-Sans.glyphs` on Glyphs
 2. Modify the typeface as you need. First master must not be modify, second is for Expressive font and third is for Pixel.
 3. Export the fonts with `⌘ + E` > Webfonts.
