@@ -83,7 +83,7 @@ body {
       -webkit-text-stroke-color: $color-dark;
       &:hover {
         color: $color-dark !important;
-        -webkit-text-fill-color: $color-dark; 
+        -webkit-text-fill-color: $color-dark;
       }
     }
   &.hover-reverse{
@@ -114,6 +114,16 @@ body {
   }
 }
 
+.hover-text-outline-reverse {
+  &:hover{
+    color: $color-dark !important;
+    -webkit-text-fill-color: $color-dark; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $color-light;
+    mix-blend-mode: screen;
+  }
+}
+
 
 // text replacement!
 
@@ -130,4 +140,3 @@ body {
   font-family:  $font-tertiary-expressive;
   white-space:nowrap;
 }
-
