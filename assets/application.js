@@ -183,12 +183,6 @@ $announcementClose.on("click", function(){
 /////////////////
 // COOKIES
 
-$document.ready(function(){
-  for (var i = 0; i < 12; i++) {
-    $cookiesTitle.append($cookiesTitle.html());
-  }
-});
-
 $cookiesClose.on("click", function(){
   $cookies.addClass("off");
   Cookies.set('cookies', 'seen');

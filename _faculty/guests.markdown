@@ -17,3 +17,4 @@ list:
 - "[Patrick Serr](http://patrickserr.com)"
 ---
 
+We invite guests to speak. You can also just leave this field blank and no text will show.

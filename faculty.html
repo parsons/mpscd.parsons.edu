@@ -14,6 +14,8 @@ filter-class: faculty
 {% for faculty in sorted_faculty %}
 {% if faculty.slug contains 'instructors' %}
 
+<p>{{ faculty.content }}</p>
+
 {% for instructor in faculty.list %}
   <div class="row listing listing-faculty">
       <div class="listing-name">
@@ -28,6 +30,8 @@ filter-class: faculty
 {% else %}
 
 <h1>{{ faculty.title }}</h1>
+
+<p>{{ faculty.content }}</p>
 
 <ul class="ul-md columns-2">
   {% for instructor in faculty.list %}

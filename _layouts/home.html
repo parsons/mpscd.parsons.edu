@@ -4,8 +4,10 @@
   {% include _background.html %}
 
   {% include _cookies.html %}
-
-  {% include _announcement.html %}
+  
+  {% if site.pages[1].is_displayed == true %}
+    {% include _announcement.html %}
+  {% endif %}
 
   {% include _sidebar.html %}
 
