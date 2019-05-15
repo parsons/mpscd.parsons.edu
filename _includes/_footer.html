@@ -5,9 +5,6 @@
         <ul class="u-mbmd footer-main">
           {% for link in site.data.navigation.primary %}
           {% assign class = nil %}
-          {% if page.url contains link.url %}
-          {% assign class = 'hidden' %}
-          {% endif %}
           <li><h1><a href="{{ link.url }}" title="{{ link.title }}" class="{{ class }} hover-text-outline">{{ link.title }}</a></h1>
           </li>
           {% endfor %}
