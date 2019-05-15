@@ -12,4 +12,4 @@ parsons_url: https://www.newschool.edu/parsons/
 parsons_logo_image: "/uploads/parsons_logo.svg"
 ---
 
-A one-year graduate degree program for Digital Product Design
+A one-year graduate degree program for Digital Product Design.
