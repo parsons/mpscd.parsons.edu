@@ -3,8 +3,12 @@
   height: 100vh;
   background: $announcement-color;
   z-index: 30;
-  padding: 0 $space-xs $space-xs;
+  padding: 5px $space-xs $space-xs;
   color: $announcement-text;
+  font-family: $font-secondary;
+  font-size: $text-xs-md;
+  text-transform: uppercase;
+  line-height: $text-line-sm;
 
   position: fixed;
   top:0;
@@ -22,7 +26,7 @@
     transform: translateX(-100%);
   }
 
-  p {
+  p, span {
     color: $announcement-text;
     font-family: $font-secondary;
     font-size: $text-xs-md;
@@ -91,6 +95,9 @@
   font-size: 50px;
 
   &:hover {
-    content: "Close";
+    &::before {
+        font-size: $text-xs-md;
+        // content: "Close";
+    }
   }
 }
