@@ -1,16 +1,10 @@
 .announcement-container {
-  min-width: $announcement-width;
-  max-width: 80vw;
   width: auto;
   height: 100vh;
   background: $announcement-color;
   z-index: 30;
-  padding: $space-xs;
+  padding: 0 $space-xs $space-xs;
   color: $announcement-text;
-  font-family: $font-secondary;
-  font-size: $text-xs-md;
-  line-height: $text-line-sm;
-  text-transform: uppercase;
 
   position: fixed;
   top:0;
@@ -37,13 +31,21 @@
     @include sm {
       font-size: $text-md;
     }
+
+    a {
+      text-decoration: underline;
+    }
   }
 
   @include sm {
     font-size: $text-md;
-    max-width: 30vw;
   }
 
+}
+
+.announcement-top {
+  padding-bottom: $space-xs;
+  text-align: right;
 }
 
 .announcement-bottom {
@@ -83,17 +85,12 @@
 
 }
 
-.announcement-subtitle, .announcement-middle {
-  padding-bottom: $space-md;
-}
-
 .announcement-close {
-  border-bottom: 1px dotted $announcement-text;
   display: inline-block;
   cursor: pointer;
+  font-size: 50px;
 
   &:hover {
-    border-bottom: 1px solid $announcement-text;
-
+    content: "Close";
   }
 }

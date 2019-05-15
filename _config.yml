@@ -25,23 +25,24 @@ defaults:
     path: ''
     type: curriculum
   values:
-    credit: 
-    pmcd: 
-    learn_more: 
+    credit:
+    pmcd:
+    learn_more:
 - scope:
     path: ''
     type: students
   values:
-    list: 
+    list:
 - scope:
     path: ''
     type: faculty
   values:
-    list: 
+    list:
 subtitle: Digital Product Design
 is_explore_open: false
 background_image: "/uploads/windows_xp_bliss.jpg"
 background_color: "#ffffff"
+og_image: "/uploads/windows_xp_bliss.jpg"
 url: http://www.newschool.edu
 markdown: kramdown
 theme: minima
