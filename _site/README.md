@@ -6,11 +6,13 @@
 4. Run `bundle exec jekyll serve`
 5. Compiles to `/_site`
 6. Opens at 'http://localhost:4000'
-6. Configure `_config.yml`
-7. Configure `application.js` to import the JS components you need
-8. Configure `application.scss` with project variables and imports for the SCSS components you need
 
-SCSS and JS are compiled with Codekit.
+Jekyll will compile your SCSS or you can use Codekit to compile both SCSS and JS.
+
+## Deploying/Publishing
+1. Commit your changes to `master` and push.
+2. Check your changes on production by using the Preview link in Siteleaf
+3. When you’re ready, click Publish.
 
 ## Typeface
 The typeface is open-source and available here: https://github.com/XXIX/mps-typeface
