@@ -93,11 +93,10 @@
   display: inline-block;
   cursor: pointer;
   font-size: 50px;
+  font-weight: 200;
+  font-family: helvetica, arial, sans-serif;
 
   &:hover {
-    &::before {
-        font-size: $text-xs-md;
-        // content: "Close";
-    }
+    
   }
 }
