@@ -3,12 +3,12 @@
   z-index: 35;
   color: $cookies-text;
   font-family: $font-secondary;
-  font-size: $text-xxs;
+  font-size: 11px;
   line-height: $text-line-md;
   position: fixed;
   right: $space-xs;
   bottom: $space-xs;
-  border-radius: $space-sm;
+  border-radius: $space-xl;
   padding: $space-xs $space-xs + 6px;
   width: calc(100% - #{$space-xs} * 2);
   text-align: center;
@@ -16,8 +16,6 @@
   @include sm {
     max-width: 20%;
     width: auto;
-    right: $space-sm;
-    bottom: $space-sm;
   }
 
   &.off {
@@ -27,7 +25,7 @@
 }
 
 .cookies-close {
-  border-bottom: 1px dotted $cookies-text;
+  border-bottom: 1px solid $cookies-text;
   display: inline-block;
   cursor: pointer;
 
