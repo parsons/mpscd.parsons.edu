@@ -9,9 +9,8 @@
   right: $space-xs;
   bottom: $space-xs;
   border-radius: $space-xl;
-  padding: $space-xs $space-xs + 6px;
+  padding: $space-xs $space-xs $space-xs ($space-xs + 10px);
   width: calc(100% - #{$space-xs} * 2);
-  text-align: center;
 
   @include sm {
     max-width: 20%;
