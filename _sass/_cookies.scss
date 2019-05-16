@@ -3,7 +3,7 @@
   z-index: 35;
   color: $cookies-text;
   font-family: $font-secondary;
-  font-size: 11px;
+  font-size: 12px;
   line-height: $text-line-md;
   position: fixed;
   right: $space-xs;
@@ -13,8 +13,8 @@
   width: calc(100% - #{$space-xs} * 2);
 
   @include sm {
-    max-width: 20%;
-    width: auto;
+    width: $cookies-width;
+    font-size: 11px;
   }
 
   &.off {

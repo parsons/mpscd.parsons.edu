@@ -179,6 +179,14 @@ $announcementClose.on("click", function(){
   Cookies.set('announcement', 'seen');
 });
 
+//if you click on anything except the modal itself or the "open modal" link, close the modal
+$(document).click(function(event) {
+  if (!$(event.target).closest(".announcement-container").length) {
+    $("body").find(".announcement-container").addClass("off");
+    console.log('close announcement');
+  }
+});
+
 
 /////////////////
 // COOKIES
@@ -215,12 +223,12 @@ function exploreMove(e) {
   var exploreHeight = $exploreOuter.outerHeight();
 
   var mL = e.pageX - exploreLeft;
-  
+
   var mouseLeft = mL / exploreWidth * 100;
   var mouseTop = e.pageY / exploreHeight * 100;
 
   if (mouseLeft <= 0) { mouseLeft = 0 } else if (mouseLeft >= 100) { mouseLeft = 100 };
-  $explore.css('transform', 'translateX(calc(' + mouseLeft + 'vw - ' + exploreLeft / 2 + 'px - ' + mouseLeft + '%)) translateY(calc(' + mouseTop + 'vh - ' + mouseTop + '%))')  
+  $explore.css('transform', 'translateX(calc(' + mouseLeft + 'vw - ' + exploreLeft / 2 + 'px - ' + mouseLeft + '%)) translateY(calc(' + mouseTop + 'vh - ' + mouseTop + '%))')
 }
 
 function transitionExplore(e) {
@@ -242,7 +250,7 @@ $exploreOuter.on("click", function(e) {
   }
   if (!Modernizr.mq('(max-width: 576px)')) {
     transitionExplore(e);
-  } 
+  }
 });
 
 $sidebar.on("click", function() {
@@ -358,7 +366,7 @@ $lightboxClose.on("click", function(e){
   $(".lightbox-more").find('h1').text('+');
   if (!Modernizr.mq('(max-width: 576px)')) {
     transitionExplore(e);
-  } 
+  }
 });
 
 $(".lightbox-more").on("click", function(){
