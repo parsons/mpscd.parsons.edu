@@ -1,5 +1,8 @@
 # Parsons MPSCD
 
+Staging URL: http://parsons-mps.siteleaf.net
+Production URL: 
+
 ## Developing
 1. Install the [Jekyll gem] with `gem install jekyll bundler`
 3. Navigate to root directory
@@ -13,6 +16,9 @@ Jekyll will compile your SCSS or you can use Codekit to compile both SCSS and JS
 1. Commit your changes to `master` and push.
 2. Check your changes on production by using the Preview link in Siteleaf
 3. When you’re ready, click Publish.
+
+
+<hr>
 
 ## Typeface
 The typeface is open-source and available here: https://github.com/XXIX/mps-typeface
