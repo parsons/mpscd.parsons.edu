@@ -76,14 +76,28 @@ div.listing {
   }
 
   &.listing-curriculum {
+
     .ui-arrow {
-      transform: rotate(45deg);
-      &.text-outline-screen {
-        @include sm {
-          transform: rotate(90deg);
+
+      &.ui-arrow-expand {
+        transform: rotate(0);
+        &.text-outline-screen {
+          @include sm {
+            transform: rotate(45deg);
+          }
+        }
+      }
+
+      &.ui-arrow-outbound {
+        transform: rotate(0);
+        &.text-outline-screen {
+          @include sm {
+            transform: rotate(-45deg);
+          }
         }
       }
     }
+
     & > div:nth-child(1) {
       margin-top: 8px;
       margin-bottom: 8px;

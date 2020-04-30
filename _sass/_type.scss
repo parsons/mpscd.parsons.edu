@@ -334,7 +334,7 @@ p {
     line-height: $text-line-lg;
 
     > a {
-      border-bottom: 1px dotted $color-base;
+      border-bottom: 1px solid $color-base;
 
       &:active,
       &:target {

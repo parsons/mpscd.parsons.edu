@@ -12,7 +12,7 @@
         <hr />
         <ul class="u-mbmd footer-sub">
           {% for link in site.data.navigation.secondary %}
-          <li><p>{{ link.title }}</p>
+          <li><h6>{{ link.title }}</h6>
           </li>
           <li>{{ link.caption }}<a href="{{ link.url }}" title="{{ link.url-title }}">{{ link.url-title }}</a></li>
           {% endfor %}
