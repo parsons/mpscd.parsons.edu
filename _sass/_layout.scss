@@ -2,15 +2,18 @@
 
 .info {
   z-index: 10;
-  position: fixed;
-  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
   background: $color-light;
   border-right: $border-sm;
   width: $info-width-xs;
   transition: $base-transition;
-  overflow-y: scroll !important;
+  // overflow-y: scroll !important;
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
+  height: 100%;
 
   @include sm {
     width: $info-width-sm;
