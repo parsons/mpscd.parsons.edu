@@ -1,7 +1,7 @@
 # Parsons MPSCD
 
 Staging URL: http://parsons-mps.siteleaf.net
-Production URL: 
+Production URL:
 
 ## Developing
 1. Install the [Jekyll gem] with `gem install jekyll bundler`
@@ -9,6 +9,7 @@ Production URL:
 4. Run `bundle exec jekyll serve`
 5. Compiles to `/_site`
 6. Opens at 'http://localhost:4000'
+7. Work on `develop` branch and merge into `master` when you want to deploy (see below)
 
 Jekyll will compile your SCSS or you can use Codekit to compile both SCSS and JS.
 
