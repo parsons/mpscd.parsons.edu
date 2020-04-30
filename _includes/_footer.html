@@ -12,9 +12,10 @@
         <hr />
         <ul class="u-mbmd footer-sub">
           {% for link in site.data.navigation.secondary %}
-          <li><h6>{{ link.title }}</h6>
+          <li>
+            <h6>{{ link.title }}</h6>
+            {{ link.caption }}
           </li>
-          <li>{{ link.caption }}<a href="{{ link.url }}" title="{{ link.url-title }}">{{ link.url-title }}</a></li>
           {% endfor %}
         </ul>
       </div>
@@ -26,7 +27,7 @@
       </div>
       <div class="col-xs-6 col-sm-6 u-sm-pbn">
         <a href="{{ site.pages[8].address_url }}" target="_blank">
-            {{ site.pages[8].address_text | markdownify }}
+          {{ site.pages[8].address_text | markdownify }}
         </a>
       </div>
     </div>
