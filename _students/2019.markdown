@@ -3,17 +3,19 @@ title: '2019'
 date: 2019-01-15 09:53:00 -05:00
 position: 1
 list:
-- "[Husani Barnwell](http://husanibarnwell.com)"
-- Carolyn Berry
-- "[Poppy Chen](http://poppychen.com)"
-- "[Sheila Cheng](http://sheilacheng.com)"
-- "[Samia Husari](http://samia.design)"
-- Vidya Keshavan
-- Diana Mejia
-- "[Nikhil Misra](http://www.nikhilmisra.com)"
-- "[Patricia Robinson](https://patriciarobinson.com)"
-- "[Sonali Sampat](https://www.sonalisampat.com)"
-- "[Danielle Santucci](http://danielle-santucci.com)"
-- "[Patrick Serr](http://patrickserr.com)"
+- "[Shefali Agarwal](https://shefalidesigns.com)"
+- "[Victoria Duong](http://www.victoriatduong.com)"
+- "[Yu Fu]"
+- "[Clemence Houede](https://clemencehouede.com)"
+- "[Eunjung Kim]"
+- "[Nataly Klajner]"
+- "[Kate Leisy](https://www.kateleisy.com)"
+- "[Anh Mai](https://www.anhmai.design)"
+- "[Zach Perkins](http://www.zerkins.com)"
+- "[Rachel Sun](http://www.rachel-sun.com)"
+- "[Rijk van Zanten](https://rijks.website)"
+- "[Lily Wang](http://www.lilywang.design)"
+- "[Sherley Wijaya]"
+- "[Olivia Yan](http://olivia-yan.com)"
 ---
 
