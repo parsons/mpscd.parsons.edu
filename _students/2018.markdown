@@ -8,12 +8,12 @@ list:
 - "[Poppy Chen](http://poppychen.com)"
 - "[Sheila Cheng](http://sheilacheng.com)"
 - "[Samia Husari](http://samia.design)"
-- Vidya Keshavan
-- Diana Mejia
+- Vidya Keshavan(http://vidyakeshavan.com)
+- Diana Mejia(https://www.dianamejia.co)
 - "[Nikhil Misra](http://www.nikhilmisra.com)"
-- "[Patricia Robinson](https://patriciarobinson.com)"
+- "[Patricia Robinson]"
 - "[Sonali Sampat](https://www.sonalisampat.com)"
-- "[Danielle Santucci](http://danielle-santucci.com)"
+- "[Danielle Santucci]"
 - "[Patrick Serr](http://patrickserr.com)"
 ---
 
