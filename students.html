@@ -10,7 +10,7 @@ filter-class: projects
 
 <hr>
 
-{% assign sorted_years = site.students | sort:"position" %}
+{% assign sorted_years = site.students | sort:"position" | reverse %}
 {% for year in sorted_years %}
 
   <h1>{{ year.title }}</h1>

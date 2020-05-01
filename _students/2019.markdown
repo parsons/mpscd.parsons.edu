@@ -16,4 +16,3 @@ list:
 - "[Danielle Santucci](http://danielle-santucci.com)"
 - "[Patrick Serr](http://patrickserr.com)"
 ---
-
