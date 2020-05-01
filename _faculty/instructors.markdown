@@ -3,11 +3,11 @@ title: Instructors
 date: 2019-01-15 11:06:00 -05:00
 position: 0
 list:
+- "[Carly Ayres](http://carlyayres.com)"
+- "[Adam Brodowski](http://abrodowski.com)"
 - "[Brendan Griffiths](https://brendangriffiths.com)"
-- Adam Brodowski
 - "[Jacob Heftmann](http://www.jacobheftmann.com)"
-- Erica Heinz
-- "[Nick Schaden](http://www.nickschaden.com)"
-- "[Brian Watterson](https://brianwatterson.com)"
+- "[Tiff Hockin](https://tiffhockin.info)"
+- "[Sebastian Speier](http://sspeier.com)"
 ---
 
