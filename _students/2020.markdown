@@ -3,17 +3,20 @@ title: '2020'
 date: 2019-01-15 09:53:00 -05:00
 position: 2
 list:
-- "[Husani Barnwell](http://husanibarnwell.com)"
-- Carolyn Berry
-- "[Poppy Chen](http://poppychen.com)"
-- "[Sheila Cheng](http://sheilacheng.com)"
-- "[Samia Husari](http://samia.design)"
-- Vidya Keshavan
-- Diana Mejia
-- "[Nikhil Misra](http://www.nikhilmisra.com)"
-- "[Patricia Robinson](https://patriciarobinson.com)"
-- "[Sonali Sampat](https://www.sonalisampat.com)"
-- "[Danielle Santucci](http://danielle-santucci.com)"
-- "[Patrick Serr](http://patrickserr.com)"
+- Luenne Albuquerque Neri
+- "[Ryan Fan](http://ryanfandesign.com)"
+- Ado Feng
+- Jing Gu
+- "[Yuri Ha](https://yuriha.me)"
+- "[Rajlaxmi Jain](https://www.rajlaxmijain.com)"
+- "[Elif Karakose](https://www.elifkarakose.com)"
+- "[Sunnie Lee](https://sunnie-lee.com)"
+- Sharrie Li
+- "[Stephany Madi](https://stephanymadi.com)"
+- "[Sanchi Oberoi](https://sanchioberoi.com)"
+- Cleo Peng
+- "[Jessie Yao](http://jessieyao.com)"
+- "[Yifu Zhang](https://yifuzhang.xyz)"
+- "[Shuqi Zhu](https://www.shuqizhu1006.com)"
 ---
 
