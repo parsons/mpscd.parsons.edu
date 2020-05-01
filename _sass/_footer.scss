@@ -14,6 +14,11 @@ footer {
     }
   }
 
+  h6 {
+    font-size: $text-sm;
+    margin-bottom: $space-xxs;
+  }
+
   p {
     font-size: $text-sm;
   }
@@ -33,7 +38,7 @@ footer {
   }
 
   .footer-sub > li {
-    margin: $space-xs 0 !important;
+    margin: $space-sm 0 !important;
     font-size: $text-xs-xs;
 
     &:first-of-type {

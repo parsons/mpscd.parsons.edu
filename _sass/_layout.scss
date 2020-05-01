@@ -2,15 +2,18 @@
 
 .info {
   z-index: 10;
-  position: fixed;
-  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
   background: $color-light;
   border-right: $border-sm;
   width: $info-width-xs;
   transition: $base-transition;
-  overflow-y: scroll !important;
+  // overflow-y: scroll !important;
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
+  height: 100%;
 
   @include sm {
     width: $info-width-sm;
@@ -76,14 +79,28 @@ div.listing {
   }
 
   &.listing-curriculum {
+
     .ui-arrow {
-      transform: rotate(45deg);
-      &.text-outline-screen {
-        @include sm {
-          transform: rotate(90deg);
+
+      &.ui-arrow-expand {
+        transform: rotate(0);
+        &.text-outline-screen {
+          @include sm {
+            transform: rotate(45deg);
+          }
+        }
+      }
+
+      &.ui-arrow-outbound {
+        transform: rotate(0);
+        &.text-outline-screen {
+          @include sm {
+            transform: rotate(-45deg);
+          }
         }
       }
     }
+
     & > div:nth-child(1) {
       margin-top: 8px;
       margin-bottom: 8px;
