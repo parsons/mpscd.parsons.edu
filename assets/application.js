@@ -96,10 +96,12 @@ $document.ready(function(){
 $window.on('load', function(){
   pageLoaded = true;
   $body.scrollTop(0)
+  initialFilter = "2020";
   $explore.imagesLoaded( function(){
     $explore.isotope({
       itemSelector: '.explore-item',
-      layoutMode: 'masonry'
+      layoutMode: 'masonry',
+      filter: "." + initialFilter
     });
     $explore.isotope('layout');
 
@@ -108,7 +110,6 @@ $window.on('load', function(){
     $body.removeClass("preload");
   }, 800)
 });
-
 
 /////////////////
 // TYPEFACE
