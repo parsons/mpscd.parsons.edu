@@ -5,17 +5,17 @@ position: 1
 list:
 - "[Shefali Agarwal](https://shefalidesigns.com)"
 - "[Victoria Duong](http://www.victoriatduong.com)"
-- "[Yu Fu]"
+- Yu Fu
 - "[Clemence Houede](https://clemencehouede.com)"
-- "[Eunjung Kim]"
-- "[Nataly Klajner]"
+- Eunjung Kim
+- Nataly Klajner
 - "[Kate Leisy](https://www.kateleisy.com)"
 - "[Anh Mai](https://www.anhmai.design)"
 - "[Zach Perkins](http://www.zerkins.com)"
 - "[Rachel Sun](http://www.rachel-sun.com)"
 - "[Rijk van Zanten](https://rijks.website)"
 - "[Lily Wang](http://www.lilywang.design)"
-- "[Sherley Wijaya]"
+- Sherley Wijaya
 - "[Olivia Yan](http://olivia-yan.com)"
 ---
 
