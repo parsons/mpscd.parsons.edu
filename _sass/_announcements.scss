@@ -13,6 +13,7 @@
   position: fixed;
   top:0;
   left:0;
+  margin-left: $sidebar-width;
 
   display: flex;
   flex-flow: column nowrap;
@@ -24,6 +25,7 @@
 
   &.off {
     transform: translateX(-100%);
+    margin-left: 0;
   }
 
   p, span {
@@ -97,6 +99,6 @@
   font-family: helvetica, arial, sans-serif;
 
   &:hover {
-    
+
   }
 }

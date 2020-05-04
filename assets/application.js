@@ -99,14 +99,18 @@ $document.ready(function(){
 $window.on('load', function(){
   pageLoaded = true;
   $body.scrollTop(0)
-  initialFilter = "{{site.initial_filter}}";
+  initialFilter = ".{{site.initial_filter}}";
+  if(!"{{site.initial_filter}}"){
+    initialFilter = ""
+  }
   $explore.imagesLoaded( function(){
     $explore.isotope({
       itemSelector: '.explore-item',
       layoutMode: 'masonry',
-      filter: "." + initialFilter
+      filter: initialFilter
     });
     $explore.isotope('layout');
+
 
   });
   setTimeout(function(){
