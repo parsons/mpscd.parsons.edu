@@ -1,3 +1,6 @@
+---
+title: js
+---
 /* v0
 *
 *= require _lib/v0/v0
@@ -96,7 +99,7 @@ $document.ready(function(){
 $window.on('load', function(){
   pageLoaded = true;
   $body.scrollTop(0)
-  initialFilter = "2020";
+  initialFilter = "{{site.initial_filter}}";
   $explore.imagesLoaded( function(){
     $explore.isotope({
       itemSelector: '.explore-item',
@@ -261,6 +264,15 @@ $sidebar.on("click", function() {
   }
 });
 
+if("{{site.is_explore_open}}"){
+  var is_root = location.pathname == "/";
+  if ($exploreOuter.hasClass("exploreOff") && is_root) {
+    $('.exploreOff').removeClass('exploreOff').addClass("exploreOn");
+    $('.blurOn').addClass("blurOff").removeClass("blurOn");
+    $('div#exploreHover').addClass('hidden');
+  }
+}
+
 
 // Captioning ---------------------------------------------
 
@@ -280,6 +292,18 @@ $exploreItem.hover(function(){
 
 var filters = {};
 $("span#title-sections").text('Everything');
+$('.sub-menu').each(function(i, buttonGroup) {
+  var $buttonGroup = $(buttonGroup);
+  $buttonGroup.children().each(function(i, button) {
+    var $button = $(button)
+    if($button.attr("data-filter") === ".{{site.initial_filter}}") {
+      $button.addClass('is-checked');
+      var t = 'span#title-' + $buttonGroup.attr('id');
+      $(t).text($button.text());
+    }
+  })
+
+});
 
 $(".filter-list").on('click', '.ui-pill', function(e) {
   var $button = $(e.currentTarget);
