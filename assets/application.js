@@ -265,7 +265,8 @@ $sidebar.on("click", function() {
 });
 
 if("{{site.is_explore_open}}"){
-  if ($exploreOuter.hasClass("exploreOff")) {
+  var is_root = location.pathname == "/";
+  if ($exploreOuter.hasClass("exploreOff") && is_root) {
     $('.exploreOff').removeClass('exploreOff').addClass("exploreOn");
     $('.blurOn').addClass("blurOff").removeClass("blurOn");
     $('div#exploreHover').addClass('hidden');
