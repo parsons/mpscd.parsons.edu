@@ -232,10 +232,10 @@ h6 {
 
 h1 {
   &.t-set {
-    margin-bottom: $space-xs;
+    // margin-bottom: $space-xs;
     font-size: $text-xs-xxl;
     @include sm {
-      margin-bottom: $space-sm;
+      // margin-bottom: $space-sm;
       font-size: $text-xxl;
     }
     @include xl {
