@@ -28,6 +28,7 @@ defaults:
     credit:
     pmcd:
     expand: false
+    outbound_link:
 - scope:
     path: ''
     type: students
