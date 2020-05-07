@@ -27,7 +27,7 @@ defaults:
   values:
     credit:
     pmcd:
-    learn_more:
+    expand: false
 - scope:
     path: ''
     type: students
