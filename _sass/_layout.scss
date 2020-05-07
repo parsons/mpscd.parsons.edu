@@ -43,12 +43,9 @@
 
 div.listing {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
-  margin-bottom: $space-xxs;
-  @include sm {
-    margin-bottom: 0;
-  }
+  margin-bottom: 0;
 
   .ui-arrow {
     width: 24px;
@@ -129,6 +126,19 @@ div.listing {
     }
     .listing-name {
       margin-left: $space-xs;
+
+      text-indent: -($space-xs);
+      padding-left: $space-xs; // second-line indent for longer list items
+
+      @include sm {
+        text-indent: -($space-sm);
+        padding-left: $space-sm;
+      }
+      
+      @include md {
+        text-indent: -($space-md);
+        padding-left: $space-md;
+      }
     }
   }
 
@@ -148,9 +158,17 @@ div.listing {
   }
 }
 
+// two-column listing styles
+.listing-sm {
+
+  li {
+    text-indent: -($space-xs);
+    padding-left: $space-xs; // second-line indent for longer list items
+  }
+}
+
 
 // student list styles
-
 .ul-md {
   list-style-type: none !important;
   margin: 0;

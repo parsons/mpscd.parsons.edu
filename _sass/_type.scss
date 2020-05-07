@@ -135,6 +135,10 @@ hr {
   height: $hr-border-width;
   border-top: 0;
   width: 100%;
+
+  &.spacer {
+    background: none;
+  }
 }
 
 li,
@@ -194,10 +198,6 @@ pre {
   width: 100%;
   overflow-x: scroll;
 }
-// hr {
-//   background: transparent;
-//   border-top: $border-base;
-// }
 
 table {
   width: 100%;
@@ -322,10 +322,21 @@ li,
 p {
   &.t-set {
     @include primary;
-    @extend .t-hyphenate;
+    // @extend .t-hyphenate; // use browser hyphenation on all p text
     font-size: $text-xs-sm;
+
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+
     @include sm {
       font-size: $text-sm;
+
+      -webkit-hyphens: none;
+      -ms-hyphens: none;
+      -moz-hyphens: none;
+      hyphens: none;
     }
     @include xl {
       font-size: $text-xl-sm;
@@ -420,7 +431,6 @@ blockquote {
 
 hr {
   &.t-set {
-    background: $hr-border-color;
     height: $hr-border-width;
     width: 100%;
     border-top: 0;

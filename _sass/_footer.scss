@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   position: relative;
-  margin-bottom: $space-lg;
+  margin-bottom: $space-xl;
 
   @include sm {
     margin-bottom: 0;
@@ -19,8 +19,17 @@ footer {
     margin-bottom: $space-xxs;
   }
 
+  p, li {
+    font-size: $text-xs;
+  }
+
   p {
-    font-size: $text-sm;
+    a {
+      border-bottom: $border-base;
+      &:hover {
+        border-bottom: $border-sm;
+      }
+    }
   }
 
   .footer-main {
@@ -39,21 +48,13 @@ footer {
 
   .footer-sub > li {
     margin: $space-sm 0 !important;
-    font-size: $text-xs-xs;
 
     &:first-of-type {
       margin-top: 0 !important;
     }
+  }
 
-    @include sm {
-      font-size: $text-xs;
-    }
+  .colophon {
 
-    a {
-      border-bottom: $border-dotted;
-      &:hover {
-        border-bottom: $border-sm;
-      }
-    }
   }
 }
