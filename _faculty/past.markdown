@@ -10,4 +10,3 @@ list:
 - "[Nick Schaden](http://www.nickschaden.com)"
 - "[Brian Watterson](https://brianwatterson.com)"
 ---
-

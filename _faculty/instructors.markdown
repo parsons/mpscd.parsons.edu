@@ -6,8 +6,7 @@ list:
 - "[Carly Ayres](http://carlyayres.com)"
 - "[Adam Brodowski](http://abrodowski.com)"
 - "[Brendan Griffiths](https://brendangriffiths.com)"
-- "[Jacob Heftmann](http://www.jacobheftmann.com)"
+- "[Jacob Heftmann Hasalongertestname](http://www.jacobheftmann.com)"
 - "[Tiff Hockin](https://tiffhockin.info)"
 - "[Sebastian Speier](http://sspeier.com)"
 ---
-

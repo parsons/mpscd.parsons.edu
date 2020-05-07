@@ -43,11 +43,15 @@
 
 div.listing {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
-  margin-bottom: $space-xxs;
+  margin-bottom: 0;
+  text-indent: -($space-xs);
+  padding-left: $space-xs; // second-line indent for longer list items
+
   @include sm {
-    margin-bottom: 0;
+    text-indent: -($space-md);
+    padding-left: $space-md;
   }
 
   .ui-arrow {
