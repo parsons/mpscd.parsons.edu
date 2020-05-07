@@ -322,7 +322,7 @@ li,
 p {
   &.t-set {
     @include primary;
-    @extend .t-hyphenate;
+    // @extend .t-hyphenate; // use browser hyphenation on all p text
     font-size: $text-xs-sm;
     @include sm {
       font-size: $text-sm;
