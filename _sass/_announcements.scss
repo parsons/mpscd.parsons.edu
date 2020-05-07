@@ -13,7 +13,6 @@
   position: fixed;
   top:0;
   left:0;
-  margin-left: $sidebar-width;
 
   display: flex;
   flex-flow: column nowrap;
@@ -22,6 +21,10 @@
   transform: translateX(0);
   transition: $base-transition;
   transition-property: transform;
+
+  @include sm {
+    margin-left: $sidebar-width;
+  }
 
   &.off {
     transform: translateX(-100%);
