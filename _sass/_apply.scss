@@ -1,28 +1,33 @@
 .apply-button {
-    @extend h1;
+  @extend h1;
+  display: inline-block;
+  color: $color-light;
+  background: $color-base;
+  padding: 10px 15px 15px 15px;
+  border: 1px solid black;
+  width: 100%;
+  margin: $space-xs 0 $space-md !important;
+  cursor: pointer;
+
+  a {
     display: inline-block;
-    color: $color-light;
-    background: $color-base;
-    padding: 10px 15px 15px 15px;
-    border: 1px solid black;
-    cursor: pointer;
+  }
+
+  &:hover{
+    background: $color-light;
     a {
-      display: inline-block;
-    }
-    &:hover{
-      background: $color-light;
-      a {
-        color: $color-light;
-        -webkit-text-fill-color: $color-light; /* Will override color (regardless of order) */
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: $color-dark;
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          color: $color-dark !important;
-        }
+      color: $color-light;
+      -webkit-text-fill-color: $color-light; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $color-dark;
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        color: $color-dark !important;
       }
     }
   }
 
+}
+
 .text-shadow {
-    text-shadow: rgba(0,0,0,1) 0px 0px 1px;
- }
+  text-shadow: rgba(0,0,0,1) 0px 0px 1px;
+}

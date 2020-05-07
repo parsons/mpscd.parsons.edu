@@ -235,7 +235,6 @@ h1 {
     margin-bottom: $space-xs;
     font-size: $text-xs-xxl;
     @include sm {
-      margin-bottom: $space-sm;
       font-size: $text-xxl;
     }
     @include xl {
@@ -246,6 +245,7 @@ h1 {
 
 h2 {
   &.t-set {
+    margin-bottom: $space-xxs;
     font-size: $text-xs-xl;
     @include sm {
       font-size: $text-xl;

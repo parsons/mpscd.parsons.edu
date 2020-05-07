@@ -15,51 +15,53 @@ filter-class: curriculum
 
 <h1>{{ course.title }}</h1>
 
-{% assign courses = site.curriculum | sort:"position" %}
-{% for c in courses %}
-{% if c.url contains course.slug %}
-{% unless c.tags contains 'toplevel' %}
+<div class="listing-group">
 
-{% if c.expand == false and c.outbound_link.size > 0 %}
-<a href="{{ c.outbound_link }}" target="_blank">
-{% endif %}
+  {% assign courses = site.curriculum | sort:"position" %}
+  {% for c in courses %}
+  {% if c.url contains course.slug %}
+  {% unless c.tags contains 'toplevel' %}
 
-  <div class="row listing listing-curriculum {% unless c.outbound_link %}no-cursor{% endunless %}">
+  {% if c.expand == false and c.outbound_link.size > 0 %}
+  <a href="{{ c.outbound_link }}" target="_blank">
+  {% endif %}
 
-    <div class="col-12 col-sm-2 col-md-3">
-      <h6>
-        <div>{{ c.pmcd }}</div>
-        <div>{{ c.credit }}</div>
-      </h6>
-    </div>
-    <div class="col-11 col-sm-10 col-md-9">
-      <h3>{{ c.title }}</h3>
-    </div>
+    <div class="row listing listing-curriculum {% unless c.outbound_link %}no-cursor{% endunless %}">
 
-    {% if c.expand == true %}
-    <div class="ui-arrow ui-arrow-expand"></div>
-    <div class="col-12 col-sm-9 offset-sm-3 listing-description">
-      {{ c.content | markdownify }}
-      {% if c.learn_more %}
-      <p><a href="{{ c.outbound_link }}" target="_blank">Learn more</a> <span class="font-secondary u-mlxxs">↗</span></p>
+      <div class="col-12 col-sm-2 col-md-3">
+        <h6>
+          <div>{{ c.pmcd }}</div>
+          <div>{{ c.credit }}</div>
+        </h6>
+      </div>
+      <div class="col-11 col-sm-10 col-md-9">
+        <h3>{{ c.title }}</h3>
+      </div>
+
+      {% if c.expand == true %}
+      <div class="ui-arrow ui-arrow-expand"></div>
+      <div class="col-12 col-sm-9 offset-sm-3 listing-description">
+        {{ c.content | markdownify }}
+        {% if c.learn_more %}
+        <p><a href="{{ c.outbound_link }}" target="_blank">Learn more</a> <span class="font-secondary u-mlxxs">↗</span></p>
+        {% endif %}
+      </div>
+      {% elsif c.outbound_link.size > 0 %}
+      <div class="ui-arrow ui-arrow-outbound"></div>
+      {% else %}
       {% endif %}
+
     </div>
-    {% elsif c.outbound_link.size > 0 %}
-    <div class="ui-arrow ui-arrow-outbound"></div>
-    {% else %}
-    {% endif %}
 
-  </div>
+  {% if c.expand == false and c.outbound_link.size > 0 %}
+  </a>
+  {% endif %}
 
-{% if c.expand == false and c.outbound_link.size > 0 %}
-</a>
-{% endif %}
+  {% endunless %}
+  {% endif %}
+  {% endfor %}
 
-{% endunless %}
-{% endif %}
-{% endfor %}
-
-<hr class="spacer">
+</div>
 
 {% endfor %}
 

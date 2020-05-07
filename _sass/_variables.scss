@@ -95,7 +95,7 @@ $text-letter-xl:                         .1em;
 // spacing
 $space-base:                             36px;
 $space-xxxs:                              4px !default;
-$space-xxs:                              10px !default;
+$space-xxs:                              8px !default;
 $space-xs:                               18px !default;
 $space-sm:                               $space-base !default;
 $space-md:                               48px !default;
@@ -131,6 +131,7 @@ $cookies-color:                          black;
 $cookies-text:                           white;
 $explore-color:                          #A0E752;
 $explore-hover-color:                    black;
+$parsons-red:                            #e82e21;
 
 // borders
 $border-base:                            1px solid $color-base;
@@ -165,8 +166,8 @@ $announcement-width:                     200px;
 $cookies-width:                          300px;
 $cookies-diameter:                       64px;
 
-$base-transition:                       all .35s cubic-bezier(.215, .61, .355, 1);
-$base-transition-sm:                    all .2s cubic-bezier(.215, .61, .355, 1);
+$base-transition:                       all .25s cubic-bezier(.215, .61, .355, 1);
+$base-transition-sm:                    all .1s cubic-bezier(.215, .61, .355, 1);
 
 $explore-img-width:                     18vw;
 $explore-img-width-mobile:              40vw;
