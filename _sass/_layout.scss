@@ -160,6 +160,10 @@ div.listing {
   }
 }
 
+.no-cursor, .no-cursor > * {
+  cursor: auto !important;
+}
+
 // two-column listing styles
 .listing-sm {
 

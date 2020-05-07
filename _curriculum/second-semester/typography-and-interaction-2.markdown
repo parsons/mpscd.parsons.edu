@@ -5,6 +5,7 @@ position: 1
 credit: 3 Credits
 pmcd: PMCD 5002
 outbound_link: https://courses.newschool.edu/courses/PMCD5002/
+expand: false
 ---
 
 In this course, we build upon knowledge of dynamic content and interactivity by addressing advanced typographic strategies and interactive skills oriented toward publishing and archiving. Sessions focus on methods relevant to digital production, including content management systems, databases, and responsive workflows. Students apply their understanding of typography and interaction principles to design screen-based projects from start to finish. This course culminates in the production of a functional portfolio site critically informed by students’ design practice and developed in tandem with the Methods and Practices class.

@@ -20,11 +20,12 @@ filter-class: curriculum
 {% if c.url contains course.slug %}
 {% unless c.tags contains 'toplevel' %}
 
-{% if c.expand == false %}
+{% if c.expand == false and c.outbound_link.size > 0 %}
 <a href="{{ c.outbound_link }}" target="_blank">
 {% endif %}
 
-  <div class="row listing listing-curriculum">
+  <div class="row listing listing-curriculum {% unless c.outbound_link %}no-cursor{% endunless %}">
+
     <div class="col-12 col-sm-2 col-md-3">
       <h6>
         <div>{{ c.pmcd }}</div>
@@ -43,14 +44,15 @@ filter-class: curriculum
       <p><a href="{{ c.outbound_link }}" target="_blank">Learn more</a> <span class="font-secondary u-mlxxs">↗</span></p>
       {% endif %}
     </div>
-    {% else %}
+    {% elsif c.outbound_link.size > 0 %}
     <div class="ui-arrow ui-arrow-outbound"></div>
+    {% else %}
     {% endif %}
 
   </div>
 
-{% if c.expand == false %}
-<a>
+{% if c.expand == false and c.outbound_link.size > 0 %}
+</a>
 {% endif %}
 
 {% endunless %}
