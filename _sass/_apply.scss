@@ -5,10 +5,14 @@
     background: $color-base;
     padding: 10px 15px 15px 15px;
     border: 1px solid black;
+    width: 100%;
+    margin: $space-xs 0 $space-md !important;
     cursor: pointer;
+
     a {
       display: inline-block;
     }
+
     &:hover{
       background: $color-light;
       a {
@@ -21,6 +25,7 @@
         }
       }
     }
+
   }
 
 .text-shadow {
