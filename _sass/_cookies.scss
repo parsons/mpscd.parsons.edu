@@ -1,20 +1,32 @@
 .cookies-container {
   background: $cookies-color;
   z-index: 35;
-  color: $cookies-text;
-  font-family: $font-secondary;
-  font-size: 12px;
-  line-height: $text-line-md;
-  position: fixed;
-  right: $space-xs;
-  bottom: $space-xs;
-  border-radius: $space-xl;
-  padding: $space-xs $space-xs $space-xs ($space-xs + 10px);
-  width: calc(100% - #{$space-xs} * 2);
 
-  @include sm {
-    width: $cookies-width;
-    font-size: 11px;
+  position: fixed;
+  right: $space-xxs;
+  bottom: $space-xxs;
+  border-radius: $space-xl;
+  width: $cookies-diameter;
+  height: $cookies-diameter;
+
+  .cookies-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    span {
+      text-align: center;
+      color: $cookies-text;
+      font-family: $font-secondary;
+      font-size: 12px;
+      line-height: $text-line-md;
+
+      @include sm {
+        font-size: 11px;
+      }
+    }
   }
 
   &.off {
@@ -24,11 +36,10 @@
 }
 
 .cookies-close {
-  border-bottom: 1px solid $cookies-text;
-  display: inline-block;
+  text-decoration: underline;
   cursor: pointer;
 
   &:hover {
-    border-bottom: 1px solid $cookies-text;
+    text-decoration: none;
   }
 }
