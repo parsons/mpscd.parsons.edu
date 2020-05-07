@@ -103,16 +103,6 @@ $space-lg:                               75px !default;
 $space-xl:                               100px !default;
 $space-xxl:                              200px !default;
 
-// spacing – new (Bootstrap)
-// override bootstrap spacers
-// $spacer:               25px !default;
-// $spacer-1:             5px;
-// $spacer-2:             10px;
-// $spacer-3:             25px;
-// $spacer-4:             50px;
-// $spacer-5:             75px;
-// $spacer-6:             100px;
-
 $spacers: () !default;
 $spacers: map-merge((
   0: 0,
