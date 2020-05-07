@@ -46,13 +46,6 @@ div.listing {
   flex-flow: row nowrap;
   justify-content: space-between;
   margin-bottom: 0;
-  text-indent: -($space-xs);
-  padding-left: $space-xs; // second-line indent for longer list items
-
-  @include sm {
-    text-indent: -($space-md);
-    padding-left: $space-md;
-  }
 
   .ui-arrow {
     width: 24px;
@@ -133,6 +126,19 @@ div.listing {
     }
     .listing-name {
       margin-left: $space-xs;
+
+      text-indent: -($space-xs);
+      padding-left: $space-xs; // second-line indent for longer list items
+
+      @include sm {
+        text-indent: -($space-sm);
+        padding-left: $space-sm;
+      }
+      
+      @include md {
+        text-indent: -($space-md);
+        padding-left: $space-md;
+      }
     }
   }
 
