@@ -14,7 +14,7 @@
           {% for link in site.data.navigation.secondary %}
           <li>
             <h6>{{ link.title }}</h6>
-            {{ link.caption }}
+            {{ link.caption | markdownify }}
           </li>
           {% endfor %}
         </ul>
