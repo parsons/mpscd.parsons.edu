@@ -22,13 +22,13 @@ filter-class: curriculum
 
 {% if c.link_type contains "expand" %}
 <div class="row listing listing-curriculum">
-  <div class="col-12 col-sm-3">
+  <div class="col-12 col-sm-2 col-md-3">
     <h6>
       <div>{{ c.pmcd }}</div>
       <div>{{ c.credit }}</div>
     </h6>
   </div>
-  <div class="col-11">
+  <div class="col-11 col-sm-10 col-md-9">
     <h3>{{ c.title }}</h3>
   </div>
   <div class="ui-arrow ui-arrow-expand"></div>
@@ -42,16 +42,18 @@ filter-class: curriculum
 {% else %}
 <a href="{{ c.outbound_link }}" target="_blank">
   <div class="row listing listing-curriculum">
-    <div class="col-12 col-sm-3">
+    <div class="col-12 col-sm-2 col-md-3">
       <h6>
         <div>{{ c.pmcd }}</div>
         <div>{{ c.credit }}</div>
       </h6>
     </div>
-    <div class="col-11">
+    <div class="col-11 col-sm-10 col-md-9">
       <h3>{{ c.title }}</h3>
     </div>
+    {% if c.outbound_link.size > 0 %}
     <div class="ui-arrow ui-arrow-outbound"></div>
+    {% endif %}
   </div>
 </a>
 
