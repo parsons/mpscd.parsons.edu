@@ -25,9 +25,10 @@ defaults:
     path: ''
     type: curriculum
   values:
-    credit: 
-    pmcd: 
-    learn_more: 
+    credit:
+    pmcd:
+    expand: false
+    outbound_link:
 - scope:
     path: ''
     type: students

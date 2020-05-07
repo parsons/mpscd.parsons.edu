@@ -20,44 +20,38 @@ filter-class: curriculum
 {% if c.url contains course.slug %}
 {% unless c.tags contains 'toplevel' %}
 
-{% if c.link_type contains "expand" %}
-<div class="row listing listing-curriculum">
-  <div class="col-12 col-sm-3">
-    <h6>
-      <div>{{ c.pmcd }}</div>
-      <div>{{ c.credit }}</div>
-    </h6>
-  </div>
-  <div class="col-11">
-    <h3>{{ c.title }}</h3>
-  </div>
-  <div class="ui-arrow ui-arrow-expand"></div>
-  <div class="col-12 col-sm-9 offset-sm-3 listing-description">
-    {{ c.content | markdownify }}
-    {% if c.learn_more %}
-    <p><a href="{{ c.learn_more }}" target="_blank">Learn more</a> <span class="font-secondary u-mlxxs">↗</span></p>
-    {% endif %}
-  </div>
-</div>
-{% else %}
+{% if c.expand == false %}
 <a href="{{ c.outbound_link }}" target="_blank">
+{% endif %}
+
   <div class="row listing listing-curriculum">
-    <div class="col-12 col-sm-3">
+    <div class="col-12 col-sm-2 col-md-3">
       <h6>
         <div>{{ c.pmcd }}</div>
         <div>{{ c.credit }}</div>
       </h6>
     </div>
-    <div class="col-11">
+    <div class="col-11 col-sm-10 col-md-9">
       <h3>{{ c.title }}</h3>
     </div>
+
+    {% if c.expand == true %}
+    <div class="ui-arrow ui-arrow-expand"></div>
+    <div class="col-12 col-sm-9 offset-sm-3 listing-description">
+      {{ c.content | markdownify }}
+      {% if c.learn_more %}
+      <p><a href="{{ c.outbound_link }}" target="_blank">Learn more</a> <span class="font-secondary u-mlxxs">↗</span></p>
+      {% endif %}
+    </div>
+    {% else %}
     <div class="ui-arrow ui-arrow-outbound"></div>
+    {% endif %}
+
   </div>
-</a>
 
-
+{% if c.expand == false %}
+<a>
 {% endif %}
-
 
 {% endunless %}
 {% endif %}

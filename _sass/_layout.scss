@@ -43,7 +43,7 @@
 
 div.listing {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   margin-bottom: 0;
 
@@ -116,6 +116,8 @@ div.listing {
   }
 
   &.listing-faculty {
+  flex-flow: row nowrap;
+
     .ui-arrow {
       transform: rotate(0deg);
       &.text-outline-screen {
@@ -134,7 +136,7 @@ div.listing {
         text-indent: -($space-sm);
         padding-left: $space-sm;
       }
-      
+
       @include md {
         text-indent: -($space-md);
         padding-left: $space-md;
