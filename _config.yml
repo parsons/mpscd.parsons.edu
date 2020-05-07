@@ -25,20 +25,20 @@ defaults:
     path: ''
     type: curriculum
   values:
-    credit:
-    pmcd:
+    credit: 
+    pmcd: 
     expand: false
-    outbound_link:
+    outbound_link: 
 - scope:
     path: ''
     type: students
   values:
-    list:
+    list: 
 - scope:
     path: ''
     type: faculty
   values:
-    list:
+    list: 
 subtitle: Digital Product Design
 sidebar_text: Parsons School of Design — MPS Communication Design — Digital Product
   Design
