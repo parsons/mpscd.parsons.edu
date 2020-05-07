@@ -6,6 +6,7 @@ Production URL:
 ## Developing
 1. Install the [Jekyll gem] with `gem install jekyll bundler`
 3. Navigate to root directory
+4. Run `bundle install`
 4. Run `bundle exec jekyll serve`
 5. Compiles to `/_site`
 6. Opens at 'http://localhost:4000'
@@ -14,8 +15,8 @@ Production URL:
 Jekyll will compile your SCSS or you can use Codekit to compile both SCSS and JS.
 
 ## Deploying/Publishing
-1. Commit your changes to `master` and push.
-2. Check your changes on production by using the Preview link in Siteleaf
+1. Merge your changes into `master` and push.
+2. Check your changes on production by using the Preview link in Siteleaf.
 3. When you’re ready, click Publish.
 
 
