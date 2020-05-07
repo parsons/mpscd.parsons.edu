@@ -42,8 +42,8 @@ defaults:
 subtitle: Digital Product Design
 sidebar_text: Parsons School of Design — MPS Communication Design — Digital Product
   Design
-is_explore_open: true
-initial_filter: 2020
+is_explore_open: false
+initial_filter: 2018
 background_image: "/uploads/windows_xp_bliss.jpg"
 background_color: "#ffffff"
 og_image: "/uploads/windows_xp_bliss.jpg"
