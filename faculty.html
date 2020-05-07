@@ -8,8 +8,6 @@ filter-class: faculty
 
 {% include _paragraphs.html page="faculty" %}
 
-<hr>
-
 {% assign sorted_faculty = site.faculty | sort:"position" %}
 {% for faculty in sorted_faculty %}
 {% if faculty.slug contains 'instructors' %}
@@ -29,7 +27,7 @@ filter-class: faculty
 
 {% else %}
 
-<h1>{{ faculty.title }}</h1>
+<h2>{{ faculty.title }}</h2>
 
 <p>{{ faculty.content }}</p>
 
