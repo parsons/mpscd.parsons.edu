@@ -3,7 +3,7 @@ title: Visiting Critics
 date: 2019-01-15 11:08:00 -05:00
 position: 2
 list:
-- "[Husani Barnwell](http://husanibarnwell.com)"
+- "[Husani Barnwell Hasalongernametoo](http://husanibarnwell.com)"
 - Carolyn Berry
 - "[Poppy Chen](http://poppychen.com)"
 - "[Sheila Cheng](http://sheilacheng.com)"

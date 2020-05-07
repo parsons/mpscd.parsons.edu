@@ -152,9 +152,17 @@ div.listing {
   }
 }
 
+// two-column listing styles
+.listing-sm {
+
+  li {
+    text-indent: -($space-xs);
+    padding-left: $space-xs; // second-line indent for longer list items
+  }
+}
+
 
 // student list styles
-
 .ul-md {
   list-style-type: none !important;
   margin: 0;

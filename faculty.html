@@ -33,9 +33,9 @@ filter-class: faculty
 
 <p>{{ faculty.content }}</p>
 
-<ul class="ul-md columns-2">
+<ul class="ul-md columns-2 listing-sm">
   {% for instructor in faculty.list %}
-    <li class="u-mbn">
+    <li class="u-mbn listing-name-sm">
         {{ instructor | markdownify | remove: '</p>' | remove: '<p>' }}
     </li>
   {% endfor %}
