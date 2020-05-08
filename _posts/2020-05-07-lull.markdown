@@ -6,7 +6,7 @@ tags:
 - '2020'
 images:
   src: rjain01.png
-  creator: Rajlaxmi Jain
+  student: Rajlaxmi Jain
   link: https://www.rajlaxmijain.com/
 layout: post
 ---
