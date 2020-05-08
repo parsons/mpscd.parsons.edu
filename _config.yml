@@ -25,15 +25,15 @@ defaults:
     path: ''
     type: curriculum
   values:
-    credit:
-    pmcd:
+    credit: 
+    pmcd: 
     expand: false
-    outbound_link:
+    outbound_link: 
 - scope:
     path: ''
     type: students
   values:
-    list:
+    list: 
 - scope:
     path: ''
     type: faculty
