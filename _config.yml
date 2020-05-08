@@ -40,8 +40,8 @@ defaults:
   values:
     list:
 - scope:
-    path: projects
-    type: posts
+    path: 'posts'
+    type: projects
   values:
     images:
       src:
