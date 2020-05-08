@@ -1,8 +1,8 @@
 ---
 title: Curriculum
 date: 2019-01-15 11:04:00 -05:00
-curriculum_text: For a complete listing of courses and course descriptions, visit
-  the [University Course Catalog](https://courses.newschool.edu/).
+curriculum_text: For a complete listing of courses and descriptions, including elective
+  options, visit the [The New School’s Course Catalog](https://courses.newschool.edu/).
 ---
 
 # Creating the future of design
