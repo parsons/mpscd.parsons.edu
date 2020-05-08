@@ -3,9 +3,9 @@ title: '2020'
 date: 2019-01-15 09:53:00 -05:00
 position: 2
 list:
-- Luenne Albuquerque Neri
+- "[Luenne Albuquerque Neri](http://luenne.design)"
 - "[Ryan Fan](http://ryanfandesign.com)"
-- Ado Feng
+- "[Ado Feng](https://adofeng.com)"
 - Jing Gu
 - "[Yuri Ha](https://yuriha.me)"
 - "[Rajlaxmi Jain](https://www.rajlaxmijain.com)"
@@ -14,7 +14,7 @@ list:
 - Sharrie Li
 - "[Stephany Madi](https://stephanymadi.com)"
 - "[Sanchi Oberoi](https://sanchioberoi.com)"
-- Cleo Peng
+- "[Cleo Peng](https://cleopeng.com)"
 - "[Jessie Yao](http://jessieyao.com)"
 - "[Yifu Zhang](https://yifuzhang.xyz)"
 - "[Shuqi Zhu](https://www.shuqizhu1006.com)"
