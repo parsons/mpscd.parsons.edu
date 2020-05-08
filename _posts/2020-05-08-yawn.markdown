@@ -5,9 +5,8 @@ tags:
 - projects
 - '2020'
 images:
-- src: ekarakose01.png
+- files: "/uploads/ekarakose01.png"
   creator: Elif Karakose
   link: https://www.elifkarakose.com/
 layout: post
 ---
-

@@ -6,7 +6,6 @@ tags:
 - '2017'
 - test
 images:
-- src: class02.jpg
+- file: "/uploads/class02.jpg"
 layout: post
 ---
-
