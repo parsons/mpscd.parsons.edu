@@ -1,8 +1,10 @@
 ---
 title: TEST
 date: 2020-05-08 19:45:00 -04:00
+tags:
+- projects
+- '2020'
 images:
-- file: "/uploads/Screen%20Shot%202020-05-08%20at%203.33.28%20PM-c62522.png"
+- file: "/uploads/test.png"
   creator: Jacob
 ---
-
