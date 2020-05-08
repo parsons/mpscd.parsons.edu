@@ -40,7 +40,7 @@ defaults:
   values:
     list:
 - scope:
-    path: ''
+    path: posts
     type: projects
   values:
     images:
