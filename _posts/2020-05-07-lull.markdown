@@ -8,5 +8,6 @@ image:
   src: rjain01.png
   creator: Rajlaxmi Jain
   link: https://www.rajlaxmijain.com/
+layout: post
 ---
 
