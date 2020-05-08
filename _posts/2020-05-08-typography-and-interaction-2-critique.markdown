@@ -5,5 +5,5 @@ tags:
 - '2020'
 - curriculum
 images:
-- src: "/uploads/Screenshot%202020-04-01%2013.12.01.png"
+- file: "ti-2-crit.png"
 ---
