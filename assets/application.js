@@ -190,7 +190,7 @@ $announcementClose.on("click", function(){
 
 //if you click on anything except the modal itself or the "open modal" link, close the modal
 $(document).click(function(event) {
-  if (!$(event.target).closest(".announcement-container").length) {
+  if (!$(event.target).closest(".announcement-container").length &&  && !$(event.target).closest(".cookies-container").length ) {
     $("body").find(".announcement-container").addClass("off");
     console.log('close announcement');
   }
