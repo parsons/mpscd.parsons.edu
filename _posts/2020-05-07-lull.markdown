@@ -1,0 +1,13 @@
+---
+title: Lull
+date: 2020-05-07 21:53:00 -04:00
+tags:
+- projects
+- '2020'
+Field name:
+  src: lull_in hand - Rajlaxmi Jain.jpg
+  creator: Rajlaxmi Lain
+  link: https://www.rajlaxmijain.com/
+---
+
+Tune into restorative slumber with Lull. This application is a music journal that gives you the tools to create your own relaxing music compositions, helping you sleep faster and deeper. It also keeps you safe from electromagnetic radiations that phones emit avoiding disruption of sleep cycles, circadian rhythm and melatonin levels.
