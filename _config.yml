@@ -44,9 +44,9 @@ defaults:
     type: posts
   values:
     images:
-    - file:
-      creator:
-      link:
+    - file: 
+      creator: 
+      link: 
 subtitle: Digital Product Design
 sidebar_text: Parsons School of Design — MPS Communication Design — Digital Product
   Design
