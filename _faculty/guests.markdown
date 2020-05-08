@@ -3,18 +3,36 @@ title: Visiting Critics
 date: 2019-01-15 11:08:00 -05:00
 position: 2
 list:
-- "[Husani Barnwell](http://husanibarnwell.com)"
-- Carolyn Berry
-- "[Poppy Chen](http://poppychen.com)"
-- "[Sheila Cheng](http://sheilacheng.com)"
-- "[Samia Husari](http://samia.design)"
-- Vidya Keshavan
-- Diana Mejia
-- "[Nikhil Misra](http://www.nikhilmisra.com)"
-- "[Patricia Robinson](https://patriciarobinson.com)"
-- "[Sonali Sampat](https://www.sonalisampat.com)"
-- "[Danielle Santucci](http://danielle-santucci.com)"
-- "[Patrick Serr](http://patrickserr.com)"
+- Bijan Berahimi
+- Virginia Chow
+- Archie Lee Coates IV
+- Lyanne Dubon
+- Dylan Fisher
+- Nika Fisher
+- Jeffrey Franklin
+- Harry Gassel
+- Daniel Goddemeyer
+- August Heffner
+- Pablo Honey
+- Jenny Kang
+- David Kille
+- Alex Limpaecher
+- LaiYee Lori
+- Molly Lafferty
+- Andrew LeClair
+- Yenwei Liu
+- Igal Nassima
+- Eric Nylund
+- Justin Ouellette
+- Chris Pross
+- Julika Rudelius
+- Andrew Rutledge
+- Laurel Schwulst
+- Jeffrey Alan Scudder
+- Justin Ternullo
+- Keith Venkiteswaran
+- Paul Vlachou
+- Lydia White
 ---
 
-We invite guests to speak. You can also just leave this field blank and no text will show.
+In addition to our core faculty, the MPS Communication Design program hosts a variety of workshops, lectures, and reviews with a wide range of external critics.
