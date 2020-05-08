@@ -190,7 +190,7 @@ $announcementClose.on("click", function(){
 
 //if you click on anything except the modal itself or the "open modal" link, close the modal
 $(document).click(function(event) {
-  if (!$(event.target).closest(".announcement-container").length &&  && !$(event.target).closest(".cookies-container").length ) {
+  if (!$(event.target).closest(".announcement-container").length && !$(event.target).closest(".cookies-container").length ) {
     $("body").find(".announcement-container").addClass("off");
     console.log('close announcement');
   }
@@ -271,7 +271,9 @@ $sidebar.on("click", function() {
 
 if("{{site.is_explore_open}}"){
   var is_root = location.pathname == "/";
-  if ($exploreOuter.hasClass("exploreOff") && is_root) {
+  var is_firstland = !document.referrer.includes(location.hostname)
+
+  if ($exploreOuter.hasClass("exploreOff") && is_root && is_firstland) {
     $('.exploreOff').removeClass('exploreOff').addClass("exploreOn");
     $('.blurOn').addClass("blurOff").removeClass("blurOn");
     $('div#exploreHover').addClass('hidden');
