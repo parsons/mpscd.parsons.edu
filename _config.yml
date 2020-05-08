@@ -38,12 +38,7 @@ defaults:
     path: ''
     type: faculty
   values:
-    list:
-- scope:
-    images:
-      src:
-      creator:
-      link: 
+    list: 
 subtitle: Digital Product Design
 sidebar_text: Parsons School of Design — MPS Communication Design — Digital Product
   Design
