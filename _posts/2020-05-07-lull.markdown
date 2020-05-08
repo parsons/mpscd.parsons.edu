@@ -11,4 +11,3 @@ Field name:
 layout: post
 ---
 
-Tune into restorative slumber with Lull. This application is a music journal that gives you the tools to create your own relaxing music compositions, helping you sleep faster and deeper. It also keeps you safe from electromagnetic radiations that phones emit avoiding disruption of sleep cycles, circadian rhythm and melatonin levels.
