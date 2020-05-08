@@ -7,4 +7,6 @@ curriculum_text: For a complete listing of courses and descriptions, including e
 
 # Creating the future of design
 
-The program is tailored to practicing designers seeking to enhance their digital skills and leadership potential as well as professionals with relevant design experience who want to enter the field. It encompasses the full product development cycle in communication design — from idea conception to prototyping to feedback-based refinements — and familiarizes you with business strategy.
+The Master of Professional Studies is awarded for completion of 30 credits. Students must maintain a 3.0 cumulative grade point average and fulfill all requirements in a timely manner.
+
+The one-year curriculum requires full-time enrollment.
