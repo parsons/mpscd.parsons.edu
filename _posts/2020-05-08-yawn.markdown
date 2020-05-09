@@ -8,6 +8,7 @@ images:
 - file: "/uploads/ekarakose01.png"
   creator: Elif Karakose
   link: https://www.elifkarakose.com/
+type: image
 layout: post
 ---
 

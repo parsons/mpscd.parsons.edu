@@ -8,6 +8,7 @@ images:
 - file: "/uploads/rjain01.png"
   creator: Rajlaxmi Jain
   link: https://www.rajlaxmijain.com/
+type: image
 layout: post
 ---
 

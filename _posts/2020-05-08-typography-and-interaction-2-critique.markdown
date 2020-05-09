@@ -6,5 +6,6 @@ tags:
 - curriculum
 images:
 - file: "/uploads/ti-2-crit.png"
+type: image
 ---
 
