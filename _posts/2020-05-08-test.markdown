@@ -7,4 +7,5 @@ tags:
 images:
 - file: "/uploads/test.png"
   creator: Jacob
+type: image
 ---

@@ -9,6 +9,7 @@ images:
 - file: "/uploads/pserr01.png"
   creator: Patrick Serr
   link: http://patrickserr.com/
+type: image
 ---
 
 Unknown Conference, a project by Patrick Serr, Poppy Chen, Vidya Keshavan and Carolyn Berry, Typography and Interaction I, Fall 2017

@@ -1,9 +1,10 @@
 ---
-title: Example Text Post
+title: Example Text Postsssb
 date: 2018-07-13 20:00:00 -04:00
 tags:
 - projects
-- 2017
+- 2020
+type: text
 layout: post
 color: "#00f"
 ---

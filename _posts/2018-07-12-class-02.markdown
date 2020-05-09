@@ -7,4 +7,5 @@ tags:
 layout: post
 images:
 - file: "/uploads/class02.jpg"
+type: image
 ---

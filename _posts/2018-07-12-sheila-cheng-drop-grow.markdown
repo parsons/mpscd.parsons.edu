@@ -9,4 +9,5 @@ images:
 - file: "/uploads/scheng01.jpg"
   creator: Sheila Cheng
   link: http://patrickserr.com/
+type: image
 ---

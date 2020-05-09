@@ -7,6 +7,7 @@ tags:
 layout: post
 images:
 - file: "/uploads/pchen01.png"
+type: image
 ---
 
 City Pop, a project by Poppy Chen for Major Studio 2, Spring 2018
