@@ -2,7 +2,7 @@
 title: Example Text Post 2
 date: 2018-06-11 20:00:00 -04:00
 tags:
-- projects
+- student-work
 - 2020
 layout: post
 images:

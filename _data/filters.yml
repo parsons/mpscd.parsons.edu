@@ -2,16 +2,14 @@
 
 filters:
   - sections:
-    type: "Sections"
+    type: "Categories"
     filters:
-      - title: "Curriculum"
-        class: "curriculum"
+      - title: "Experience"
+        class: "experience"
       - title: "Events"
         class: "event"
-      - title: "Faculty"
-        class: "faculty"
-      - title: "Student Projects"
-        class: "projects"
+      - title: "Student Work"
+        class: "student-work"
   - years:
     type: "Years"
     filters:

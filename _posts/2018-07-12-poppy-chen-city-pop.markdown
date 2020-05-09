@@ -2,7 +2,7 @@
 title: City Pop App
 date: 2018-07-12 20:00:00 -04:00
 tags:
-- projects
+- student-work
 - 2018
 layout: post
 images:
