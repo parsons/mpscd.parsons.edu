@@ -19,6 +19,10 @@ Jekyll will compile your SCSS or you can use Codekit to compile both SCSS and JS
 2. Check your changes on production by using the Preview link in Siteleaf.
 3. When you’re ready, click Publish.
 
+<hr>
+
+- by tagging a project `important`, you can create a special announcement block in the Explore section
+- by excluding an image from a project, this will create a text-only post. Use the content area for your text
 
 <hr>
 
