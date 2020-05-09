@@ -9,3 +9,4 @@ images:
 - file: "/uploads/class01.jpg"
 type: image
 ---
+
