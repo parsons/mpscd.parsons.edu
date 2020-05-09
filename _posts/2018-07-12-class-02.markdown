@@ -6,6 +6,5 @@ tags:
 - 2018
 layout: post
 images:
-- src: class02.jpg
+- file: "/uploads/class02.jpg"
 ---
-

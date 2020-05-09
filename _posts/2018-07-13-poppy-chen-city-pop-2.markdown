@@ -6,7 +6,7 @@ tags:
 - 2018
 layout: post
 images:
-- src: pchen01.png
+- file: "/uploads/pchen01.png"
   creator: Poppy Chen
   link: http://patrickserr.com/
 ---

@@ -6,7 +6,7 @@ tags:
 - 2018
 layout: post
 images:
-- src: pserr01.png
+- file: "/uploads/pserr01.png"
   student: Patrick Serr
   link: http://patrickserr.com/
 ---
