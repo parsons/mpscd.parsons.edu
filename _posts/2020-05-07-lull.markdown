@@ -2,7 +2,7 @@
 title: Lull
 date: 2020-05-07 22:05:00 -04:00
 tags:
-- projects
+- student-work
 - '2020'
 images:
 - file: "/uploads/rjain01.png"
@@ -11,4 +11,3 @@ images:
 type: image
 layout: post
 ---
-

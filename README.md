@@ -22,7 +22,7 @@ Jekyll will compile your SCSS or you can use Codekit to compile both SCSS and JS
 <hr>
 
 - by tagging a project `important`, you can create a special announcement block in the Explore section
-- by excluding an image from a project, this will create a text-only post. Use the content area for your text
+- you can choose whether a post should be a `text` or `image`
 
 <hr>
 
