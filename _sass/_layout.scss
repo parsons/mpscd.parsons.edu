@@ -14,12 +14,12 @@
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   height: 100%;
-  // padding-bottom: $space-lg;
+  padding-bottom: $space-lg;
 
   @include sm {
     width: $info-width-sm;
     padding-left: $sidebar-width;
-    // padding-bottom: 0;
+    padding-bottom: 0;
   }
 
   @include md {
