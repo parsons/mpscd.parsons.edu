@@ -298,7 +298,7 @@ $exploreItem.hover(function(){
 // Filtering ----------------------------------------------
 
 var filters = {};
-$("span#title-sections").text('Everything');
+$("span#title-categories").text('Everything');
 $('.sub-menu').each(function(i, buttonGroup) {
   var $buttonGroup = $(buttonGroup);
   $buttonGroup.children().each(function(i, button) {
