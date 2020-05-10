@@ -1,0 +1,13 @@
+---
+title: Gin Gins
+date: 2020-05-10 10:24:00 -04:00
+tags:
+- projects
+- '2020'
+images:
+- file: "/uploads/osanchi01.gif"
+  creator: Sanchi Oberoi
+  link: https://sanchioberoi.com/
+layout: post
+---
+
