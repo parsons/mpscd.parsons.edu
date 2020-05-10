@@ -10,6 +10,7 @@
 body {
   background-color: $color-brand-secondary;
   position: relative;
+  height: 100%;
   min-height: 100vh;
   overflow: hidden;
   .touch & {
