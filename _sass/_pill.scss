@@ -31,12 +31,27 @@
   @include sm {
     display: inline-block !important;
   }
-  &:hover {
-    &::after {
-      content: "Reset filters";
-    }
-    span {
-      display: none;
+  // &:hover {
+  //   &::after {
+  //     content: "Reset filters";
+  //   }
+  //   span {
+  //     display: none;
+  //   }
+  // }
+
+  &.disable-hover {
+    cursor: default;
+  }
+
+  &:not(.disable-hover) {
+    &:hover {
+      &::after {
+        content: "Reset filters";
+      }
+      span {
+        display: none;
+      }
     }
   }
 

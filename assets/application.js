@@ -49,10 +49,10 @@ var $main = $('main');
 var $outline = $('.text-outline, .text-outline-screen, .text-outline a, .hover-reverse, .hover-text-outline, .lightbox-description p, .lightbox-detail p');
 
 var regexLetters = new RegExp("^[A-Za-z]+$");
-var letterRecurrence = 6; // Ex: 4 = 1/4 of the letters replaced
+var letterRecurrence = 10; // Ex: 4 = 1/4 of the letters replaced
 var letterTiming = 3000;
-var imagesMin = 150;
-var imagesMax = 250;
+var imagesMin = 400;
+var imagesMax = 500;
 var pad = 5;
 var down = false;
 
@@ -192,7 +192,7 @@ $announcementClose.on("click", function(){
 $(document).click(function(event) {
   if (!$(event.target).closest(".announcement-container").length && !$(event.target).closest(".cookies-container").length ) {
     $("body").find(".announcement-container").addClass("off");
-    console.log('close announcement');
+    // console.log('close announcement');
   }
 });
 
@@ -325,8 +325,23 @@ $('.page-filter').on('click', function(e) {
   $('.sub-menu').find('.is-checked').removeClass('is-checked');
   $explore.isotope({ filter: '' });
   $(this).find('span').empty();
-  $(find).find('span#title-sections').text('Everything');
-})
+  $(find).find('span#title-categories').text('Everything');
+});
+
+$(".ui-pill").mouseenter(function(){
+  if ($('span#title-categories').text().indexOf('Everything') > -1){
+    console.log('contains everything!');
+    $(this).addClass('disable-hover');
+  }
+});
+
+$(".ui-pill").mouseleave(function(){
+  if ($('span#title-categories').text().indexOf('Everything') > -1){
+    $(this).removeClass('disable-hover');
+  }
+});
+
+console.log('test!');
 
 $('.sub-menu').each(function(i, buttonGroup) {
   var $buttonGroup = $(buttonGroup);
