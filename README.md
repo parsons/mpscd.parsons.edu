@@ -12,7 +12,7 @@ Production URL:
 6. Opens at 'http://localhost:4000'
 7. Work on `develop` branch and merge into `master` when you want to deploy (see below)
 
-Jekyll will compile your SCSS or you can use Codekit to compile both SCSS and JS.
+Jekyll will compile your SCSS and changes to `application.js`. If you need to combine `.js` files, you can use Codekit to compile them.
 
 ## Deploying/Publishing
 1. Merge your changes into `master` and push.
