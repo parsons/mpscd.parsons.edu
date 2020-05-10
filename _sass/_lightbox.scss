@@ -57,13 +57,16 @@
   position: fixed;
   bottom: $space-xxs;
   left: $space-xxs;
-  width: 60%;
   transform: translateY(0);
   transition: $base-transition;
   transition-property: transform;
+  padding-right: $space-xxs;
+  
   @include sm {
     bottom: $space-xs;
     left: $sidebar-width + $space-sm;
+    width: 60%;
+    padding-right: 0;
   }
 
   & > .caption-student {

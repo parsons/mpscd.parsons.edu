@@ -214,7 +214,7 @@ div.listing {
 
 div#four-o-four{
   position: fixed;
-  height: 100vh;
+  height: 100%;
   display: flex;
   top: 0;
   flex-direction: column;
@@ -223,6 +223,7 @@ div#four-o-four{
   left: 0;
   padding: $space-xxs;
   @include sm {
+    height: 100vh;
     width: calc(100vw - #{$sidebar-width});
     left: $sidebar-width;
     padding: $space-xs $space-sm;
