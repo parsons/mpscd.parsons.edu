@@ -328,20 +328,17 @@ $('.page-filter').on('click', function(e) {
   $(find).find('span#title-categories').text('Everything');
 });
 
-$(".ui-pill").mouseenter(function(){
+$(".page-filter").mouseenter(function(){
   if ($('span#title-categories').text().indexOf('Everything') > -1){
-    console.log('contains everything!');
     $(this).addClass('disable-hover');
   }
 });
 
-$(".ui-pill").mouseleave(function(){
+$(".page-filter").mouseleave(function(){
   if ($('span#title-categories').text().indexOf('Everything') > -1){
     $(this).removeClass('disable-hover');
   }
 });
-
-console.log('test!');
 
 $('.sub-menu').each(function(i, buttonGroup) {
   var $buttonGroup = $(buttonGroup);
