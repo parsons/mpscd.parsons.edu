@@ -134,11 +134,14 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
   bottom: $space-xs;
   left: $sidebar-width + $space-sm;
   z-index: 12;
-  width: 60%;
+  width: 100%;
   display:none;
   pointer-events: none;
+  padding-right: $space-xxs;
 
   @include sm {
+    width: 60%;
+
     &.exploreOn {
     display:block;
     }
