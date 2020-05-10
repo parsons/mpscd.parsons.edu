@@ -2,7 +2,7 @@
 title: αPark
 date: 2020-05-10 10:31:00 -04:00
 tags:
-- projects
+- student-work
 - '2020'
 images:
 - file: "/uploads/rfan01.jpg"
