@@ -7,8 +7,9 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
 
 .explore {
   z-index: 0;
-  margin-left: $space-sm;
+  padding-left: $space-sm;
   height: 100%;
+  width: 100%;
   position: relative;
 
   @include sm {
@@ -23,9 +24,18 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
   }
 
   &.exploreOff {
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    position: fixed;
+
     &:hover {
       @extend .blurInter;
       cursor: pointer;
+    }
+
+    *, .explore #exploreArea {
+      overflow: hidden;
     }
   }
 
@@ -153,7 +163,6 @@ div#exploreHover {
   width: $explore-hover;
   height: $explore-hover;
   justify-content: center;
-  display: flex;
   align-items: center;
   border-radius: 50%;
   background: $explore-hover-color;
@@ -161,6 +170,12 @@ div#exploreHover {
   margin-top: $explore-hover * -0.5;
   pointer-events: none;
   cursor: pointer;
+  display: none;
+
+  @include sm {
+    display: flex;
+  }
+  
   h4 {
     color: $color-light;
   }
