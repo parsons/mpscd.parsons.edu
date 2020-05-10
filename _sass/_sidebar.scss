@@ -17,6 +17,12 @@
   }
 
   h6 {
+    font-size: $text-xxs;
+
+    @include md {
+      font-size: $text-xs;
+    }
+
     @include xl {
       font-size: $text-sm;
     }
@@ -39,12 +45,17 @@
     }
   }
   .sidebar-info {
-    margin-right: 18px;
+    margin-right: 8px;
     margin-left: 18px;
     opacity: 0;
     overflow: hidden;
     transition: $base-transition-sm;
     transition-property: opacity;
+
+    @include sm {
+      margin-right: 18px;
+    }
+
     h6 {
       white-space: nowrap;
       overflow: hidden;
