@@ -18,8 +18,13 @@
 }
 
 .lightbox-container, .hover-caption { // style lightbox and hover captions at the same time
-  > *, h1 {
-    @extend h2;
+  > *, h1, h2 {
+    // @extend h2;
+    font-size: $text-md;
+
+    @include sm {
+      font-size: $text-xl;
+    }
   }
 }
 
@@ -61,7 +66,7 @@
   transition: $base-transition;
   transition-property: transform;
   padding-right: $space-xxs;
-  
+
   @include sm {
     bottom: $space-xs;
     left: $sidebar-width + $space-sm;

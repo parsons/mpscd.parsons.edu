@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   position: relative;
-  margin-bottom: $space-md;
+  margin-bottom: $space-sm;
 
   @include sm {
     margin-bottom: 0;
@@ -56,7 +56,7 @@ footer {
 
   .colophon {
     p {
-      font-size: $text-xs-xs;
+      font-size: $text-xxs;
     }
   }
 }

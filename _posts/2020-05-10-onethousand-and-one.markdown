@@ -1,5 +1,5 @@
 ---
-title: OneThousand&One
+title: One Thousand & One
 date: 2020-05-10 10:35:00 -04:00
 tags:
 - student-work
@@ -10,4 +10,3 @@ images:
   link: https://stephanymadi.com/
 layout: post
 ---
-
