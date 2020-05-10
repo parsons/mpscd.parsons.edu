@@ -2,12 +2,8 @@
   z-index: 0;
   position: fixed;
   width: 100vw;
-  height: 100%;
-  overflow: visible;
-
-  @include sm {
-    height: 100vh;
-  }
+  height: 100vh;
+  overflow: hidden;
 }
 
 .background-image {
