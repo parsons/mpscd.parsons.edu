@@ -309,7 +309,6 @@ $('.sub-menu').each(function(i, buttonGroup) {
       $(t).text($button.text());
     }
   })
-
 });
 
 $(".filter-list").on('click', '.ui-pill', function(e) {
