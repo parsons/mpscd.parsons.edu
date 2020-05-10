@@ -17,9 +17,8 @@
   }
 }
 
-.lightbox-container, .hover-caption { // style lightbox and hover captions at the same time
-  > *, h1, h2 {
-    // @extend h2;
+.lightbox-container, .hover-caption, .lightbox-description { // style lightbox and hover captions at the same time
+  > *, h1, h2, p {
     font-size: $text-md;
 
     @include sm {
