@@ -186,20 +186,22 @@ div.listing {
   & > li {
   font-family: $font-secondary;
   font-size: $text-xs-md;
-  line-height: $text-line-md;
+  line-height: $text-line-base;
   margin: none;
 
-  & a {
-    border-bottom: $border-base;
-    &:hover {
-      border-bottom: $border-sm;
+    @include sm {
+      font-size: $text-md;
     }
+
+    & a {
+      border-bottom: $border-base;
+      &:hover {
+        border-bottom: $border-sm;
+      }
+    }
+
   }
 
-  @include sm {
-    font-size: $text-md;
-    }
-  }
 }
 
 .columns-2 {
