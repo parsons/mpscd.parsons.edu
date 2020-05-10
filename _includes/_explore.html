@@ -15,12 +15,12 @@
       {% assign shuffled_array = site.posts | shuffle %}
       {% for post in shuffled_array %}
         {% unless post.tags contains "important" %}
-          <div class="explore-item {% if site.is_explore_open == 'true' and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %} {{ post.tags | join:' ' }} {% if post.images %}imagepost {% else %}large {% endif %}">
+          <div class="explore-item {% if site.is_explore_open == 'true' and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %} {{ post.tags | join:' ' }} {% if post.type == 'image' %}imagepost {% else %}textpost {% endif %}">
             {% if post.type == "image" %}
               {% for image in post.images %}
-                  <img src="{{ image.file }}" alt="{{ post.title }}" {% if post.content %}data-content="{{ post.content }}"{% endif %} data-caption="{{ post.title }} {% if image.student %}<h1 class='text-outline caption-student'><a class='hover-reverse' href='{{ image.link }}' target='_blank'>{{ image.student }}</a></h1>{% endif %}" data-link="{{ image.link }}">
+                  <img src="{{ image.file }}" alt="{{ post.title }}" {% if post.content %}data-content="{{ post.content }}"{% endif %} data-caption="{{ post.title }} {% if image.creator %}<h1 class='text-outline caption-creator'><a class='hover-reverse' href='{{ image.link }}' target='_blank'>{{ image.creator }}</a></h1>{% endif %}" data-link="{{ image.link }}">
               {% endfor %}
-            {% elsif post.type == "text"  %}
+            {% elsif post.type == "text" %}
               <div class="explore-text" data-caption="{{ post.title }}" {% if post.color %}style="background-color: {{ post.color }}"{% endif %}>
                 {{ post.content }}
               </div>

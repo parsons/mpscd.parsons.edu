@@ -7,7 +7,7 @@
   <div class="filter-list">
     {% for type in site.data.filters.filters %}
       <ul class="sub-menu" id="{{ type.type | downcase }}" data-filter-group="{{ type.type | downcase }}">
-        <li class="ui-pill filter-button" data-filter="">{{ type.type }}</li>
+        <li class="ui-pill ui-pill-label filter-button" data-filter="">{{ type.type }}</li>
         {% for subfilter in type.filters reversed %}
           <li class="ui-pill" data-filter=".{{ subfilter.class }}">{{ subfilter.title }}</li>
         {% endfor %}

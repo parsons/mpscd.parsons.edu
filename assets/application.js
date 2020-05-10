@@ -49,10 +49,10 @@ var $main = $('main');
 var $outline = $('.text-outline, .text-outline-screen, .text-outline a, .hover-reverse, .hover-text-outline, .lightbox-description p, .lightbox-detail p');
 
 var regexLetters = new RegExp("^[A-Za-z]+$");
-var letterRecurrence = 6; // Ex: 4 = 1/4 of the letters replaced
+var letterRecurrence = 10; // Ex: 4 = 1/4 of the letters replaced
 var letterTiming = 3000;
-var imagesMin = 150;
-var imagesMax = 250;
+var imagesMin = 400;
+var imagesMax = 500;
 var pad = 5;
 var down = false;
 
@@ -192,7 +192,7 @@ $announcementClose.on("click", function(){
 $(document).click(function(event) {
   if (!$(event.target).closest(".announcement-container").length && !$(event.target).closest(".cookies-container").length ) {
     $("body").find(".announcement-container").addClass("off");
-    console.log('close announcement');
+    // console.log('close announcement');
   }
 });
 
@@ -309,7 +309,6 @@ $('.sub-menu').each(function(i, buttonGroup) {
       $(t).text($button.text());
     }
   })
-
 });
 
 $(".filter-list").on('click', '.ui-pill', function(e) {
@@ -325,8 +324,20 @@ $('.page-filter').on('click', function(e) {
   $('.sub-menu').find('.is-checked').removeClass('is-checked');
   $explore.isotope({ filter: '' });
   $(this).find('span').empty();
-  $(find).find('span#title-sections').text('Everything');
-})
+  $(find).find('span#title-categories').text('Everything');
+});
+
+$(".page-filter").mouseenter(function(){
+  if ($('span#title-categories').text().indexOf('Everything') > -1){
+    $(this).addClass('disable-hover');
+  }
+});
+
+$(".page-filter").mouseleave(function(){
+  if ($('span#title-categories').text().indexOf('Everything') > -1){
+    $(this).removeClass('disable-hover');
+  }
+});
 
 $('.sub-menu').each(function(i, buttonGroup) {
   var $buttonGroup = $(buttonGroup);
@@ -369,16 +380,16 @@ $exploreItem.on("click", function(){
     var content = $(this).find('img').length !== 0 ? $(this).find('img').attr('data-content').trim() : '';
     if (content != '') {
       if (/MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
-        $lightboxCaption.html("<h1 class='text-outline text-shadow'>" + $(this).find('img, div').data('caption').replace('hover-reverse', 'hover-reverse text-shadow') + "</h1>");
+        $lightboxCaption.html("<h2 class='text-outline text-shadow'>" + $(this).find('img, div').data('caption').replace('hover-reverse', 'hover-reverse text-shadow') + "</h2>");
       } else {
-        $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
+        $lightboxCaption.html("<h2 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h2>");
       }
       $('.lightbox-more').show();
     } else {
       if (/MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
-        $lightboxCaption.html("<h1 class='text-outline text-shadow'>" + $(this).find('img, div').data('caption').replace('hover-reverse', 'hover-reverse text-shadow') + "</h1>");
+        $lightboxCaption.html("<h2 class='text-outline text-shadow'>" + $(this).find('img, div').data('caption').replace('hover-reverse', 'hover-reverse text-shadow') + "</h2>");
       } else {
-        $lightboxCaption.html("<h1 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h1>");
+        $lightboxCaption.html("<h2 class='text-outline'>" + $(this).find('img, div').data('caption') + "</h2>");
       }
       $('.lightbox-more').hide();
     }

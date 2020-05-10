@@ -7,7 +7,7 @@ tags:
 layout: post
 images:
 - file: "/uploads/pserr01.png"
-  creator: Patrick Serr
+  creator: Creator Name
   link: http://patrickserr.com/
 type: image
 ---
