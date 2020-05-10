@@ -51,8 +51,8 @@ var $outline = $('.text-outline, .text-outline-screen, .text-outline a, .hover-r
 var regexLetters = new RegExp("^[A-Za-z]+$");
 var letterRecurrence = 10; // Ex: 4 = 1/4 of the letters replaced
 var letterTiming = 3000;
-var imagesMin = 400;
-var imagesMax = 500;
+var imagesMin = 500;
+var imagesMax = 800;
 var pad = 5;
 var down = false;
 
