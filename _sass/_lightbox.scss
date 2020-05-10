@@ -17,6 +17,12 @@
   }
 }
 
+.lightbox-container, .hover-caption { // style lightbox and hover captions at the same time
+  > *, h1 {
+    @extend h2;
+  }
+}
+
 .lightbox-detail {
   width: 100%;
   height: 100%;
