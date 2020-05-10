@@ -55,7 +55,7 @@ is_explore_open: true
 initial_filter: 2020
 background_image: "/uploads/windows_xp_bliss.jpg"
 background_color: "#ffffff"
-og_image: "/uploads/windows_xp_bliss.jpg"
+og_image: "/uploads/og-image.png"
 url: http://www.newschool.edu
 markdown: kramdown
 theme: minima
