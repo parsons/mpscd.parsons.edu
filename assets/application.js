@@ -338,7 +338,7 @@ $('.sub-menu').each(function(i, buttonGroup) {
     if(!$button.hasClass('filter-button')){
       $(t).text($button.text());
     } else {
-      if($buttonGroup.attr('id') == "sections"){
+      if($buttonGroup.attr('id') == "categories"){
         $(t).text('Everything');
       } else {
         $(t).empty();
