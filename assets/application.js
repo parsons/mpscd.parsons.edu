@@ -323,6 +323,7 @@ $(".filter-list").on('click', '.ui-pill', function(e) {
 $('.page-filter').on('click', function(e) {
   $('.sub-menu').find('.is-checked').removeClass('is-checked');
   $explore.isotope({ filter: '' });
+  filters = {}
   $(this).find('span').empty();
   $(find).find('span#title-categories').text('Everything');
 });
