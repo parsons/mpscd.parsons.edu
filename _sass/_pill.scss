@@ -58,6 +58,7 @@
 }
 
 .ui-pill {
+  cursor: pointer;
   font-size: $text-xs-xs;
   padding: $space-xxs;
   line-height: 1;
@@ -70,7 +71,7 @@
     font-size: $text-xl-xs;
     padding: $space-xs;
   }
-  
+
   margin-left: $space-xxs / 2;
   margin-bottom: $space-xxs;
   font-family: $font-secondary;
@@ -94,10 +95,11 @@
 
 .ui-pill-label {
   pointer-events: none;
+  cursor: default;
 }
 
 ul.sub-menu {
-  cursor: pointer;
+
   li {
     float: right;
     &:first-of-type {
