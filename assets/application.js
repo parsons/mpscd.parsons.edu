@@ -304,6 +304,8 @@ $('.sub-menu').each(function(i, buttonGroup) {
   $buttonGroup.children().each(function(i, button) {
     var $button = $(button)
     if($button.attr("data-filter") === ".{{site.initial_filter}}") {
+      var filterGroup = $buttonGroup.attr('data-filter-group');
+      filters[ filterGroup ] = $button.attr('data-filter');
       $button.addClass('is-checked');
       var t = 'span#title-' + $buttonGroup.attr('id');
       $(t).text($button.text());
