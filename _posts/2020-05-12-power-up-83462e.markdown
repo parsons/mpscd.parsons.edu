@@ -1,0 +1,12 @@
+---
+title: POWER UP
+date: 2020-05-12 19:39:00 -04:00
+tags:
+- '2018'
+- student-work
+type: image
+images:
+- file: "/uploads/HUSANIBARNWELL_MAJORSTUDIO2APP1_MPSCD18-Power%20Up-1f7a92.jpg"
+  creator: Husani Barnwell
+---
+
