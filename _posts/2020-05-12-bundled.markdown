@@ -1,0 +1,13 @@
+---
+title: Bundled
+date: 2020-05-12 18:42:00 -04:00
+tags:
+- projects
+- '2020'
+images:
+- file: "/uploads/rjain02.png"
+  creator: Rajlaxmi Jain
+  link: https://www.rajlaxmijain.com/
+layout: post
+---
+
