@@ -1,0 +1,12 @@
+---
+title: WingIt
+date: 2020-05-12 18:47:00 -04:00
+tags:
+- projects
+images:
+- file: "/uploads/ekarakose02.png"
+  creator: Elif Karakose
+  link: https://www.elifkarakose.com/
+layout: post
+---
+
