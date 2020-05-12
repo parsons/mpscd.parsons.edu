@@ -1,0 +1,12 @@
+---
+title: VE-GAINS
+date: 2020-05-12 19:42:00 -04:00
+tags:
+- '2018'
+- student-work
+type: image
+images:
+- file: "/uploads/Diana_Vegains_MPSCD18.jpg"
+  creator: Diana Mejia
+---
+
