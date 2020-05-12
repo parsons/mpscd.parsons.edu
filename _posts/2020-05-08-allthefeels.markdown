@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2020'
 images:
-- file: "/uploads/slee01.png"
+- file: "/uploads/slee01.jpg"
   creator: Sunnie Lee
   link: https://sunnie-lee.com/
 layout: post
