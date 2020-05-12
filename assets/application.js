@@ -330,18 +330,6 @@ $('.page-filter').on('click', function(e) {
   $(find).find('span#title-categories').text('Everything');
 });
 
-$(".page-filter").mouseenter(function(){
-  if ($('span#title-categories').text().indexOf('Everything') > -1){
-    $(this).addClass('disable-hover');
-  }
-});
-
-$(".page-filter").mouseleave(function(){
-  if ($('span#title-categories').text().indexOf('Everything') > -1){
-    $(this).removeClass('disable-hover');
-  }
-});
-
 $('.sub-menu').each(function(i, buttonGroup) {
   var $buttonGroup = $(buttonGroup);
   $buttonGroup.on('click', '.ui-pill', function(e) {
@@ -352,7 +340,7 @@ $('.sub-menu').each(function(i, buttonGroup) {
     if(!$button.hasClass('filter-button')){
       $(t).text($button.text());
     } else {
-      if($buttonGroup.attr('id') == "sections"){
+      if($buttonGroup.attr('id') == "categories"){
         $(t).text('Everything');
       } else {
         $(t).empty();

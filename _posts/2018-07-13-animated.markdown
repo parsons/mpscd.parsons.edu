@@ -6,7 +6,7 @@ tags:
 - 2020
 type: text
 layout: post
-color: "#00f"
+color: "#000000"
 ---
 
 Unknown Conference, a project by Patrick Serr, Poppy Chen, Vidya Keshavan and Carolyn Berry, Typography and Interaction I, Fall 2017
