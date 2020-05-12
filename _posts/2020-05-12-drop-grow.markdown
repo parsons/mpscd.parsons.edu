@@ -1,0 +1,12 @@
+---
+title: Drop Grow
+date: 2020-05-12 01:11:00 -04:00
+tags:
+- '2018'
+- student-work
+type: image
+images:
+- file: "/uploads/drop_grow-3.jpg"
+  creator: Sheila Cheng
+---
+
