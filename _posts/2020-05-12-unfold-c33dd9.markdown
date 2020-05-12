@@ -1,0 +1,12 @@
+---
+title: Unfold
+date: 2020-05-12 19:41:00 -04:00
+tags:
+- '2018'
+- student-work
+type: image
+images:
+- file: "/uploads/Diana_Unfold-4_MPSCD18.jpg"
+  creator: Diana Mejia
+---
+
