@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2020'
 images:
-- file: "/uploads/yha01-f7db25.png"
+- file: "/uploads/yha01.png"
   creator: Yuri Ha
   link: https://yuriha.me/
 layout: post
