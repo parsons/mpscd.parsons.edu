@@ -4,11 +4,11 @@ date: 2020-05-08 17:36:00 -04:00
 tags:
 - student-work
 - '2020'
+type: image
 images:
 - file: "/uploads/ekarakose01.png"
   creator: Elif Karakose
   link: https://www.elifkarakose.com/
-type: image
 layout: post
 ---
 
