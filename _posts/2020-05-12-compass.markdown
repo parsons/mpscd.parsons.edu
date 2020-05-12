@@ -1,0 +1,12 @@
+---
+title: Compass
+date: 2020-05-12 19:41:00 -04:00
+tags:
+- '2018'
+- student-work
+type: image
+images:
+- file: "/uploads/Diana_Compass_MPSCD18.jpg"
+  creator: Diana Mejia
+---
+
