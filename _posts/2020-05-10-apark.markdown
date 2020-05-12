@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2020'
 images:
-- file: "/uploads/rfan01.jpg"
+- file: "/uploads/rfan01.png"
   creator: Ryan Fan
   link: http://ryanfandesign.com/
 layout: post
