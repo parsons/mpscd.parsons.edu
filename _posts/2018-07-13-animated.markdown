@@ -1,12 +1,13 @@
 ---
 title: Example Text Postsssb
 date: 2018-07-13 20:00:00 -04:00
+published: false
 tags:
 - student-work
-- 2020
+- '2020'
 type: text
-layout: post
 color: "#000000"
+layout: post
 ---
 
 Unknown Conference, a project by Patrick Serr, Poppy Chen, Vidya Keshavan and Carolyn Berry, Typography and Interaction I, Fall 2017
