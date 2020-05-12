@@ -330,6 +330,18 @@ $('.page-filter').on('click', function(e) {
   $(find).find('span#title-categories').text('Everything');
 });
 
+$(".page-filter").mouseenter(function(){
+   if(jQuery.isEmptyObject(filters)){
+     console.log(filters)
+     $(this).addClass('disable-hover');
+   }
+ });
+
+ $(".page-filter").mouseleave(function(){
+     $(this).removeClass('disable-hover');
+ });
+
+
 $('.sub-menu').each(function(i, buttonGroup) {
   var $buttonGroup = $(buttonGroup);
   $buttonGroup.on('click', '.ui-pill', function(e) {
