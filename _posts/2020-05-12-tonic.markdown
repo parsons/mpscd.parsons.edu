@@ -1,0 +1,12 @@
+---
+title: Tonic
+date: 2020-05-12 01:13:00 -04:00
+tags:
+- '2018'
+- student-work
+type: image
+images:
+- file: "/uploads/HUSANIBARNWELL_T_I3_MPSCD18.jpg"
+  creator: Husani Barnwell
+---
+
