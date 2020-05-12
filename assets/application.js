@@ -304,6 +304,8 @@ $('.sub-menu').each(function(i, buttonGroup) {
   $buttonGroup.children().each(function(i, button) {
     var $button = $(button)
     if($button.attr("data-filter") === ".{{site.initial_filter}}") {
+      var filterGroup = $buttonGroup.attr('data-filter-group');
+      filters[ filterGroup ] = $button.attr('data-filter');
       $button.addClass('is-checked');
       var t = 'span#title-' + $buttonGroup.attr('id');
       $(t).text($button.text());
@@ -327,6 +329,18 @@ $('.page-filter').on('click', function(e) {
   $(this).find('span').empty();
   $(find).find('span#title-categories').text('Everything');
 });
+
+$(".page-filter").mouseenter(function(){
+   if(jQuery.isEmptyObject(filters)){
+     console.log(filters)
+     $(this).addClass('disable-hover');
+   }
+ });
+
+ $(".page-filter").mouseleave(function(){
+     $(this).removeClass('disable-hover');
+ });
+
 
 $('.sub-menu').each(function(i, buttonGroup) {
   var $buttonGroup = $(buttonGroup);
