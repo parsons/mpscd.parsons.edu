@@ -1,0 +1,12 @@
+---
+title: Vini
+date: 2020-05-13 01:40:00 -04:00
+tags:
+- '2019'
+- student-work
+type: image
+images:
+- file: "/uploads/Anh_Mai_002.jpg"
+  creator: Anh Mai
+---
+
