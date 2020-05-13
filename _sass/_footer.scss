@@ -48,6 +48,7 @@ footer {
 
   .footer-sub > li {
     margin: $space-sm 0 !important;
+    break-inside: avoid-column;
 
     &:first-of-type {
       margin-top: 0 !important;
