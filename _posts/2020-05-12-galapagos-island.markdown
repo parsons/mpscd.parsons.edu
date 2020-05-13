@@ -5,7 +5,7 @@ tags:
 - projects
 - '2020'
 images:
-- file: "/uploads/afeng01-26727b.png"
+- file: "/uploads/afeng01.png"
   creator: Ado Feng
   link: https://adofeng.com/
 layout: post
