@@ -1,0 +1,13 @@
+---
+title: Smartie
+date: 2020-05-12 20:38:00 -04:00
+tags:
+- projects
+- '2020'
+images:
+- file: "/uploads/jyao01.png"
+  creator: Jessie Yao
+  link: https://www.jessieyao.com/
+layout: post
+---
+
