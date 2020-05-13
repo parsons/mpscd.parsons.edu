@@ -1,0 +1,13 @@
+---
+title: Maia
+date: 2020-05-12 20:20:00 -04:00
+tags:
+- projects
+- '2020'
+images:
+- file: "/uploads/smadi02.gif"
+  creator: Stephany Madi
+  link: https://stephanymadi.com/
+layout: post
+---
+
