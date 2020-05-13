@@ -1,0 +1,12 @@
+---
+title: Sprout
+date: 2020-05-13 02:42:00 -04:00
+tags:
+- '2019'
+- student-work
+type: image
+images:
+- file: "/uploads/Clecc81mence_Houecc81decc81_004-aeae23.jpg"
+  creator: Clémence Houédé
+---
+
