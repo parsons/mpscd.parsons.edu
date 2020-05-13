@@ -1,0 +1,13 @@
+---
+title: Crateful
+date: 2020-05-12 20:34:00 -04:00
+tags:
+- projects
+- '2020'
+images:
+- file: "/uploads/smadi01.png"
+  creator: Stephany Madi
+  link: https://stephanymadi.com/
+layout: post
+---
+
