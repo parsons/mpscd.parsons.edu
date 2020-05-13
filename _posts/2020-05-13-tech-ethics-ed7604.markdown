@@ -1,0 +1,12 @@
+---
+title: TECH:ETHICS
+date: 2020-05-13 02:57:00 -04:00
+tags:
+- student-work
+- '2019'
+type: image
+images:
+- file: "/uploads/Rijk_vanZanten_005.jpg"
+  creator: Rijk van Zanten and Rachel Sun
+---
+
