@@ -5,7 +5,8 @@ tags:
 - projects
 - '2020'
 images:
-- creator: Stephany Madi
+- file: "/uploads/smadi02.gif"
+  creator: Stephany Madi
   link: https://stephanymadi.com/
 layout: post
 ---
