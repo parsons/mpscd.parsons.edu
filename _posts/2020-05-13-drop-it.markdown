@@ -1,6 +1,9 @@
 ---
 title: Drop It
 date: 2020-05-13 01:42:00 -04:00
+tags:
+- '2019'
+- student-work
 type: image
 images:
 - file: "/uploads/DropIt1.jpg"
