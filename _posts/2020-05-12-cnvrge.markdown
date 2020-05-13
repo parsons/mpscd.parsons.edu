@@ -1,0 +1,11 @@
+---
+title: CNVRGE
+date: 2020-05-12 20:07:00 -04:00
+tags:
+- event
+- '2019'
+type: image
+images:
+- file: "/uploads/CNVRGE-001-final-2019.jpg"
+---
+
