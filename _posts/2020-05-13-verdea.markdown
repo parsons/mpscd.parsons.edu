@@ -1,0 +1,12 @@
+---
+title: Verdèa
+date: 2020-05-13 22:02:00 -04:00
+tags:
+- student-work
+- '2020'
+images:
+- file: "/uploads/lalbul02.png"
+  creator: Luenne Albuquerque
+  link: http://luenne.design/#
+---
+
