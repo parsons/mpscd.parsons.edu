@@ -8,5 +8,6 @@ images:
 - file: "/uploads/smadi02.png"
   creator: Stephany Madi
   link: https://stephanymadi.com/
+layout: post
 ---
 
