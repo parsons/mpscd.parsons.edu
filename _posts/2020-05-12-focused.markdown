@@ -2,8 +2,8 @@
 title: Focused
 date: 2020-05-12 17:29:00 -04:00
 tags:
-- projects
 - '2020'
+- student-work
 images:
 - file: "/uploads/rfan02.png"
   creator: Ryan Fan
