@@ -5,7 +5,8 @@ tags:
 - student-work
 - '2020'
 images:
-- creator: Sanchi Oberoi
+- file: "/uploads/osanchi01.png"
+  creator: Sanchi Oberoi
   link: https://sanchioberoi.com/
 layout: post
 ---
