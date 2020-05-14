@@ -8,5 +8,6 @@ images:
 - file: "/uploads/yzhang01.jpg"
   creator: Yifu Zhang
   link: https://yifuzhang.xyz/
+layout: post
 ---
 
