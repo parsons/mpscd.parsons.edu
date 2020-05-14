@@ -6,8 +6,7 @@ tags:
 - '2020'
 type: image
 images:
-- file: "/uploads/ekarakose01.png"
-  creator: Elif Karakose
+- creator: Elif Karakose
   link: https://www.elifkarakose.com/
 layout: post
 ---
