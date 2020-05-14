@@ -8,5 +8,6 @@ images:
 - file: "/uploads/lalbul02.png"
   creator: Luenne Albuquerque
   link: http://luenne.design/#
+layout: post
 ---
 
