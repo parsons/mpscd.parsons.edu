@@ -1,7 +1,6 @@
 # Parsons MPSCD
 
-Staging URL: http://parsons-mps.siteleaf.net
-Production URL:
+Production URL: https://mpscd.parsons.edu
 
 ## Developing
 1. Install the [Jekyll gem] with `gem install jekyll bundler`
