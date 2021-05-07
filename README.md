@@ -37,5 +37,5 @@ To do:
 [] mobile
 [] dismiss modal
 [] when counter hits zero, trigger confetti and show image
-[] add confetti
+[] add confetti (https://github.com/catdad/canvas-confetti)
 [] change timer
