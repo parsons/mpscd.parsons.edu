@@ -31,3 +31,11 @@ The typeface is open-source and available here: https://github.com/XXIX/mps-type
 To update the webfonts:
 1. Follow directions in [the repo](https://github.com/XXIX/mps-typeface) to export from Glyphs
 2. Replace the `.woff` files
+
+To do:
+[] type sizing and style
+[] mobile
+[] dismiss modal
+[] when counter hits zero, trigger confetti and show image
+[] add confetti
+[] change timer

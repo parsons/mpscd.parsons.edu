@@ -1,0 +1,77 @@
+$countdown-sticker-diameter: 100px;
+$countdown-sticker-color: blue;
+
+.countdown-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: calc(100vw - $sidebar-width);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-modal {
+  width: 50%;
+  min-width: 400px;
+}
+
+.countdown-timer {
+  background: black;
+  border-radius: 25px;
+  padding: 25px;
+
+  > * {
+    text-align: center;
+    color: white;
+  }
+
+  h2 {
+
+  }
+}
+
+.countdown-dismiss {
+  text-align: center;
+
+  span {
+    color: white;
+  }
+}
+
+.countdown-hero {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .countdown-hero-sticker {
+    height: $countdown-sticker-diameter;
+    width: $countdown-sticker-diameter;
+    background: $countdown-sticker-color;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -($countdown-sticker-diameter/2);
+    right: 25px;
+    z-index: 101;
+    text-align: center;
+  }
+}
+
+.countdown-hidden {
+  display: none;
+}
+
+.countdown-visible {
+  display: flex;
+}

@@ -1,7 +1,6 @@
 # Parsons MPSCD
 
-Staging URL: http://parsons-mps.siteleaf.net
-Production URL:
+Production URL: https://mpscd.parsons.edu
 
 ## Developing
 1. Install the [Jekyll gem] with `gem install jekyll bundler`
@@ -32,3 +31,11 @@ The typeface is open-source and available here: https://github.com/XXIX/mps-type
 To update the webfonts:
 1. Follow directions in [the repo](https://github.com/XXIX/mps-typeface) to export from Glyphs
 2. Replace the `.woff` files
+
+To do:
+[] type sizing and style
+[] mobile
+[] dismiss modal
+[] when counter hits zero, trigger confetti and show image
+[] add confetti
+[] change timer
