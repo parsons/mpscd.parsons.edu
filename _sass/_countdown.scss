@@ -41,6 +41,10 @@ $countdown-sticker-color: blue;
 
   span {
     color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 

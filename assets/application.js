@@ -459,3 +459,8 @@ var x = setInterval(function() {
     console.log('timer done');
   }
 }, 1000);
+
+$('#dismiss').click(function() {
+  $('.countdown-wrapper').hide();
+  console.log('hide');
+});
