@@ -453,10 +453,10 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "EXPIRED";
+    document.getElementById("timer").innerHTML = "0d 0h 0m 0s";
     $('.countdown-timer').addClass('countdown-hidden');
     $('.countdown-hero').removeClass('countdown-hidden').addClass('countdown-visible');
-    console.log('timer done');
+    // console.log('timer done');
 
     // confetti({
     //   particleCount: 150

@@ -1,14 +1,13 @@
-$countdown-sticker-diameter: 100px;
+$countdown-sticker-diameter: 150px;
+$countdown-sticker-diameter-sm: 100px;
 $countdown-sticker-color: blue;
 
 .countdown-wrapper {
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
   z-index: 100;
-  width: calc(100vw - $sidebar-width);
+  width: calc(100vw - #{$sidebar-width});
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -17,30 +16,54 @@ $countdown-sticker-color: blue;
 }
 
 .countdown-modal {
-  width: 50%;
-  min-width: 400px;
+  width: 85%;
+  min-width: 280px;
+
+  @include sm {
+    width: 75%;
+    min-width: 400px;
+  }
 }
 
 .countdown-timer {
   background: black;
   border-radius: 25px;
-  padding: 25px;
+  padding: 10px;
+
+  @include sm {
+    padding: 25px;
+    margin: 0 12.5%;
+  }
 
   > * {
     text-align: center;
     color: white;
+    @include tertiary-italic;
+    font-size: $text-sm;
+
+    @include sm {
+      font-size: $text-lg;
+    }
   }
 
-  h2 {
+  h2#timer {
+    @include secondary;
+    margin-top: $space-xxs;
+    font-size: $text-xs-lg;
 
+    @include sm {
+      font-size: $text-xl-xl;
+    }
   }
 }
 
 .countdown-dismiss {
   text-align: center;
+  margin-top: $space-xs;
 
   span {
-    color: white;
+    color: black;
+    @include secondary;
 
     &:hover {
       cursor: pointer;
@@ -57,18 +80,36 @@ $countdown-sticker-color: blue;
   }
 
   .countdown-hero-sticker {
-    height: $countdown-sticker-diameter;
-    width: $countdown-sticker-diameter;
-    background: $countdown-sticker-color;
-    border-radius: 999px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: -($countdown-sticker-diameter/2);
-    right: 25px;
+    top: -($countdown-sticker-diameter-sm/2);
+    right: 10px;
     z-index: 101;
-    text-align: center;
+    height: $countdown-sticker-diameter-sm;
+    width: $countdown-sticker-diameter-sm;
+    background: $countdown-sticker-color;
+    border-radius: 999px;
+    padding: 10px;
+
+    @include sm {
+      top: -($countdown-sticker-diameter/2);
+      right: 25px;
+      height: $countdown-sticker-diameter;
+      width: $countdown-sticker-diameter;
+    }
+
+    span {
+      text-align: center;
+      color: white;
+      font-size: $text-xs;
+      @include secondary;
+
+      @include sm {
+        font-size: $text-sm;
+      }
+    }
   }
 }
 

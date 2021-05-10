@@ -54,7 +54,9 @@ sidebar_text: Parsons School of Design — MPS Communication Design — Digital 
 is_explore_open: true
 initial_filter: 2020
 show_countdown: true
-countdown_date: "May 7, 2021 15:40:25"
+countdown_date: "May 13, 2021 09:00:00"
+countdown_hero: "uploads/class-of-21-portrait.png"
+countdown_sticker: Congrats MPSCD 2021!
 background_image:
 background_color: "#d5ffc3"
 og_image: "/uploads/og-image.png"

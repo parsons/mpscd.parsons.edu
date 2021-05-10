@@ -33,9 +33,13 @@ To update the webfonts:
 2. Replace the `.woff` files
 
 To do:
-[] type sizing and style
-[] mobile
-[] dismiss modal
-[] when counter hits zero, trigger confetti and show image
-[] add confetti (https://github.com/catdad/canvas-confetti)
+[x] type sizing and style
+[x] mobile
+[x] dismiss modal
+[x] when counter hits zero, trigger confetti and show image
+[x] add confetti (https://github.com/catdad/canvas-confetti)
+[x] make hero image accessible from cms
+[x] check hero size
 [] change timer
+[] run image optim
+[] set timer to EST
