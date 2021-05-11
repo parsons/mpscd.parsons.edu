@@ -427,79 +427,13 @@ $(".lightbox-more").on("click", function(){
   }
 })
 
-// countdown timer
-// Set the date we're counting down to
-// Set in _head.html so it's editable in CMS
-
-// Update the count down every 1 second
-// var x = setInterval(function() {
-//
-//   // Get today's date and time
-//   var now = new Date().getTime();
-//
-//   // Find the distance between now and the count down date
-//   var distance = countDownDate - now;
-//
-//   // Time calculations for days, hours, minutes and seconds
-//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-//
-//   // Display the result in the element with id="demo"
-//   document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-//   + minutes + "m " + seconds + "s ";
-//
-//   // If the count down is finished, write some text
-//   if (distance < 0) {
-//     clearInterval(x);
-//     document.getElementById("timer").innerHTML = "0d 0h 0m 0s";
-//     $('.countdown-timer').addClass('countdown-hidden');
-//     $('.countdown-hero').removeClass('countdown-hidden').addClass('countdown-visible');
-//     // console.log('timer done');
-//
-//     // confetti({
-//     //   particleCount: 150
-//     // });
-//
-//     // TRIGGER CONFETTI!
-//     // do this for 30 seconds
-//     var duration = 12 * 1000;
-//     var end = Date.now() + duration;
-//
-//     (function frame() {
-//       // launch a few confetti from the left edge
-//       confetti({
-//         particleCount: 7,
-//         angle: 60,
-//         spread: 55,
-//         origin: { x: 0 }
-//       });
-//       // and launch a few from the right edge
-//       confetti({
-//         particleCount: 7,
-//         angle: 120,
-//         spread: 55,
-//         origin: { x: 1 }
-//       });
-//
-//       // keep going until we are out of time
-//       if (Date.now() < end) {
-//         requestAnimationFrame(frame);
-//       }
-//     }());
-//
-//   }
-// }, 1000);
-
 $('#dismiss').click(function() {
   $('.countdown-wrapper').hide();
-  console.log('hide');
+  // console.log('hide');
 });
 
-
 /// timer
-// set the variable in the
+// set the variable in _head
 var end = new Date(countdown_date);
 
 var _second = 1000;
@@ -523,7 +457,7 @@ function showRemaining() {
 
             $('.countdown-timer').addClass('countdown-hidden');
             $('.countdown-hero').removeClass('countdown-hidden').addClass('countdown-visible');
-            console.log('timer done');
+            // console.log('timer done');
 
         // confeetti
         // do this for 30 seconds
