@@ -432,67 +432,137 @@ $(".lightbox-more").on("click", function(){
 // Set in _head.html so it's editable in CMS
 
 // Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timer").innerHTML = "0d 0h 0m 0s";
-    $('.countdown-timer').addClass('countdown-hidden');
-    $('.countdown-hero').removeClass('countdown-hidden').addClass('countdown-visible');
-    // console.log('timer done');
-
-    // confetti({
-    //   particleCount: 150
-    // });
-
-    // TRIGGER CONFETTI!
-    // do this for 30 seconds
-    var duration = 12 * 1000;
-    var end = Date.now() + duration;
-
-    (function frame() {
-      // launch a few confetti from the left edge
-      confetti({
-        particleCount: 7,
-        angle: 60,
-        spread: 55,
-        origin: { x: 0 }
-      });
-      // and launch a few from the right edge
-      confetti({
-        particleCount: 7,
-        angle: 120,
-        spread: 55,
-        origin: { x: 1 }
-      });
-
-      // keep going until we are out of time
-      if (Date.now() < end) {
-        requestAnimationFrame(frame);
-      }
-    }());
-
-  }
-}, 1000);
+// var x = setInterval(function() {
+//
+//   // Get today's date and time
+//   var now = new Date().getTime();
+//
+//   // Find the distance between now and the count down date
+//   var distance = countDownDate - now;
+//
+//   // Time calculations for days, hours, minutes and seconds
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//
+//   // Display the result in the element with id="demo"
+//   document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+//   + minutes + "m " + seconds + "s ";
+//
+//   // If the count down is finished, write some text
+//   if (distance < 0) {
+//     clearInterval(x);
+//     document.getElementById("timer").innerHTML = "0d 0h 0m 0s";
+//     $('.countdown-timer').addClass('countdown-hidden');
+//     $('.countdown-hero').removeClass('countdown-hidden').addClass('countdown-visible');
+//     // console.log('timer done');
+//
+//     // confetti({
+//     //   particleCount: 150
+//     // });
+//
+//     // TRIGGER CONFETTI!
+//     // do this for 30 seconds
+//     var duration = 12 * 1000;
+//     var end = Date.now() + duration;
+//
+//     (function frame() {
+//       // launch a few confetti from the left edge
+//       confetti({
+//         particleCount: 7,
+//         angle: 60,
+//         spread: 55,
+//         origin: { x: 0 }
+//       });
+//       // and launch a few from the right edge
+//       confetti({
+//         particleCount: 7,
+//         angle: 120,
+//         spread: 55,
+//         origin: { x: 1 }
+//       });
+//
+//       // keep going until we are out of time
+//       if (Date.now() < end) {
+//         requestAnimationFrame(frame);
+//       }
+//     }());
+//
+//   }
+// }, 1000);
 
 $('#dismiss').click(function() {
   $('.countdown-wrapper').hide();
   console.log('hide');
 });
+
+
+/// timer
+// set the variable in the
+var end = new Date(countdown_date);
+
+var _second = 1000;
+var _minute = _second * 60;
+var _hour = _minute * 60;
+var _day = _hour * 24;
+var timer;
+
+function getESTOffset() {
+
+    return new Date().getTimezoneOffset() - (end.getTimezoneOffset())
+}
+
+function showRemaining() {
+    var now = new Date();
+    var distance = end - now - getESTOffset() * _hour;
+    if (distance < 0) {
+
+        clearInterval(timer);
+        document.getElementById('timer').innerHTML = '0d 0h 0m 0s!';
+
+            $('.countdown-timer').addClass('countdown-hidden');
+            $('.countdown-hero').removeClass('countdown-hidden').addClass('countdown-visible');
+            console.log('timer done');
+
+        // confeetti
+        // do this for 30 seconds
+        var duration = 30 * 1000;
+        var end_confetti = Date.now() + duration;
+
+        (function frame() {
+          // launch a few confetti from the left edge
+          confetti({
+            particleCount: 7,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0 }
+          });
+          // and launch a few from the right edge
+          confetti({
+            particleCount: 7,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1 }
+          });
+
+          // keep going until we are out of time
+          if (Date.now() < end_confetti) {
+            requestAnimationFrame(frame);
+          }
+        }());
+
+        return;
+    }
+    var days = Math.floor(distance / _day);
+    var hours = Math.floor((distance % _day) / _hour);
+    var minutes = Math.floor((distance % _hour) / _minute);
+    var seconds = Math.floor((distance % _minute) / _second);
+
+    document.getElementById('timer').innerHTML = days + 'd ';
+    document.getElementById('timer').innerHTML += hours + 'h ';
+    document.getElementById('timer').innerHTML += minutes + 'm ';
+    document.getElementById('timer').innerHTML += seconds + 's';
+}
+
+timer = setInterval(showRemaining, 1000);

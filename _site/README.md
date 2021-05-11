@@ -38,8 +38,8 @@ To do:
 [x] dismiss modal
 [x] when counter hits zero, trigger confetti and show image
 [x] add confetti (https://github.com/catdad/canvas-confetti)
-[] change timer
-[] run image optim
 [x] make hero image accessible from cms
 [x] check hero size
+[] change timer
+[] run image optim
 [] set timer to EST
