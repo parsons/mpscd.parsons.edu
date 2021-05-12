@@ -1,0 +1,12 @@
+---
+title: Attnd.
+date: 2021-05-12 13:43:00 -04:00
+tags:
+- student-work
+- '2021'
+images:
+- file: "/uploads/mo-labban_2_0.49850700-1620762748_m_labban_s2_final_web_03.jpg"
+  creator: Mo Labban
+  link: http://labbouf.com
+---
+
