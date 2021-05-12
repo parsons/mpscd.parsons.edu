@@ -40,6 +40,6 @@ To do:
 [x] add confetti (https://github.com/catdad/canvas-confetti)
 [x] make hero image accessible from cms
 [x] check hero size
-[] change timer
+[x] change timer
 [] run image optim
-[] set timer to EST
+[x] set timer to EST
