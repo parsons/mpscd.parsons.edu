@@ -32,14 +32,6 @@ To update the webfonts:
 1. Follow directions in [the repo](https://github.com/XXIX/mps-typeface) to export from Glyphs
 2. Replace the `.woff` files
 
-To do:
-[x] type sizing and style
-[x] mobile
-[x] dismiss modal
-[x] when counter hits zero, trigger confetti and show image
-[x] add confetti (https://github.com/catdad/canvas-confetti)
-[x] make hero image accessible from cms
-[x] check hero size
-[x] change timer
-[] run image optim
-[x] set timer to EST
+## CMS and updating
+- Year filter needs to be added manually to `_data/filters.yml`
+- 
