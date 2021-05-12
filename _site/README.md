@@ -34,4 +34,4 @@ To update the webfonts:
 
 ## CMS and updating
 - Year filter needs to be added manually to `_data/filters.yml`
-- 
+- Countdown date needs to be formatted as `05/11/2021 7:01 PM EDT`. Do not use Siteleaf's date picker.
