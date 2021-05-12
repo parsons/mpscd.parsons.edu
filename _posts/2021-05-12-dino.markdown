@@ -1,0 +1,12 @@
+---
+title: Dino
+date: 2021-05-12 14:13:00 -04:00
+tags:
+- '2021'
+- student-work
+images:
+- file: "/uploads/cherie-chan_0_0.90745700-1620791752_web-1.jpg"
+  creator: Cherie Chan
+  link: https://cheriechan.net
+---
+
