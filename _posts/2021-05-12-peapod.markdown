@@ -1,0 +1,12 @@
+---
+title: Peapod
+date: 2021-05-12 13:33:00 -04:00
+tags:
+- student-work
+- '2021'
+images:
+- file: "/uploads/yina-shan_0_0.87560700-1620755409_1_digital.png"
+  creator: Yina Shan
+  link: https://www.yinashan.com/
+---
+
