@@ -1,5 +1,5 @@
 ---
-title: 'Dinner Party: a more meaningful takeout experience'
+title: Dinner Party
 date: 2021-05-12 13:49:00 -04:00
 tags:
 - student-work
