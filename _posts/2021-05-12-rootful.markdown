@@ -1,0 +1,12 @@
+---
+title: Rootful
+date: 2021-05-12 13:28:00 -04:00
+tags:
+- student-work
+- '2021'
+images:
+- file: "/uploads/roseanne-chao_2_0.66262900-1620676861_slide-4_3-3.png"
+  creator: Roseanne Chao
+  link: http://www.roseannechao.com
+---
+
