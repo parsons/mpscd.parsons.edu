@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2021'
 images:
-- file: "/uploads/defne-kaynak_0_0.49961100-1620752425_fleet01.jpg"
+- file: "/uploads/Fleet.jpg"
   creator: Defne Kaynak
   link: https://www.defnekaynak.com/
 ---
