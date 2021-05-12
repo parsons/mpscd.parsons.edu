@@ -1,6 +1,9 @@
 ---
 title: Fleet
 date: 2021-05-12 11:33:00 -04:00
+tags:
+- student-work
+- '2021'
 images:
 - file: "/uploads/defne-kaynak_0_0.49961100-1620752425_fleet01.jpg"
   creator: Defne Kaynak
