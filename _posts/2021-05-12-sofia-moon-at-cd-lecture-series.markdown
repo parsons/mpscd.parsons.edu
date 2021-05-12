@@ -6,6 +6,6 @@ tags:
 - experience
 images:
 - file: "/uploads/Sofia-CDlecture.jpg"
-  link: https://www.youtube.com/channel/UCHehLDRBXdVyf-CiLIOC5gg
+  link: https://www.youtube.com/watch?v=q19h2SOGXXI
 ---
 
