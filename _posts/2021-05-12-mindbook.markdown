@@ -1,0 +1,12 @@
+---
+title: Mindbook
+date: 2021-05-12 14:08:00 -04:00
+tags:
+- '2021'
+- student-work
+images:
+- file: "/uploads/anita-li_0_0.71068700-1620767811_1mindbook_anita.jpg"
+  creator: Anita Li
+  link: https://anitalidesign.com
+---
+
