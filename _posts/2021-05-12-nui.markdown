@@ -1,0 +1,12 @@
+---
+title: Nui
+date: 2021-05-12 13:32:00 -04:00
+tags:
+- student-work
+- '2021'
+images:
+- file: "/uploads/gandhali-bapat_0_0.63570300-1620697449_gandhalibapat_web_1.png"
+  creator: Gandhali Bapat
+  link: https://www.gandhalibapat.com/
+---
+
