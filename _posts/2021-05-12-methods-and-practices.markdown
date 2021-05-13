@@ -1,6 +1,6 @@
 ---
 title: Methods and Practices
-date: 2021-05-12 12:55:00 -04:00
+date: 2021-05-12 23:55:00 -04:00
 tags:
 - '2021'
 - experience
