@@ -27,7 +27,7 @@ list:
 - "[Kara Wilson](https://www.karawilsondesign.com/)"
 - Yinan Xia
 - "[Jessica Yang](https://www.jessicayang.design/)"
-- Qiuyi Yu
+- Sherry Yu
 - Haiyi Zhao
 - "[Xiaoyu Zhou](https://www.sherryxz.com/)"
 ---
