@@ -62,7 +62,11 @@ $countdown-sticker-color: blue;
   margin-top: $space-xs;
 
   span {
-    color: black;
+    background: black;
+    border-radius: 999px;
+    padding: 7px 10px 5px 10px;
+    color: white;
+    font-size: $text-xxs;
     @include secondary;
 
     &:hover {
