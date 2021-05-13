@@ -2,5 +2,33 @@
 title: '2021'
 date: 2021-05-12 11:26:00 -04:00
 position: 3
+list: |-
+  * [Mari Al-Midhadi]()
+  * [Gandhali Bapat](https://www.gandhalibapat.com/)
+  * [Katie Brown]()
+  * [Cherie Chan](https://cheriechan.net/)
+  * [Lisa Chang]()
+  * [Roseanne Chao](http://www.roseannechao.com/)
+  * [Amy Deng]()
+  * [Kebing Han]()
+  * [Sejeong Hwang-Yoo](https://sejeonghwang.com/)
+  * [Fiona Jin]()
+  * [Defne Kaynak](https://www.defnekaynak.com/)
+  * [Regina La O’](http://www.reginalao.design/)
+  * [Mo Labban](http://labbouf.com/)
+  * [Anita Li](https://anitalidesign.com/)
+  * [Zhenliang Li]()
+  * [Imogene Liang](https://www.imogeneliang.com/)
+  * [Sofia Moon](https://www.sofiamoon.com/)
+  * [Yina Shan](https://www.yinashan.com/)
+  * [Kaiwen Tao](https://www.taokaiwen.design/)
+  * [Yimeng Wang](https://www.yimengdesign.com/)
+  * [Samantha Wen](https://www.qingwendesign.com/)
+  * [Kara Wilson](https://www.karawilsondesign.com/)
+  * [Yinan Xia]()
+  * [Jessica Yang](https://www.jessicayang.design/)
+  * [Qiuyi Yu]()
+  * [Haiyi Zhao]()
+  * [Xiaoyu Zhou](https://www.sherryxz.com/)
 ---
 
