@@ -427,7 +427,7 @@ $(".lightbox-more").on("click", function(){
   }
 })
 
-$('#dismiss').click(function() {
+$('.js-countdown-dismiss').click(function() {
   $('.countdown-wrapper').hide();
   // console.log('hide');
 });

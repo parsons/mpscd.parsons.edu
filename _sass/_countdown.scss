@@ -124,3 +124,9 @@ $countdown-sticker-color: blue;
 .countdown-visible {
   display: flex;
 }
+
+.js-countdown-dismiss {
+  &:hover {
+    cursor: pointer;
+  }
+}
