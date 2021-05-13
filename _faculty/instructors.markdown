@@ -10,7 +10,7 @@ list:
 - "[Lukas Eigler-Harding](http://lukas.eigler-harding.com)"
 - "[Brendan Griffiths](https://brendangriffiths.com)"
 - "[Jacob Heftmann](http://www.jacobheftmann.com)"
-- "[Krystyn Heide](http://heide.io)"
+- Krystyn Heide
 - "[Erica Heinz](http://ericaheinz.com)"
 - "[Tiff Hockin](https://tiffhockin.info)"
 - "[E Roon Kang](http://eroonkang.com)"
