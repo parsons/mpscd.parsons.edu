@@ -460,8 +460,8 @@ function showRemaining() {
             // console.log('timer done');
 
         // confeetti
-        // do this for 30 seconds
-        var duration = 30 * 1000;
+        // do this for 10 seconds
+        var duration = 10 * 1000;
         var end_confetti = Date.now() + duration;
 
         (function frame() {
