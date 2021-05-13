@@ -1,6 +1,6 @@
 ---
 title: Visual Culture Seminar
-date: 2021-05-12 12:57:00 -04:00
+date: 2021-05-12 14:57:00 -04:00
 tags:
 - '2021'
 - experience
