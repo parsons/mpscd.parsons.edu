@@ -7,9 +7,10 @@ parsons_url: https://www.newschool.edu/parsons/
 parsons_logo_image: "/uploads/parsons_logo.svg"
 colophon_title: Colophon
 colophon: This site was built with the help of Parsons MPS faculty and students (Patrick,
-  <a href="https://stephanymadi.com">Stephany</a>, and <a href="https://yifuzhang.xyz">Yifu</a>)
-  in collaboration with [XXIX](http://www.xxix.co). The [custom typeface](https://github.com/XXIX/mps-typeface)
-  is open-source and can be contributed to by the MPS community.
+  <a href="https://stephanymadi.com">Stephany</a>, <a href="https://yifuzhang.xyz">Yifu</a>,
+  and <a href="https://www.defnekaynak.com/">Defne</a>) in collaboration with [XXIX](http://www.xxix.co).
+  The [custom typeface](https://github.com/XXIX/mps-typeface) is open-source and can
+  be contributed to by the MPS community.
 ---
 
 A one-year graduate degree program for Digital Product Design.
