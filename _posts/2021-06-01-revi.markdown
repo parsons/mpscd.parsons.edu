@@ -1,0 +1,12 @@
+---
+title: Revi
+date: 2021-06-01 10:48:00 -04:00
+tags:
+- '2021'
+- student-work
+images:
+- file: "/uploads/sejeong-hwang-yoo_2_0.81929200-1620763337_submission_animation.gif"
+  creator: Sejeong Hwang-Yoo
+  link: https://sejeonghwang.com/
+---
+
