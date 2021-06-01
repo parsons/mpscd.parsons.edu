@@ -1,0 +1,12 @@
+---
+title: Cura
+date: 2021-06-01 10:30:00 -04:00
+tags:
+- '2021'
+- student-work
+images:
+- file: "/uploads/sofia-moon_0_0.96719500-1620674441_cura-hero-1.png"
+  creator: Sofia Moon
+  link: https://www.sofiamoon.com/
+---
+
