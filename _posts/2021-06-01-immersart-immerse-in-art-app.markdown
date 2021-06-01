@@ -1,5 +1,5 @@
 ---
-title: 'Immersart: Immerse in Art App'
+title: Immersart - Immerse in Art
 date: 2021-06-01 10:52:00 -04:00
 tags:
 - '2021'
