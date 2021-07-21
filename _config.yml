@@ -25,30 +25,31 @@ defaults:
     path: ''
     type: curriculum
   values:
-    credit:
-    pmcd:
+    credit: 
+    pmcd: 
     expand: false
-    outbound_link:
+    outbound_link: 
 - scope:
     path: ''
     type: students
   values:
-    list:
+    list: 
 - scope:
     path: ''
     type: faculty
   values:
-    list:
+    list: 
 - scope:
     path: ''
     type: posts
   values:
     type: image
     images:
-    - file:
-      creator:
-      link:
-description: Parsons MPS Communication Design Digital Product Design Masters program at Parsons The New School for Design in New York City.
+    - file: 
+      creator: 
+      link: 
+description: Parsons MPS Communication Design Digital Product Design Masters program
+  at Parsons The New School for Design in New York City.
 subtitle: Digital Product Design
 sidebar_text: Parsons School of Design — MPS Communication Design — Digital Product
   Design
