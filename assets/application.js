@@ -273,7 +273,7 @@ if("{{site.is_explore_open}}"){
   var is_root = location.pathname == "/";
   var is_firstland = !document.referrer.includes(location.hostname)
 
-  if ($exploreOuter.hasClass("exploreOff") && is_root && is_firstland) {
+  if ($exploreOuter.hasClass("exploreOn") && is_root && is_firstland) {
     $('.exploreOff').removeClass('exploreOff').addClass("exploreOn");
     $('.blurOn').addClass("blurOff").removeClass("blurOn");
     $('div#exploreHover').addClass('hidden');

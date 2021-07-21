@@ -1,4 +1,4 @@
-<div class="explore {% if site.is_explore_open == 'true' and page.url == '/' %}exploreOn blurOff{% else %}exploreOff blurOn{% endif %}">
+<div class="explore {% if site.is_explore_open == true and page.url == '/' %}exploreOn blurOff{% else %}exploreOff blurOn{% endif %}">
 
   {% if site.show_countdown == true %}
     {% include _countdown.html %}
@@ -8,7 +8,7 @@
     <div class="explore-items">
       {% for post in site.posts %}
         {% if post.tags contains "important" %}
-          <div class="explore-item {% if site.is_explore_open == 'true' and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %} {{ post.tags | join:' ' }}">
+          <div class="explore-item {% if site.is_explore_open == true and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %} {{ post.tags | join:' ' }}">
             <a href="{{ post.link }}" target="_blank">
               <div class="explore-text" {% if post.color %}style="background-color: {{ post.color }}"{% endif %}>
                 {{ post.content }}
@@ -20,7 +20,7 @@
       {% assign shuffled_array = site.posts | shuffle %}
       {% for post in shuffled_array %}
         {% unless post.tags contains "important" %}
-          <div class="explore-item {% if site.is_explore_open == 'true' and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %} {{ post.tags | join:' ' }} {% if post.type == 'image' %}imagepost {% else %}textpost {% endif %}">
+          <div class="explore-item {% if site.is_explore_open == true and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %} {{ post.tags | join:' ' }} {% if post.type == 'image' %}imagepost {% else %}textpost {% endif %}">
             {% if post.type == "image" %}
               {% for image in post.images %}
                   <img src="{{ image.file }}" alt="{{ post.title }}" {% if post.content %}data-content="{{ post.content }}"{% endif %} data-caption="{{ post.title }} {% if image.creator %}<h1 class='text-outline caption-creator'>{% if image.link %}<a class='hover-reverse' href='{{ image.link }}' target='_blank'>{% endif %}{{ image.creator }}{% if image.link %}</a>{% endif %}</h1>{% endif %}" data-link="{{ image.link }}">
