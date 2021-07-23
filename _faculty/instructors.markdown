@@ -11,7 +11,7 @@ list:
 - "[Brendan Griffiths](https://brendangriffiths.com)"
 - "[Jacob Heftmann](http://www.jacobheftmann.com)"
 - "[E Roon Kang](http://eroonkang.com)"
-- "[Lynn Kiang](https://lynnkiang.com)"
+- "[Lynn Kiang](https://domecollective.com)"
 - "[Conor McGlauflin](http://conormcglauflin.com)"
 - "[Tuan Quoc Pham](https://tuanpham.info)"
 - "[Sebastian Speier](http://sspeier.com)"
