@@ -16,6 +16,7 @@ list:
 - "[Tuan Quoc Pham](https://tuanpham.info)"
 - "[Sebastian Speier](http://sspeier.com)"
 - "[Lucille Tenazas](https://en.wikipedia.org/wiki/Lucille_Tenazas)"
-- "[Luiza Dale](http://luizadale.com)"
+- "[Chuck Sarah Allison](https://www.linkedin.com/in/janet-sarah-allison)"
+- "[Robert Spica](https://www.linkedin.com/in/robertspica)"
 ---
 
