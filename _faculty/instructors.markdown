@@ -18,5 +18,6 @@ list:
 - "[Lucille Tenazas](https://en.wikipedia.org/wiki/Lucille_Tenazas)"
 - "[Chuck Sarah Allison](https://www.linkedin.com/in/janet-sarah-allison)"
 - "[Robert Spica](https://www.linkedin.com/in/robertspica)"
+- "[Laura Tolomelli](http://laura-tolomelli.com)"
 ---
 
