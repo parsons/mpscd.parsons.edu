@@ -16,5 +16,6 @@ list:
 - "[Tuan Quoc Pham](https://tuanpham.info)"
 - "[Sebastian Speier](http://sspeier.com)"
 - "[Lucille Tenazas](https://en.wikipedia.org/wiki/Lucille_Tenazas)"
+- "[Luiza Dale](http://luizadale.com)"
 ---
 
