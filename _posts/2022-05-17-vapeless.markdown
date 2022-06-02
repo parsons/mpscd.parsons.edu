@@ -1,0 +1,12 @@
+---
+title: Vapeless
+date: 2022-05-17 20:11:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/vape1%20-%20Yiyao%20Zhao.jpg"
+  creator: Yiyao Zhao
+  link: http://www.yiyaozhao.com/
+---
+

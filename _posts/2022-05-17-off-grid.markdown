@@ -1,0 +1,12 @@
+---
+title: OFF GRID
+date: 2022-05-17 19:20:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/Dong_MPS%20-%20Dong%20Xia.jpg"
+  creator: Dong Xia
+  link: https://www.dongxia.design/==https://dongxia97.github.io/finalportfolio/index.html
+---
+

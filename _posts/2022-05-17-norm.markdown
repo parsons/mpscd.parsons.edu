@@ -1,0 +1,12 @@
+---
+title: Norm
+date: 2022-05-17 19:07:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/12%20-%20Chenxing%20Zhou.png"
+  creator: Chelsea Zhou
+  link: https://chelseas-site-f37157.webflow.io/
+---
+

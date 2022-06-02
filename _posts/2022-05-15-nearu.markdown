@@ -1,0 +1,12 @@
+---
+title: NearU
+date: 2022-05-15 22:12:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/NearU%20-%20So%20Young%20Park.jpg"
+  creator: So Young Park
+  link: https://www.soold.me/
+---
+

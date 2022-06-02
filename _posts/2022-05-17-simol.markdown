@@ -1,0 +1,12 @@
+---
+title: SIMOL
+date: 2022-05-17 19:05:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/2xpng%20-%20Mark%20Huang.png"
+  creator: Mark Huang
+  link: https://www.markhuang.design/
+---
+

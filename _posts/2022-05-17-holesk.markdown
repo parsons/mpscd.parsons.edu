@@ -1,0 +1,12 @@
+---
+title: Holesk
+date: 2022-05-17 20:05:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/Pulpo%204%20-%20Giordana%20Pulpo.png"
+  creator: Giordana Pulpo
+  link: http://giordanapulpo.com/
+---
+

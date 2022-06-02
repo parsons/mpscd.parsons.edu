@@ -1,0 +1,12 @@
+---
+title: Picnic
+date: 2022-05-17 20:01:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/picnic-hero-maudthuland%20-%20Maud%20Thuland.png"
+  creator: Maud Thuland
+  link: http://maudthuland.com/
+---
+

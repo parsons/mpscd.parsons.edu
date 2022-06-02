@@ -1,5 +1,42 @@
 ---
 title: '2022'
 date: 2022-04-06 10:59:00 -04:00
+list:
+- "[Amy Jongjitt](https://amyjongjitt.com)\n"
+- "[Antoinette Chow](https://antoinettechow.com/)"
+- "[Ashley Zhang](http://ashleyzhang.work/)\n"
+- "[Bryan Oh](https://itsbryanoh.com/)"
+- "[Carla Sunji](https://carlasunji.github.io/portfolio/)"
+- "[Chelsea Zhou](https://chelseas-site-f37157.webflow.io/)"
+- "[Claire Boguslawski](http://www.claireboguslawski.com/)"
+- "[Vern Liu](http://vernliu.com/)"
+- "[Dong Xia](https://www.dongxia.design/)"
+- "[Jess Chen](https://www.jesschendesign.com/)"
+- "[Tina Li](https://lij851.myportfolio.com)"
+- "[Karan Chowdhary](https://karanchowdhary.webflow.io)"
+- "[Krishangi Agarwal] (https://krishangiagarwal.com/)"
+- "[Lena Chen](https://lenachenleqi.cargo.site/)"
+- "[Liam Brettenny] (https://liambrettenny.com/)"
+- "[Austin Poon](https://www.austinpoon.com/)"
+- "[Madhu Mithaa Gengatheran](https://madhugengatheran.myportfolio.com/)"
+- "[María Fernanda Quevedo Acuna](https://mafquevedo.com/)"
+- "[Mark Huang](https://www.markhuang.design/)"
+- "[Maya Lal](https://maya-lals-portfolio-site.webflow.io/)"
+- "[Yuxi Lyu](https://yuxilyu.com/)"
+- "[Tegwen McKenzie](https://tegwen.ca/)"
+- "[Yu Pan](https://carlapan.com/)"
+- "[So Young Park](https://www.soold.me/)"
+- "[Rita Giordana Pulpo](http://giordanapulpo.com/)"
+- "[Ziyao Sun](https://ziyao.cargo.site/)"
+- "[Ranxing Tao](https://www.ranxing.space/)"
+- "[Maud Thuland](http://maudthuland.com/)"
+- "[Thao Tran](https://thaotran.cargo.site/)"
+- "[Xiaoyu Wang](https://www.xiaoyuuw.com/)"
+- "[SiChun Yang](http://gy-graceyang.com/)"
+- "[Sili Yu](https://hannahysl.com/)"
+- "[Yiyao Zhao](http://www.yiyaozhao.com/)"
+- "[Chenxing Zhou]()"
+- "[Yining Zhu](https://www.yining-zhu.com/)"
+Field name: 
 ---
 

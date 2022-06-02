@@ -1,0 +1,12 @@
+---
+title: Seelect
+date: 2022-05-17 19:09:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/29%20-%20Ziyao%20Sun.png"
+  creator: Ziyao Sun
+  link: https://ziyao.cargo.site/
+---
+

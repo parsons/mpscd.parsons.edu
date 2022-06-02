@@ -1,0 +1,12 @@
+---
+title: hab ez
+date: 2022-05-17 19:41:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/hab%20ez%201%20-%20Hero%20Image%20-%20Carla%20Sunji.jpg"
+  creator: Carla Sunji
+  link: https://carlasunji.github.io/portfolio/
+---
+

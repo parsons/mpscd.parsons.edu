@@ -1,0 +1,12 @@
+---
+title: aromee
+date: 2022-05-17 19:13:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/aromee%20-%20Xiaoyu%20Wang.jpg"
+  creator: Xiaoyu Wang
+  link: https://www.xiaoyuuw.com/
+---
+

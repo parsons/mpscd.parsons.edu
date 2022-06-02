@@ -1,0 +1,12 @@
+---
+title: Muze
+date: 2022-05-17 19:59:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/Muze%20Cover%20-%20Karan%20Chowdhary.jpg"
+  creator: Karan Chowdhary
+  link: https://karanchowdhary.webflow.io
+---
+

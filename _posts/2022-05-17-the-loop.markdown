@@ -1,0 +1,12 @@
+---
+title: The Loop
+date: 2022-05-17 19:18:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/cray_arrange%20-%20Ashley%20Zhang.png"
+  creator: Ashley Zhang
+  link: http://ashleyzhang.work/
+---
+

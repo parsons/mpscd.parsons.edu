@@ -1,0 +1,12 @@
+---
+title: Bookish
+date: 2022-05-17 19:53:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/MPSCD%20-%20Bookish%20(Hero)%20-%20Austin%20Poon.png"
+  creator: Austin Poon
+  link: https://www.austinpoon.com/
+---
+

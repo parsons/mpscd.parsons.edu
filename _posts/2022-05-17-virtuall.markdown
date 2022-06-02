@@ -1,0 +1,12 @@
+---
+title: Virtuall
+date: 2022-05-17 19:02:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/3.2%20Virtuall%20-%20Yining%20Zhu.png"
+  creator: Yining Zhu
+  link: https://www.yining-zhu.com/
+---
+

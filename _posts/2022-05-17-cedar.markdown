@@ -1,0 +1,12 @@
+---
+title: Cedar
+date: 2022-05-17 19:17:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/Cedar%202%20-%20Maya%20Lal.jpg"
+  creator: Maya Lal
+  link: https://maya-lals-portfolio-site.webflow.io/
+---
+

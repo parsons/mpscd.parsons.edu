@@ -1,0 +1,12 @@
+---
+title: Moment
+date: 2022-05-17 19:56:00 -04:00
+tags:
+- '2022'
+- student-work
+images:
+- file: "/uploads/Moment_1%20-%20Chuxuan%20Liu.jpg"
+  creator: Vern Liu
+  link: https://vernliu.com/
+---
+
