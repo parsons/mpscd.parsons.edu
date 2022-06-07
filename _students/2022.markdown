@@ -8,7 +8,7 @@ list:
 - "[Ashley Zhang](http://ashleyzhang.work/)\n"
 - "[Bryan Oh](https://itsbryanoh.com/)"
 - "[Carla Sunji](https://carlasunji.github.io/portfolio/)"
-- "[Chelsea Zhou](https://chelseas-site-f37157.webflow.io/)"
+- "[Ruolin Fu](https://ruolinfu.myportfolio.com/)"
 - "[Claire Boguslawski](http://www.claireboguslawski.com/)"
 - "[Vern Liu](http://vernliu.com/)"
 - "[Dong Xia](https://www.dongxia.design/)"
@@ -36,7 +36,7 @@ list:
 - "[SiChun Yang](http://gy-graceyang.com/)"
 - "[Sili Yu](https://hannahysl.com/)"
 - "[Yiyao Zhao](http://www.yiyaozhao.com/)"
-- "[Chenxing Zhou]()"
+- "[Chelsea Zhou](https://chelseas-site-f37157.webflow.io/)"
 - "[Yining Zhu](https://www.yining-zhu.com/)"
 Field name: 
 ---
