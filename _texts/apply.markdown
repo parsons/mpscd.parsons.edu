@@ -7,4 +7,4 @@ admission_text: For more information, please contact our [admissions office](htt
 
 # What would you create?
 
-The application deadline is December 15. To be most competitive for admission and merit scholarship consideration, please apply before the deadline. We will continue to review applications submitted after the deadline pending space availability in the program. The Admission Committee will make a decision on your application only after all the required materials have been received. Spring term admission is not offered for this program.
+The application deadline is January 2. To be most competitive for admission and merit scholarship consideration, please apply before the deadline. We will continue to review applications submitted after the deadline pending space availability in the program. The Admission Committee will make a decision on your application only after all the required materials have been received. Spring term admission is not offered for this program.
