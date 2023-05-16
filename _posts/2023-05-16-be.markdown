@@ -1,0 +1,13 @@
+---
+title: Be.
+date: 2023-05-16 15:07:00 -04:00
+tags:
+- student-work
+- '2023'
+images:
+- file: "/uploads/Be_5%20-%20Han%20Bao.png"
+  creator: 'Han Bao '
+  link: https://hihan.me/
+---
+
+An APP helps people reduce their appearance anxiety and be better. Be confidence. Be attractive. Be yourself. You will see what the real life is for people all around the world on that specific day. You can play with your friends here and create your own memories with weird filters. Everyone has their own pretty characteristics, do not be afraid to show it.
