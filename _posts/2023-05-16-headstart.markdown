@@ -1,8 +1,12 @@
 ---
 title: Headstart
 date: 2023-05-16 15:31:00 -04:00
+tags:
+- student-work
+- '2023'
 images:
-- creator: Vasu Mohan
+- file: "/uploads/Screenshot%202023-05-16%20at%2015.35.03.png"
+  creator: Vasu Mohan
   link: http://vasumohan.com/
 ---
 
