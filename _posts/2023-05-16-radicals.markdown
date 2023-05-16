@@ -1,0 +1,12 @@
+---
+title: Radicals
+date: 2023-05-16 15:35:00 -04:00
+tags:
+- student-work
+- '2023'
+images:
+- creator: Caroline Que
+  link: https://carolineque.com/
+---
+
+Radicals is a UI/UX project which aims to research and solve the problems of 'character amnesia (提笔忘字）.' It is a mobile app that facilitates people to memorize Chinese characters and practice handwriting. Users can effectively improve their handwriting proficiency by completing daily tasks and exploring characters' fresh perspectives with the AR experience.
