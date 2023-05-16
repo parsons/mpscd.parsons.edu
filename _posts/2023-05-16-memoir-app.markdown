@@ -2,7 +2,8 @@
 title: Memoir App
 date: 2023-05-16 15:22:00 -04:00
 images:
-- creator: Ina Siddiqui
+- file: "/uploads/INA-SIDDIQUI_MEMOIR%20-%20Ina%20Siddiqui.jpg"
+  creator: Ina Siddiqui
   link: https://inasiddiqui.com/
 ---
 
