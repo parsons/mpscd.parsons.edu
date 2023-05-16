@@ -1,0 +1,33 @@
+---
+title: '2023'
+date: 2023-05-16 14:08:00 -04:00
+list:
+- "[Azra Adenwala](https://aden.co.in/)"
+- "[Myriam N'Sele]"
+- "[Sushanto Sarkar](https://www.sushantosarkar.com/)"
+- "[Ina Siddiqui](https://inasiddiqui.com/)"
+- "[Han Bao](https://hihan.me/)"
+- "[Vasu Mohan](https://vasumohan.com/)"
+- "[Caroline Que](https://carolineque.com/)"
+- "[Abhishek Kalia](https://abhishekkalia.design/)"
+- "[Osayiuwamen Bobby Omoregbee](https://osayiuwamenomoregbee.squarespace.com/)"
+- "[Amaya Kothari](https://amayakothari.com/)"
+- "[Dhruv Jesrani](http://dhruvjesrani.com/)"
+- "[Shivi Ravisankar](https://shiviravisankar.com/)"
+- "[Sanjana Mohan](https://www.sanjanamohan.com/)"
+- "[Sarah Zhang](http://sarahzhang.me/)"
+- "[Masha Vareva](http://mashavareva.co/)"
+- "[Dayna Brislane](https://daynabrislane.com/)"
+- "[Tanvi Walanj](https://www.tanviwalanj.com/)"
+- "[Keren Mevorach](https://www.kerenmevorach.com/)"
+- "[Chi Pham](https://www.saymycheese.com/)"
+- "[Andre Magracia](https://www.andremagracia.com/)"
+- "[Kinjal Gawaskar](https://www.kinjalgawaskar.com/)"
+- "[Dusha Castro](http://dushacastro.com/)"
+- "[Hamza Iqbal](https://www.hamzaiqbal.com/)"
+- "[Fahila Mansuri](http://fahilamansuri.com/)"
+- "[Giselle Lee](http://gisellelee.com/)"
+- "[Vidushi B Goel](https://vidushibgoel.com/)"
+- 
+---
+
