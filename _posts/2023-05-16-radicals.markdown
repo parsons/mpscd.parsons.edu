@@ -5,7 +5,8 @@ tags:
 - student-work
 - '2023'
 images:
-- creator: Caroline Que
+- file: "/uploads/Untitled-1-01%20-%20Caroline%20Que%20(1).jpg"
+  creator: Caroline Que
   link: https://carolineque.com/
 ---
 
