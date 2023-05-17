@@ -5,7 +5,8 @@ tags:
 - '2023'
 - student-work
 images:
-- creator: Azra Adenwala
+- file: "/uploads/Breathe%20-%20Azra%20Adenwala.jpg"
+  creator: Azra Adenwala
   link: https://aden.co.in/
 ---
 
