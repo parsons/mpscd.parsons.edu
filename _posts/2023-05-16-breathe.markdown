@@ -1,0 +1,12 @@
+---
+title: Breathe
+date: 2023-05-16 20:21:00 -04:00
+tags:
+- '2023'
+- student-work
+images:
+- creator: Azra Adenwala
+  link: https://aden.co.in/
+---
+
+Breathe is a collection of breathing exercises, each targeted to help a specific condition - from anxiety to breathlessness. This website has been coded end-to-end, with a focus on CSS animations. 
