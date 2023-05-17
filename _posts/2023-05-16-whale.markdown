@@ -1,0 +1,13 @@
+---
+title: Whale
+date: 2023-05-16 20:55:00 -04:00
+tags:
+- '2023'
+- student-work
+images:
+- file: "/uploads/whale%20img%20branding%20-%20Qijia%20Qin.jpg"
+  creator: Sandra Qin
+  link: http://sandraqin.com/
+---
+
+"Whale" is an app specifically designed to help people with social anxiety. It customizes its features for user by playing audio content they enjoy, it also provides tasks that shift their focus to the outside world, distracting them during anxiety attacks. By utilizing the Apple product suite, users can effortlessly monitor their heart rate by Apple Watch, enjoy audio through AirPods, and complete tasks through the app or live events on iPhone.
