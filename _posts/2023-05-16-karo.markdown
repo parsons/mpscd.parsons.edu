@@ -1,0 +1,11 @@
+---
+title: Karo
+date: 2023-05-16 20:39:00 -04:00
+tags:
+- '2023'
+- student-work
+images:
+- creator: Kinjal Gawaskar
+  link: https://www.kinjalgawaskar.com/
+---
+
