@@ -1,0 +1,13 @@
+---
+title: Snuggy!
+date: 2023-05-16 20:44:00 -04:00
+tags:
+- '2023'
+- student-work
+images:
+- file: "/uploads/MS2_Fahila_Mansuri%20-%20Fahila%20Mansuri.pdf"
+  creator: Fahila Mansuri
+  link: http://fahilamansuri.com/
+---
+
+Snuggy is an app powered by a smart tag and diapers that help parents monitor and understand their child's digestive health. Its Symptom Tracking feature offers detailed analysis and food recommendations, while the Medication feature tracks schedules and doses. Snuggy helps parents improve their children's health, resulting in a healthier and happier life for their little ones.
