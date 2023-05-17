@@ -1,0 +1,13 @@
+---
+title: Binding
+date: 2023-05-16 20:30:00 -04:00
+tags:
+- '2023'
+- student-work
+images:
+- file: "/uploads/binding%20-%20Chi%20Pham.png"
+  creator: Chi Pham
+  link: https://www.saymycheese.com/
+---
+
+This project is styling 3 articles with a common theme: digital design sustainability. The website begins with a brief introduction to each article, highlighting how they complement each other. The article titles are displayed in a horizontal scroll gallery. Clicking on a title directs you to the corresponding article, presented in a vertical scroll format. The screenshot showcases artwork that interacts with the text using CSS mix blend mode.
