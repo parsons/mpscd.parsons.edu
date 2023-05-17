@@ -1,0 +1,13 @@
+---
+title: Hippo Loo
+date: 2023-05-16 20:53:00 -04:00
+tags:
+- '2023'
+- student-work
+images:
+- file: "/uploads/HippoLoo%20-%20Yisi%20Lu.png"
+  creator: Lucine
+  link: http://lucine0508.com/
+---
+
+HippoLoo is an innovative app project enhancing the restroom experience. With real-time occupancy info, user reviews, and a comprehensive database, users find clean nearby restrooms. It features emergency alerts and wait time monitoring for added safety and efficiency. Join us in revolutionizing restroom navigation.
