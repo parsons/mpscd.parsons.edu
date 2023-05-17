@@ -1,0 +1,13 @@
+---
+title: TakeOFF
+date: 2023-05-16 20:18:00 -04:00
+tags:
+- '2023'
+- student-work
+images:
+- file: "/uploads/Masha_Vareva_Hero_Image%20-%20Masha%20Vareva.png"
+  creator: Masha Vareva
+  link: http://mashavareva.co/
+---
+
+TakeOFF is a credit building app that facilitates credit growth through the utilization of a secure debit card, as well as rent and recurring bill payments, such as utility or subscriptions. Leveraging the power of AI, the product aims at simplifying a behavioral shift for younger borrowers and educates them on their journey to a better credit. 
