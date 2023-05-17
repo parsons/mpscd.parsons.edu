@@ -5,7 +5,8 @@ tags:
 - student-work
 - '2023'
 images:
-- creator: Abhishek Kalia
+- file: "/uploads/Pour%20Cover%20-%20Abhishek%20Kalia.png"
+  creator: Abhishek Kalia
   link: https://abhishekkalia.design
 ---
 
