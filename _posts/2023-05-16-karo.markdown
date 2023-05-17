@@ -5,7 +5,9 @@ tags:
 - '2023'
 - student-work
 images:
-- creator: Kinjal Gawaskar
+- file: "/uploads/Kinjal%20Gawaskar_Karo%20Hero%20Image%20-%20Kinjal%20Gawaskar.png"
+  creator: Kinjal Gawaskar
   link: https://www.kinjalgawaskar.com/
 ---
 
+Karo is an intuitive volunteering & altruism app that enables you to make an impact at your ease & find a community in the process of making a difference. This app has been designed to find volunteering opportunities that align with your interests and schedule & provide a platform to connect with other like-minded individuals who share your passion for altruism. Take a step towards creating a better world & 'Make an Impact. Anytime! Anywhere!'
