@@ -1,0 +1,13 @@
+---
+title: Oh, Canada
+date: 2023-05-16 20:27:00 -04:00
+tags:
+- '2023'
+- student-work
+images:
+- file: "/uploads/kerenmevorach-ohcanada%20-%20Keren%20Mevorach.jpg"
+  creator: Keren Mevorach
+  link: https://www.kerenmevorach.com/
+---
+
+Oh, Canada is a website that helps people learn about Canadian slang, terminology, and culture. Users can check out the Word of the Day page for their daily dose of Canadian slang. They can also visit the Search page to find specific terms, or read through the Glossary of Canadian slang.
