@@ -1,0 +1,15 @@
+---
+title: Doppio
+date: 2023-05-16 20:07:00 -04:00
+tags:
+- student-work
+- '2023'
+images:
+- file: "/uploads/Doppio_Dhruv-Jesrani%20-%20Dhruv%20Jesrani.png"
+  creator: Dhruv Jesrani
+  link: http://dhruvjesrani.com/
+---
+
+Doppio is a platform where users can view, share, and brew coffee recipes with a community of like-minded coffee lovers. 
+
+The app caters to enthusiasts with varying skill levels and brewing devices, creating an inclusive environment where everyone can be inspired to try new ways of brewing and enhancing their daily ritual.
