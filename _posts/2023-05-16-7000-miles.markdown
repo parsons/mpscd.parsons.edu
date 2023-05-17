@@ -1,0 +1,13 @@
+---
+title: 7000 Miles
+date: 2023-05-16 20:25:00 -04:00
+tags:
+- '2023'
+- student-work
+images:
+- file: "/uploads/Branding%20-%20Tanvi%20Walanj.png"
+  creator: Tanvi Walanj
+  link: https://www.tanviwalanj.com/
+---
+
+7000 miles is a virtual dating application for couples in long-distance relationships. It is a new and interactive way to keep in touch with your significant other. The application mimics a room to give a sense of sharing a common space with your partner while engaging in activities to promote healthy competition and create memories.
