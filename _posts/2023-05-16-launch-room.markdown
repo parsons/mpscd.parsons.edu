@@ -5,7 +5,8 @@ tags:
 - '2023'
 - student-work
 images:
-- creator: Andre Magracia
+- file: "/uploads/LaunchRoom-CD%20-%20Andre%20Magracia.png"
+  creator: Andre Magracia
   link: https://www.andremagracia.com/
 ---
 
