@@ -1,0 +1,13 @@
+---
+title: Beo
+date: 2023-05-16 20:24:00 -04:00
+tags:
+- student-work
+- '2023'
+images:
+- file: "/uploads/Frame%204095%20-%20Dayna%20Brislane.png"
+  creator: Dayna Brislane
+  link: https://daynabrislane.com/
+---
+
+Beo aims to preserve the Irish language one word at a time. The app provides users with a daily word that the user can engage with by listening to it and pronouncing it. It includes the background of the word and the user can build up streaks and collect cards by engaging. The idea is to showcase the beauty of the language without putting pressure on the user to learn the whole word. 
