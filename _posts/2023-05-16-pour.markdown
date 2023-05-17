@@ -1,0 +1,12 @@
+---
+title: Pour
+date: 2023-05-16 19:59:00 -04:00
+tags:
+- student-work
+- '2023'
+images:
+- creator: Abhishek Kalia
+  link: https://abhishekkalia.design
+---
+
+Pour is an AI powered journalling app focused on improving the effectiveness of therapy sessions.
