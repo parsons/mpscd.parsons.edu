@@ -6,7 +6,7 @@ tags:
 - '2023'
 images:
 - file: "/uploads/Be_5%20-%20Han%20Bao.png"
-  creator: 'Han Bao '
+  creator: 'Jocelyn Han Bao '
   link: https://hihan.me/
 ---
 
