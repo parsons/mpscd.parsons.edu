@@ -1,0 +1,13 @@
+---
+title: Parwana
+date: 2023-05-16 20:43:00 -04:00
+tags:
+- '2023'
+- student-work
+images:
+- file: "/uploads/HamzaI%20-%20Hamza%20Iqbal.jpg"
+  creator: Hamza Iqbal
+  link: https://www.hamzaiqbal.com/
+---
+
+App-based lifestyle interventions tackling physical, spiritual and nutritional needs of urban Pakistani youth.
