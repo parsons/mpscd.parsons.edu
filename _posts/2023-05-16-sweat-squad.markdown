@@ -5,7 +5,8 @@ tags:
 - student-work
 - '2023'
 images:
-- creator: Amaya Kothari
+- file: "/uploads/heroframe%20-%20Amaya%20Kothari.png"
+  creator: Amaya Kothari
   link: http://amayakothari.com/
 ---
 
