@@ -1,0 +1,13 @@
+---
+title: HoneyBee
+date: 2023-05-16 20:51:00 -04:00
+tags:
+- '2023'
+- student-work
+images:
+- file: "/uploads/Frame%20108%20-%20Madhura%20Sekar.jpg"
+  creator: Madhura Sekar
+  link: https://www.madhurasekar.com/
+---
+
+Your kitchen sidekick, reducing waste with recipe suggestions & expiration tracking
