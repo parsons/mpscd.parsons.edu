@@ -3,7 +3,7 @@ title: '2023'
 date: 2023-05-16 14:08:00 -04:00
 list:
 - "[Azra Adenwala](https://aden.co.in/)"
-- "[Myriam N'Sele]"
+- "[Myriam N'Sele](https://mpscd.parsons.edu/students/)"
 - "[Sushanto Sarkar](https://www.sushantosarkar.com/)"
 - "[Ina Siddiqui](https://inasiddiqui.com/)"
 - "[Han Bao](https://hihan.me/)"
@@ -29,7 +29,7 @@ list:
 - "[Giselle Lee](http://gisellelee.com/)"
 - "[Vidushi B Goel](https://vidushibgoel.com/)"
 - "[Madhura Sekar](https://www.madhurasekar.com/)"
-- "[Lucine](https://lucine0508.com/)"
+- "[Lucine Liu](https://lucine0508.com/)"
 - "[Sandra Qin](http://sandraqin.com/)"
 ---
 
