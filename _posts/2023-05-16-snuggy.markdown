@@ -5,7 +5,7 @@ tags:
 - '2023'
 - student-work
 images:
-- file: "/uploads/MS2_Fahila_Mansuri%20-%20Fahila%20Mansuri.pdf"
+- file: "/uploads/MS2_Fahila_Mansuri---Fahila-Mansuri.jpg"
   creator: Fahila Mansuri
   link: http://fahilamansuri.com/
 ---
