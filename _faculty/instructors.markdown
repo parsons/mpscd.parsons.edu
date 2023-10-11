@@ -10,7 +10,7 @@ list:
 - "[Michael Fehrenbach](https://michaelfehrenbach.com/)"
 - "[Brendan Griffiths](https://brendangriffiths.com)"
 - "[Lynn Kiang](https://www.domecollective.com)"
-- "[Eric Li](https://eric.young.li/)"
+- "[Eric Li](https://eric.young.li)"
 - "[Abby Ricarte](http://abbyricarte.com)"
 - "[Rijk van Zanten](https://rijks.website)"
 ---
