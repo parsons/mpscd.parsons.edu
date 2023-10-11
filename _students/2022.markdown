@@ -21,7 +21,7 @@ list:
 - "[Austin Poon](https://www.austinpoon.com/)"
 - "[Madhu Mithaa Gengatheran](https://madhugengatheran.myportfolio.com/)"
 - "[María Fernanda Quevedo Acuna](https://mafquevedo.com/)"
-- "[Mark Huang](https://www.markhuang.design/)"
+- "[Mark Huang](https://www.markhuang.work/)"
 - "[Maya Lal](https://maya-lals-portfolio-site.webflow.io/)"
 - "[Yuxi Lyu](https://yuxilyu.com/)"
 - "[Tegwen McKenzie](https://tegwen.ca/)"
