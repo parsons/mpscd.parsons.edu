@@ -2,5 +2,29 @@
 title: '2024'
 date: 2024-05-08 12:16:00 -04:00
 position: 6
+list:
+- "[Haoyu Chao](https://www.wennychao.com)"
+- "[Vicky Chen](https://www.grphvics.com/)"
+- "[JC Clark](https://jc-clark.com/)"
+- "[Kritika Dhariwal](https://kritikadhariwal.com/)"
+- "[Kirsten Geiger](https://kirstengeigerdesign.com)"
+- "[Rodrigo Gouveiar](https://www.rodrigogouveia.me)"
+- "[Bhroovi Gupta](https://www.bhroovi.com)"
+- "[Rebecca Hart](https://rebeccahart.nyc)"
+- "[Emily Hsieh](http://www.emilyhs1eh.com)"
+- "[Hana Joo](https://hanajoo.cargo.site)"
+- "[Alexis Kim](https://alexismkkim.com)"
+- "[Lucy Kim](www.lucykim.design)"
+- "[Vera Kim](https://vera.kim)"
+- "[Angelica Kramarski](https://www.angelicakramarski.com)"
+- "[Po Hao Lee](https://www.haotodesign.com/)"
+- "[Shaoran Liang](https://www.shaoranliang.com)"
+- "[Sachi Mavinkurve](https://www.sachimavinkurve.com/)"
+- "[Shaurya Mehta](https://www.nirvaan.work)"
+- "[Cristina Miquel Garrido](www.cristinamiquel.com)"
+- "[Hannah Moran](https://www.hannahmorandesign.com/)"
+- "[Sarah Saroufim](https://www.sarahsaroufim.com)"
+- "[Sabrina Tseng](https://tsengsabrina.com/)"
+- "[Xinyi Zhang](https://www.xinyizhang.work)"
 ---
 
