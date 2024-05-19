@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2024'
 images:
-- file: "/uploads/Kramarski_Angelica2---Angelica-Kramarski.jpg"
+- file: "/uploads/Kramarski_Angelica.png"
   creator: Angelica Kramarski
   link: https://www.angelicakramarski.com
 ---
