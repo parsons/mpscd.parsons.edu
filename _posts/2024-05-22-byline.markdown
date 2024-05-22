@@ -1,0 +1,13 @@
+---
+title: Byline
+date: 2024-05-22 10:31:00 -04:00
+tags:
+- student-work
+- '2024'
+images:
+- file: "/uploads/moran_hannah_1%20-%20Hannah%20Moran.png"
+  creator: Hannah Moran
+  link: https://www.hannahmorandesign.com/
+---
+
+Byline is a news content aggregation app, which allows users to curate a newsfeed based on their interests and preferences. The algorithm pulls content from various sources, across the political spectrum, curating an unbiased feed of content for users to explore, helping them keep informed on issues they care about. Byline allows users to compare what different sources are saying about the same story, informing the user of where they lie on the political spectrum. Users also have the opportunity to voice their opinion, by contributing to the ‘user bias review’. Byline’s primary goal is to ‘share different perspectives’ on important stories, to help fight media bias, and to allow users to form their own perspectives.
