@@ -1,0 +1,13 @@
+---
+title: Hubs
+date: 2024-05-22 10:39:00 -04:00
+tags:
+- student-work
+- '2024'
+images:
+- file: "/uploads/Kim_Alexis%20-%20Alexis%20Kim.png"
+  creator: Alexis Kim
+  link: alexismkkim.com
+---
+
+Hubs is an inspirational discovery platform for creative professionals. Its 'Venn Diagram Search' and 'Mood Board' functionality set it apart from other platforms. The two functions address the challenge of efficient content search and curation in the digital age. 
