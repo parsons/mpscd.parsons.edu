@@ -1,0 +1,13 @@
+---
+title: Whim
+date: 2024-05-22 10:26:00 -04:00
+tags:
+- student-work
+- '2024'
+images:
+- file: "/uploads/Liang_Shaoran_3%20-%20Shaoran%20Liang.png"
+  creator: Shaoran Liang
+  link: http://shaoranliang.com
+---
+
+Whim is a dream sharing platform where users can record dream effortlessly and connect to each other.  It’s enabling exploration, sharing, and fulfillment of your emotional curiosity. Creating a safe space where dreams can be shared publicly or between friends and family.
