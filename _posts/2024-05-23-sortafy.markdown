@@ -1,6 +1,9 @@
 ---
 title: Sortafy
 date: 2024-05-23 10:32:00 -04:00
+tags:
+- student-work
+- '2024'
 images:
 - file: "/uploads/hsieh_emily_2%20-%20Emily%20Hsieh.png"
   creator: Emily Hsieh
