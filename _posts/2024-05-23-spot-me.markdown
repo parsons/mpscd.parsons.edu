@@ -1,0 +1,13 @@
+---
+title: Spot Me
+date: 2024-05-23 10:43:00 -04:00
+tags:
+- student-work
+- '2024'
+images:
+- file: "/uploads/Geiger_Kirsten_1%20-%20Kirsten%20Geiger.png"
+  creator: Kirsten Geiger
+  link: https://kirstengeigerdesign.com/
+---
+
+Spot Me is a fitness training tool that digitally assists weightlifters by utilizing body scanning and visual feedback to correct their form. The app aims to not only prevent injury but also optimize each workout, so that you can keep the focus on lifting at your personal best.
