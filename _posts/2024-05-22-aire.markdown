@@ -1,0 +1,13 @@
+---
+title: AIRE
+date: 2024-05-22 21:24:00 -04:00
+tags:
+- student-work
+- '2024'
+images:
+- file: "/uploads/Chen_Vicky%20-%20Vicky%20Chen.png"
+  creator: Vicky Chen
+  link: https://www.grphvics.com/
+---
+
+AIRE is a smart mirror device that utilizes facial analysis technology that can help detect skin concerns. Once major skin concerns are detected, the smart mirror device will help users generate a skincare routine based on skincare products they already own that can properly address their current problem areas. In a way, AIRE assists with how to accurately layer skincare products to maximize efficiency and results that can help users build confidence through their natural skin. 
