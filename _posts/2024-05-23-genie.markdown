@@ -1,6 +1,9 @@
 ---
 title: Genie
 date: 2024-05-23 10:18:00 -04:00
+tags:
+- student-work
+- '2024'
 images:
 - file: "/uploads/Frame%202%20-%20Po-Hao%20Lee.jpg"
   creator: Po Hao Lee
