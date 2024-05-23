@@ -1,0 +1,10 @@
+---
+title: Genie
+date: 2024-05-23 10:18:00 -04:00
+images:
+- file: "/uploads/Frame%202%20-%20Po-Hao%20Lee.jpg"
+  creator: Po Hao Lee
+  link: https://www.haotodesign.com/
+---
+
+Genie is a goods transaction platform that connects travelers and customers to access desired products globally. As an international student from Taiwan, I often face challenges in finding hometown goods in New York due to various constraints. Therefore, I decided to make "foreign goods" the theme of my project. Through multiple user interviews during the design process, I ultimately focused on 'How might we generate a new community interaction model to ease the pressure of assigning shopping tasks on people?' Through iterations from low-fi to hi-fi prototypes, I optimized the design through several rounds and finally developed this digital product. In Genie, users can submit requests for foreign products they wish to purchase, entrusting them to travelers visiting the respective locations. They can also provide a certain level of reward to the travelers, helping them save on travel expenses.
