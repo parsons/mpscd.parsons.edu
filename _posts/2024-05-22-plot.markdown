@@ -1,0 +1,13 @@
+---
+title: Plot
+date: 2024-05-22 21:21:00 -04:00
+tags:
+- student-work
+- '2024'
+images:
+- file: "/uploads/Mavinkurve_Sachi_3%20-%20Sachi%20Mavinkurve.jpg"
+  creator: Sachi Mavinkurve
+  link: https://www.sachimavinkurve.com/
+---
+
+Plot is an AI powered travel planning app built to eliminate conflict in groups while planning a trip. It accounts for your travel preferences, assigns roles within a group, provides a place to collate research, and make flexible plans using AI. It aims to solve communication based conflicts, the overwhelm from social media recommendations, and overcome the limitations of spreadsheets.
