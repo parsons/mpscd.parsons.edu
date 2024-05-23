@@ -1,0 +1,13 @@
+---
+title: Minimail
+date: 2024-05-23 10:35:00 -04:00
+tags:
+- student-work
+- '2024'
+images:
+- file: "/uploads/Kim_Vera_2%20-%20Vera%20Kim.png"
+  creator: Vera Kim
+  link: https://vera.kim
+---
+
+Minimail is an email summary app that leverages generative AI to transform how users interact with their inboxes. By providing bite-sized, digestible summaries, Minimail ensures that you can quickly identify and understand the key information in each email without sorting through clutter. It smartly categorizes incoming messages into distinct types, offering a tailored user interface for each category. This intuitive design helps streamline your email management, allowing you to focus more on what truly matters. Minimail keeps users organized and efficient, eliminating email overload.
