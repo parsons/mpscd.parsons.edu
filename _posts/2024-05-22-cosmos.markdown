@@ -1,0 +1,18 @@
+---
+title: COSMOS
+date: 2024-05-22 11:03:00 -04:00
+tags:
+- student-work
+- '2024'
+images:
+- file: "/uploads/Kim_Lucy2%20-%20Lucy%20Kim.png"
+  creator: Lucy Kim
+  link: www.lucykim.design
+---
+
+"COSMOS is a speech therapy application designed to assist stroke survivors in honing their speech ability. It employs a personalized video guide with prompts tailored to individual interests, coupled with a voice recognition system for accurate articulation and pronunciation. Addressing the lack of accessible and personalized resources for stroke survivors, COSMOS advocates for equality and the restoration of normalcy in patients' lives.
+
+COSMOS also redefines speech therapy by streamlining progress tracking and emphasizing user experience. Its interface boasts easy-to-navigate text and buttons, ensuring a smooth user journey. Users effortlessly monitor their progress, fostering a sense of achievement and motivation. Moreover, the app introduces a reward system where users earn redeemable points for prizes, enhancing engagement and promoting consistent usage.
+
+Through its blend of accessibility, user-friendly design, and motivational incentives, COSMOS not only enhances communication skills but also instills empowerment and progress, reaffirming belief in individuals' potential to overcome challenges.
+"
