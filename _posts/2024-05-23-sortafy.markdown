@@ -1,0 +1,10 @@
+---
+title: Sortafy
+date: 2024-05-23 10:32:00 -04:00
+images:
+- file: "/uploads/hsieh_emily_2%20-%20Emily%20Hsieh.png"
+  creator: Emily Hsieh
+  link: www.emilyhs1eh.com
+---
+
+"Sortafy" is an advanced digital photo application driven by AI, engineered to streamline the organization of your photo library. With its SmartSort feature, the app intelligently suggests which photos to keep or delete, effectively saving valuable time and storage space on your device. Moreover, AlbumGenius feature facilitates the effortless creation of tailored albums. Say goodbye to cluttered galleries and embrace a more refined and efficient method of managing your cherished memories with Sortafy.
