@@ -1,0 +1,16 @@
+---
+title: Herd
+date: 2024-05-23 10:38:00 -04:00
+tags:
+- student-work
+- '2024'
+images:
+- file: "/uploads/clark_jc_1%20-%20JC%20Clark.png"
+  creator: JC Clark
+  link: https://jc-clark.com/
+---
+
+"Herd represents the communal gathering of pets and their family. The app is designed specifically for pet care management, providing dedicated features and tools tailored to the unique needs of pet owners. The app consists of different “herds” which you create for your pet and family members to share pet related content. 
+
+Group chats in other messaging apps can become cluttered, Herd keeps discussions focused solely on pet-related matters. Users are able to mark tasks as complete and share real-time updates on their pet's well-being, providing instant visibility to all the herd without the need to sift through unrelated conversations. In addition, Herd also provides visibility into who is actively caring for their pet at any given time, offering reassurance and clarity on the current carers availability. 
+"
