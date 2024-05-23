@@ -1,0 +1,17 @@
+---
+title: Flex
+date: 2024-05-23 10:22:00 -04:00
+tags:
+- student-work
+- '2024'
+images:
+- file: "/uploads/Hart_Rebecca%20-%20Rebecca%20Hart.png"
+  creator: Rebecca Hart
+  link: https://rebeccahart.nyc
+---
+
+"Flex is a physical therapy app designed to empower patients in their rehabilitation journey.This app fosters direct communication and engagement between patients and healthcare providers, offering real-time feedback, transparent communication, and personalized exercise plans for use between clinical appointments.
+
+As a designer with a clinical research background and a passion for design in healthcare, I developed Flex to address a critical need in patient care. The app serves as a comprehensive tracking & communication tool, supporting patients in adhering to their treatment plans and facilitating collaboration with their healthcare team.
+
+Flex aims to instill a sense of ownership and motivation in patients, ensuring they feel empowered and supported during recovery. This project not only benefits patients but also enhances the workflow and effectiveness of medical providers by offering a clear and cohesive approach to patient management."
