@@ -1,0 +1,13 @@
+---
+title: Rooted
+date: 2024-05-22 21:19:00 -04:00
+tags:
+- student-work
+- '2024'
+images:
+- file: "/uploads/Gouveia_Rodrigo01%20-%20Rodrigo%20Albuquerque%20Gouveia.png"
+  creator: Rodrigo Gouveia
+  link: https://www.rodrigogouveia.me/
+---
+
+Rooted is an app that aims to strengthen the bonds between people. It takes into consideration that in our busy digital lives, we are sometimes distracted from those who truly matter to us. It invites people to grow a digital plant together by seamlessly integrating small actions such as watering the plant or giving it sunlight into people’s normal online workflow: texting, sending voice notes, videos, and more. Join Rooted, nurture the connections that matter to you, and see them flourish.
