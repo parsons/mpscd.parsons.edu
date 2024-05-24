@@ -26,7 +26,7 @@ list:
 - "[Sarah Saroufim](https://www.sarahsaroufim.com)"
 - "[Sabrina Tseng](https://tsengsabrina.com/)"
 - "[Xinyi Zhang](https://www.xinyizhang.work)"
-- "[Dhruvil Shah]"
-- "[Zil Shah] {https://zilshah.work/)"
+- Dhruvil Shah
+- "[Zil Shah](https://zilshah.work/)"
 ---
 
