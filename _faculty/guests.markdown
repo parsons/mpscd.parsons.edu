@@ -27,7 +27,6 @@ list:
 - Chris Pross
 - Julika Rudelius
 - Andrew Rutledge
-- Laurel Schwulst
 - Jeffrey Alan Scudder
 - Justin Ternullo
 - Keith Venkiteswaran
