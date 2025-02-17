@@ -19,7 +19,6 @@ list:
 - Alex Limpaecher
 - LaiYee Lori
 - Molly Lafferty
-- Andrew LeClair
 - Yenwei Liu
 - Igal Nassima
 - Eric Nylund
