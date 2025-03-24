@@ -12,6 +12,6 @@ list:
 - "[Andrew LeClair](https://andrewleclair.com)"
 - "[Jonathan Lee](https://www.linkedin.com/in/hifromjonathan/)"
 - "[Eric Li](https://eric.young.li)"
-- "[Rijk van Zanten](https://rijks.website)"
+- "[Rijk van Zanten](https://rijk.nyc)"
 ---
 
