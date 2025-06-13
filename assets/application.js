@@ -327,7 +327,7 @@ $('.page-filter').on('click', function(e) {
   $explore.isotope({ filter: '' });
   filters = {}
   $(this).find('span').empty();
-  $(find).find('span#title-categories').text('Everything');
+  $('span#title-categories').text('Everything');
 });
 
 $(".page-filter").mouseenter(function(){
