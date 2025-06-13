@@ -4,11 +4,9 @@ Production URL: https://mpscd.parsons.edu
 
 ## Developing (circa June 2025)
 
-This project uses Jekyll `3.9.5` and the latest compatible plugin versions.
+This project uses Jekyll `4.2.x` and Ruby `3.1.x`. We’re now limited here by older SASS versions/conventions, before the switch to [Dart](https://sass-lang.com/dart-sass/).
 
-### Setup on a modern Mac
-
-Assuming you have [Homebrew](https://brew.sh) installed:
+On a Mac, and assuming you have [Homebrew](https://brew.sh) installed:
 
 ```sh
 # Install rbenv and Ruby build tools
@@ -16,13 +14,12 @@ brew install rbenv ruby-build
 rbenv init
 exec $SHELL
 
-# Install Ruby 2.7.8
-rbenv install 2.7.8
-rbenv global 2.7.8
+# Install an older Ruby
+rbenv install 3.1.4
 
 # Install Bundler and dependencies
-gem install bundler:2.4.22
-bundle _2.4.22_ install
+gem install bundler
+bundle install
 ```
 
 ### Running the site
