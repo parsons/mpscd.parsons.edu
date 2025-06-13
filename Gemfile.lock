@@ -128,7 +128,6 @@ DEPENDENCIES
   kramdown-parser-gfm
   minima (~> 2.5.2)
   sprockets (~> 3.7)
-  tzinfo-data
 
 BUNDLED WITH
-   2.0.1
+   2.4.22

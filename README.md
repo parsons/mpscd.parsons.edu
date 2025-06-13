@@ -21,8 +21,8 @@ rbenv install 2.7.8
 rbenv global 2.7.8
 
 # Install Bundler and dependencies
-gem install bundler:2.0.1
-bundle _2.0.1_ install
+gem install bundler:2.4.22
+bundle _2.4.22_ install
 ```
 
 ### Running the site
