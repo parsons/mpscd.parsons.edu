@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+# Jekyll 3.9.x is required for `jekyll-assets`
 gem "jekyll", "~> 3.9.5"
 gem "minima", "~> 2.5.2"
 gem "kramdown-parser-gfm"
