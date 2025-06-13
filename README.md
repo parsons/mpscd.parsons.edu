@@ -4,7 +4,7 @@ Production URL: https://mpscd.parsons.edu
 
 ## Developing (circa June 2025)
 
-This project uses Jekyll `3.9.5` and the latest compatible plugin versions, limited by the `jekyll-assets` pipeline.
+This project uses Jekyll `3.9.5` and the latest compatible plugin versions.
 
 ### Setup on a modern Mac
 
