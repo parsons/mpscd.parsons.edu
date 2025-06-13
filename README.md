@@ -3,13 +3,30 @@
 Production URL: https://mpscd.parsons.edu
 
 ## Developing
-1. Install the [Jekyll gem] with `gem install jekyll bundler`
-3. Navigate to root directory
-4. Run `bundle install`
-4. Run `bundle exec jekyll serve`
-5. Compiles to `/_site`
-6. Opens at 'http://localhost:4000'
-7. Work on `develop` branch and merge into `master` when you want to deploy (see below)
+
+> [!WARNING]
+> To get this running on a modern Mac (assuming Homebrew is installed):
+>
+> ```sh
+> # Install rbenv and Ruby build tools
+> brew install rbenv ruby-build
+> rbenv init
+> exec $SHELL
+>
+> # Install the older Ruby
+> rbenv install 2.7.8
+>
+> # Install Bundler and dependencies
+> gem install bundler:2.0.1
+> bundle _2.0.1_ install
+> ```
+>
+> Then you should be able to pick up as before:
+
+1. Run `bundle exec jekyll serve`
+1. Compiles to `/_site`
+1. Opens at 'http://localhost:4000'
+1. Work on `develop` branch and merge into `master` when you want to deploy (see below)
 
 Jekyll will compile your SCSS and changes to `application.js`. If you need to combine `.js` files, you can use Codekit to compile them.
 
