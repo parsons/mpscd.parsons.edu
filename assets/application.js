@@ -450,10 +450,15 @@ function getESTOffset() {
 function showRemaining() {
     var now = new Date();
     var distance = end - now - getESTOffset() * _hour;
+    var timerElem = document.getElementById('timer');
+    if (!timerElem) {
+        // Timer element not found, do nothing
+        return;
+    }
     if (distance < 0) {
 
         clearInterval(timer);
-        document.getElementById('timer').innerHTML = '0d 0h 0m 0s!';
+        timerElem.innerHTML = '0d 0h 0m 0s!';
 
             $('.countdown-timer').addClass('countdown-hidden');
             $('.countdown-hero').removeClass('countdown-hidden').addClass('countdown-visible');
@@ -493,10 +498,10 @@ function showRemaining() {
     var minutes = Math.floor((distance % _hour) / _minute);
     var seconds = Math.floor((distance % _minute) / _second);
 
-    document.getElementById('timer').innerHTML = days + 'd ';
-    document.getElementById('timer').innerHTML += hours + 'h ';
-    document.getElementById('timer').innerHTML += minutes + 'm ';
-    document.getElementById('timer').innerHTML += seconds + 's';
+    timerElem.innerHTML = days + 'd ';
+    timerElem.innerHTML += hours + 'h ';
+    timerElem.innerHTML += minutes + 'm ';
+    timerElem.innerHTML += seconds + 's';
 }
 
 timer = setInterval(showRemaining, 1000);
