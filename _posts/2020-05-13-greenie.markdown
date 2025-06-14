@@ -7,6 +7,5 @@ tags:
 images:
 - file: "/uploads/sli02.png"
   creator: Sharrie Li
-layout: post
 ---
 

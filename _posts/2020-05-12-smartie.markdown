@@ -8,6 +8,5 @@ images:
 - file: "/uploads/jyao01.png"
   creator: Jessie Yao
   link: https://www.jessieyao.com/
-layout: post
 ---
 

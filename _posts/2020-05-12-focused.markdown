@@ -8,6 +8,5 @@ images:
 - file: "/uploads/rfan02.png"
   creator: Ryan Fan
   link: http://ryanfandesign.com/
-layout: post
 ---
 

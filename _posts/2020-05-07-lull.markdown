@@ -9,6 +9,5 @@ images:
   creator: Rajlaxmi Jain
   link: https://www.rajlaxmijain.com/
 type: image
-layout: post
 ---
 

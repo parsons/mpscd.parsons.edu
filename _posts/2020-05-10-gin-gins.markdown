@@ -8,6 +8,5 @@ images:
 - file: "/uploads/osanchi01.png"
   creator: Sanchi Oberoi
   link: https://sanchioberoi.com/
-layout: post
 ---
 

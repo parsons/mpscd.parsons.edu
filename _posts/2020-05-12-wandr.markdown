@@ -9,6 +9,5 @@ images:
 - file: "/uploads/cpeng02.png"
   creator: Cleo Peng
   link: https://cleopeng.com/
-layout: post
 ---
 

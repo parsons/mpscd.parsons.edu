@@ -8,6 +8,5 @@ images:
 - file: "/uploads/yha02.png"
   creator: Yuri Ha
   link: https://yuriha.me/
-layout: post
 ---
 

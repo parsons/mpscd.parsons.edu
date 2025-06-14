@@ -7,6 +7,5 @@ tags:
 type: image
 images:
 - file: "/uploads/class01.jpg"
-layout: post
 ---
 
