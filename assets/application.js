@@ -1,5 +1,6 @@
 ---
 title: js
+layout: none
 ---
 
 !function($) {
