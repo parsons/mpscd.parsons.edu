@@ -65,7 +65,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.10)
   kramdown-parser-gfm
-  webrick (~> 1.7)
 
 RUBY VERSION
    ruby 3.1.4p223
