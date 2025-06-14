@@ -4,7 +4,7 @@ Production URL: https://mpscd.parsons.edu
 
 ## Developing (circa June 2025)
 
-This project uses Jekyll `4.2.x` and Ruby `3.1.x`. We’re now limited here by older SASS versions/conventions, before the switch to [Dart](https://sass-lang.com/dart-sass/).
+This project uses Jekyll `3.10.0` (and Ruby `3.1.4`). We’re limited here by older [Ruby SASS](https://sass-lang.com/blog/ruby-sass-is-unsupported/) versions/conventions, which break on upgrading past `>4.0`.
 
 On a Mac, and assuming you have [Homebrew](https://brew.sh) installed:
 
