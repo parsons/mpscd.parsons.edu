@@ -85,7 +85,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (= 3.10.0)
+  jekyll (~> 3.10)
   jekyll-feed (~> 0.17)
   jekyll-minifier (~> 0.1.10)
   kramdown-parser-gfm
