@@ -5,24 +5,10 @@
 // Utilities
 @import "mixins/breakpoints";
 @import "mixins/hover";
-@import "mixins/image";
-@import "mixins/screen-reader";
-@import "mixins/text-emphasis";
-@import "mixins/text-hide";
-@import "mixins/text-truncate";
-@import "mixins/visibility";
 
 // // Components
-@import "mixins/caret";
 @import "mixins/lists";
 
-// // Skins
-@import "mixins/border-radius";
-@import "mixins/box-shadow";
-@import "mixins/gradients";
-
 // // Layout
-@import "mixins/clearfix";
 @import "mixins/grid-framework";
 @import "mixins/grid";
-@import "mixins/float";
