@@ -4,7 +4,7 @@ Production URL: https://mpscd.parsons.edu
 
 ## Developing (circa June 2025)
 
-This project uses Jekyll `3.10.0` (and Ruby `2.7.0`). We’re limited here by older [Ruby SASS](https://sass-lang.com/blog/ruby-sass-is-unsupported/) versions/conventions, which break the styles when upgrading to Jekyll `4.x`. This also limits us to an era-appropriate [`jekyll_picture_tag`](https://github.com/rbuchberger/jekyll_picture_tag/releases/tag/v1.14.0).
+This project uses Jekyll `3.10.0` (and Ruby `2.7.0`). We’re limited here by older [Ruby SASS](https://sass-lang.com/blog/ruby-sass-is-unsupported/) versions/conventions, which break the styles when upgrading to Jekyll `4.x`. This also limits us to an era-appropriate [`jekyll_picture_tag`](https://github.com/rbuchberger/jekyll_picture_tag/issues/192).
 
 On a Mac, and assuming you have [Homebrew](https://brew.sh) installed:
 
