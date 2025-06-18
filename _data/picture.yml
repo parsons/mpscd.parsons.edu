@@ -1,6 +1,0 @@
-markup_presets:
-  explore:
-    widths: [1000]
-    formats: [webp]
-    fallback_width: 2000
-    fallback_format: webp
