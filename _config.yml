@@ -71,3 +71,8 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+plugins:
+  - jekyll_picture_tag
+picture:
+  ignore_missing_images: true
+  source: '_uploads'
