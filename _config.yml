@@ -17,9 +17,6 @@ collections:
   students:
     title: Students
     output: true
-  uploads:
-    title: Uploads
-    output: true
 defaults:
 - scope:
     path: ''
@@ -71,3 +68,6 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+# Prevent Jekyll from overwriting `convert_to_webp.rb` plugin output
+keep_files:
+  - uploads
