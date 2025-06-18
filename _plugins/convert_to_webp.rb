@@ -2,38 +2,54 @@
 
 module Jekyll
 	class ConvertToWebp < Generator
+		@@dimensions = {}
+
 		def generate(site)
+			require 'shellwords'
+
 			uploads_source = File.join(site.source, '_uploads')
 			uploads_destination = File.join(site.dest, 'uploads')
+			dimensions = {}
+
 			FileUtils.mkdir_p(uploads_destination)
 
 			Dir.glob(File.join(uploads_source, '*.{gif,jpg,jpeg,png}')).each do |img|
 				webp = File.join(uploads_destination, "#{Jekyll::Utils.slugify(File.basename(img, '.*'))}.webp")
 
+				width, height = `identify -format "%w %h" #{Shellwords.escape(img)}[0]`.strip.split.map(&:to_i)
+				dimensions[File.basename(img)] = { 'width' => width, 'height' => height }
+
 				next Jekyll.logger.info("Skipped", "#{webp}, already exists") if File.exist?(webp)
 
 				if File.extname(img) == ".gif"
-					system("magick", img, "-coalesce", "-resize", "1000x1000>", "-quality", "50", "-define", "webp:lossless=false", webp)
+					system("magick", img, "-coalesce", "-resize", "2000x2000>", "-quality", "50", "-define", "webp:lossless=false", webp)
 				else
 					system("magick", img, "-resize", "2000x2000>", "-quality", "66", "-define", "webp:lossless=false", webp)
 				end
 
 				Jekyll.logger.info "Converted", "#{img} → #{webp}"
 			end
+
+			@@dimensions = dimensions
 		end
 	end
 
-	module WebpPathFilter
-		def webp_path(input)
+	module WebpData
+		def getWebpData(input)
 			require 'cgi'
 
-			decoded = CGI.unescape(input)
-			filename = File.basename(decoded, File.extname(decoded))
-			slug = Jekyll::Utils.slugify(filename)
+			filename = File.basename(CGI.unescape(input))
 
-			"/uploads/#{slug}.webp"
+			path = "/uploads/#{Jekyll::Utils.slugify(File.basename(filename, '.*'))}.webp"
+			dims = Jekyll::ConvertToWebp.class_variable_get(:@@dimensions)[filename]
+
+			if dims
+				"data-src=\"#{path}\" width=\"#{dims['width']}\" height=\"#{dims['height']}\""
+			else
+				"data-src=\"#{path}\""
+			end
 		end
 	end
 end
 
-Liquid::Template.register_filter(Jekyll::WebpPathFilter)
+Liquid::Template.register_filter(Jekyll::WebpData)
