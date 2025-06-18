@@ -1,33 +1,35 @@
 # Quick Jekyll plugin: convert uploaded images to `.webp`, max `2000px`, with ImageMagick
 
 module Jekyll
+	UPLOADS_DESTINATION = 'uploads'.freeze
+	UPLOADS_SOURCE = '_uploads'.freeze
+
 	class ConvertToWebp < Generator
 		@@dimensions = {}
 
 		def generate(site)
 			require 'shellwords'
 
-			uploads_source = File.join(site.source, '_uploads')
-			uploads_destination = File.join(site.dest, 'uploads')
 			dimensions = {}
 
-			FileUtils.mkdir_p(uploads_destination)
+			FileUtils.mkdir_p(File.join(site.dest, UPLOADS_DESTINATION))
 
-			Dir.glob(File.join(uploads_source, '*.{gif,jpg,jpeg,png}')).each do |img|
-				webp = File.join(uploads_destination, "#{Jekyll::Utils.slugify(File.basename(img, '.*'))}.webp")
+			Dir.glob(File.join(site.source, UPLOADS_SOURCE, "*.{gif,jpeg,jpg,png}")).each do |img|
+				webp = File.join(site.dest, UPLOADS_DESTINATION, "#{Jekyll::Utils.slugify(File.basename(img, '.*'))}.webp")
 
 				width, height = `identify -format "%w %h" #{Shellwords.escape(img)}[0]`.strip.split.map(&:to_i)
 				dimensions[File.basename(img)] = { 'width' => width, 'height' => height }
 
-				next Jekyll.logger.info("Skipped", "#{webp}, already exists") if File.exist?(webp)
-
 				if File.extname(img) == ".gif"
-					FileUtils.cp(img, File.join(uploads_destination, File.basename(img)))
+					FileUtils.cp(img, File.join(site.dest, UPLOADS_DESTINATION, File.basename(img)))
+					Jekyll.logger.info "Moved", "#{File.basename(img)}, animated GIF"
+				elsif File.exist?(webp)
+					Jekyll.logger.info("Skipped", "#{File.basename(webp)}, already exists")
+					next
 				else
 					system("magick", img, "-resize", "2000x2000>", "-quality", "90", "-define", "webp:lossless=false", webp)
+					Jekyll.logger.info "Converted", "#{File.basename(webp)}"
 				end
-
-				Jekyll.logger.info "Converted", "#{img} → #{webp}"
 			end
 
 			@@dimensions = dimensions
@@ -39,17 +41,16 @@ module Jekyll
 			require 'cgi'
 
 			filename = File.basename(CGI.unescape(input))
+			dimensions = Jekyll::ConvertToWebp.class_variable_get(:@@dimensions)[filename]
 
 			if File.extname(filename) == ".gif"
-				path = "/uploads/#{filename}"
+				path = File.join(Jekyll::UPLOADS_DESTINATION, filename)
 			else
-				path = "/uploads/#{Jekyll::Utils.slugify(File.basename(filename, '.*'))}.webp"
+				path = File.join(Jekyll::UPLOADS_DESTINATION, "#{Jekyll::Utils.slugify(File.basename(filename, '.*'))}.webp")
 			end
 
-			dims = Jekyll::ConvertToWebp.class_variable_get(:@@dimensions)[filename]
-
-			if dims
-				"data-src=\"#{path}\" width=\"#{dims['width']}\" height=\"#{dims['height']}\""
+			if dimensions
+				"data-src=\"#{path}\" width=\"#{dimensions['width']}\" height=\"#{dimensions['height']}\""
 			else
 				"data-src=\"#{path}\""
 			end
