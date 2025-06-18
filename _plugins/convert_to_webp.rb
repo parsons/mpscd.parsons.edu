@@ -22,9 +22,9 @@ module Jekyll
 				next Jekyll.logger.info("Skipped", "#{webp}, already exists") if File.exist?(webp)
 
 				if File.extname(img) == ".gif"
-					system("magick", img, "-coalesce", "-resize", "2000x2000>", "-quality", "50", "-define", "webp:lossless=false", webp)
+					FileUtils.cp(img, File.join(uploads_destination, File.basename(img)))
 				else
-					system("magick", img, "-resize", "2000x2000>", "-quality", "66", "-define", "webp:lossless=false", webp)
+					system("magick", img, "-resize", "2000x2000>", "-quality", "90", "-define", "webp:lossless=false", webp)
 				end
 
 				Jekyll.logger.info "Converted", "#{img} → #{webp}"
@@ -40,7 +40,12 @@ module Jekyll
 
 			filename = File.basename(CGI.unescape(input))
 
-			path = "/uploads/#{Jekyll::Utils.slugify(File.basename(filename, '.*'))}.webp"
+			if File.extname(filename) == ".gif"
+				path = "/uploads/#{filename}"
+			else
+				path = "/uploads/#{Jekyll::Utils.slugify(File.basename(filename, '.*'))}.webp"
+			end
+
 			dims = Jekyll::ConvertToWebp.class_variable_get(:@@dimensions)[filename]
 
 			if dims
