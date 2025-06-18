@@ -4,6 +4,10 @@ module Jekyll
 	UPLOADS_DESTINATION = 'uploads'.freeze
 	UPLOADS_SOURCE = '_uploads'.freeze
 
+	def self.webp_slug(basename)
+		"#{Jekyll::Utils.slugify(File.basename(basename, '.*'))}.webp"
+	end
+
 	class ConvertToWebp < Generator
 		@@dimensions = {}
 
@@ -15,7 +19,7 @@ module Jekyll
 			FileUtils.mkdir_p(File.join(site.dest, UPLOADS_DESTINATION))
 
 			Dir.glob(File.join(site.source, UPLOADS_SOURCE, "*.{gif,jpeg,jpg,png}")).each do |img|
-				webp = File.join(site.dest, UPLOADS_DESTINATION, "#{Jekyll::Utils.slugify(File.basename(img, '.*'))}.webp")
+				webp = File.join(site.dest, UPLOADS_DESTINATION, Jekyll.webp_slug(img))
 
 				width, height = `identify -format "%w %h" #{Shellwords.escape(img)}[0]`.strip.split.map(&:to_i)
 				dimensions[File.basename(img)] = { 'width' => width, 'height' => height }
@@ -46,7 +50,7 @@ module Jekyll
 			if File.extname(filename) == ".gif"
 				path = File.join(Jekyll::UPLOADS_DESTINATION, filename)
 			else
-				path = File.join(Jekyll::UPLOADS_DESTINATION, "#{Jekyll::Utils.slugify(File.basename(filename, '.*'))}.webp")
+				path = File.join(Jekyll::UPLOADS_DESTINATION, Jekyll.webp_slug(filename))
 			end
 
 			if dimensions
