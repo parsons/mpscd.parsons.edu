@@ -22,4 +22,18 @@ module Jekyll
 			end
 		end
 	end
+
+	module WebpPathFilter
+		def webp_path(input)
+			require 'cgi'
+
+			decoded = CGI.unescape(input)
+			filename = File.basename(decoded, File.extname(decoded))
+			slug = Jekyll::Utils.slugify(filename)
+
+			"/uploads/#{slug}.webp"
+		end
+	end
 end
+
+Liquid::Template.register_filter(Jekyll::WebpPathFilter)
