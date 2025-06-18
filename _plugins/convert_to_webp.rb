@@ -13,9 +13,9 @@ module Jekyll
 				next Jekyll.logger.info("Skipped", "#{webp}, already exists") if File.exist?(webp)
 
 				if File.extname(img) == ".gif"
-					system("magick", img, "-coalesce", "-resize", "2000x2000>", "-quality", "85", "-define", "webp:lossless=false", webp)
+					system("magick", img, "-coalesce", "-resize", "1000x1000>", "-quality", "50", "-define", "webp:lossless=false", webp)
 				else
-					system("magick", img, "-resize", "2000x2000>", "-quality", "85", "-define", "webp:lossless=false", webp)
+					system("magick", img, "-resize", "2000x2000>", "-quality", "66", "-define", "webp:lossless=false", webp)
 				end
 
 				Jekyll.logger.info "Converted", "#{img} → #{webp}"
