@@ -7,7 +7,7 @@ module Jekyll
 			uploads_destination = File.join(site.dest, 'uploads')
 			FileUtils.mkdir_p(uploads_destination)
 
-			Dir.glob(File.join(uploads_source, '*.{gif,jpg,png}')).each do |img|
+			Dir.glob(File.join(uploads_source, '*.{gif,jpg,jpeg,png}')).each do |img|
 				webp = File.join(uploads_destination, "#{Jekyll::Utils.slugify(File.basename(img, '.*'))}.webp")
 
 				next Jekyll.logger.info("Skipped", "#{webp}, already exists") if File.exist?(webp)
