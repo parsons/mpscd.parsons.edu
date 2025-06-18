@@ -9,6 +9,9 @@ This project uses Jekyll `3.10.0` (and Ruby `3.1.4`). We’re limited here by ol
 On a Mac, and assuming you have [Homebrew](https://brew.sh) installed:
 
 ```sh
+# For processing the images down
+brew install imagemagick
+
 # Install rbenv and Ruby build tools
 brew install rbenv ruby-build
 rbenv init
