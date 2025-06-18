@@ -2,29 +2,23 @@
 
 module Jekyll
 	class ConvertToWebp < Generator
-		safe true
-		priority :low
-
 		def generate(site)
-			src_dir = File.join(site.source, '_uploads')
-			dest_dir = File.join(site.dest, 'uploads')
-			FileUtils.mkdir_p(dest_dir)
+			uploads_source = File.join(site.source, '_uploads')
+			uploads_destination = File.join(site.dest, 'uploads')
+			FileUtils.mkdir_p(uploads_destination)
 
-			Dir.glob(File.join(src_dir, '*.{jpg,jpeg,png,gif,JPG,JPEG,PNG,GIF}')).each do |img|
-				filename = File.basename(img)
-				name = File.basename(img, '.*')
-				ext = File.extname(img).downcase
-				dest = File.join(dest_dir, "#{name}.webp")
+			Dir.glob(File.join(uploads_source, '*.{gif,jpg,png}')).each do |img|
+				webp = File.join(uploads_destination, "#{File.basename(img, '.*')}.webp")
 
-				if File.exist?(dest)
-					Jekyll.logger.info "Skipped", "#{dest}, already exists"
-					next
-				if ext == '.gif'
-					system("magick", img, "-coalesce", "-resize", "2000x2000>", "-quality", "85", "-define", "webp:lossless=false", dest)
+				next Jekyll.logger.info("Skipped", "#{webp}, already exists") if File.exist?(webp)
+
+				if File.extname(img) == ".gif"
+					system("magick", img, "-coalesce", "-resize", "2000x2000>", "-quality", "85", "-define", "webp:lossless=false", webp)
 				else
-					system("magick", img, "-resize", "2000x2000>", "-quality", "85", "-define", "webp:lossless=false", dest)
+					system("magick", img, "-resize", "2000x2000>", "-quality", "85", "-define", "webp:lossless=false", webp)
 				end
-				Jekyll.logger.info "Converted", "#{img} → #{dest}"
+
+				Jekyll.logger.info "Converted", "#{img} → #{webp}"
 			end
 		end
 	end
