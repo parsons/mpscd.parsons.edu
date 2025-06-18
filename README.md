@@ -4,7 +4,7 @@ Production URL: https://mpscd.parsons.edu
 
 ## Developing (circa June 2025)
 
-This project uses Jekyll `3.10.0` (and Ruby `2.7.0`). We’re limited here by older [Ruby SASS](https://sass-lang.com/blog/ruby-sass-is-unsupported/) versions/conventions, which break the styles when upgrading to Jekyll `4.x`. This also limits us to an era-appropriate [`jekyll_picture_tag`](https://github.com/rbuchberger/jekyll_picture_tag/issues/192).
+This project uses Jekyll `3.10.0` (and Ruby `3.1.4`). We’re limited here by older [Ruby SASS](https://sass-lang.com/blog/ruby-sass-is-unsupported/) versions/conventions, which break on upgrading past `>4.0`.
 
 On a Mac, and assuming you have [Homebrew](https://brew.sh) installed:
 
@@ -15,11 +15,11 @@ rbenv init
 exec $SHELL
 
 # Install an older Ruby
-rbenv install 2.7.8
+rbenv install 3.1.4
 
-# Install an older Bundler and dependencies
-gem install bundler -v 2.4.22
-bundle _2.4.22_ install
+# Install Bundler and dependencies
+gem install bundler
+bundle install
 ```
 
 ### Running the site
