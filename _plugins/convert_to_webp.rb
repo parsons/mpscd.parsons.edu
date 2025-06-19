@@ -48,6 +48,8 @@ module Jekyll
 			else
 				# Otherwise ImageMagick gives us a new asset.
 				cmd = "magick #{Shellwords.escape(filename)} -resize '2000x2000>' -quality 90 -define webp:lossless=false #{Shellwords.escape(webp_file)}"
+				Jekyll.logger.info 'Command', cmd
+				output = `#{cmd} 2>&1`
 
 				# Debug: check if input file exists
 				unless File.exist?(filename)
@@ -56,10 +58,6 @@ module Jekyll
 				# Debug: check magick command path
 				magick_check = `which magick 2>&1`
 				Jekyll.logger.info 'Magick path', magick_check.strip
-
-				# Debug: print the command string
-				cmd = "magick #{Shellwords.escape(filename)} -resize 2000x2000> -quality 90 -define webp:lossless=false #{Shellwords.escape(webp_file)}"
-				Jekyll.logger.info 'Command', cmd
 
 				# Debug: check WebP support in ImageMagick
 				webp_support = `magick -list format | grep -i webp 2>&1`
