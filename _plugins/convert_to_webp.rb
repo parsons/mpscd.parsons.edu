@@ -6,8 +6,8 @@ module Jekyll
 	# Store image dimensions for the filter.
 	IMAGE_DIMENSIONS = {}
 
-	def self.webp_slug(basename)
-		"#{Jekyll::Utils.slugify(File.basename(basename, '.*'))}.webp"
+	def self.slug_ext(filename, ext)
+		"#{Jekyll::Utils.slugify(File.basename(filename, '.*'))}.#{ext}"
 	end
 
 	class ConvertToWebp < Generator
@@ -17,7 +17,7 @@ module Jekyll
 			FileUtils.mkdir_p(File.join(site.dest, UPLOADS_DESTINATION))
 
 			Dir.glob(File.join(site.source, UPLOADS_SOURCE, "*.{gif,jpeg,jpg,png}")).each do |img|
-				webp = File.join(site.dest, UPLOADS_DESTINATION, Jekyll.webp_slug(img))
+				webp = File.join(site.dest, UPLOADS_DESTINATION, Jekyll.slug_ext(img, 'webp'))
 
 				# Get dimensions from the files as we go through.
 				width, height = `identify -format "%w %h" #{Shellwords.escape(img)}[0]`.strip.split.map(&:to_i)
@@ -25,7 +25,7 @@ module Jekyll
 
 				if File.extname(img) == ".gif"
 					# Recompressing GIFs loses timing; just pass those on through.
-					FileUtils.cp(img, File.join(site.dest, UPLOADS_DESTINATION, File.basename(img)))
+					FileUtils.cp(img, File.join(site.dest, UPLOADS_DESTINATION, Jekyll.slug_ext(img, 'gif')))
 					Jekyll.logger.info "Moved", "#{File.basename(img)}, animated GIF"
 					# Speed up local builds.
 				elsif File.exist?(webp)
@@ -47,7 +47,7 @@ module Jekyll
 			filename = File.basename(CGI.unescape(input))
 			dimensions = Jekyll::IMAGE_DIMENSIONS[filename]
 
-			src_path = File.join(Jekyll::UPLOADS_DESTINATION, File.extname(filename) == ".gif" ? filename : Jekyll.webp_slug(filename))
+			src_path = File.join(Jekyll::UPLOADS_DESTINATION, Jekyll.slug_ext(filename, File.extname(filename) == ".gif" ? 'gif' : 'webp'))
 			dimension_attr = dimensions ? " width=\"#{dimensions['width']}\" height=\"#{dimensions['height']}\"" : ""
 
 			# Return the attributes to the template.
