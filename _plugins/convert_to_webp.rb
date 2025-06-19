@@ -46,18 +46,9 @@ module Jekyll
 				Jekyll.logger.info 'Skipped', "#{File.basename(webp_file)}, already exists"
 				next
 			else
-				# Debug: Log the command and output path
-				Jekyll.logger.info 'Debug', "Running: magick #{filename} -resize 2000x2000> -quality 90 -define webp:lossless=false #{webp_file}"
-
-				result = system('magick', filename, '-resize', '2000x2000>', '-quality', '90', '-define', 'webp:lossless=false', webp_file)
-
-				Jekyll.logger.info 'Debug', "magick result: \\#{result}, output exists: \\#{File.exist?(webp_file)}"
-
-				if result && File.exist?(webp_file)
-					Jekyll.logger.info 'Converted', "#{File.basename(webp_file)}"
-				else
-					Jekyll.logger.error 'WebP conversion failed', "#{File.basename(filename)}"
-				end
+				# Otherwise ImageMagick gives us a new asset.
+				system('magick', Shellwords.escape(filename), '-resize', '2000x2000>', '-quality', '90', '-define', 'webp:lossless=false', webp_file)
+				Jekyll.logger.info 'Converted', "#{File.basename(webp_file)}"
 			end
 		end
 	end
