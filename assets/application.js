@@ -92,19 +92,12 @@ $window.on('load', function(){
   if(!"{{site.initial_filter}}"){
     initialFilter = ""
   }
-  $explore.imagesLoaded( function(){
-    $explore.isotope({
-      itemSelector: '.explore-item',
-      layoutMode: 'masonry',
-      filter: initialFilter
-    });
-    $explore.isotope('layout');
-
-
+  $explore.isotope({
+    itemSelector: '.explore-item',
+    layoutMode: 'masonry',
+    filter: initialFilter
   });
-  setTimeout(function(){
-    $body.removeClass("preload");
-  }, 100)
+  $explore.isotope('layout');
 });
 
 /////////////////
