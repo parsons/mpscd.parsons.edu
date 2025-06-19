@@ -10,7 +10,7 @@ On a Mac, and assuming you have [Homebrew](https://brew.sh) installed:
 
 ```sh
 # For processing the images down
-brew install imagemagick
+brew install imagemagick webp
 
 # Install rbenv and Ruby build tools
 brew install rbenv ruby-build
