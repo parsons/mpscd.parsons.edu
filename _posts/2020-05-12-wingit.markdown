@@ -7,6 +7,5 @@ images:
 - file: "/uploads/ekarakose02.png"
   creator: Elif Karakose
   link: https://www.elifkarakose.com/
-layout: post
 ---
 

@@ -48,13 +48,11 @@
     <meta name="msapplication-wide310x150logo" content="{{ site.data.filepaths.favicon }}parsons-310-wide.png" />
     <meta name="msapplication-square310x310logo" content="{{ site.data.filepaths.favicon }}parsons-310.png" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js" integrity="sha256-DI6NdAhhFRnO2k51mumYeDShet3I8AKCQf/tf7ARNhI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/blast-text@2.0.0/jquery.blast.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
 
     <link rel="stylesheet" href="{{ '/assets/application.css' | relative_url }}" />
 
@@ -72,10 +70,11 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 
+    <script src="{{ '/assets/lazy-img.js' | relative_url }}" defer></script>
 
     <!--[if lt IE 9]>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
 
-  <body class="preload js-body with-mask" id="current-page-title">
+  <body class="js-body with-mask" id="current-page-title">

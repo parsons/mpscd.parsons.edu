@@ -8,6 +8,5 @@ images:
 - file: "/uploads/slee01.jpg"
   creator: Sunnie Lee
   link: https://sunnie-lee.com/
-layout: post
 ---
 

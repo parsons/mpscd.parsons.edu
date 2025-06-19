@@ -1,19 +1,7 @@
 ---
 title: js
+layout: none
 ---
-
-/* v0
-*
-*= require _lib/v0/v0
-*= require _lib/touch/jquery.ui.touch-punch.min
-*= require _lib/ajaxchimp/jquery.ajaxchimp
-*= require _lib/ajaxchimp/jquery.ajaxchimp.langs
-*= require _lib/jquery.finger/jquery.finger
-*= require _lib/hypher/hypher
-*= require _lib/hypher/en-us
-*= require _lib/marquee/marquee
-*
-*/
 
 !function($) {
 }(window.jQuery);
@@ -104,19 +92,12 @@ $window.on('load', function(){
   if(!"{{site.initial_filter}}"){
     initialFilter = ""
   }
-  $explore.imagesLoaded( function(){
-    $explore.isotope({
-      itemSelector: '.explore-item',
-      layoutMode: 'masonry',
-      filter: initialFilter
-    });
-    $explore.isotope('layout');
-
-
+  $explore.isotope({
+    itemSelector: '.explore-item',
+    layoutMode: 'masonry',
+    filter: initialFilter
   });
-  setTimeout(function(){
-    $body.removeClass("preload");
-  }, 800)
+  $explore.isotope('layout');
 });
 
 /////////////////
@@ -220,7 +201,7 @@ $document.on('mousemove', function(e) {
 });
 
 $(document).on('mousemove', function(e) {
-  if (!$exploreOuter.hasClass("blurOn") && !$main.hasClass('blurred') && !Modernizr.mq('(max-width: 576px)')) {
+  if (!$exploreOuter.hasClass("blurOn") && !$main.hasClass('blurred') && !window.matchMedia('(max-width: 576px)').matches) {
     exploreMove(e);
   }
 })
@@ -240,15 +221,6 @@ function exploreMove(e) {
   $explore.css('transform', 'translateX(calc(' + mouseLeft + 'vw - ' + exploreLeft / 2 + 'px - ' + mouseLeft + '%)) translateY(calc(' + mouseTop + 'vh - ' + mouseTop + '%))')
 }
 
-function transitionExplore(e) {
-  $explore.css('transition', 'transform .3s ease');
-  exploreMove(e);
-  setTimeout(function(){
-    $explore.css('transition', 'none');
-  }, 300)
-}
-
-
 // open/close explore section ----------------------------------------------
 
 $exploreOuter.on("click", function(e) {
@@ -257,8 +229,8 @@ $exploreOuter.on("click", function(e) {
     $('.blurOn').addClass("blurOff").removeClass("blurOn");
     $('div#exploreHover').addClass('hidden');
   }
-  if (!Modernizr.mq('(max-width: 576px)')) {
-    transitionExplore(e);
+  if (!window.matchMedia('(max-width: 576px)').matches) {
+    exploreMove(e);
   }
 });
 
@@ -327,7 +299,7 @@ $('.page-filter').on('click', function(e) {
   $explore.isotope({ filter: '' });
   filters = {}
   $(this).find('span').empty();
-  $(find).find('span#title-categories').text('Everything');
+  $('span#title-categories').text('Everything');
 });
 
 $(".page-filter").mouseenter(function(){
@@ -401,17 +373,25 @@ $exploreItem.on("click", function(){
   }
 });
 
-$lightboxClose.on("click", function(e){
+function closeLightbox() {
   $lightbox.removeClass('lightboxOn');
-  $main.removeClass("blurred");
-  $body.removeClass("overflow-hidden");
+  $main.removeClass('blurred');
+  $body.removeClass('overflow-hidden');
   $lightboxCaption.css('transform', 'translateY(0)');
   $(".hover-caption").removeClass("hidden");
   $('.lightbox-description').removeClass('active');
   $('.lightbox-description').html("");
   $(".lightbox-more").find('h1').text('+');
-  if (!Modernizr.mq('(max-width: 576px)')) {
-    transitionExplore(e);
+}
+
+$lightboxClose.on("click", function(e){
+  closeLightbox();
+});
+
+// Close lightbox on ESC key
+$(document).on('keydown', function(e) {
+  if ($lightbox.hasClass('lightboxOn') && (e.key === 'Escape' || e.keyCode === 27)) {
+    closeLightbox();
   }
 });
 
@@ -426,6 +406,12 @@ $(".lightbox-more").on("click", function(){
     $lightboxCaption.css('transform', 'translateY(0)');
   }
 })
+
+$(".lightbox-detail").on("click", function(e) {
+  if (!$(e.target).is('img')) {
+    closeLightbox();
+  }
+});
 
 $('.js-countdown-dismiss').click(function() {
   $('.countdown-wrapper').hide();
@@ -450,10 +436,15 @@ function getESTOffset() {
 function showRemaining() {
     var now = new Date();
     var distance = end - now - getESTOffset() * _hour;
+    var timerElem = document.getElementById('timer');
+    if (!timerElem) {
+        // Timer element not found, do nothing
+        return;
+    }
     if (distance < 0) {
 
         clearInterval(timer);
-        document.getElementById('timer').innerHTML = '0d 0h 0m 0s!';
+        timerElem.innerHTML = '0d 0h 0m 0s!';
 
             $('.countdown-timer').addClass('countdown-hidden');
             $('.countdown-hero').removeClass('countdown-hidden').addClass('countdown-visible');
@@ -493,10 +484,10 @@ function showRemaining() {
     var minutes = Math.floor((distance % _hour) / _minute);
     var seconds = Math.floor((distance % _minute) / _second);
 
-    document.getElementById('timer').innerHTML = days + 'd ';
-    document.getElementById('timer').innerHTML += hours + 'h ';
-    document.getElementById('timer').innerHTML += minutes + 'm ';
-    document.getElementById('timer').innerHTML += seconds + 's';
+    timerElem.innerHTML = days + 'd ';
+    timerElem.innerHTML += hours + 'h ';
+    timerElem.innerHTML += minutes + 'm ';
+    timerElem.innerHTML += seconds + 's';
 }
 
 timer = setInterval(showRemaining, 1000);

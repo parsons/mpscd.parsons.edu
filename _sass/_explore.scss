@@ -61,6 +61,7 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
       min-height: 100vh;
       cursor: pointer;
       padding-bottom: 50px;
+      transition: transform 50ms linear;
       @include sm {
         padding: 25px 50px;
         width: $exp;
@@ -81,7 +82,12 @@ $exp-mobile: calc(#{$exp-x-mobile} - #{$exp-y-mobile});
             width: calc((#{$explore-img-width} * 2) - #{$space-sm} * -2);
           }
         }
+        // Hide before JS comes in, for lazy-loading to work.
+        &:not([style]) {
+          display: none;
+        }
         img {
+          display: block;
           max-width: 100%;
           // -webkit-filter: drop-shadow(5px 5px 5px #222);
           // filter: drop-shadow(5px 5px 5px #222);

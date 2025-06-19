@@ -8,6 +8,5 @@ images:
 - file: "/uploads/szhu01.png"
   creator: Shuqi Zhu
   link: https://www.shuqizhu1006.com/
-layout: post
 ---
 

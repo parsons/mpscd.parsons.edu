@@ -6,6 +6,5 @@ tags:
 - experience
 images:
 - file: "/uploads/class02.png"
-layout: post
 ---
 

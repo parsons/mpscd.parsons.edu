@@ -5,8 +5,7 @@ tags:
 - '2022'
 - student-work
 images:
-- file: "/uploads/What_s%20Good%20Hero%20Image_Mari%CC%81a%20-%20Maria%20Quevedo%20Acuna.png"
+- file: "/uploads/what_s-good-hero-image_maria-maria-quevedo-acuna.png"
   creator: Maria Quevedo
   link: https://mafquevedo.com/
 ---
-

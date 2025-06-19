@@ -8,6 +8,5 @@ images:
 - file: "/uploads/cpeng01.png"
   creator: Cleo Peng
   link: https://cleopeng.com/
-layout: post
 ---
 

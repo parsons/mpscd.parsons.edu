@@ -17,6 +17,7 @@
 }
 
 .filter-list {
+  align-items: end;
   text-align: right;
   display: flex;
   flex-direction: column;
@@ -24,7 +25,6 @@
 
 .page-filter{
   display: none !important;
-  cursor: pointer;
   &.exploreOn{
     display: inline-block !important;
   }
@@ -99,7 +99,6 @@
 }
 
 ul.sub-menu {
-
   li {
     float: right;
     &:first-of-type {
