@@ -31,8 +31,8 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gems-
     - name: Setup ImageMagick
-      uses: iamsauravsharma/setup-imagemagick@v3
-      # Ubuntu doesn’t have version 7 `magick`, otherwise.
+      uses: mfinelli/setup-imagemagick@v6
+      # Ubuntu doesn’t have version `magick`, otherwise.
     - name: Install dependencies and build
       run: |
         gem install bundler
