@@ -17,34 +17,37 @@ collections:
   students:
     title: Students
     output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
 - scope:
     path: ''
     type: curriculum
   values:
-    credit:
-    pmcd:
+    credit: 
+    pmcd: 
     expand: false
-    outbound_link:
+    outbound_link: 
 - scope:
     path: ''
     type: students
   values:
-    list:
+    list: 
 - scope:
     path: ''
     type: faculty
   values:
-    list:
+    list: 
 - scope:
     path: ''
     type: posts
   values:
     type: image
     images:
-    - file:
-      creator:
-      link:
+    - file: 
+      creator: 
+      link: 
 - scope:
     path: ''
   values:
@@ -68,6 +71,5 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
-# Prevent Jekyll from overwriting `convert_to_webp.rb` plugin output
 keep_files:
-  - uploads
+- uploads
