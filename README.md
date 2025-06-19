@@ -34,9 +34,8 @@ bundle install
 Jekyll will compile your SCSS and changes to `application.js`. If you need to combine `.js` files, you can use Codekit to compile them.
 
 ## Deploying/Publishing
-1. Merge your changes into `master` and push
-1. Check your changes on production by using the Preview link in Siteleaf
-1. When you’re ready, click Publish
+1. You can make changes over on [Siteleaf](https://manage.siteleaf.com/sites/5c33862b290be2499413842e/pages)
+1. …or edit the repo and merge your changes into `main`
 1. The site is built back on GitHub, serving up the Jekyll artifact
 
 ## CMS and updating
