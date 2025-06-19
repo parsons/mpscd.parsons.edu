@@ -16,35 +16,35 @@ module Jekyll
 
 			FileUtils.mkdir_p(File.join(site.dest, UPLOADS_DESTINATION))
 
-			Dir.glob(File.join(site.source, UPLOADS_SOURCE, '*.{gif,jpeg,jpg,png}')).each do |img|
-				webp = File.join(site.dest, UPLOADS_DESTINATION, Jekyll.slug_ext(img, 'webp'))
-
+			Dir.glob(File.join(site.source, UPLOADS_SOURCE, '*.{gif,jpeg,jpg,png}')).each do |filename|
 				# Get dimensions from the files as we go through.
-				width, height = `identify -format '%w %h' #{Shellwords.escape(img)}[0]`.strip.split.map(&:to_i)
-				Jekyll::IMAGE_DIMENSIONS[File.basename(img)] = { 'width' => width, 'height' => height }
+				width, height = `identify -format '%w %h' #{Shellwords.escape(filename)}[0]`.strip.split.map(&:to_i)
+				Jekyll::IMAGE_DIMENSIONS[File.basename(filename)] = { 'width' => width, 'height' => height }
 
-				if File.extname(img) == '.gif'
+				webp_file = File.join(site.dest, UPLOADS_DESTINATION, Jekyll.slug_ext(filename, 'webp'))
+
+				if File.extname(filename) == '.gif'
 					# Recompressing GIFs loses timing; just pass those on through.
-					FileUtils.cp(img, File.join(site.dest, UPLOADS_DESTINATION, Jekyll.slug_ext(img, 'gif')))
-					Jekyll.logger.info 'Moved', "#{File.basename(img)}, animated GIF"
+					FileUtils.cp(filename, File.join(site.dest, UPLOADS_DESTINATION, Jekyll.slug_ext(filename, 'gif')))
+					Jekyll.logger.info 'Moved', "#{File.basename(filename)}, animated GIF"
 					# Speed up local builds.
-				elsif File.exist?(webp)
-					Jekyll.logger.info 'Skipped', "#{File.basename(webp)}, already exists"
+				elsif File.exist?(webp_file)
+					Jekyll.logger.info 'Skipped', "#{File.basename(webp_file)}, already exists"
 					next
 				else
 					# Otherwise ImageMagick gives us a new asset.
-					system('magick', img, '-resize', '2000x2000>', '-quality', '90', '-define', 'webp:lossless=false', webp)
-					Jekyll.logger.info 'Converted', "#{File.basename(webp)}"
+					system('magick', filename, '-resize', '2000x2000>', '-quality', '90', '-define', 'webp:lossless=false', webp_file)
+					Jekyll.logger.info 'Converted', "#{File.basename(webp_file)}"
 				end
 			end
 		end
 	end
 
 	module GetWebpData
-		def getWebpData(input)
+		def getWebpData(filename)
 			require 'cgi'
 
-			filename = File.basename(CGI.unescape(input))
+			filename = File.basename(CGI.unescape(filename))
 			dimensions = Jekyll::IMAGE_DIMENSIONS[filename]
 
 			src_path = File.join(Jekyll::UPLOADS_DESTINATION, Jekyll.slug_ext(filename, File.extname(filename) == '.gif' ? 'gif' : 'webp'))
