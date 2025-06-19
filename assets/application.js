@@ -104,7 +104,7 @@ $window.on('load', function(){
   });
   setTimeout(function(){
     $body.removeClass("preload");
-  }, 800)
+  }, 100)
 });
 
 /////////////////
