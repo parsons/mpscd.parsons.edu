@@ -66,7 +66,7 @@ module Jekyll
 			dimensions = Jekyll::IMAGE_DIMENSIONS[filename]
 
 			src_path = File.join(Jekyll::UPLOADS_DESTINATION, Jekyll.slug_ext(filename, File.extname(filename) == '.gif' ? 'gif' : 'webp'))
-			dimension_attr = dimensions ? "width=\"#{dimensions['width']}\" height=\"#{dimensions['height']}\"" : ''
+			dimension_attr = dimensions ? "width=\"#{dimensions['width']}\" height=\"#{dimensions['height']}\" style=\"aspect-ratio: #{dimensions['width']} / #{dimensions['height']}\"" : ''
 
 			# Return the attributes to the template.
 			"data-src=\"/#{src_path}\" #{dimension_attr}"
