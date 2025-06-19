@@ -34,10 +34,10 @@ module Jekyll
 		# Toss naïve Jekyll-copied ones.
 		FileUtils.rm_f(Dir.glob(File.join(uploads_path, '*')) - Dir.glob(File.join(uploads_path, '*.webp')))
 
-		# Debug: log magick version and WebP support at the start of the hook
-		magick_version = `magick -version 2>&1`
-		webp_support = `magick identify -list format 2>&1 | grep -i webp`
-		Jekyll.logger.info 'Magick version', magick_version
+		# Debug: log convert version and WebP support at the start of the hook
+		convert_version = `convert -version 2>&1`
+		webp_support = `convert -list format 2>&1 | grep -i webp`
+		Jekyll.logger.info 'Convert version', convert_version
 		Jekyll.logger.info 'WebP support', webp_support
 
 		Dir.glob(File.join(site.source, UPLOADS_SOURCE, '*.{gif,jpeg,jpg,png}')).each do |filename|
@@ -58,13 +58,12 @@ module Jekyll
 				Jekyll.logger.info 'Skipped', "#{File.basename(webp_file)}, already exists"
 				next
 			else
-				# Otherwise ImageMagick gives us a new asset.
-				output = `magick #{Shellwords.escape(filename)} -resize 2000x2000> -quality 90 -define webp:lossless=false #{Shellwords.escape(webp_file)} 2>&1`
+				output = `convert #{Shellwords.escape(filename)} -resize 2000x2000> -quality 90 -define webp:lossless=false #{Shellwords.escape(webp_file)} 2>&1`
 
 				if $?.success?
 					Jekyll.logger.info 'Converted', "#{File.basename(webp_file)}"
 				else
-					Jekyll.logger.error 'Magick failed', output
+					Jekyll.logger.error 'Convert failed', output
 				end
 			end
 		end
