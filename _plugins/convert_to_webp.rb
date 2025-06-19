@@ -34,8 +34,20 @@ module Jekyll
 		# Toss naïve Jekyll-copied ones.
 		FileUtils.rm_f(Dir.glob(File.join(uploads_path, '*')) - Dir.glob(File.join(uploads_path, '*.webp')))
 
+		# Debug: log magick version and WebP support at the start of the hook
+		magick_version = `magick -version 2>&1`
+		webp_support = `magick identify -list format 2>&1 | grep -i webp`
+		Jekyll.logger.info 'Magick version', magick_version
+		Jekyll.logger.info 'WebP support', webp_support
+
 		Dir.glob(File.join(site.source, UPLOADS_SOURCE, '*.{gif,jpeg,jpg,png}')).each do |filename|
 			webp_file = File.join(uploads_path, Jekyll.slug_ext(filename, 'webp'))
+
+			# Debug: check if input file exists and is readable
+			unless File.exist?(filename) && File.readable?(filename)
+				Jekyll.logger.error 'Input file missing or unreadable', filename
+				next
+			end
 
 			if File.extname(filename) == '.gif'
 				# Recompressing GIFs loses timing; just pass those on through.
