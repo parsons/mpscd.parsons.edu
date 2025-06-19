@@ -30,11 +30,9 @@ jobs:
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
         restore-keys: |
           ${{ runner.os }}-gems-
-    - name: Setup ImageMagick
-      uses: mfinelli/setup-imagemagick@v6
-      # Ubuntu doesn’t have version `magick`, otherwise.
     - name: Install dependencies and build
       run: |
+        brew install imagemagick
         gem install bundler
         bundle install
         bundle exec jekyll build
