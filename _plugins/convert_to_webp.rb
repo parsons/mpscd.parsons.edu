@@ -34,20 +34,8 @@ module Jekyll
 		# Toss naïve Jekyll-copied ones.
 		FileUtils.rm_f(Dir.glob(File.join(uploads_path, '*')) - Dir.glob(File.join(uploads_path, '*.webp')))
 
-		# Debug: log convert version and WebP support at the start of the hook
-		convert_version = `convert -version 2>&1`
-		webp_support = `convert -list format 2>&1 | grep -i webp`
-		Jekyll.logger.info 'Convert version', convert_version
-		Jekyll.logger.info 'WebP support', webp_support
-
 		Dir.glob(File.join(site.source, UPLOADS_SOURCE, '*.{gif,jpeg,jpg,png}')).each do |filename|
 			webp_file = File.join(uploads_path, Jekyll.slug_ext(filename, 'webp'))
-
-			# Debug: check if input file exists and is readable
-			unless File.exist?(filename) && File.readable?(filename)
-				Jekyll.logger.error 'Input file missing or unreadable', filename
-				next
-			end
 
 			if File.extname(filename) == '.gif'
 				# Recompressing GIFs loses timing; just pass those on through.
@@ -58,13 +46,9 @@ module Jekyll
 				Jekyll.logger.info 'Skipped', "#{File.basename(webp_file)}, already exists"
 				next
 			else
-				output = `convert #{Shellwords.escape(filename)} -resize 2000x2000> -quality 90 -define webp:lossless=false #{Shellwords.escape(webp_file)} 2>&1`
-
-				if $?.success?
-					Jekyll.logger.info 'Converted', "#{File.basename(webp_file)}"
-				else
-					Jekyll.logger.error 'Convert failed', output
-				end
+				# Otherwise ImageMagick gives us a new asset.
+				system('magick', filename, '-resize', '2000x2000>', '-quality', '90', '-define', 'webp:lossless=false', webp_file)
+				Jekyll.logger.info 'Converted', "#{File.basename(webp_file)}"
 			end
 		end
 	end
