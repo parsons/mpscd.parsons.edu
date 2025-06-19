@@ -47,7 +47,7 @@ module Jekyll
 				next
 			else
 				# Otherwise ImageMagick gives us a new asset.
-				output = `magick #{Shellwords.escape(filename)} -resize 2000x2000> -quality 90 -define webp:lossless=false #{Shellwords.escape(webp_file)} 2>&1`
+				cmd = "magick #{Shellwords.escape(filename)} -resize '2000x2000>' -quality 90 -define webp:lossless=false #{Shellwords.escape(webp_file)}"
 
 				# Debug: check if input file exists
 				unless File.exist?(filename)
