@@ -1,7 +1,3 @@
-# Parsons MPSCD
-
-Production URL: https://mpscd.parsons.edu
-
 ## Developing (circa June 2025)
 
 This project uses Jekyll `3.10.0` (and Ruby `3.1.4`). We’re limited here by older [Ruby SASS](https://sass-lang.com/blog/ruby-sass-is-unsupported/) versions/conventions, which break on upgrading past `>4.0`.

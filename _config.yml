@@ -66,7 +66,7 @@ countdown_sticker: Congrats MPSCD 2021!
 background_image: "/assets/images/mpscdbg.jpg"
 background_color: "#8e93f7"
 og_image: "/assets/images/og-image.png"
-url: http://www.newschool.edu
+url: https://mpscd.parsons.edu
 markdown: kramdown
 sass:
   sass_dir: _sass
