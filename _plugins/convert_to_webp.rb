@@ -16,25 +16,25 @@ module Jekyll
 
 			FileUtils.mkdir_p(File.join(site.dest, UPLOADS_DESTINATION))
 
-			Dir.glob(File.join(site.source, UPLOADS_SOURCE, "*.{gif,jpeg,jpg,png}")).each do |img|
+			Dir.glob(File.join(site.source, UPLOADS_SOURCE, '*.{gif,jpeg,jpg,png}')).each do |img|
 				webp = File.join(site.dest, UPLOADS_DESTINATION, Jekyll.slug_ext(img, 'webp'))
 
 				# Get dimensions from the files as we go through.
-				width, height = `identify -format "%w %h" #{Shellwords.escape(img)}[0]`.strip.split.map(&:to_i)
+				width, height = `identify -format '%w %h' #{Shellwords.escape(img)}[0]`.strip.split.map(&:to_i)
 				Jekyll::IMAGE_DIMENSIONS[File.basename(img)] = { 'width' => width, 'height' => height }
 
-				if File.extname(img) == ".gif"
+				if File.extname(img) == '.gif'
 					# Recompressing GIFs loses timing; just pass those on through.
 					FileUtils.cp(img, File.join(site.dest, UPLOADS_DESTINATION, Jekyll.slug_ext(img, 'gif')))
-					Jekyll.logger.info "Moved", "#{File.basename(img)}, animated GIF"
+					Jekyll.logger.info 'Moved', "#{File.basename(img)}, animated GIF"
 					# Speed up local builds.
 				elsif File.exist?(webp)
-					Jekyll.logger.info("Skipped", "#{File.basename(webp)}, already exists")
+					Jekyll.logger.info 'Skipped', "#{File.basename(webp)}, already exists"
 					next
 				else
 					# Otherwise ImageMagick gives us a new asset.
-					system("magick", img, "-resize", "2000x2000>", "-quality", "90", "-define", "webp:lossless=false", webp)
-					Jekyll.logger.info "Converted", "#{File.basename(webp)}"
+					system('magick', img, '-resize', '2000x2000>', '-quality', '90', '-define', 'webp:lossless=false', webp)
+					Jekyll.logger.info 'Converted', "#{File.basename(webp)}"
 				end
 			end
 		end
@@ -47,11 +47,11 @@ module Jekyll
 			filename = File.basename(CGI.unescape(input))
 			dimensions = Jekyll::IMAGE_DIMENSIONS[filename]
 
-			src_path = File.join(Jekyll::UPLOADS_DESTINATION, Jekyll.slug_ext(filename, File.extname(filename) == ".gif" ? 'gif' : 'webp'))
-			dimension_attr = dimensions ? " width=\"#{dimensions['width']}\" height=\"#{dimensions['height']}\"" : ""
+			src_path = File.join(Jekyll::UPLOADS_DESTINATION, Jekyll.slug_ext(filename, File.extname(filename) == '.gif' ? 'gif' : 'webp'))
+			dimension_attr = dimensions ? "width=\"#{dimensions['width']}\" height=\"#{dimensions['height']}\"" : ''
 
 			# Return the attributes to the template.
-			"data-src=\"/#{src_path}\"#{dimension_attr}"
+			"data-src=\"/#{src_path}\" #{dimension_attr}"
 		end
 	end
 end
