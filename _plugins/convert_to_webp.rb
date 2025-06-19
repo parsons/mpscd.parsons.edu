@@ -10,32 +10,45 @@ module Jekyll
 		"#{Jekyll::Utils.slugify(File.basename(filename, '.*'))}.#{ext}"
 	end
 
-	class ConvertToWebp < Generator
+	# Get dimensions from the files on build.
+	class CollectImageDimensions < Generator
 		def generate(site)
 			require 'shellwords'
 
-			FileUtils.mkdir_p(File.join(site.dest, UPLOADS_DESTINATION))
-
 			Dir.glob(File.join(site.source, UPLOADS_SOURCE, '*.{gif,jpeg,jpg,png}')).each do |filename|
-				# Get dimensions from the files as we go through.
 				width, height = `identify -format '%w %h' #{Shellwords.escape(filename)}[0]`.strip.split.map(&:to_i)
 				Jekyll::IMAGE_DIMENSIONS[File.basename(filename)] = { 'width' => width, 'height' => height }
+				Jekyll.logger.info 'Measured', "#{File.basename(filename)}"
+			end
+		end
+	end
 
-				webp_file = File.join(site.dest, UPLOADS_DESTINATION, Jekyll.slug_ext(filename, 'webp'))
+	# Use `post_write` so the files are copied _after_ Jekyll does its thing.
+	Jekyll::Hooks.register :site, :post_write do |site|
+		require 'shellwords'
 
-				if File.extname(filename) == '.gif'
-					# Recompressing GIFs loses timing; just pass those on through.
-					FileUtils.cp(filename, File.join(site.dest, UPLOADS_DESTINATION, Jekyll.slug_ext(filename, 'gif')))
-					Jekyll.logger.info 'Moved', "#{File.basename(filename)}, animated GIF"
-					# Speed up local builds.
-				elsif File.exist?(webp_file)
-					Jekyll.logger.info 'Skipped', "#{File.basename(webp_file)}, already exists"
-					next
-				else
-					# Otherwise ImageMagick gives us a new asset.
-					system('magick', filename, '-resize', '2000x2000>', '-quality', '90', '-define', 'webp:lossless=false', webp_file)
-					Jekyll.logger.info 'Converted', "#{File.basename(webp_file)}"
-				end
+		uploads_path = File.join(site.dest, UPLOADS_DESTINATION)
+
+		FileUtils.mkdir_p(uploads_path)
+
+		# Toss naïve Jekyll-copied ones.
+		FileUtils.rm_f(Dir.glob(File.join(uploads_path, '*')) - Dir.glob(File.join(uploads_path, '*.webp')))
+
+		Dir.glob(File.join(site.source, UPLOADS_SOURCE, '*.{gif,jpeg,jpg,png}')).each do |filename|
+			webp_file = File.join(uploads_path, Jekyll.slug_ext(filename, 'webp'))
+
+			if File.extname(filename) == '.gif'
+				# Recompressing GIFs loses timing; just pass those on through.
+				FileUtils.cp(filename, File.join(uploads_path, Jekyll.slug_ext(filename, 'gif')))
+				Jekyll.logger.info 'Moved', "#{File.basename(filename)}, animated GIF"
+			elsif File.exist?(webp_file)
+				# Speed up local builds.
+				Jekyll.logger.info 'Skipped', "#{File.basename(webp_file)}, already exists"
+				next
+			else
+				# Otherwise ImageMagick gives us a new asset.
+				system('magick', filename, '-resize', '2000x2000>', '-quality', '90', '-define', 'webp:lossless=false', webp_file)
+				Jekyll.logger.info 'Converted', "#{File.basename(webp_file)}"
 			end
 		end
 	end
