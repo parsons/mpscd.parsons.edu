@@ -21,7 +21,8 @@ jobs:
       uses: actions/configure-pages@v5
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
-      # Uses `.ruby-version`
+    - name: Configure bundler path
+      run: bundle config set path 'vendor/bundle'
     - name: Cache Ruby gems
       uses: actions/cache@v4
       with:
