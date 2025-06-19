@@ -32,7 +32,7 @@ jobs:
           ${{ runner.os }}-gems-
     - name: Install dependencies and build
       run: |
-        sudo apt-get update && sudo apt-get install -y libfuse2 imagemagick
+        sudo apt-get install imagemagick webp
         gem install bundler
         bundle install
         bundle exec jekyll build
