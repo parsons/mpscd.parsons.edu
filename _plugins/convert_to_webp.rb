@@ -47,12 +47,12 @@ module Jekyll
 				next
 			else
 				# Otherwise ImageMagick gives us a new asset.
-				result = system('magick', filename, '-resize', '2000x2000>', '-quality', '90', '-define', 'webp:lossless=false', webp_file)
+				output = `magick #{Shellwords.escape(filename)} -resize 2000x2000> -quality 90 -define webp:lossless=false #{Shellwords.escape(webp_file)} 2>&1`
 
-				if result && File.exist?(webp_file)
+				if $?.success? && File.exist?(webp_file)
 					Jekyll.logger.info 'Converted', "#{File.basename(webp_file)}"
 				else
-					Jekyll.logger.error 'Error', "Failed to convert #{File.basename(filename)}. Command result: \\#{result}, Output exists: \\#{File.exist?(webp_file)}"
+					Jekyll.logger.error 'Error', "Failed to convert #{File.basename(filename)}. Output: #{output}"
 				end
 			end
 		end
