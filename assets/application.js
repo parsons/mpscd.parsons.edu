@@ -389,17 +389,25 @@ $exploreItem.on("click", function(){
   }
 });
 
-$lightboxClose.on("click", function(e){
+function closeLightbox() {
   $lightbox.removeClass('lightboxOn');
-  $main.removeClass("blurred");
-  $body.removeClass("overflow-hidden");
+  $main.removeClass('blurred');
+  $body.removeClass('overflow-hidden');
   $lightboxCaption.css('transform', 'translateY(0)');
   $(".hover-caption").removeClass("hidden");
   $('.lightbox-description').removeClass('active');
   $('.lightbox-description').html("");
   $(".lightbox-more").find('h1').text('+');
-  if (!Modernizr.mq('(max-width: 576px)')) {
-    transitionExplore(e);
+}
+
+$lightboxClose.on("click", function(e){
+  closeLightbox();
+});
+
+// Close lightbox on ESC key
+$(document).on('keydown', function(e) {
+  if ($lightbox.hasClass('lightboxOn') && (e.key === 'Escape' || e.keyCode === 27)) {
+    closeLightbox();
   }
 });
 
