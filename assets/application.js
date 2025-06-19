@@ -201,7 +201,7 @@ $document.on('mousemove', function(e) {
 });
 
 $(document).on('mousemove', function(e) {
-  if (!$exploreOuter.hasClass("blurOn") && !$main.hasClass('blurred') && !Modernizr.mq('(max-width: 576px)')) {
+  if (!$exploreOuter.hasClass("blurOn") && !$main.hasClass('blurred') && !window.matchMedia('(max-width: 576px)').matches) {
     exploreMove(e);
   }
 })
@@ -229,7 +229,7 @@ $exploreOuter.on("click", function(e) {
     $('.blurOn').addClass("blurOff").removeClass("blurOn");
     $('div#exploreHover').addClass('hidden');
   }
-  if (!Modernizr.mq('(max-width: 576px)')) {
+  if (!window.matchMedia('(max-width: 576px)').matches) {
     exploreMove(e);
   }
 });
