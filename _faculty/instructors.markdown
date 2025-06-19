@@ -7,7 +7,7 @@ list:
 - "[Adam Brodowski](https://abrodowski.com)"
 - "[Clara Bunker](https://clarajoybunker.com/)"
 - "[Sally Chung](https://www.sallyhychung.com/)"
-- "[Michael Fehrenbach](https://michaelfehrenbach.com)"
+- "[Michael Fehrenbach](https://michaelfehrenbach.com/)"
 - "[Crayon Hsieh](https://imcrayon.com/)"
 - "[Andrew LeClair](https://andrewleclair.com)"
 - "[Jonathan Lee](https://www.linkedin.com/in/hifromjonathan/)"
