@@ -221,15 +221,6 @@ function exploreMove(e) {
   $explore.css('transform', 'translateX(calc(' + mouseLeft + 'vw - ' + exploreLeft / 2 + 'px - ' + mouseLeft + '%)) translateY(calc(' + mouseTop + 'vh - ' + mouseTop + '%))')
 }
 
-function transitionExplore(e) {
-  $explore.css('transition', 'transform .3s ease');
-  exploreMove(e);
-  setTimeout(function(){
-    $explore.css('transition', 'none');
-  }, 300)
-}
-
-
 // open/close explore section ----------------------------------------------
 
 $exploreOuter.on("click", function(e) {
@@ -239,7 +230,7 @@ $exploreOuter.on("click", function(e) {
     $('div#exploreHover').addClass('hidden');
   }
   if (!Modernizr.mq('(max-width: 576px)')) {
-    transitionExplore(e);
+    exploreMove(e);
   }
 });
 
