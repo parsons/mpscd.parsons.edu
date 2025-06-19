@@ -423,6 +423,12 @@ $(".lightbox-more").on("click", function(){
   }
 })
 
+$(".lightbox-detail").on("click", function(e) {
+  if (!$(e.target).is('img')) {
+    closeLightbox();
+  }
+});
+
 $('.js-countdown-dismiss').click(function() {
   $('.countdown-wrapper').hide();
   // console.log('hide');
