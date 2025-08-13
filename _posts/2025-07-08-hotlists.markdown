@@ -1,0 +1,19 @@
+---
+title: '“Hotlists” Feature for Resy'
+date: '2025-07-08'
+tags:
+- 'student-work'
+- '2025'
+images:
+- file: '/uploads/rayana-dilawri_print_0_0.65317100-1743448543_finalscreen1.jpg'
+  creator: 'Rayana Dilawri'
+  link: 'https://rayanadilawri.framer.website'
+---
+
+Resy, owned by AMEX, already makes it easy to discover and book restaurants. But in a city like New York, where demand constantly outpaces supply, I saw an opportunity to reframe how people approach reservations. Getting into a hot new restaurant here can feel like an Olympic sport. As a frequent Resy user, I noticed something: New Yorkers cared more about where they were eating than when. They were overjoyed to grab a 5 PM dinner if it meant getting into the newest, buzziest spot.
+
+This mindset inspired The Resy Hotlist—a feature that prioritizes the restaurant over the reservation time. Instead of setting alerts for specific dates, users can now create up to five personalized lists and receive real-time notifications when a table opens within a 14-day window, thanks to live cancellation alerts.
+
+"New Yorkers are just different when it comes to booking restaurants. They’re on top of it like it’s their second job—it’s wild,” said Carly, 25, one of my research participants. I interviewed diners aged 23–37 who go out frequently and view food as a core part of their social life.
+
+Designing Hotlists meant introducing a new, intuitive flow while staying true to Resy’s brand—using Beatrice Bold for headers, GT America Standard for body text, and clean large/small button styles. On the profile page, users can tap the three dots to open a modal and adjust guest count (not time). To introduce the feature, a Resy-style notification leads to “What’s Hotlist?”—a playful nod to “What’s Notify?”

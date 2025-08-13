@@ -1,0 +1,23 @@
+---
+title: 'Gymmy: Find Your Ideal Gym'
+date: '2025-07-18'
+tags:
+- 'student-work'
+- '2025'
+images:
+- file: '/uploads/mia-seo_print_0_0.63118900-1743539968_framework-01.jpg'
+  creator: 'Mia Seo'
+  link: 'https://www.mia-seo.com'
+---
+
+While searching for the ideal gym in my area, I realized a major gap in the fitness world: there was no single platform that allowed users to easily compare gyms side by side. Most gym websites looked and felt the same, forcing users to jump from one site to another just to gather basic information.
+
+Gymmy is designed to change that.
+
+This all-in-one gym platform offers more than just location and pricing—it brings together fitness, wellness, and community in one visually compelling and user-friendly experience. With Gymmy, users can explore various gyms, discover wellness resources, and connect with a like-minded fitness community—all from one place.
+
+Unlike traditional gym websites, Gymmy features a fresh, unique structure built to keep users engaged. The platform offers smooth navigation, clean design, and interactive elements that make finding the right gym not just easier—but enjoyable.
+
+My goal is to create a vibrant, intuitive platform where everything revolves around the gym lifestyle. Whether users are beginners or seasoned athletes, Gymmy offers a seamless experience to explore, compare, and connect.
+
+It’s not just a gym search—it’s a new way to live fit.

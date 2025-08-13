@@ -1,0 +1,21 @@
+---
+title: '“Mirror” Extension for Robinhood'
+date: '2025-07-05'
+tags:
+- 'student-work'
+- '2025'
+images:
+- file: '/uploads/jonathan-chiang_print_0_0.17028100-1743481672_mps-cd-5.png'
+  creator: 'Jonathan Chiang'
+  link: 'https://jonathanchiang.com'
+---
+
+Robinhood Mirror is a conceptual extension of the Robinhood platform, an investment app designed to democratize finance by making investing accessible to everyone. Known for commission-free trades and a clean user interface, Robinhood has attracted millions of users, from beginners exploring their first trades to seasoned investors managing diverse portfolios.
+
+Robinhood Mirror builds on this foundation by introducing a more personalized and community-driven experience, empowering users to invest with confidence and connection. The project centers around three core enhancements: a more personalized onboarding flow, investor discovery, and Mirror Trading.
+
+The new onboarding experience guides users through tailored questions to assess their investing knowledge, risk tolerance, and preferences. This helps categorize users into investor profiles, ensuring they receive content, recommendations, and tools that match their goals, making the app feel smarter and more intuitive from the start.
+
+The standout feature, Mirror Trading, allows users to automatically mirror the trades of experienced investors. With full control over asset allocation and risk settings, users can align their portfolios with strategies they admire, turning Robinhood into a more educational and supportive investing platform.
+
+Overall, Robinhood Mirror enhances the original app by adding guidance, transparency, and community, transforming investing from a solo journey into a more collaborative experience.

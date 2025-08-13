@@ -1,0 +1,19 @@
+---
+title: 'Buyer Customization Feature for Depop'
+date: '2025-07-19'
+tags:
+- 'student-work'
+- '2025'
+images:
+- file: '/uploads/hye-lynn-suh_print_0_0.89510400-1743538064_depop01.jpg'
+  creator: 'Hye Lynn Suh'
+  link: 'https://www.hyelynnsuh.com'
+---
+
+Depop, a second-hand shopping app, primarily supports two user flows: buying and selling. Over five weeks, I designed a new feature to enhance buyer customization and personalization. Through research—including UI analysis, user reviews, and three user interviews with Depop’s target audience (18-26-year-olds)—I identified a need for improved trust and customization.
+
+Brainstorming with fellow designers led to three potential features: profile customization, an outfit generator, and search filter edits. I combined the Style Finder Quiz and Outfit Generator into a streamlined solution. The Style Finder Quiz, a five-step onboarding process, tailors shopping experiences based on users’ fashion preferences. The Outfit Generator then curates looks, linking users to relevant product listings. Additional features included editable filters, a shopping cart, and pinpointed posts that display real product listings within generated outfits.
+
+User testing revealed key insights, such as the need for a faster generator experience and the option to skip the quiz. After refining the prototype and integrating feedback, I finalized the design in Figma, ensuring alignment with Depop’s brand mission of making fashion more circular.
+
+Future improvements include further exploring buyer-seller trust, refining edge cases, and enhancing inclusivity in the generator feature. If revisited, I’d conduct additional low-fidelity explorations, introduce animated elements, and incorporate seller perspectives. This project underscores the value of personalization in secondhand shopping, bridging the gap between user preferences and seamless discovery.

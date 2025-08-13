@@ -1,0 +1,25 @@
+---
+title: 'Moodsy: Your AI Mood Matcher Buddy'
+date: '2025-07-06'
+tags:
+- 'student-work'
+- '2025'
+images:
+- file: '/uploads/nattakitta-chuasiriphattana_print_0_0.80078400-1743544235_opalnattakitta_yb_print_01.jpg'
+  creator: 'Nattakitta Chuasiriphattana'
+  link: 'https://opalnattakitta.com'
+---
+
+Spending too much time browsing on Netflix, and still don’t know what to watch?
+
+Let Moodsy match your mood and find your perfect Netflix pick—fast and fun!
+
+After researching the behavior and pain points of Netflix users, I found a common problem: people often spend too much time scrolling through content, unsure of what to watch. With endless options and no clear direction, viewers feel overwhelmed—<br>especially when they just want something that matches their current mood.
+
+This led to the idea of Moodsy—an AI-powered mood matcher that helps users pick content based on how they feel. Whether you’re happy, sad, drained, or just want something exciting, Moodsy tunes into your emotions and curates a personalized watchlist in seconds.
+
+We explored several solutions—from genre filters to friend recommendations and even content based on current watchlists—but nothing felt as engaging or relevant as a mood-based approach. Moodsy stood out as the most intuitive, fun, and emotionally connected option.
+
+On the design side, I was inspired by how emotions are often associated with colors. This led to the creation of a playful, color-driven UI using a mood wheel—making the experience both visual and interactive.
+
+Designing with AI in mind was also a key part of this project. With AI becoming an essential trend, I focused on building a feature that learns from user feedback. By allowing users to rate or adjust recommendations, Moodsy improves over time—generating even more accurate and personalized watchlists.
