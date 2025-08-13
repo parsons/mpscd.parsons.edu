@@ -1,13 +1,13 @@
 ---
-title: 'Accountable'
-date: '2025-07-03'
+title: Accountable
+date: 2025-07-03 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/nadia-batchelor_print_0_0.03357600-1743532572_01_first_mock-up.jpg'
-  creator: 'Nadia Batchelor'
-  link: 'https://nadabdesigns.com'
+- file: "/uploads/nadia-batchelor_print_0_0.03357600-1743532572_01_first_mock-up.jpg"
+  creator: Nadia Batchelor
+  link: https://nadabdesigns.com
 ---
 
 Social pressure often carries a negative connotation, but at its core, it reflects our natural drive to connect and belong. When guided with intention, social pressure can become a powerful tool for personalized growth by fostering a shared sense of progress. Accountable leverages this dynamic to encourage meaningful, community-driven development.

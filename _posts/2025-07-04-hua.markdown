@@ -1,13 +1,13 @@
 ---
 title: 'Hua: A Personalized and Purposeful Flower-Booking Experience'
-date: '2025-07-04'
+date: 2025-07-04 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/iris-chang_print_0_0.57592400-1743535150_hua_print_image_1.jpg'
-  creator: 'Iris Chang'
-  link: 'https://irischang.co/'
+- file: "/uploads/iris-chang_print_0_0.57592400-1743535150_hua_print_image_1.jpg"
+  creator: Iris Chang
+  link: https://irischang.co/
 ---
 
 Hua is a flower-booking platform designed for a seamless and personalized shopping experience. Users can browse seasonal collections, explore flowers by color, and easily place orders with a smooth checkout process.

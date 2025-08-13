@@ -1,13 +1,13 @@
 ---
 title: 'Crafted Plates: A Meal Planning System'
-date: '2025-07-21'
+date: 2025-07-21 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/shambhavi-varma_print_0_0.85657100-1743529497_image-1-print.jpg'
-  creator: 'Shambhavi Varma'
-  link: 'https://shambhavi.xyz'
+- file: "/uploads/shambhavi-varma_print_0_0.85657100-1743529497_image-1-print.jpg"
+  creator: Shambhavi Varma
+  link: https://shambhavi.xyz
 ---
 
 Crafted Plates is a modular meal-planning system designed for real life. It meets users where they are, whether that’s with a stocked pantry or limited ingredients, and helps them plan meals with what they already have. By combining pantry awareness, AI-based recipe suggestions, and a guided cooking experience, Crafted Plates reduces the daily friction of “what should I cook today?”

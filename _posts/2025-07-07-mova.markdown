@@ -1,13 +1,13 @@
 ---
 title: 'MOVA: Find Your Run Club, Your Way'
-date: '2025-07-07'
+date: 2025-07-07 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/emma-de-suyrot_print_0_0.12908300-1743523970_hero-1.jpg'
-  creator: 'Emma de Suyrot'
-  link: 'https://readymag.website/u3658646869/5250755'
+- file: "/uploads/emma-de-suyrot_print_0_0.12908300-1743523970_hero-1.jpg"
+  creator: Emma de Suyrot
+  link: https://readymag.website/u3658646869/5250755
 ---
 
 Not all run clubs are the same—so why search for one like they are? This platform makes discovering the perfect running group effortless, fun, and all about what matters to you.

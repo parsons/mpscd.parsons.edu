@@ -1,13 +1,13 @@
 ---
-title: '“Challenges” Feature for AllTrails'
-date: '2025-07-13'
+title: "“Challenges” Feature for AllTrails"
+date: 2025-07-13 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/ishani-koul_print_0_0.83510100-1743533788_1.jpg'
-  creator: 'Ishani Koul'
-  link: 'https://ishanikoul.com'
+- file: "/uploads/ishani-koul_print_0_0.83510100-1743533788_1.jpg"
+  creator: Ishani Koul
+  link: https://ishanikoul.com
 ---
 
 AllTrails is more than a trail-finding app—it’s a gateway to outdoor exploration. As my first downloaded app in the U.S., its mission—to help the world find its way outside—deeply resonated with me. Wanting to contribute meaningfully, I introduced AllTrails Challenges, a feature that transforms hikes into exciting, goal-driven adventures. Instead of simply choosing trails, people can set personal challenges, like hiking 50 miles in a month or exploring eco-friendly routes that encourage sustainable outdoor habits.

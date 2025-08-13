@@ -1,13 +1,13 @@
 ---
 title: 'Leadership in Action: A Scenario-Based Challenge'
-date: '2025-07-16'
+date: 2025-07-16 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/inji-mammadli_print_0_0.68823400-1743544220_1.jpg'
-  creator: 'Inji Mammadli'
-  link: 'https://injimammadli.com/portfolio'
+- file: "/uploads/inji-mammadli_print_0_0.68823400-1743544220_1.jpg"
+  creator: Inji Mammadli
+  link: https://injimammadli.com/portfolio
 ---
 
 This interactive, scenario-based leadership project is designed to help users explore and reflect on their unique leadership style through choice-driven storytelling. It responds to a common problem in leadership education: traditional exercises often feel abstract, rigid, or too theoretical, leaving learners disengaged or unsure how to apply concepts in real-life situations.

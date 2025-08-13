@@ -1,13 +1,13 @@
 ---
-title: 'Habit Rabbit'
-date: '2025-07-01'
+title: Habit Rabbit
+date: 2025-07-01 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/irene-jaehyun-ahn_print_0_0.93339700-1743530630_1.-habit-rabbit_main.jpg'
-  creator: 'Irene Jaehyun Ahn'
-  link: 'https://www.irenejhahn.com'
+- file: "/uploads/irene-jaehyun-ahn_print_0_0.93339700-1743530630_1.-habit-rabbit_main.jpg"
+  creator: Irene Jaehyun Ahn
+  link: https://www.irenejhahn.com
 ---
 
 Habit Rabbit is a habit-tracking app inspired by the classic fable The Tortoise and the Hare. But this time, the story continues: after losing the race, the rabbit decides to try again—not with speed alone, but with consistency, commitment, and daily effort.

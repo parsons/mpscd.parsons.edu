@@ -1,13 +1,13 @@
 ---
 title: 'Moodsy: Your AI Mood Matcher Buddy'
-date: '2025-07-06'
+date: 2025-07-06 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/nattakitta-chuasiriphattana_print_0_0.80078400-1743544235_opalnattakitta_yb_print_01.jpg'
-  creator: 'Nattakitta Chuasiriphattana'
-  link: 'https://opalnattakitta.com'
+- file: "/uploads/nattakitta-chuasiriphattana_print_0_0.80078400-1743544235_opalnattakitta_yb_print_01.jpg"
+  creator: Nattakitta Chuasiriphattana
+  link: https://opalnattakitta.com
 ---
 
 Spending too much time browsing on Netflix, and still don’t know what to watch?

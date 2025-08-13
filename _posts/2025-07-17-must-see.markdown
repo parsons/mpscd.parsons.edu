@@ -1,13 +1,13 @@
 ---
 title: 'Must-See: End Exhibition FOMO'
-date: '2025-07-17'
+date: 2025-07-17 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/amely-richter_print_0_0.79318000-1743545106_artboard-4.jpg'
-  creator: 'Amely Richter'
-  link: 'https://amelyrichter.com'
+- file: "/uploads/amely-richter_print_0_0.79318000-1743545106_artboard-4.jpg"
+  creator: Amely Richter
+  link: https://amelyrichter.com
 ---
 
 Must-See: End Exhibition FOMO is a digital tool designed to enhance the way users engage with exhibitions. It allows users to save exhibitions directly from museum websites, creating a personalized archive of must-see shows. The tool also provides tailored recommendations based on saved exhibitions and includes a countdown feature to ensure users never miss an event.

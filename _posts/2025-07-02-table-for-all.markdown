@@ -1,13 +1,13 @@
 ---
-title: 'Table for All'
-date: '2025-07-02'
+title: Table for All
+date: 2025-07-02 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/mika-arai_print_0_0.44389800-1743565600_cover.jpg'
-  creator: 'Mika Arai'
-  link: 'https://mikaarai.com'
+- file: "/uploads/mika-arai_print_0_0.44389800-1743565600_cover.jpg"
+  creator: Mika Arai
+  link: https://mikaarai.com
 ---
 
 It all started with a dinner plan. My friend, a wheelchair user, hesitated when I suggested a new restaurant. “What if there’s no ramp? What if the tables are too close together?” At the same time, my 67-year-old mother struggles with blurry vision and small text on apps. Something as simple as booking a table shouldn’t be stressful, yet for millions of seniors and people with disabilities, it often is.

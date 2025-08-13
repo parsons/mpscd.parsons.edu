@@ -1,6 +1,6 @@
 ---
 title: '2025'
-date: '2025-07-01'
+date: 2025-07-01 00:00:00 -04:00
 position: 7
 list:
 - "[Irene Jaehyun Ahn](https://www.irenejhahn.com)"
@@ -32,3 +32,4 @@ list:
 - "[Jenny Yen](https://jennyenn.com)"
 - "[Yuting Zhuang](https://www.yutingzhuang.com)"
 ---
+

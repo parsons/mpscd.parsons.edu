@@ -1,13 +1,13 @@
 ---
-title: 'Torv'
-date: '2025-07-09'
+title: Torv
+date: 2025-07-09 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/hannah-farnham_print_0_0.27042400-1743543958_mockup-1.jpg'
-  creator: 'Hannah Farnham'
-  link: 'https://www.hannahfarnham.com'
+- file: "/uploads/hannah-farnham_print_0_0.27042400-1743543958_mockup-1.jpg"
+  creator: Hannah Farnham
+  link: https://www.hannahfarnham.com
 ---
 
 The goal was to evoke a sense of community through a digital forum. I drew inspiration from the idea of a gathering place, similar to an old village square or community house. The problem arose from the observation that people struggle to meet others within their community or to get involved locally. I wanted to create a digital space for people to discover what was happening around them, and get involved. I explored how we can create a sense of community in a city environment, where our repeated interaction with others is limited.

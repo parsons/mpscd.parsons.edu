@@ -1,13 +1,13 @@
 ---
-title: '“Hotlists” Feature for Resy'
-date: '2025-07-08'
+title: "“Hotlists” Feature for Resy"
+date: 2025-07-08 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/rayana-dilawri_print_0_0.65317100-1743448543_finalscreen1.jpg'
-  creator: 'Rayana Dilawri'
-  link: 'https://rayanadilawri.framer.website'
+- file: "/uploads/rayana-dilawri_print_0_0.65317100-1743448543_finalscreen1.jpg"
+  creator: Rayana Dilawri
+  link: https://rayanadilawri.framer.website
 ---
 
 Resy, owned by AMEX, already makes it easy to discover and book restaurants. But in a city like New York, where demand constantly outpaces supply, I saw an opportunity to reframe how people approach reservations. Getting into a hot new restaurant here can feel like an Olympic sport. As a frequent Resy user, I noticed something: New Yorkers cared more about where they were eating than when. They were overjoyed to grab a 5 PM dinner if it meant getting into the newest, buzziest spot.

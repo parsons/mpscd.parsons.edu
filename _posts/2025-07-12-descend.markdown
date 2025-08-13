@@ -1,14 +1,15 @@
 ---
-title: 'Descend'
-date: '2025-07-12'
+title: Descend
+date: 2025-07-12 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/devansh-khajanchi_print_0_0.55293700-1743538061_descend-print-01.jpg'
-  creator: 'Devansh Khajanchi'
-  link: 'https://www.devanshkhajanchi.com'
+- file: "/uploads/devansh-khajanchi_print_0_0.55293700-1743538061_descend-print-01.jpg"
+  creator: Devansh Khajanchi
+  link: https://www.devanshkhajanchi.com
 ---
+
 Descend is a mobile application that simplifies dive planning with a comprehensive, location based directory of dive centers. Divers can explore sites based on factors such as visibility, difficulty, and biodiversity, ensuring a safer and more seamless experience, whether they’re beginners or seasoned explorers. The app also allows new or returning divers to find dive centers where they can get certified or continue advancing through certification levels.
 
 Beyond discovering dive spots, Descend helps divers log their dives, share experiences, and connect with the diving community. The app streamlines equipment rentals and dive bookings, making trip planning effortless. Personalized dive recommendations based on past experiences ensure each dive is both memorable and tailored to the user’s preferences.

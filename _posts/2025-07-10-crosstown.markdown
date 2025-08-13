@@ -1,13 +1,13 @@
 ---
-title: 'Crosstown'
-date: '2025-07-10'
+title: Crosstown
+date: 2025-07-10 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/rice-gallardo_print_0_0.44750600-1743588680_crosstown-print-1.jpg'
-  creator: 'Rice Gallardo'
-  link: 'http://www.ricegallardo.xyz'
+- file: "/uploads/rice-gallardo_print_0_0.44750600-1743588680_crosstown-print-1.jpg"
+  creator: Rice Gallardo
+  link: http://www.ricegallardo.xyz
 ---
 
 Crosstown is a social discovery app designed to help New York City residents—especially newcomers—build connections while exploring the city. Moving to NYC can be overwhelming, and finding like-minded people to share experiences with isn’t always easy. Crosstown bridges that gap by matching users based on shared interests, favorite activities, and availability, making it effortless to meet new friends and experience the city together.

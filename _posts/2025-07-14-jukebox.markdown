@@ -1,13 +1,13 @@
 ---
-title: '“Jukebox” Feature for Spotify'
-date: '2025-07-14'
+title: "“Jukebox” Feature for Spotify"
+date: 2025-07-14 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/amy-lewis_print_0_0.42761800-1743549445_main-photo.jpg'
-  creator: 'Amy Lewis'
-  link: 'https://www.amy-lewis.com'
+- file: "/uploads/amy-lewis_print_0_0.42761800-1743549445_main-photo.jpg"
+  creator: Amy Lewis
+  link: https://www.amy-lewis.com
 ---
 
 Spotify is a beloved music streaming app known for it's large music library, generated playlists, and popular social media campaigns. It serves as the go-to place for people to curate their own music library, share music with friends, or discover something new—sort of. In this project, I explored how Spotify has lessened its focus and retention between new music discovery and long time users of the platform. I aimed to design a new feature that brought back building playlists with a twist. Instead of users feeling discouraged in their search for new music or disappointed in repetitive playlists, I implemented functionalities that prioritized a users mood and preferences into a playlist builder centered around unheard of music. No repeats, no long scrolling through lists, no more wasting time. This new feature is positioned to encourage listeners to get out of their familiar listening habits and use Spotify to develop a love for music exploration. I really enjoyed hearing from current users about their experience using Spotify as well as working within its current design system to create a new feature that would feel right at home.

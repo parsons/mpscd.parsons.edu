@@ -1,13 +1,13 @@
 ---
-title: 'Buyer Customization Feature for Depop'
-date: '2025-07-19'
+title: Buyer Customization Feature for Depop
+date: 2025-07-19 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/hye-lynn-suh_print_0_0.89510400-1743538064_depop01.jpg'
-  creator: 'Hye Lynn Suh'
-  link: 'https://www.hyelynnsuh.com'
+- file: "/uploads/hye-lynn-suh_print_0_0.89510400-1743538064_depop01.jpg"
+  creator: Hye Lynn Suh
+  link: https://www.hyelynnsuh.com
 ---
 
 Depop, a second-hand shopping app, primarily supports two user flows: buying and selling. Over five weeks, I designed a new feature to enhance buyer customization and personalization. Through research—including UI analysis, user reviews, and three user interviews with Depop’s target audience (18-26-year-olds)—I identified a need for improved trust and customization.

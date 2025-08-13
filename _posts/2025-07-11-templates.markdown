@@ -1,13 +1,13 @@
 ---
-title: '“Templates” Feature for Apple Notes'
-date: '2025-07-11'
+title: "“Templates” Feature for Apple Notes"
+date: 2025-07-11 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/bhakti-garach_print_0_0.57233900-1743539459_print_01.jpg'
-  creator: 'Bhakti Garach'
-  link: 'https://bhaktigarach.com'
+- file: "/uploads/bhakti-garach_print_0_0.57233900-1743539459_print_01.jpg"
+  creator: Bhakti Garach
+  link: https://bhaktigarach.com
 ---
 
 I focused on enhancing Apple Notes by introducing a much-needed Templates feature. While Apple Notes is widely used for its clean interface and seamless integration across Apple devices, many users—especially power users—turn to competitor note-taking apps for more advanced capabilities.

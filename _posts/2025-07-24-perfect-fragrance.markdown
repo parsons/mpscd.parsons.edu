@@ -1,13 +1,13 @@
 ---
 title: 'Perfect Fragrance: Helping You Find the Right Perfume'
-date: '2025-07-24'
+date: 2025-07-24 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/jenny-yen_print_0_0.24469200-1743523969_book.jpg'
-  creator: 'Jenny Yen'
-  link: 'https://jennyenn.com'
+- file: "/uploads/jenny-yen_print_0_0.24469200-1743523969_book.jpg"
+  creator: Jenny Yen
+  link: https://jennyenn.com
 ---
 
 Perfect Fragrance is an online fragrance shopping platform designed to help users discover their ideal perfumes. It provides detailed information on each fragrance, conveys scents through visual and auditory elements, and offers personalized recommendations.

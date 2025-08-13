@@ -1,13 +1,13 @@
 ---
-title: 'Error as Aesthetic'
-date: '2025-07-25'
+title: Error as Aesthetic
+date: 2025-07-25 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/yuting-zhuang_print_0_0.24158900-1743544104_laptop01-cmyk.jpg'
-  creator: 'Yuting Zhuang'
-  link: 'https://www.yutingzhuang.com'
+- file: "/uploads/yuting-zhuang_print_0_0.24158900-1743544104_laptop01-cmyk.jpg"
+  creator: Yuting Zhuang
+  link: https://www.yutingzhuang.com
 ---
 
 Error as Aesthetic explores the beauty of digital glitches—those unexpected pixel distortions that occur when a computer malfunctions. Drawing inspiration from early screen errors and system crashes, the site creates an immersive visual experience that turns technical failure into aesthetic expression.

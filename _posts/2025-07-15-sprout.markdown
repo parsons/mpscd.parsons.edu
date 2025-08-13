@@ -1,13 +1,13 @@
 ---
 title: 'Sprout: Connect, Chat, Grow'
-date: '2025-07-15'
+date: 2025-07-15 00:00:00 -04:00
 tags:
-- 'student-work'
+- student-work
 - '2025'
 images:
-- file: '/uploads/vy-mai_print_0_0.70529800-1743474115_image-01.jpg'
-  creator: 'Vy Mai'
-  link: 'https://vee-mai.com'
+- file: "/uploads/vy-mai_print_0_0.70529800-1743474115_image-01.jpg"
+  creator: Vy Mai
+  link: https://vee-mai.com
 ---
 
 Building a network can feel overwhelming, but like a seedling reaching for the sun, the right environment helps you grow.
