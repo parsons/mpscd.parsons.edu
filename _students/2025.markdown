@@ -1,0 +1,31 @@
+---
+title: '2025'
+date: '2025-05-14'
+position: 7
+list:
+- "[Irene Jaehyun Ahn](https://www.irenejhahn.com)"
+- "[Mika Arai](https://mikaarai.com)"
+- "[Nadia Batchelor](https://nadabdesigns.com)"
+- "[Iris Chang](https://irischang.co)"
+- "[Jonathan Chiang](https://jonathanchiang.com)"
+- "[Nattakitta Chuasiriphattana](https://opalnattakitta.com)"
+- "[Emma de Suyrot](https://readymag.website/u3658646869/5250755)"
+- "[Rayana Dilawri](https://rayanadilawri.framer.website)"
+- "[Hannah Farnham](https://hannah-farnham.github.io)"
+- "[Rice Gallardo](http://www.ricegallardo.xyz)"
+- "[Bhakti Garach](https://bhaktigarach.com)"
+- "[Devansh Khajanchi](https://www.devanshkhajanchi.com)"
+- "[Ishani Koul](https://ishanikoul.com)"
+- "[Amy Lewis](https://www.amy-lewis.com)"
+- "[Vy Mai](https://vee-mai.com)"
+- "[Inji Mammadli](https://injimammadli.com/portfolio)"
+- "[Amely Richter](https://amelyrichter.com)"
+- "[Mia Seo](https://www.mia-seo.com)"
+- "[Hye Lynn Suh](https://hyelynnsuh.com)"
+- "[Jolyn Tran](https://jolyntran.com)"
+- "[Shambhavi Varma](https://shamv.framer.website)"
+- "[Jennifer Wu](https://daizhuwu.github.io)"
+- "[Ziwei Xing](https://ziweixing97.github.io/Portfolio)"
+- "[Jenny Yen](https://jennyenn.com)"
+- "[Yuting Zhuang](https://www.yutingzhuang.com)"
+---
