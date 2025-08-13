@@ -118,6 +118,8 @@
   z-index: 20;
   width: 75vw;
   margin-left: $space-xxs;
+  max-height: 100vh;
+  overflow-y: scroll;
   transform: translateY(100%);
   transition: $base-transition;
   transition-property: transform;
