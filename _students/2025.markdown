@@ -1,11 +1,13 @@
 ---
 title: '2025'
-date: '2025-06-24'
+date: '2025-07-01'
 position: 7
 list:
 - "[Irene Jaehyun Ahn](https://www.irenejhahn.com)"
 - "[Mika Arai](https://mikaarai.com)"
 - "[Nadia Batchelor](https://nadabdesigns.com)"
+- "[Bee Bulgan](https://bulganbee.github.io/portfolio)"
+- "[Yaxuan Cai](https://annie-cai0924.github.io/Cai.github.io/)"
 - "[Iris Chang](https://irischang.co/)"
 - "[Jonathan Chiang](https://jonathanchiang.com)"
 - "[Nattakitta Chuasiriphattana](https://opalnattakitta.com)"
@@ -14,6 +16,7 @@ list:
 - "[Hannah Farnham](https://www.hannahfarnham.com)"
 - "[Rice Gallardo](http://www.ricegallardo.xyz)"
 - "[Bhakti Garach](https://bhaktigarach.com)"
+- "[Huijie Ji](https://www.myjihuijie.com)"
 - "[Devansh Khajanchi](https://www.devanshkhajanchi.com)"
 - "[Ishani Koul](https://ishanikoul.com)"
 - "[Amy Lewis](https://www.amy-lewis.com)"
