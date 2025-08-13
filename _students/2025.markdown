@@ -1,6 +1,6 @@
 ---
 title: '2025'
-date: '2025-05-14'
+date: '2025-06-24'
 position: 7
 list:
 - "[Irene Jaehyun Ahn](https://www.irenejhahn.com)"
