@@ -6,7 +6,7 @@ list:
 - "[Irene Jaehyun Ahn](https://www.irenejhahn.com)"
 - "[Mika Arai](https://mikaarai.com)"
 - "[Nadia Batchelor](https://nadabdesigns.com)"
-- "[Iris Chang](https://irischang.co)"
+- "[Iris Chang](https://irischang.co/)"
 - "[Jonathan Chiang](https://jonathanchiang.com)"
 - "[Nattakitta Chuasiriphattana](https://opalnattakitta.com)"
 - "[Emma de Suyrot](https://readymag.website/u3658646869/5250755)"
