@@ -1,0 +1,17 @@
+---
+title: 'Hua: A Personalized and Purposeful Flower-Booking Experience'
+date: '2025-07-04'
+tags:
+- 'student-work'
+- '2025'
+images:
+- file: '/uploads/iris-chang_print_0_0.57592400-1743535150_hua_print_image_1.jpg'
+  creator: 'Iris Chang'
+  link: 'https://irischang.co/'
+---
+
+Hua is a flower-booking platform designed for a seamless and personalized shopping experience. Users can browse seasonal collections, explore flowers by color, and easily place orders with a smooth checkout process.
+
+Beyond traditional flower ordering, Hua offers the Create Your Own Bouquet feature, allowing customers to design unique floral arrangements with real-time previews. Additionally, the Monthly Flower initiative donates a portion of proceeds from featured flowers to charitable causes, turning every purchase into an opportunity to give back.
+
+By combining thoughtful design with meaningful interactions, hua transforms the way people experience flowers—making the process effortless, creative, and socially impactful.
