@@ -23,10 +23,10 @@
           <div class="explore-item {% if site.is_explore_open == true and page.url == '/' %}exploreOn{% else %}exploreOff{% endif %} {{ post.tags | join:' ' }} {% if post.type == 'image' %}imagepost {% else %}textpost {% endif %}">
             {% if post.type == "image" %}
               {% for image in post.images %}
-                {% assign image_link = image.link %}
-                {% if image_link and (image_link | slice: 0, 4) != 'http' %}
-                  {% assign image_link = 'https://' | append: image_link %}
-                {% endif %}
+                {% assign image_link = image.link | strip %}
+                {% unless image_link == blank or image_link contains "http://" or image_link contains "https://" %}
+                  {% assign image_link = image_link | prepend: "https://" %}
+                {% endunless %}
                 <img
                   {{ image.file | getWebpData }}
                   alt="{{ post.title }}"
