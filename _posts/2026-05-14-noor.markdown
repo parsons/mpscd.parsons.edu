@@ -1,13 +1,13 @@
 ---
-title: TKTKTK
+title: The Plate
 date: 2025-05-14 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/5--noor.png'
   creator: Noor Abdussaboor
-  link: https://noorabdussaboor.framer.website
+  link: https://noor2025-design.github.io/functions
 ---
 
-TKTKTKTK
+I initially wanted to build a tool that could recommend restaurants across all of New York City based on factors like mood, budget and location. After discussing the scope of the idea, I was encouraged to narrow my focus significantly either by cuisine or location because I had about 6 weeks to take the project from concept to a fully coded site in HTML, CSS and Javascript. I decided to narrow it down to Arabic cuisine which I chose because it's what I know best and am most personally connected to. I curated my own dataset in a JSON file featuring 6 Arabic cuisines, and while there are many more that I could include, the constraints of the timeline made it necessary to be intentional. As a result, the experience essentially works seamlessly in the amount of time given. The user submits their preferences for cuisine type, price range, and borough and the app generates exactly one restaurant and one dish so that there is no scrolling or overwhelm. Along with the restaurant recommendation, the user gets the restaurant details, a photo of the dish, a description and directions.

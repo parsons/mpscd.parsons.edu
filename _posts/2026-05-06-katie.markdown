@@ -1,13 +1,13 @@
 ---
-title: TKTKTK
+title: Spark
 date: 2025-05-06 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/5--katie.png'
   creator: Katie Lu
-  link: https://katieludesigns.com
+  link: https://luk862-glitch.github.io/function
 ---
 
-TKTKTKTK
+Whether you're meeting new coworkers, going on a first date, or just want a question to sit with on your own — good conversations and reflections don't always come naturally. Spark is a reflection and conversation starter generator that gives you a prompt tailored to your vibe, the social setting you're in, and what you want to talk about — so you always have questions that help you get to know yourself and others more.

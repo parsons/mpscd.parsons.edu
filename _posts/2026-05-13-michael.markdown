@@ -1,13 +1,13 @@
 ---
-title: TKTKTK
+title: GutCheck
 date: 2025-05-13 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/5--michael.png'
   creator: Michael French
-  link: https://michaelfrench.co
+  link: https://github.com/mfrench022/functions
 ---
 
-TKTKTKTK
+GutCheck is an extension for Google Chrome that is inserted directly into the Amazon interface. As such, many of the styles are pulled directly from Amazon, or modified slightly to fit the extension's design system. This includes the extension's typeface, Amazon Ember, icons, and colors. The project has three main files. The CSS file modifies Amazon's styles and creates any new styles needed for the extension. The Javascript file contains the core functionality of the extension. The JSON file contains the setup information for the Chrome Extension.

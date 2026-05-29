@@ -1,13 +1,15 @@
 ---
-title: TKTKTK
+title: Eyerest Reminder
 date: 2025-05-16 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/5--soko.png'
   creator: Soko Mungunsukh
-  link: https://www.soko-designs.com
+  link: https://github.com/soko-solongo/functions
 ---
 
-TKTKTKTK
+Eyerest Reminder is a Chrome browser extension that helps screen-heavy users protect their eyes by reminding them a regular break of 1 minute once in every 30 or 60 min based on user's choice.
+
+The problem: Most people know they should rest their eyes, but forget to do it. This extension makes it harder to ignore, because a big sheep grows and takes over every open tab making the user impossible to work unless they click "Cancel" which terminates every active flow.

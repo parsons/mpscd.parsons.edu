@@ -1,13 +1,13 @@
 ---
-title: TKTKTK
+title: Songvault
 date: 2025-05-19 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/5--trenton.png'
   creator: Trenton Soto
-  link: https://trentonsoto.design
+  link: https://trentonsoto.github.io/functions
 ---
 
-TKTKTKTK
+A home for your songs. Store, organize, and revisit your ideas whenever inspiration hits. Each entry keeps your creative process organized.

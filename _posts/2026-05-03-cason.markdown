@@ -1,13 +1,13 @@
 ---
-title: TKTKTK
+title: The Men in The Torrent
 date: 2025-05-03 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/5--cason.png'
   creator: Cason Huang
-  link: https://www.casonhuang.com
+  link: https://agedhuang.github.io/The-Men-in-the-Torrent
 ---
 
-TKTKTKTK
+_The Men in The Torrent_ is an interactive digital archive and family museum project. It preserves and visualizes the history of the Huang family across five generations, treating historical artifacts—photos, letters, and physical objects—as anchors within the fast-moving "torrent" of 20th and 21st-century social change.

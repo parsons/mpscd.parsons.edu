@@ -1,13 +1,17 @@
 ---
-title: TKTKTK
+title: Decoded Lines
 date: 2025-05-18 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/5--sophia.png'
   creator: Sophia Bae
-  link: https://sophbae.com
+  link: https://baes358.github.io/functions
 ---
 
-TKTKTKTK
+Politics moves extremely fast, especially on social media. Fully understanding it means leaving the conversation entirely. You may see a term, leave the app to search for its definition, lose your place, come back, and find three more terms you don't recognize. Then repeat, and forget what you were even reading!
+
+Decoded Lines is a field guide built for that problem. It's a simulated social feed where glossary terms open inline, right beneath the post that uses them. There are no new tabs, meaning no lost context.
+
+Every definition is intentionally neutral, because the goal of this isn't to tell you how to think about American politics. It is to make sure you have the language/tools/context to form an opinion yourself.

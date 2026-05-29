@@ -1,13 +1,17 @@
 ---
-title: TKTKTK
+title: Mixed Signals
 date: 2025-05-02 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/5--amanda.png'
   creator: Amanda Guo
-  link: https://itsamandaguo.com
+  link: https://amanda-gu.github.io/functions
 ---
 
-TKTKTKTK
+A tool to help you design unique cocktail recipes based on mood, taste palate, and intensity.
+
+Cocktails are incredibly delicious, but can get increasingly expensive. I’m beginning to save money by experimenting with cocktail recipes at home, but a lot of the time I have no clue what I’m doing and what ingredients work well with what base drinks. On many occasions, I spend a long time googling recipes that look like they may taste bad to me. I wonder if there is a way to help me create cocktail recipes that fit my taste, and my taste only.
+
+The visual direction takes inspiration from physical menu designs. I prioritized clean and structured typography, and stepped away from heavy imageries as I don't want detailed photography to limit the way users imagines what the drink might look like. Instead, I created a series of cocktail family illustrations that subtle suggest what glass might be the best for the cocktail.
