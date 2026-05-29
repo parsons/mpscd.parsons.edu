@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/5--amanda.png'
+- file: "/uploads/5--amanda.png"
   creator: Amanda Guo
   link: https://amanda-gu.github.io/functions
 ---

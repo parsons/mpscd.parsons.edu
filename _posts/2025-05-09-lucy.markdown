@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/lucille-trepanier_print_1_0.61696100-1774643935_lucytrepanier_print_2.jpg'
+- file: "/uploads/lucille-trepanier_print_1_0.61696100-1774643935_lucytrepanier_print_2.jpg"
   creator: Lucy Trepanier
   link: https://lucytrep.com/axsphere
 ---

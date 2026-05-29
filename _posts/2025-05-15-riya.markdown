@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/riya-shrestha_print_3_0.92580400-1774821424_b4.jpg'
+- file: "/uploads/riya-shrestha_print_3_0.92580400-1774821424_b4.jpg"
   creator: Riya Shrestha
   link: https://riyashrestha.design/case-studies/pinterest-basket
 ---

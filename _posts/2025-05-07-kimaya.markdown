@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/kimaya-sarin_print_2_0.64396000-1774636520_ks_echo_3_print.jpg'
+- file: "/uploads/kimaya-sarin_print_2_0.64396000-1774636520_ks_echo_3_print.jpg"
   creator: Kimaya Sarin
   link: https://www.kimayasarin.com/work/echo
 ---

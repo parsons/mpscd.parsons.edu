@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/5--cason.png'
+- file: "/uploads/5--cason.png"
   creator: Cason Huang
   link: https://agedhuang.github.io/The-Men-in-the-Torrent
 ---

@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/sooim-kang_print_2_0.16830700-1774648713_print-3.jpg'
+- file: "/uploads/sooim-kang_print_2_0.16830700-1774648713_print-3.jpg"
   creator: Sooim Kang
   link: http://sooimkang.com/neuk
 ---

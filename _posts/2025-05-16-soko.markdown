@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/5--soko.png'
+- file: "/uploads/5--soko.png"
   creator: Soko Mungunsukh
   link: https://github.com/soko-solongo/functions
 ---

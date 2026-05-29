@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/1_evgenii-astapov/evgenii-astapov_print_4_0.81449100-1774540834_005_5000x3333.jpg'
+- file: "/uploads/1_evgenii-astapov/evgenii-astapov_print_4_0.81449100-1774540834_005_5000x3333.jpg"
   creator: Evgenii Astapov
   link: https://astapable.github.io/binding
 ---

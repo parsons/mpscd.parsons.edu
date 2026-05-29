@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/chareese-lam_print_4_0.46687700-1774648868_picture-3.jpg'
+- file: "/uploads/chareese-lam_print_4_0.46687700-1774648868_picture-3.jpg"
   creator: Chareese Lam
   link: https://www.chareeselam.com/parameter
 ---

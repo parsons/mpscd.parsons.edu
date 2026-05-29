@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/5--katie.png'
+- file: "/uploads/5--katie.png"
   creator: Katie Lu
   link: https://luk862-glitch.github.io/function
 ---

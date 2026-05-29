@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/maika-sacerdote_print_4_0.45298700-1774643306_5.jpg'
+- file: "/uploads/maika-sacerdote_print_4_0.45298700-1774643306_5.jpg"
   creator: Maika Sacerdote
   link: https://www.maikasacerdote.com/nike
 ---

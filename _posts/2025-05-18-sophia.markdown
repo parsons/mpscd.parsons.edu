@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/5--sophia.png'
+- file: "/uploads/5--sophia.png"
   creator: Sophia Bae
   link: https://baes358.github.io/functions
 ---

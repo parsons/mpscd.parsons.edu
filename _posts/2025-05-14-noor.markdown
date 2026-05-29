@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/5--noor.png'
+- file: "/uploads/5--noor.png"
   creator: Noor Abdussaboor
   link: https://noor2025-design.github.io/functions
 ---

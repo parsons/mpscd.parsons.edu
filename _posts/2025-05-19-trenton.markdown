@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/5--trenton.png'
+- file: "/uploads/5--trenton.png"
   creator: Trenton Soto
   link: https://trentonsoto.github.io/functions
 ---

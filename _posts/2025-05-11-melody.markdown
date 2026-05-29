@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/melody-ekbatani_print_2_0.13768500-1774647236_image-3-print.jpg'
+- file: "/uploads/melody-ekbatani_print_2_0.13768500-1774647236_image-3-print.jpg"
   creator: Melody Ekbatani
   link: https://melodyekbatani.com/aeri
 ---

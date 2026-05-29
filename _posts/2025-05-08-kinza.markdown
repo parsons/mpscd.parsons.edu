@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/kinza-ghanchi_print_0_0.06312900-1774648103_main-book.jpg'
+- file: "/uploads/kinza-ghanchi_print_0_0.06312900-1774648103_main-book.jpg"
   creator: kinza ghanchi
   link: https://k881-droid.github.io/links
 ---

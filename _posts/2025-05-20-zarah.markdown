@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/zarah-yaqub_print_2_0.78847000-1774648789_iris-print-03.jpg'
+- file: "/uploads/zarah-yaqub_print_2_0.78847000-1774648789_iris-print-03.jpg"
   creator: Zarah Yaqub
   link: https://zarahyaqub.com/projects/iris.html
 ---

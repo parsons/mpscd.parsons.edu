@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/5--michael.png'
+- file: "/uploads/5--michael.png"
   creator: Michael French
   link: https://github.com/mfrench022/functions
 ---

@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/ali-salifov_print_0_0.04864700-1774825117_image-1.jpg'
+- file: "/uploads/ali-salifov_print_0_0.04864700-1774825117_image-1.jpg"
   creator: Ali Salifov
   link: https://ali001.com/persistence-of-color
 ---

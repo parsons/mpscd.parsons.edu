@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/mia-tran_print_2_0.43714800-1774832503_image-3.jpg'
+- file: "/uploads/mia-tran_print_2_0.43714800-1774832503_image-3.jpg"
   creator: Mia Tran
   link: https://www.mialamtran.com/nook
 ---
