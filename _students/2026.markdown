@@ -1,0 +1,26 @@
+---
+title: '2026'
+date: 2025-05-01 00:00:00 -04:00
+position: 8
+list:
+- "[Noor Abdussaboor](https://noorabdussaboor.framer.website/)"
+- "[Evgenii Astapov](https://astapable.com/)"
+- "[Sophia Bae](https://sophbae.com)"
+- "[Melody Ekbatani](https://melodyekbatani.com/)"
+- "[Michael French](https://michaelfrench.co)"
+- "[kinza ghanchi](https://k881-droid.github.io/)"
+- "[Amanda Guo](https://itsamandaguo.com/)"
+- "[Cason Huang](https://www.casonhuang.com)"
+- "[Sooim Kang](https://sooimkang.com/)"
+- "[Chareese Lam](https://chareeselam.com)"
+- "[Katie Lu](https://luk862-glitch.github.io/)"
+- "[Soko Mungunsukh](https://www.soko-designs.com)"
+- "[Maika Sacerdote](https://www.maikasacerdote.com)"
+- "[Ali Salifov](https://ali001.com/)"
+- "[Kimaya Sarin](https://www.kimayasarin.com)"
+- "[Riya Shrestha](https://riyashrestha.design/)"
+- "[Trenton Soto](https://trentonsoto.design/)"
+- "[Mia Tran](https://www.mialamtran.com/)"
+- "[Lucy Trepanier](https://lucytrep.com)"
+- "[Zarah Yaqub](https://zarahyaqub.com)"
+---
