@@ -1,0 +1,13 @@
+---
+title: TKTKTK
+date: 2025-05-10 00:00:00 -04:00
+tags:
+- student-work
+- '2026'
+images:
+- file: '/uploads/'
+  creator: Maika Sacerdote
+  link: https://www.maikasacerdote.com
+---
+
+TKTKTKTK

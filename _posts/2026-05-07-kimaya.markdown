@@ -1,0 +1,13 @@
+---
+title: TKTKTK
+date: 2025-05-07 00:00:00 -04:00
+tags:
+- student-work
+- '2026'
+images:
+- file: '/uploads/'
+  creator: Kimaya Sarin
+  link: https://www.kimayasarin.com
+---
+
+TKTKTKTK

@@ -1,0 +1,13 @@
+---
+title: TKTKTK
+date: 2025-05-02 00:00:00 -04:00
+tags:
+- student-work
+- '2026'
+images:
+- file: '/uploads/'
+  creator: Amanda Guo
+  link: https://itsamandaguo.com
+---
+
+TKTKTKTK

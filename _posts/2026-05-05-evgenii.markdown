@@ -1,0 +1,13 @@
+---
+title: F/ckts Anthology
+date: 2025-05-05 00:00:00 -04:00
+tags:
+- student-work
+- '2026'
+images:
+- file: '/uploads/'
+  creator: Evgenii Astapov
+  link: https://astapable.com
+---
+
+TKTKTKTK

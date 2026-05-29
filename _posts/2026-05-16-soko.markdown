@@ -1,0 +1,13 @@
+---
+title: TKTKTK
+date: 2025-05-16 00:00:00 -04:00
+tags:
+- student-work
+- '2026'
+images:
+- file: '/uploads/'
+  creator: Soko Mungunsukh
+  link: https://www.soko-designs.com
+---
+
+TKTKTKTK
