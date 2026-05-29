@@ -1,13 +1,21 @@
 ---
-title: TKTKTK
+title: neuk
 date: 2025-05-17 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/sooim-kang_print_2_0.16830700-1774648713_print-3.jpg'
   creator: Sooim Kang
-  link: https://sooimkang.com
+  link: http://sooimkang.com/neuk
 ---
 
-TKTKTKTK
+neuk is a platform for booking private, premium watch-party rooms: small, cinema-grade spaces designed for groups to watch content together. Positioned between home streaming and traditional movie theaters, neuk creates a new category of social entertainment centered around shared viewing.
+
+Users browse nearby rooms, reserve by the hour, and arrive to a private, pre-configured cinema space designed for small groups. Upon entry, guests scan a QR code to check in, and their phones become remotes to control playback, volume, and browsing. Content is accessed through a room-based streaming interface, allowing groups to watch together without logging into personal accounts.
+
+The experience prioritizes social connection over content itself, transforming passive watching into a shared, intentional activity. By removing friction around hosting, setup, and coordination, neuk makes group viewing effortless and repeatable.
+
+Beyond the core experience, neuk introduces a scalable system layer: hourly room pricing, themed spaces, food and beverage upsells, and extensions. The platform positions shared watching as a bookable outing, similar to bowling, karaoke, or escape rooms.
+
+neuk explores how physical environments and digital interfaces can combine to create a new social behavior, turning everyday streaming into a designed, premium, and social experience.

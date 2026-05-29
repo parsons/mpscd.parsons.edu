@@ -1,13 +1,13 @@
 ---
-title: TKTKTK
+title: Nook
 date: 2025-05-12 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/mia-tran_print_2_0.43714800-1774832503_image-3.jpg'
   creator: Mia Tran
-  link: https://www.mialamtran.com
+  link: https://www.mialamtran.com/nook
 ---
 
-TKTKTKTK
+Nook was designed to make it easier for people to find genuine connections and experiences in the city. It’s more than just an event-finding app, it’s a space for discovery, shared moments, and new friendships. Having moved between cities and countries, I’ve often felt how difficult it can be to build a sense of belonging, especially in a fast-paced place like New York. Through Nook, I wanted to create something that helps users find not only fun things to do, but also meaningful ways to feel part of a community wherever they are.

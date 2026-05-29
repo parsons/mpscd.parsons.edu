@@ -1,13 +1,13 @@
 ---
-title: TKTKTK
+title: Axsphere
 date: 2025-05-09 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/lucille-trepanier_print_1_0.61696100-1774643935_lucytrepanier_print_2.jpg'
   creator: Lucy Trepanier
-  link: https://lucytrep.com
+  link: https://lucytrep.com/axsphere
 ---
 
-TKTKTKTK
+Axsphere helps people show up with confidence by rethinking how people choose where to go. Research revealed a clear gap that accessibility information is often invisible, unverified, or too vague to be useful. Axsphere closes that gap by letting users filter spaces by atmosphere and accessibility needs, preview real conditions before arriving, and contribute live crowd and noise data for others. Features like text-to-speech, alt text, colorblind-friendly visuals, and adjustable audio controls make the experience comfortable for everyone.

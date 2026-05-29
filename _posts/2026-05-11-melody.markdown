@@ -1,13 +1,19 @@
 ---
-title: TKTKTK
+title: Aeri
 date: 2025-05-11 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/melody-ekbatani_print_2_0.13768500-1774647236_image-3-print.jpg'
   creator: Melody Ekbatani
-  link: https://melodyekbatani.com
+  link: https://melodyekbatani.com/aeri
 ---
 
-TKTKTKTK
+Aeri is a preventative care concept that rethinks how Type 2 diabetes can be managed through emerging technologies. The project was created during the Parsons x University of Arizona 24-hour AI Hackathon.
+
+Many diabetes management systems today focus primarily on reporting data. Continuous glucose monitors generate a steady stream of readings, yet individuals must still interpret the information, recognize patterns, and decide how to respond throughout the day. However, managing this information creates a significant cognitive load on users.
+
+Aeri proposes a more anticipatory approach. The system combines continuous biosensing, predictive AI, and an augmented reality interface delivered through a smart contact lens. By identifying shifts earlier, the system surfaces timely insights that help users respond before issues intensify.
+
+The experience is structured around four connected components: live interventions, daily overviews, metric breakdowns, and user controls. Together, they make health insights clearer, more timely, and easier to act on. The project explores a future where diabetes care becomes more preventative, supporting everyday decisions through guidance that appears naturally within the user’s environment.

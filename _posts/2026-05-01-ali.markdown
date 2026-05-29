@@ -1,13 +1,23 @@
 ---
-title: TKTKTK
+title: Persistence of Color
 date: 2025-05-01 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/ali-salifov_print_0_0.04864700-1774825117_image-1.jpg'
   creator: Ali Salifov
-  link: https://ali001.com
+  link: https://ali001.com/persistence-of-color
 ---
 
-TKTKTKTK
+This project explores the use of color across time, beginning as ideas in Josef Albers’ studio, expanding into the lived architectural space through Luis Barragán’s structures, and arriving at the current systems of digital interfaces.
+
+In _Interaction of Color,_ Josef Albers demonstrates how the same color can appear to shift depending on its surrounding context, lighting, and adjacency to other colors.
+
+In _Homage to an Homage of an Homage,_ Tamara Shopsin traces how Josef Albers’ knowledge of color translates beyond the painted square, through the architecture of Luis Barragán.
+
+In _Everyday Color Theory,_ Cortney Cassidy examines how color now operates as a functional system within digital interfaces, branding, and accessibility design.
+
+By combining form and reference, this digital binding reflects on how visual language evolves through reuse and reinterpretation. Through spatial relationships and juxtaposition, color becomes a constant that changes as the viewer interacts with it.
+
+Josef Albers’ ideas still persist because they are grounded in perception and remain applicable across the ever-changing technologies. His studies of color established a way of thinking that continues to shape how designers approach digital screens, accessibility, branding, and interaction today.

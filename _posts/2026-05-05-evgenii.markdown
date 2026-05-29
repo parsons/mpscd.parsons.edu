@@ -5,9 +5,13 @@ tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/1_evgenii-astapov/evgenii-astapov_print_4_0.81449100-1774540834_005_5000x3333.jpg'
   creator: Evgenii Astapov
-  link: https://astapable.com
+  link: https://astapable.github.io/binding
 ---
 
-TKTKTKTK
+F/ckts Anthology is a web-based editorial project that brings together three critical texts. The project examines how design is shaped by labor conditions, ideology, and professional power structures. It argues that design is never an isolated cultural practice, but something produced within larger systems of control, value, and interest.
+
+Rather than treating the readings as separate essays, the anthology frames them as parts of a shared argument. Together, they show that design does not stand outside power, but is always formed by economic structures, political interests, cultural narratives, and professional gatekeeping. Every visual decision, every claim of clarity, and every formal system carries the conditions of its own production.
+
+This position is reflected in the visual language of the project. Sharp and simple visual forms, pixel elements, bright colors, and the harsh contrast of deep almost flat black and white create a deliberately digital and confrontational atmosphere. The key image, treated with an ASCII effect, shows a group of figures attempting to enter a territory. Its meaning shifts depending on the viewer’s position after reading: it can suggest intrusion and threat, or an attempt to break through toward hidden truth. The project uses this instability to show that perception is never neutral. Text shapes interpretation, and design becomes part of that process.

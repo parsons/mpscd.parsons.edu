@@ -1,13 +1,19 @@
 ---
-title: TKTKTK
+title: Nike Run Music App
 date: 2025-05-10 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/maika-sacerdote_print_4_0.45298700-1774643306_5.jpg'
   creator: Maika Sacerdote
-  link: https://www.maikasacerdote.com
+  link: https://www.maikasacerdote.com/nike
 ---
 
-TKTKTKTK
+Nike Run Music is a project developed to introduce a meaningful new feature to an existing app. I chose the Nike Run app because it is the tool I personally use to track my runs, and because of my strong interest in running, performance, and Nike as a brand.
+
+Through research, I explored how music influences running behavior and discovered that rhythm and tempo can directly affect pace, endurance, and motivation. This insight led to the concept of integrating music more intentionally into the running experience—not just as background entertainment, but as an active performance tool.
+
+The objective of this project was to increase motivation and engagement among runners by connecting music to movement. The feature allows users to create custom playlists based on their running goals, learn how music tempo (BPM) affects performance, and visualize how music aligns with their cadence during a run. By turning music into a measurable and responsive element, the experience supports both motivation and self-awareness.
+
+In addition to designing the user experience, I developed a visual campaign to support the feature, using AI-generated imagery created with Midjourney. This allowed me to explore how the concept could live not only inside the app, but also as part of a broader brand narrative.

@@ -1,13 +1,19 @@
 ---
-title: TKTKTK
+title: Pinterest Basket
 date: 2025-05-15 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/riya-shrestha_print_3_0.92580400-1774821424_b4.jpg'
   creator: Riya Shrestha
-  link: https://riyashrestha.design
+  link: https://riyashrestha.design/case-studies/pinterest-basket
 ---
 
-TKTKTKTK
+Baskets is a temporary holding space designed for the in-between moments of curation, the part most platforms ignore.
+
+On Pinterest, saving is decisive: a pin has to belong somewhere. But real behavior is messier. We collect quickly, impulsively, without always knowing why something resonates or where it fits. Baskets was introduced as a low-pressure layer between discovery and organization, a place to drag and drop pins without committing them to a board.
+
+Rather than forcing immediate structure, Baskets embraces ambiguity. It lets users gather freely, then step back and make sense of what they've collected. To support this transition, the feature integrates AI in a way that feels assistive, not directive. It suggests relevant boards based on patterns in saved pins, or creates new ones when needed. Importantly, this system is optional, users can organize everything manually, maintaining full control over their process.
+
+The goal isn't just efficiency, but to design for how people actually think: non-linear, intuitive, and often unfinished. Baskets turns a rigid action into a fluid workflow, making curation feel less like sorting and more like discovering intent over time.

@@ -1,13 +1,13 @@
 ---
-title: TKTKTK
+title: red string theory
 date: 2025-05-08 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/kinza-ghanchi_print_0_0.06312900-1774648103_main-book.jpg'
   creator: kinza ghanchi
-  link: https://k881-droid.github.io
+  link: https://k881-droid.github.io/links
 ---
 
-TKTKTKTK
+The red string theory explains the myth of people connected by a red string, and how they always find their way back to one another. The depiction is closely referenced in art and design, and this collection aims to explore that.

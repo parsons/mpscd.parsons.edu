@@ -1,13 +1,21 @@
 ---
-title: TKTKTK
+title: Echo
 date: 2025-05-07 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/kimaya-sarin_print_2_0.64396000-1774636520_ks_echo_3_print'
   creator: Kimaya Sarin
-  link: https://www.kimayasarin.com
+  link: https://www.kimayasarin.com/work/echo
 ---
 
-TKTKTKTK
+Echo is a social music events platform designed to help people discover events through the people they trust most, their friends.
+
+Most event platforms work like a database. They show you everything, personalize nothing, and leave you scrolling through hundreds of listings with no relevance to your taste or social life. Music is communal by nature. Echo was designed to match that.
+
+At its core is a social-first experience where you can see what friends are attending, follow artists and venues you love, and receive bespoke recommendations based on your listening history, past attendance, and social connections. The platform brings together the best events, DJs, concerts, festivals, and late nights your city has to offer, filtered through a social layer that makes discovery feel less like a search and more like a conversation with people who know your taste.
+
+The project began with problem discovery and user interviews with people who regularly attend events. Three consistent themes emerged: the need for personalization, the importance of social context, and the frustration of jumping between fragmented platforms. From sketching and lo-fi prototyping through to testing, brand identity, and high-fidelity prototypes, every decision was grounded in those insights.
+
+The result is a platform that puts community and culture at its core, where the best recommendation you will ever get is finding out your friends are already going.

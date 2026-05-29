@@ -1,13 +1,17 @@
 ---
-title: TKTKTK
+title: Iris
 date: 2025-05-20 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: '/uploads/'
+- file: '/uploads/zarah-yaqub_print_2_0.78847000-1774648789_iris-print-03.jpg'
   creator: Zarah Yaqub
-  link: https://zarahyaqub.com
+  link: https://zarahyaqub.com/projects/iris.html
 ---
 
-TKTKTKTK
+Iris is a 24-hour hackathon project that reimagines how artificial intelligence can live beyond the phone and become part of everyday life through smart glasses. Developed during the 2026 AI Startup Design Hackathon, the project was created by a team of two product designers from Parsons School of Design and two business strategists from the University of Arizona. The team began with a music-focused app idea, then reframed the challenge around a bigger question: what if intelligence could exist around the user instead of inside a screen?
+
+The result was Iris, an agentic AI platform designed to assist proactively and contextually. Rather than waiting for prompts like a traditional chatbot, Iris learns how a person lives, builds context over time, and offers help when it is most useful. It is meant to reduce the constant friction of switching between apps, checking phones, and manually coordinating daily tasks.
+
+Iris is built specifically for smart glasses because they provide continuous access to the user’s visual environment while keeping interactions hands-free. The concept was demonstrated through scenarios such as airport navigation, real-time workout tracking, and contextual alerts. The interface is organized to keep the center of vision clear, with relevant information appearing only where needed. It also adapts contrast and opacity to preserve readability in different environments. Overall, Iris presents a vision of AI as an ambient, supportive layer woven into daily life rather than a tool that must be repeatedly summoned.
