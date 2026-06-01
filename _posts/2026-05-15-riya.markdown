@@ -5,7 +5,7 @@ tags:
 - student-work
 - '2026'
 images:
-- file: "4--riya.png"
+- file: 4--riya.png
   creator: Riya Shrestha
   link: https://github.com/shrer488/link
 ---
