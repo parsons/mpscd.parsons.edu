@@ -1,6 +1,6 @@
 ---
 title: Parameter
-date: 2025-05-04 00:00:00 -04:00
+date: 2026-05-04 00:00:00 -04:00
 tags:
 - student-work
 - '2026'

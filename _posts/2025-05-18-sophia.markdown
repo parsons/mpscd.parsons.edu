@@ -1,6 +1,6 @@
 ---
 title: Decoded Lines
-date: 2025-05-18 00:00:00 -04:00
+date: 2026-05-18 00:00:00 -04:00
 tags:
 - student-work
 - '2026'

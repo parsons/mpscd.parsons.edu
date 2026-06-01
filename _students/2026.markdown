@@ -1,6 +1,6 @@
 ---
 title: '2026'
-date: 2025-05-01 00:00:00 -04:00
+date: 2026-05-01 00:00:00 -04:00
 position: 8
 list:
 - "[Noor Abdussaboor](https://noorabdussaboor.framer.website/)"
