@@ -1,19 +1,17 @@
 ---
-title: Pinterest Basket
+title: Butterflies
 date: 2026-05-15 00:00:00 -04:00
 tags:
 - student-work
 - '2026'
 images:
-- file: "/uploads/riya-shrestha_print_3_0.92580400-1774821424_b4.jpg"
+- file: "4--riya.png"
   creator: Riya Shrestha
-  link: https://riyashrestha.design/case-studies/pinterest-basket
+  link: https://github.com/shrer488/link
 ---
 
-Baskets is a temporary holding space designed for the in-between moments of curation, the part most platforms ignore.
+When I received this topic, I realized I hadn't seen a butterfly in ages. It had become a distant memory. This made me want to explore the connection between butterflies and remembrance, and the way we search for meaning within our memories.
 
-On Pinterest, saving is decisive: a pin has to belong somewhere. But real behavior is messier. We collect quickly, impulsively, without always knowing why something resonates or where it fits. Baskets was introduced as a low-pressure layer between discovery and organization, a place to drag and drop pins without committing them to a board.
+The overall design is symmetric, taking direct inspiration from the natural symmetry of a butterfly's wings. To evoke the feeling of trying to recall something, the images are kept intentionally hazy and only reveal themselves on hover, much like how a memory sharpens the moment you focus on it.
 
-Rather than forcing immediate structure, Baskets embraces ambiguity. It lets users gather freely, then step back and make sense of what they've collected. To support this transition, the feature integrates AI in a way that feels assistive, not directive. It suggests relevant boards based on patterns in saved pins, or creates new ones when needed. Importantly, this system is optional, users can organize everything manually, maintaining full control over their process.
-
-The goal isn't just efficiency, but to design for how people actually think: non-linear, intuitive, and often unfinished. Baskets turns a rigid action into a fluid workflow, making curation feel less like sorting and more like discovering intent over time.
+I also wanted to capture something of the butterfly's own perspective. As a playful interaction, I added a Butterfly Vision mode that shifts the color palette to simulate how butterflies perceive the world, through ultraviolet light. Throughout the design, I incorporated butterfly-inspired iconography and wove in the Are.na logo as a subtle visual nod. Finally, the dialog backgrounds are deliberately blurred, meant to feel as thin and delicate as a butterfly's wing.
