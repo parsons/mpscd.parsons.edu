@@ -1,3 +1,8 @@
+> [!WARNING]
+> We’re rebuilding over in [a new repo](https://github.com/parsons/mps-cd)! This is archived here, for posterity.
+
+<br>
+
 ## Developing (circa June 2025)
 
 This project uses Jekyll `3.10.0` (and Ruby `3.1.4`). We’re limited here by older [Ruby SASS](https://sass-lang.com/blog/ruby-sass-is-unsupported/) versions/conventions, which break on upgrading past `>4.0`.
