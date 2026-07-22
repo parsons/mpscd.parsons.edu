@@ -8,7 +8,7 @@ list:
 - "[Sophia Bae](https://sophbae.com)"
 - "[Melody Ekbatani](https://melodyekbatani.com/)"
 - "[Michael French](https://michaelfrench.co)"
-- "[kinza ghanchi](https://k881-droid.github.io/)"
+- "[kinza ghanchi](https://kinzaghanchi.com)"
 - "[Amanda Guo](https://itsamandaguo.com/)"
 - "[Cason Huang](https://www.casonhuang.com)"
 - "[Sooim Kang](https://sooimkang.com/)"
